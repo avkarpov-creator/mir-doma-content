@@ -117,16 +117,22 @@ h1, h2 { color: #214A24; }
   transform: scale(1.06) !important;
 }
 
-/* Заголовок карточки — спокойный тёмный, акцент при наведении */
-.post-card__content a,
+/* Заголовок карточки — спокойный тёмный, акцент при наведении.
+   Растущее подчёркивание внутри карточек выключено: при наведении
+   достаточно подъёма карточки + смены цвета заголовка.
+   Подчёркивание остаётся для меню и ссылок внутри текста статей. */
+.post-card a,
 .post-card-one a,
-.post-card-square a {
+.post-card-square a,
+.post-card-without-micro a {
   color: #23302A;
+  background-image: none !important;
   transition: color .2s ease;
 }
-.post-card:hover .post-card__content a,
+.post-card:hover a,
 .post-card-one:hover a,
-.post-card-square:hover a {
+.post-card-square:hover a,
+.post-card-without-micro:hover a {
   color: #3F7A3A;
 }
 
