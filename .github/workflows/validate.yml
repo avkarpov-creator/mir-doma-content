@@ -1,0 +1,25 @@
+name: Проверка статей
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'articles/**'
+  pull_request:
+    paths:
+      - 'articles/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Получить код
+        uses: actions/checkout@v4
+
+      - name: Поставить Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Проверить статьи
+        run: python3 scripts/validate.py
