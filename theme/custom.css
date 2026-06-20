@@ -1,14 +1,84 @@
 /* ============================================================
-   mir-doma.pro — кастомный дизайн (Этап 2, старт)
-   Едет из git через плагин Git Importer. Грузится после темы.
+   mir-doma.pro — кастомный дизайн (Этап 2: полный custom.css)
+   Едет из git через Git Importer 1.4.2, инлайном в <head>,
+   после стилей темы Root 3.1.4.
+
+   Базовая палитра уже наложена «Дизайнером» Root — здесь мы
+   НЕ перекрашиваем всё заново, а добавляем поверх: шрифты,
+   акценты, карточки, тёмно-зелёный подвал, анимации.
+
+   ПАЛИТРА (для справки, тема не на CSS-переменных):
+     bg          #F4F7EF   surface     #FFFFFF
+     green       #3F7A3A   green-deep  #214A24
+     ink         #23302A   muted       #67766B
+     amber       #E89A3C   amber-deep  #B26C16
    ============================================================ */
 
-/* ⚠️ ВРЕМЕННЫЙ МАРКЕР проверки доставки.
-   Если вверху страницы появилась янтарная полоса — значит CSS
-   с GitHub успешно подключился. После проверки эту строку уберём. */
-html { border-top: 6px solid #B26C16 !important; }
 
-/* Карточки статей: скругления, мягкая тень, подъём при наведении.
+/* ── 1. ШРИФТЫ ───────────────────────────────────────────────
+   Сами файлы шрифтов подгружает custom.js (вставкой <link> на
+   Google Fonts с preconnect). Здесь — только применение семейств.
+   Onest — текст, Nunito — заголовки. Оба с поддержкой кириллицы. */
+body,
+button, input, select, textarea,
+.site-content, .content-area {
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title, .entry-title,
+.main-navigation a,
+.post-card a, .post-card-one a, .post-card-square a {
+  font-family: 'Nunito', 'Onest', sans-serif !important;
+}
+h1, h2, h3 { font-weight: 800 !important; letter-spacing: -0.012em; }
+h4, h5, h6 { font-weight: 700 !important; }
+h1, h2 { color: #214A24; }
+
+/* Админ-бар оставляем на системном шрифте — он только у админа */
+#wpadminbar, #wpadminbar * {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+
+/* ── 2. ССЫЛКИ В КОНТЕНТЕ ────────────────────────────────────
+   Растущее подчёркивание (фишка из брифа), без сдвига текста. */
+.site-content a:not(.post-card):not(.btn):not(.button) {
+  color: #3F7A3A;
+  text-decoration: none;
+  background-image: linear-gradient(#E89A3C, #E89A3C);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  transition: background-size .25s ease, color .2s ease;
+}
+.site-content a:not(.post-card):not(.btn):not(.button):hover {
+  color: #214A24;
+  background-size: 100% 2px;
+}
+
+
+/* ── 3. МЕНЮ ─────────────────────────────────────────────────
+   Подчёркивание-акцент янтарём; активный пункт подчёркнут всегда. */
+.main-navigation a {
+  position: relative;
+  text-decoration: none;
+  background-image: linear-gradient(#E89A3C, #E89A3C);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  transition: background-size .25s ease, color .2s ease;
+}
+.main-navigation a:hover,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a {
+  background-size: 100% 2px;
+  color: #214A24;
+}
+
+
+/* ── 4. КАРТОЧКИ СТАТЕЙ ──────────────────────────────────────
+   Скругление, мягкая тень, подъём при наведении, зум фото.
    Перекрываем все варианты карточек темы Root. */
 .post-card,
 .post-card-one,
@@ -16,6 +86,8 @@ html { border-top: 6px solid #B26C16 !important; }
 .post-card-without-micro {
   border-radius: 18px !important;
   overflow: hidden !important;
+  background: #FFFFFF;
+  box-shadow: 0 2px 10px rgba(33, 74, 36, .06);
   transition: transform .28s ease, box-shadow .28s ease !important;
 }
 .post-card:hover,
@@ -23,10 +95,10 @@ html { border-top: 6px solid #B26C16 !important; }
 .post-card-square:hover,
 .post-card-without-micro:hover {
   transform: translateY(-6px) !important;
-  box-shadow: 0 12px 30px rgba(33, 74, 36, .14) !important;
+  box-shadow: 0 14px 32px rgba(33, 74, 36, .16) !important;
 }
 
-/* Фото в карточке: лёгкий зум при наведении */
+/* Фото в карточке: обрезаем по скруглению + лёгкий зум */
 .post-card__image,
 .post-card-one__image,
 .post-card-square__image {
@@ -35,9 +107,9 @@ html { border-top: 6px solid #B26C16 !important; }
 .post-card__image img,
 .post-card-one__image img,
 .post-card-square__image img {
-  transition: transform .5s ease !important;
   display: block;
   width: 100%;
+  transition: transform .5s ease !important;
 }
 .post-card:hover .post-card__image img,
 .post-card-one:hover .post-card-one__image img,
@@ -45,6 +117,97 @@ html { border-top: 6px solid #B26C16 !important; }
   transform: scale(1.06) !important;
 }
 
+/* Заголовок карточки — спокойный тёмный, акцент при наведении */
+.post-card__content a,
+.post-card-one a,
+.post-card-square a {
+  color: #23302A;
+  transition: color .2s ease;
+}
+.post-card:hover .post-card__content a,
+.post-card-one:hover a,
+.post-card-square:hover a {
+  color: #3F7A3A;
+}
+
+
+/* ── 5. ПОДВАЛ ───────────────────────────────────────────────
+   Тёмно-зелёный подвал со светлым текстом и янтарным наведением. */
+#site-footer.site-footer,
+.footer-navigation {
+  background-color: #214A24 !important;
+  color: #EAF1E6 !important;
+}
+#site-footer.site-footer a,
+.footer-navigation a {
+  color: #EAF1E6 !important;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+#site-footer.site-footer a:hover,
+.footer-navigation a:hover {
+  color: #E89A3C !important;
+}
+#site-footer .widget-title,
+#site-footer h2, #site-footer h3 {
+  color: #FFFFFF !important;
+}
+
+
+/* ── 6. КНОПКА «НАВЕРХ» ──────────────────────────────────────*/
+.scrolltop.js-scrolltop {
+  background-color: #3F7A3A !important;
+  color: #FFFFFF !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 20px rgba(33, 74, 36, .25) !important;
+  transition: background-color .2s ease, transform .2s ease !important;
+}
+.scrolltop.js-scrolltop:hover {
+  background-color: #214A24 !important;
+  transform: translateY(-3px) !important;
+}
+
+
+/* ── 7. ПОЯВЛЕНИЕ ПРИ ПРОКРУТКЕ ──────────────────────────────
+   Класс .reveal навешивает custom.js, и только если JS отработал
+   (html.mdgi-reveal). Без JS контент всегда видим — без сюрпризов. */
+html.mdgi-reveal .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .6s ease, transform .6s ease;
+  will-change: opacity, transform;
+}
+html.mdgi-reveal .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+
+/* ── 8. СЕЗОННЫЙ БЕЙДЖ (задел под Этап 3) ────────────────────
+   Пульсирующий янтарный бейдж для блока «сейчас в сезоне». */
+@keyframes mdgi-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 154, 60, .45); }
+  50%      { box-shadow: 0 0 0 8px rgba(232, 154, 60, 0); }
+}
+.season-badge {
+  display: inline-block;
+  background: #E89A3C;
+  color: #23302A;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 4px 12px;
+  animation: mdgi-pulse 2.4s ease-in-out infinite;
+}
+
+
+/* ── 9. УВАЖЕНИЕ К prefers-reduced-motion ────────────────────*/
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+  html.mdgi-reveal .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
