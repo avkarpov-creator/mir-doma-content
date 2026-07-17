@@ -199,6 +199,7 @@ images:
 - [Планировка участка 10 соток под строительство дома](https://mir-doma.pro/planirovka-uchastka-10-sotok-pod-stroitelstvo/)
 - [Зонирование участка 10 соток: схемы и примеры](https://mir-doma.pro/zonirovanie-uchastka-10-sotok/)
 - [Ошибки планировки дачного участка](https://mir-doma.pro/oshibki-planirovki-uchastka/)
+- [Расстояние от дома до бани, забора и построек: нормы](https://mir-doma.pro/rasstoyanie-ot-doma-do-bani-zabora/)
 
 ## Заключение
 
