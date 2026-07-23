@@ -9,6 +9,7 @@ tags:
   - заморозка
   - заготовки
   - рецепты
+adopt_existing: true
 status: draft
 images:
   - images/zamorozka-ovoshchey.jpg
@@ -48,7 +49,7 @@ images:
 
 ![Замороженные ягоды на зиму](images/zamorozka-yagody.jpg)
 
-Из замороженных овощей удобно готовить супы, рагу и гарниры — например, [блюда из кабачков](https://mir-doma.pro/blyuda-iz-kabachkov-recepty/) зимой, — а из ягод — компоты, смузи и начинку для пирогов.
+Из замороженных овощей удобно готовить супы, рагу и гарниры — например, [блюда из кабачков](https://mir-doma.pro/blyuda-iz-kabachkov-recepty/) зимой, — а из ягод — компоты, смузи и начинку для пирогов. Как заморозить ягоды, чтобы они не слиплись и не превратились в кашу — по каждой ягоде отдельно — в статье [как заморозить ягоды на зиму](https://mir-doma.pro/kak-zamorozit-yagody/).
 
 ![Замороженная зелень на зиму](images/zamorozka-zelen.jpg)
 
