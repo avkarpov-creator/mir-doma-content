@@ -225,9 +225,320 @@ images:
 
 Считайте не «сколько просят», а **сколько будет стоить дом после приведения в порядок**. Иногда дешёвый дом с тремя серьёзными проблемами обходится дороже, чем крепкий по адекватной цене.
 
-## ✅ Чек-лист осмотра: коротко
+## 📱 Интерактивный чек-лист: отмечайте прямо на осмотре
 
-Распечатайте или сохраните в телефон:
+Полная версия проверки — 72 пункта по всем узлам дома. Отмечайте галочки прямо с телефона, пока ходите по дому: всё сохранится в браузере, даже если закроете страницу и вернётесь на следующий день. Впишите адрес объекта, добавьте заметки, а в конце отправьте отчёт себе в мессенджер одной кнопкой — удобно, когда смотрите несколько домов и через неделю уже не помните, где именно был сырой подпол.
+
+<!-- wp:html -->
+<div id="mdChecklist" class="md-cl">
+  <div class="md-cl__head">
+    <h3 class="md-cl__title">Чек-лист осмотра дома</h3>
+    <p class="md-cl__sub">Отмечайте пункты прямо на осмотре — всё сохранится в браузере на этом устройстве.</p>
+    <input type="text" id="mdAddr" class="md-cl__addr" placeholder="Адрес или название объекта (например: Иваново, ул. Лесная 12)">
+    <div class="md-cl__progwrap">
+      <div class="md-cl__progbar"><div id="mdProgFill" class="md-cl__progfill"></div></div>
+      <span id="mdProgText" class="md-cl__progtext">0 из 0</span>
+    </div>
+  </div>
+  <div id="mdSections" class="md-cl__body"></div>
+  <div class="md-cl__notes">
+    <label for="mdNotes" class="md-cl__nlabel">Общие заметки по объекту</label>
+    <textarea id="mdNotes" class="md-cl__textarea" rows="4" placeholder="Что смутило, о чём спросить, что уточнить у соседей, торг..."></textarea>
+  </div>
+  <div class="md-cl__actions">
+    <button type="button" id="mdShare" class="md-cl__btn md-cl__btn--main">Сохранить отчёт</button>
+    <button type="button" id="mdCopy" class="md-cl__btn">Скопировать</button>
+    <button type="button" id="mdPrint" class="md-cl__btn">Печать</button>
+    <button type="button" id="mdReset" class="md-cl__btn md-cl__btn--ghost">Очистить</button>
+  </div>
+  <p id="mdStatus" class="md-cl__status"></p>
+</div>
+<style>
+.md-cl{--md-green:#3d7a3d;--md-green-l:#eaf3ea;--md-red:#c0392b;--md-bd:#e2e2e2;
+  max-width:760px;margin:28px auto;padding:20px;border:1px solid var(--md-bd);border-radius:14px;
+  background:#fff;font-family:inherit;color:#222;line-height:1.5;box-sizing:border-box}
+.md-cl *{box-sizing:border-box}
+.md-cl__title{margin:0 0 6px;font-size:1.35em;color:var(--md-green)}
+.md-cl__sub{margin:0 0 14px;font-size:.92em;color:#666}
+.md-cl__addr{width:100%;padding:11px 13px;border:1px solid var(--md-bd);border-radius:9px;
+  font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-cl__addr:focus{outline:none;border-color:var(--md-green);background:#fff}
+.md-cl__progwrap{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.md-cl__progbar{flex:1;height:9px;background:#eee;border-radius:9px;overflow:hidden}
+.md-cl__progfill{height:100%;width:0;background:var(--md-green);border-radius:9px;transition:width .25s ease}
+.md-cl__progtext{font-size:.85em;color:#666;white-space:nowrap;font-variant-numeric:tabular-nums}
+.md-cl__sec{border-top:1px solid var(--md-bd);padding-top:14px;margin-top:14px}
+.md-cl__sectitle{margin:0 0 4px;font-size:1.05em;font-weight:700;color:var(--md-green);
+  display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}
+.md-cl__sectitle .md-cl__count{font-size:.78em;font-weight:400;color:#888;margin-left:auto}
+.md-cl__sechint{margin:0 0 10px;font-size:.85em;color:#777}
+.md-cl__list{margin:0;padding:0;list-style:none}
+.md-cl__item{display:flex;align-items:flex-start;gap:11px;padding:9px 10px;border-radius:9px;
+  cursor:pointer;transition:background .15s}
+.md-cl__item:active{background:var(--md-green-l)}
+.md-cl__item input{width:22px;height:22px;margin:1px 0 0;flex-shrink:0;accent-color:var(--md-green);cursor:pointer}
+.md-cl__item span{font-size:.97em}
+.md-cl__item.is-done span{color:#999;text-decoration:line-through}
+.md-cl__item.is-flag span{color:var(--md-red)}
+.md-cl__notes{margin-top:18px;border-top:1px solid var(--md-bd);padding-top:14px}
+.md-cl__nlabel{display:block;font-weight:700;margin-bottom:7px;font-size:.97em}
+.md-cl__textarea{width:100%;padding:11px 13px;border:1px solid var(--md-bd);border-radius:9px;
+  font-size:16px;font-family:inherit;resize:vertical;background:#fafafa}
+.md-cl__textarea:focus{outline:none;border-color:var(--md-green);background:#fff}
+.md-cl__actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.md-cl__btn{flex:1 1 auto;min-width:110px;padding:12px 16px;border:1px solid var(--md-green);
+  border-radius:9px;background:#fff;color:var(--md-green);font-size:.95em;font-family:inherit;
+  font-weight:600;cursor:pointer;transition:opacity .15s}
+.md-cl__btn:active{opacity:.7}
+.md-cl__btn--main{background:var(--md-green);color:#fff}
+.md-cl__btn--ghost{border-color:#ccc;color:#888}
+.md-cl__status{margin:11px 0 0;font-size:.87em;color:var(--md-green);min-height:1.2em;text-align:center}
+@media (max-width:600px){
+  .md-cl{padding:15px;margin:20px auto;border-radius:11px}
+  .md-cl__btn{flex:1 1 45%}
+}
+@media print{
+  .md-cl__actions,.md-cl__status,.md-cl__sub{display:none}
+  .md-cl{border:none;max-width:100%}
+}
+</style>
+<script>
+(function(){
+  var KEY='mdHouseChecklist_v1';
+  var DATA=[
+    {t:'Перед выездом',h:'Сезон и подготовка решают половину дела',i:[
+      'Приехал в подходящий сезон: ранняя весна или дождливая осень',
+      'Осмотр днём, при хорошем свете, заложил минимум 2 часа',
+      'Взял фонарь, шило или отвёртку, уровень, рулетку',
+      'Взял старую одежду — лезть в подпол и на чердак'
+    ]},
+    {t:'Фундамент и цоколь',h:'Самая дорогая для исправления часть дома',i:[
+      'Обошёл фундамент по периметру, осмотрел трещины',
+      'Раскрытых трещин шире 2–3 мм нет',
+      'Трещин через углы и расходящихся клином нет',
+      'Дом не перекошен: проверил уровнем полы и линию конька',
+      'Двери и окна открываются и закрываются свободно',
+      'Отмостка есть и не отошла от стены',
+      'Цоколь достаточной высоты, снег и вода не достают до стен',
+      'Продухи в подполе есть и не заложены наглухо'
+    ]},
+    {t:'Стены и венцы',h:'Главная зона риска деревянного дома',i:[
+      'Проткнул шилом нижние венцы по всему периметру',
+      'Проверил венцы в углах, под окнами, под верандой и крыльцом',
+      'Дерево твёрдое, шило не входит, звук при простукивании звонкий',
+      'Тёмных пятен, грибка и белого налёта нет',
+      'Углы изнутри сухие, без плесени и отслоившихся обоев',
+      'Для кирпича: диагональных трещин и высолов нет',
+      'Если дом свежеобшит — попросил заглянуть под обшивку'
+    ]},
+    {t:'Крыша и чердак',h:'Самое информативное место, куда ленятся лезть',i:[
+      'Поднялся на чердак',
+      'Следов протечек на стропилах и обрешётке нет',
+      'Проткнул шилом стропила, особенно у опоры на стену',
+      'Утеплитель сухой, не слежался',
+      'Чердак проветривается: есть продухи или слуховые окна',
+      'Дымоход целый, без трещин и следов копоти вокруг',
+      'Дневного света сквозь кровлю не видно',
+      'Потолки в комнатах без жёлтых разводов'
+    ]},
+    {t:'Подпол и полы',h:'Здесь ничего нельзя замаскировать косметикой',i:[
+      'Спустился в подпол',
+      'Запаха сырости и затхлости нет',
+      'Грунт сухой, следов стоявшей воды на стенах нет',
+      'Плесени и белого пушистого налёта нет',
+      'Проткнул шилом лаги и балки — твёрдые',
+      'Следов грызунов нет',
+      'Прошёлся по всем комнатам: полы не прогибаются',
+      'Прокатил шарик — заметного уклона нет'
+    ]},
+    {t:'Коммуникации',h:'Здесь прячутся неожиданные расходы',i:[
+      'Узнал выделенную мощность электричества',
+      'Проводка не алюминиевая старого образца',
+      'В щитке автоматы и УЗО, а не пробки и скрутки',
+      'Проверил розетки и выключатели в каждой комнате',
+      'Набрал воду: напор, цвет и запах в норме',
+      'Узнал глубину источника и не пересыхает ли летом',
+      'Водопровод утеплён, есть возможность слить на зиму',
+      'Выяснил, что с канализацией и как часто откачивают',
+      'Осмотрел печь, котёл, дымоход и радиаторы',
+      'Узнал реальные расходы на отопление за зиму в цифрах'
+    ]},
+    {t:'Участок и окружение',h:'Дом можно починить, место — нет',i:[
+      'Спросил напрямую, подтапливает ли весной',
+      'Участок не в низине относительно соседних и дороги',
+      'Следов воды на цоколе и влаголюбивых растений нет',
+      'Выяснил, чистят ли дорогу зимой и за чей счёт',
+      'Поговорил с соседями, спросил, почему продают',
+      'Проверил, что рядом: трасса, ферма, ЛЭП, промзона',
+      'Проверил связь и интернет прямо на месте',
+      'Приехал в другое время суток — тихо ли'
+    ]},
+    {t:'Документы',h:'Ошибка здесь дороже любого ремонта',i:[
+      'Запросил свежую выписку из ЕГРН на дом и на землю',
+      'Проверил правоустанавливающие документы',
+      'Границы участка отмежёваны и совпадают с забором',
+      'Категория земли и ВРИ позволяют жить и прописаться',
+      'Все постройки зарегистрированы',
+      'Площадь дома и участка совпадает с документами',
+      'Нет прописанных лиц с правом проживания',
+      'Обременений, арестов и залогов нет',
+      'Есть согласие супруга на продажу, если нужно',
+      'Планирую показать документы юристу до задатка'
+    ]},
+    {t:'Красные флаги',h:'Отметьте то, что заметили — каждый пункт требует объяснения',flag:true,i:[
+      'Свежий косметический ремонт и покраска потолка',
+      'Новая обшивка стен или полов, скрывающая конструкции',
+      'Сильный запах освежителя, краски или благовоний',
+      'Отказ показать подпол, чердак или отдельную комнату',
+      'Показ только вечером или в спешке',
+      'Давят срочностью: «вносите задаток сегодня»',
+      'Уходят от прямых вопросов о протечках и подтоплении',
+      'Цена заметно ниже рынка без внятной причины',
+      'Продажа по доверенности или сразу после наследства'
+    ]}
+  ];
+  var root=document.getElementById('mdSections');
+  var addr=document.getElementById('mdAddr');
+  var notes=document.getElementById('mdNotes');
+  var fill=document.getElementById('mdProgFill');
+  var ptext=document.getElementById('mdProgText');
+  var status=document.getElementById('mdStatus');
+  var total=0;
+  // отрисовка
+  DATA.forEach(function(sec,si){
+    var wrap=document.createElement('div'); wrap.className='md-cl__sec';
+    var h=document.createElement('div'); h.className='md-cl__sectitle';
+    h.innerHTML='<span>'+sec.t+'</span><span class="md-cl__count" data-count="'+si+'"></span>';
+    var hint=document.createElement('p'); hint.className='md-cl__sechint'; hint.textContent=sec.h;
+    var ul=document.createElement('ul'); ul.className='md-cl__list';
+    sec.i.forEach(function(txt,ii){
+      total++;
+      var li=document.createElement('li');
+      li.className='md-cl__item'+(sec.flag?' is-flag':'');
+      var id='md_'+si+'_'+ii;
+      var cb=document.createElement('input');
+      cb.type='checkbox'; cb.id=id; cb.dataset.k=id;
+      var lb=document.createElement('label'); lb.setAttribute('for',id); lb.style.cursor='pointer';
+      lb.style.flex='1'; lb.innerHTML='<span>'+txt+'</span>';
+      li.appendChild(cb); li.appendChild(lb);
+      cb.addEventListener('change',function(){
+        li.classList.toggle('is-done',cb.checked&&!sec.flag);
+        save(); refresh();
+      });
+      ul.appendChild(li);
+    });
+    wrap.appendChild(h); wrap.appendChild(hint); wrap.appendChild(ul);
+    root.appendChild(wrap);
+  });
+  function boxes(){ return root.querySelectorAll('input[type=checkbox]'); }
+  function refresh(){
+    var done=0;
+    boxes().forEach(function(cb){ if(cb.checked) done++; });
+    var pct=total?Math.round(done/total*100):0;
+    fill.style.width=pct+'%';
+    ptext.textContent=done+' из '+total;
+    DATA.forEach(function(sec,si){
+      var d=0;
+      sec.i.forEach(function(_,ii){
+        var cb=document.getElementById('md_'+si+'_'+ii);
+        if(cb&&cb.checked) d++;
+      });
+      var el=root.querySelector('[data-count="'+si+'"]');
+      if(el) el.textContent=d+'/'+sec.i.length;
+    });
+  }
+  function save(){
+    try{
+      var st={a:addr.value,n:notes.value,c:{}};
+      boxes().forEach(function(cb){ if(cb.checked) st.c[cb.dataset.k]=1; });
+      localStorage.setItem(KEY,JSON.stringify(st));
+    }catch(e){}
+  }
+  function load(){
+    try{
+      var raw=localStorage.getItem(KEY); if(!raw) return;
+      var st=JSON.parse(raw);
+      addr.value=st.a||''; notes.value=st.n||'';
+      boxes().forEach(function(cb){
+        if(st.c&&st.c[cb.dataset.k]){
+          cb.checked=true;
+          var li=cb.closest('.md-cl__item');
+          if(li&&!li.classList.contains('is-flag')) li.classList.add('is-done');
+        }
+      });
+    }catch(e){}
+  }
+  function report(){
+    var out='ЧЕК-ЛИСТ ОСМОТРА ДОМА\n';
+    out+=(addr.value?'Объект: '+addr.value+'\n':'');
+    out+='Дата: '+new Date().toLocaleDateString('ru-RU')+'\n';
+    var done=0; boxes().forEach(function(cb){ if(cb.checked) done++; });
+    out+='Проверено: '+done+' из '+total+'\n';
+    DATA.forEach(function(sec,si){
+      var lines=[];
+      sec.i.forEach(function(txt,ii){
+        var cb=document.getElementById('md_'+si+'_'+ii);
+        lines.push((cb&&cb.checked?'[x] ':'[ ] ')+txt);
+      });
+      out+='\n'+sec.t.toUpperCase()+'\n'+lines.join('\n')+'\n';
+    });
+    if(notes.value) out+='\nЗАМЕТКИ\n'+notes.value+'\n';
+    out+='\nИсточник: mir-doma.pro';
+    return out;
+  }
+  function flash(msg){
+    status.textContent=msg;
+    setTimeout(function(){ status.textContent=''; },2600);
+  }
+  addr.addEventListener('input',save);
+  notes.addEventListener('input',save);
+  document.getElementById('mdShare').addEventListener('click',function(){
+    var txt=report();
+    if(navigator.share){
+      navigator.share({title:'Чек-лист осмотра дома',text:txt}).catch(function(){});
+    }else{
+      var blob=new Blob([txt],{type:'text/plain;charset=utf-8'});
+      var a=document.createElement('a');
+      a.href=URL.createObjectURL(blob);
+      a.download='osmotr-doma-'+(new Date().toISOString().slice(0,10))+'.txt';
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(a.href); },1000);
+      flash('Файл сохранён');
+    }
+  });
+  document.getElementById('mdCopy').addEventListener('click',function(){
+    var txt=report();
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(function(){ flash('Скопировано — можно вставить в заметки'); },
+        function(){ fallbackCopy(txt); });
+    }else fallbackCopy(txt);
+  });
+  function fallbackCopy(txt){
+    var ta=document.createElement('textarea');
+    ta.value=txt; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); flash('Скопировано'); }catch(e){ flash('Не удалось скопировать'); }
+    document.body.removeChild(ta);
+  }
+  document.getElementById('mdPrint').addEventListener('click',function(){ window.print(); });
+  document.getElementById('mdReset').addEventListener('click',function(){
+    if(!confirm('Очистить чек-лист и заметки?')) return;
+    boxes().forEach(function(cb){
+      cb.checked=false;
+      var li=cb.closest('.md-cl__item'); if(li) li.classList.remove('is-done');
+    });
+    addr.value=''; notes.value='';
+    try{ localStorage.removeItem(KEY); }catch(e){}
+    refresh(); flash('Очищено');
+  });
+  load(); refresh();
+})();
+</script>
+<!-- /wp:html -->
+
+## ✅ Краткий чек-лист: главное в 15 пунктах
+
+Если нужна короткая версия — распечатать или держать перед глазами:
 
 1. Приехал в подходящий сезон (весна/дождливая осень), днём, с фонарём и шилом.
 2. Спустился в подпол: сырость, плесень, лаги, продухи.
