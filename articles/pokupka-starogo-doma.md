@@ -9,6 +9,7 @@ tags:
   - строительство
   - дача своими руками
   - ремонт
+adopt_existing: true
 status: draft
 images:
   - images/pokupka-starogo-doma.jpg
