@@ -34,6 +34,18 @@ except (AttributeError, ValueError):
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ARTICLES = ROOT / "articles"
+EXTERNAL_SLUGS_FILE = ROOT / "external-slugs.txt"
+
+
+def load_external_slugs():
+    if not EXTERNAL_SLUGS_FILE.exists():
+        return set()
+    slugs = set()
+    for line in EXTERNAL_SLUGS_FILE.read_text(encoding="utf-8").splitlines():
+        line = line.split("#", 1)[0].strip()
+        if line:
+            slugs.add(line)
+    return slugs
 INDEX_PATH = ROOT / ".mdi-index.json"
 SITE = "mir-doma.pro"
 
@@ -365,10 +377,12 @@ def cmd_sec(slug, needle):
 
 def cmd_check(slug=None):
     docs = load()["docs"]
+    external = load_external_slugs()
     targets = [slug] if slug else list(docs)
     if slug and slug not in docs:
         sys.exit(f"Нет статьи {slug}")
     problems = []
+    external_hits = 0
     for s in targets:
         d = docs[s]
         path = ARTICLES / d["file"]
@@ -399,7 +413,9 @@ def cmd_check(slug=None):
         for line in [d["title"], d["seo_title"], d["seo_desc"]]:
             for w in re.findall(r"[А-Яа-яЁё]+[A-Za-z]+|[A-Za-z]+[А-Яа-яЁё]+", line):
                 p.append(f"смесь кириллицы и латиницы: {w}")
-        broken = [t for t in d["out"] if t not in docs]
+        broken = [t for t in d["out"] if t not in docs and t not in external]
+        ext_used = [t for t in d["out"] if t not in docs and t in external]
+        external_hits += len(ext_used)
         if broken:
             p.append("битые слаги: " + ", ".join(broken))
         if not d["out"]:
@@ -408,12 +424,16 @@ def cmd_check(slug=None):
             problems.append((s, p))
     if not problems:
         print(f"OK — проверено {len(targets)}, замечаний нет.")
+        if external_hits:
+            print(f"внешних ссылок: {external_hits}")
         return
     for s, p in problems:
         print(f"{s}:")
         for x in p:
             print(f"  - {x}")
     print(f"\nС замечаниями: {len(problems)} из {len(targets)}")
+    if external_hits:
+        print(f"внешних ссылок: {external_hits}")
     sys.exit(1)
 
 
