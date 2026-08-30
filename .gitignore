@@ -1,1 +1,5 @@
 .mdi-index.json
+.gemini.token
+.mutagen.token
+.cache/
+prompts/*.tmp
