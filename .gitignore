@@ -3,3 +3,7 @@
 .mutagen.token
 .cache/
 prompts/*.tmp
+seo/inbox/
+seo/archive/
+seo/reports/
+__pycache__/

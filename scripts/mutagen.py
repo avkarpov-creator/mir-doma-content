@@ -36,9 +36,16 @@ DOMAIN = os.environ.get("MD_DOMAIN", "mir-doma.pro")
 REGION = os.environ.get("MD_REGION", "yandex_msk")
 
 # --- интент-фильтр (правила проекта) ---
+# Явные маркеры действия в вопросительных формулировках.
 ACTION = ["как ", "чем ", "сколько", "какой", "какие", "что лучше", "своими руками",
           "пошагов", "расчет", "расчёт", "когда ", "нужно ли", "можно ли", "чтобы ",
           "инструкц", "схема", "размер", "норма", "пропорц", "выбрать", "сделать"]
+# Отглагольные существительные: «утепление пола на веранде» — это тоже намерение
+# сделать, просто сформулированное именной группой. Таких хвостов большинство.
+ACTION_NOUN = ["утеплен", "отделк", "обшивк", "монтаж", "установк", "устройств",
+               "строительств", "ремонт", "покраск", "обработк", "укладк", "подшивк",
+               "изготовлен", "оформлен", "подготовк", "уход", "посадк", "обрезк",
+               "подкормк", "хранен", "консерваци", "заготовк", "планировк", "зонирован"]
 DIAG = ["фото", "как выглядит", "выглядят", "симптом", "признак", "почему появля",
         "что такое", "виды ", "описание", "картинк", "значение"]
 
@@ -78,15 +85,38 @@ def cached(key: str, producer):
     safe = re.sub(r"[^a-zа-яё0-9_-]+", "_", key.lower())[:120]
     f = CACHE / f"{safe}.json"
     if f.exists():
-        return json.loads(f.read_text(encoding="utf-8"))
+        val = json.loads(f.read_text(encoding="utf-8"))
+        if not _is_error(val):
+            return val
+        f.unlink()          # ошибочный ответ в кэше не держим
     val = producer()
-    f.write_text(json.dumps(val, ensure_ascii=False), encoding="utf-8")
+    if not _is_error(val):
+        f.write_text(json.dumps(val, ensure_ascii=False), encoding="utf-8")
     return val
+
+
+def _is_error(val) -> bool:
+    """Ответ с ошибкой кэшировать нельзя: отказ по подписке или сбою залипнет навсегда."""
+    if isinstance(val, dict):
+        if "error" in val:
+            return True
+        txt = json.dumps(val, ensure_ascii=False).lower()
+        if "требуется подписка" in txt or "не найден" in txt:
+            return True
+    if isinstance(val, list) and not val:
+        return True
+    return False
 
 
 def rows(res):
     """Отчёты Мега-инструмента приходят списком или словарём — приводим к списку."""
     if isinstance(res, dict):
+        txt = json.dumps(res, ensure_ascii=False)
+        if "требуется подписка" in txt.lower():
+            sys.exit("Мутаген: отчёты Мега-инструмента требуют активной подписки "
+                     "с доступом по API (тариф «Расширенный» и выше).\n"
+                     "Проверка конкуренции по фразе работает и на балансе: "
+                     "mutagen.py strong \"<фраза>\"")
         if "error" in res:
             sys.exit(f"Мутаген: {res['error']}")
         for k in ("data", "result", "rows"):
@@ -101,6 +131,8 @@ def intent(kw: str) -> str:
     if any(d in k for d in DIAG):
         return "диагностика"
     if any(a in k for a in ACTION):
+        return "действие"
+    if any(a in k for a in ACTION_NOUN):
         return "действие"
     return "нейтр"
 
@@ -292,6 +324,91 @@ def cmd_topics(a):
         print(f"# ещё {len(cand)-n} кандидатов без проверки конкуренции:")
         for f, kw, ov in cand[n:n + 12]:
             print(f"{f}\t{kw}\t{ov}")
+
+
+def cmd_pick(a):
+    """Отбор тем по жёстким порогам: частотность ≥ N и конкуренция ≤ M.
+
+    mutagen.py pick "утепление веранды" --min-freq=200 --max-strong=5 [--check=12]
+    """
+    if not a:
+        sys.exit('укажи опорную фразу: pick "утепление веранды" --min-freq=200 --max-strong=5')
+    minf, maxs, check, kws = 200, 5, 12, []
+    for x in a:
+        if x.startswith("--min-freq="):
+            minf = int(x.split("=")[1])
+        elif x.startswith("--max-strong="):
+            maxs = int(x.split("=")[1])
+        elif x.startswith("--check="):
+            check = int(x.split("=")[1])
+        else:
+            kws.append(x)
+    phrase = " ".join(kws)
+    param = {"region": "yandex_ru", "keyword": phrase,
+             "report": "report_keyword_tailings",
+             "filter": [{"column": "world_wsqso", "filter_type": "gr_or_eq", "val": minf},
+                        {"column": "words", "filter_type": "less_or_eq", "val": 7}],
+             "sort": "-world_wsqso", "limit": 400}
+    res = cached(f"tails_{phrase}_{minf}_400", lambda: call("mutagen.serp.report", param))
+    arts = known_slugs()
+    cand = []
+    stat = {"всего": 0, "мало частотности": 0, "диагностика": 0, "нейтр": 0, "дубль": 0}
+    for r in rows(res):
+        kw = r.get("keyword", "")
+        f = int(r.get("world_wsqso") or 0)
+        stat["всего"] += 1
+        if f < minf:
+            stat["мало частотности"] += 1
+            continue
+        it = intent(kw)
+        if it != "действие":
+            stat[it if it in stat else "нейтр"] += 1
+            continue
+        ov = overlaps(kw, arts)
+        if ov.startswith("дубль"):
+            stat["дубль"] += 1
+            continue
+        cand.append((f, kw, ov))
+    cand.sort(key=lambda x: -x[0])
+    print(f"# «{phrase}»: хвостов {stat['всего']} → кандидатов {len(cand)}")
+    print("# отсеяно: " + ", ".join(f"{k} {v}" for k, v in stat.items()
+                                    if k != "всего" and v))
+    if not cand:
+        print("# Ничего не прошло. Посмотри сырые хвосты: "
+              f'mutagen.py tails "{phrase}" --min=1')
+        return
+    winners = []
+    for f, kw, ov in cand[:check]:
+        def fetch(kw=kw):
+            r = call("mutagen.check_key.new", {"key": kw})
+            if "task_id" not in r:
+                r = call("mutagen.check_key.new", {"keys": kw})
+            tid = r.get("task_id")
+            if not tid:
+                return {"error": r}
+            for _ in range(30):
+                g = call("mutagen.check_key.get", {"task_id": tid})
+                if g.get("status") == "completed":
+                    return g
+                time.sleep(4)
+            return {"error": "timeout"}
+        d = cached("strong_" + kw, fetch)
+        if "error" in d:
+            print(f"  ОШИБКА  {kw}: {d['error']}")
+            continue
+        s = d.get("strong")
+        mark = "✓ ПОДХОДИТ" if isinstance(s, int) and s <= maxs else "  мимо"
+        print(f"{mark}\tconc={s}\tfreq={f}\t{kw}\t{ov}")
+        if isinstance(s, int) and s <= maxs:
+            winners.append((s, f, kw, ov))
+    print(f"# Проверено {min(check, len(cand))}, прошло порог конкуренции ≤{maxs}: {len(winners)}")
+    if winners:
+        winners.sort(key=lambda x: (x[0], -x[1]))
+        s, f, kw, ov = winners[0]
+        print(f"# ЛУЧШИЙ КАНДИДАТ: «{kw}» — конкуренция {s}, частотность {f}")
+        if ov:
+            print(f"# Внимание: {ov} — разведи интенты явно или возьми следующего.")
+    print("# Данные: Мутаген. Порог — не приоритет: решает формула из priorities.md")
 
 
 CMDS = {k[4:]: v for k, v in list(globals().items()) if k.startswith("cmd_")}
