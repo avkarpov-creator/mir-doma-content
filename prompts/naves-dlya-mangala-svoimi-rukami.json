@@ -1,0 +1,36 @@
+{
+  "slug": "naves-dlya-mangala-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/naves-dlya-mangala-svoimi-rukami.jpg",
+      "alt": "Навес для мангала на дачном участке, общий план, дневной свет",
+      "prompt": "Wide establishing shot of a wooden single-pitch canopy over a brick barbecue grill in a garden, corrugated metal roof, wooden posts, daytime"
+    },
+    {
+      "file": "images/naves-dlya-mangala-svoimi-rukami-2.jpg",
+      "alt": "Каркас навеса для мангала из бруса перед монтажом кровли, крупный план",
+      "prompt": "Close-up of an unfinished wooden timber post-and-beam frame for a garden canopy, no roofing installed yet, daytime"
+    },
+    {
+      "file": "images/naves-dlya-mangala-svoimi-rukami-3.jpg",
+      "alt": "Готовый навес для мангала с профнастилом на крыше, вид сбоку",
+      "prompt": "Side view of a finished wooden garden canopy with dark gray corrugated metal roofing, single-pitch slope, daylight"
+    },
+    {
+      "file": "images/naves-dlya-mangala-svoimi-rukami-4.jpg",
+      "alt": "Мангал под навесом с зоной для стола и лежанки дров, дневной свет",
+      "prompt": "Wide shot of a brick barbecue grill under a wooden canopy with a wooden table and a firewood rack nearby, garden setting, daylight"
+    },
+    {
+      "file": "images/naves-dlya-mangala-svoimi-rukami-5.jpg",
+      "alt": "Мангал на негорючей бетонной площадке под навесом, крупный план",
+      "prompt": "Close-up of a brick barbecue grill standing on a concrete paving slab base under a canopy, daylight"
+    },
+    {
+      "file": "images/naves-dlya-mangala-svoimi-rukami-6.jpg",
+      "alt": "Столбчатый фундамент под опорные стойки навеса, вид сверху, дневной свет",
+      "prompt": "Overhead view of concrete pier footings set in the ground for a wooden post canopy foundation, construction site, daylight"
+    }
+  ]
+}
