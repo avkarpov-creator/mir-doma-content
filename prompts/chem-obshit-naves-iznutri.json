@@ -1,0 +1,36 @@
+{
+  "slug": "chem-obshit-naves-iznutri",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-obshit-naves-iznutri.jpg",
+      "alt": "Навес для машины с деревянной обшивкой изнутри, общий план, естественный свет",
+      "prompt": "Wide establishing shot of a freestanding wooden carport with vertical thermo-treated timber cladding on the open side panels, gabled metal roof, car parked underneath, golden hour sunlight"
+    },
+    {
+      "file": "images/chem-obshit-naves-iznutri-2.jpg",
+      "alt": "Термообработанная террасная доска на подшивке навеса, крупный план текстуры",
+      "prompt": "Close-up texture shot of thermally modified terrace decking boards used as soffit cladding on the underside of an open carport roof, warm daylight"
+    },
+    {
+      "file": "images/chem-obshit-naves-iznutri-3.jpg",
+      "alt": "Обрешётка навеса с вентиляционным зазором перед монтажом обшивки, крупный план",
+      "prompt": "Close-up of a timber batten frame with a visible ventilation gap on an open carport structure before wall cladding installation, overcast daylight"
+    },
+    {
+      "file": "images/chem-obshit-naves-iznutri-4.jpg",
+      "alt": "Готовый навес с металлической обшивкой и системой водостока, общий план, дневной свет",
+      "prompt": "Wide shot of a finished open carport with dark gray corrugated metal wall cladding and an aluminum gutter with downspout along the roof edge, daytime"
+    },
+    {
+      "file": "images/chem-obshit-naves-iznutri-5.jpg",
+      "alt": "Древесно-полимерный композит на подшивке потолка открытого навеса, крупный план",
+      "prompt": "Close-up texture shot of wood-plastic composite decking panels installed as ceiling soffit cladding under an open carport roof, natural daylight"
+    },
+    {
+      "file": "images/chem-obshit-naves-iznutri-6.jpg",
+      "alt": "Блок-хаус фасадного класса на боковой обшивке навеса, вид сбоку, дневной свет",
+      "prompt": "Side view of facade-grade wooden blockhouse log siding cladding on the side wall of an open carport, weathered wood texture, daylight"
+    }
+  ]
+}
