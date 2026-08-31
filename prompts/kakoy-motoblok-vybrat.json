@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-motoblok-vybrat",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-motoblok-vybrat.jpg",
+      "alt": "Мотоблок с фрезами перекапывает грядку на дачном участке",
+      "prompt": "A walk-behind tractor with rotary tiller blades cultivating a garden bed on a countryside plot, wide angle, daylight, freshly turned soil"
+    },
+    {
+      "file": "images/kakoy-motoblok-vybrat-2.jpg",
+      "alt": "Сравнение лёгкого и тяжёлого мотоблока рядом на участке",
+      "prompt": "A small lightweight walk-behind tractor and a larger heavy-duty walk-behind tractor parked side by side on a dirt yard, wide comparison shot, daylight"
+    },
+    {
+      "file": "images/kakoy-motoblok-vybrat-3.jpg",
+      "alt": "Крупный план фрезы и колёс мотоблока на вспаханной земле",
+      "prompt": "Close-up of rotary tiller blades and rubber wheels of a walk-behind tractor on freshly plowed dark soil, low angle, daylight"
+    },
+    {
+      "file": "images/kakoy-motoblok-vybrat-4.jpg",
+      "alt": "Мотоблок с тележкой-прицепом для перевозки грузов по участку",
+      "prompt": "A walk-behind tractor with an attached small cargo trailer standing on a garden path, wide shot, daylight, rural background"
+    },
+    {
+      "file": "images/kakoy-motoblok-vybrat-5.jpg",
+      "alt": "Мотоблок в сарае на хранении рядом с садовым инвентарём",
+      "prompt": "A walk-behind tractor parked inside a wooden garden shed next to hand tools hanging on the wall, indoor ambient light, tidy storage scene"
+    },
+    {
+      "file": "images/kakoy-motoblok-vybrat-6.jpg",
+      "alt": "Мотоблок готовится к зимнему хранению, топливный бак открыт",
+      "prompt": "A walk-behind tractor with its fuel tank cap open, parked in a shed for winter storage, close-up on the engine and tank, indoor dim light"
+    }
+  ]
+}
