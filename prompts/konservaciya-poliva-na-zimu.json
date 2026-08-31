@@ -1,0 +1,36 @@
+{
+  "slug": "konservaciya-poliva-na-zimu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/konservaciya-poliva-na-zimu.jpg",
+      "alt": "Отключённая система капельного полива на грядке поздней осенью",
+      "prompt": "A disconnected drip irrigation line lying on an empty garden bed in late autumn, wide angle, cool overcast daylight"
+    },
+    {
+      "file": "images/konservaciya-poliva-na-zimu-2.jpg",
+      "alt": "Продувка капельной ленты компрессором, вода вытекает из открытого конца",
+      "prompt": "Water draining out of an open end of drip irrigation tape lying on soil, close-up shot, natural daylight"
+    },
+    {
+      "file": "images/konservaciya-poliva-na-zimu-3.jpg",
+      "alt": "Электронный таймер полива с вынутыми батарейками на столе",
+      "prompt": "An electronic garden irrigation timer with its battery compartment open and batteries removed, placed on a wooden table, close-up product shot, indoor daylight"
+    },
+    {
+      "file": "images/konservaciya-poliva-na-zimu-4.jpg",
+      "alt": "Смотанная капельная лента для хранения зимой в сарае",
+      "prompt": "A coiled roll of drip irrigation tape stored on a shelf inside a garden shed, close-up angle, indoor ambient light"
+    },
+    {
+      "file": "images/konservaciya-poliva-na-zimu-5.jpg",
+      "alt": "Пустая перевёрнутая бочка для воды на дачном участке осенью",
+      "prompt": "An empty plastic water barrel tipped upside down on the ground in a garden, wide shot, autumn daylight"
+    },
+    {
+      "file": "images/konservaciya-poliva-na-zimu-6.jpg",
+      "alt": "Законсервированная система полива готова к зиме, все узлы разобраны",
+      "prompt": "Disassembled irrigation system parts — filter, valve, and tubing — neatly laid out on a garden table ready for winter storage, wide shot, daylight"
+    }
+  ]
+}
