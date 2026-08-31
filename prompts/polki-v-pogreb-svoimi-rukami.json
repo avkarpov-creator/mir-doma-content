@@ -1,0 +1,36 @@
+{
+  "slug": "polki-v-pogreb-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/polki-v-pogreb-svoimi-rukami.jpg",
+      "alt": "Деревянные полки с банками заготовок в погребе",
+      "prompt": "Wooden shelving in a root cellar filled with rows of glass jars of home preserves, wide angle shot, warm work lamp light, rustic cellar wall texture in background"
+    },
+    {
+      "file": "images/polki-v-pogreb-svoimi-rukami-2.jpg",
+      "alt": "Сравнение образцов дерева, оцинкованного металла и пластика для полок",
+      "prompt": "Three material sample boards laid side by side on a workbench — a wooden plank, a galvanized metal sheet, and a plastic panel, close-up product comparison shot, natural daylight"
+    },
+    {
+      "file": "images/polki-v-pogreb-svoimi-rukami-3.jpg",
+      "alt": "Зазор между деревянной полкой и стеной погреба для вентиляции",
+      "prompt": "Close-up of a wooden shelf mounted with a visible air gap between the shelf edge and the damp concrete cellar wall, side angle, dim ambient light showing the gap clearly"
+    },
+    {
+      "file": "images/polki-v-pogreb-svoimi-rukami-4.jpg",
+      "alt": "Деревянный каркас стеллажа со строительным уровнем на полке",
+      "prompt": "An unfinished wooden shelving frame in a cellar with a spirit level lying flat on one of the shelf boards, close-up angle, natural daylight, raw untreated wood texture"
+    },
+    {
+      "file": "images/polki-v-pogreb-svoimi-rukami-5.jpg",
+      "alt": "Стеллаж с банками заготовок и деревянными ящиками для овощей",
+      "prompt": "A wooden cellar shelving unit holding glass preserve jars on the upper level and slatted wooden vegetable crates on the lower level, wide shot, warm ambient light"
+    },
+    {
+      "file": "images/polki-v-pogreb-svoimi-rukami-6.jpg",
+      "alt": "Готовый стеллаж с полками в обустроенном погребе",
+      "prompt": "A finished multi-tier wooden shelving unit standing in a tidy, well-organized root cellar, wide establishing shot, soft daylight from a hatch opening above"
+    }
+  ]
+}
