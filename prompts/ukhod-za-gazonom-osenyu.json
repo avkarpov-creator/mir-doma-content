@@ -1,0 +1,36 @@
+{
+  "slug": "ukhod-za-gazonom-osenyu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/ukhod-za-gazonom-osenyu.jpg",
+      "alt": "Газон с опавшими листьями осенью на дачном участке",
+      "prompt": "A green lawn scattered with fallen autumn leaves in a countryside garden, wide angle, soft overcast daylight"
+    },
+    {
+      "file": "images/ukhod-za-gazonom-osenyu-2.jpg",
+      "alt": "Аэрация газона вилами, проколы в дёрне крупным планом",
+      "prompt": "Close-up of a garden fork pushed into lawn turf creating aeration holes, ground-level angle, natural daylight"
+    },
+    {
+      "file": "images/ukhod-za-gazonom-osenyu-3.jpg",
+      "alt": "Уборка опавших листьев с газона граблями",
+      "prompt": "A garden rake gathering fallen autumn leaves into a pile on a lawn, wide shot, soft daylight"
+    },
+    {
+      "file": "images/ukhod-za-gazonom-osenyu-4.jpg",
+      "alt": "Полив газона из шланга в сухую осеннюю погоду",
+      "prompt": "A garden hose watering a green lawn on a dry autumn day, wide angle, soft afternoon light, water droplets visible"
+    },
+    {
+      "file": "images/ukhod-za-gazonom-osenyu-5.jpg",
+      "alt": "Ухоженный газон рядом с садовой дорожкой поздней осенью",
+      "prompt": "A well-maintained green lawn bordering a stone garden path in late autumn, wide establishing shot, soft daylight"
+    },
+    {
+      "file": "images/ukhod-za-gazonom-osenyu-6.jpg",
+      "alt": "Газон под первым лёгким снегом после осенней подготовки",
+      "prompt": "A garden lawn dusted with the first light snow of the season, wide angle, cold winter daylight"
+    }
+  ]
+}
