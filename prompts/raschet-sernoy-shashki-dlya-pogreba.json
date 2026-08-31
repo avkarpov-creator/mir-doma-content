@@ -1,0 +1,36 @@
+{
+  "slug": "raschet-sernoy-shashki-dlya-pogreba",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/raschet-sernoy-shashki-dlya-pogreba.jpg",
+      "alt": "Серная шашка в упаковке рядом с погребом, крупный план",
+      "prompt": "A sulfur fumigation smoke bomb in its cardboard packaging placed on a wooden crate near an open cellar hatch, close-up product shot, daylight from above, rustic root cellar interior in soft focus background"
+    },
+    {
+      "file": "images/raschet-sernoy-shashki-dlya-pogreba-2.jpg",
+      "alt": "Разные форматы серных шашек на весах, сравнение размеров, крупный план",
+      "prompt": "Several sulfur fumigation smoke bombs of different sizes placed on a kitchen scale for weight comparison, close-up, indoor daylight, wooden table surface"
+    },
+    {
+      "file": "images/raschet-sernoy-shashki-dlya-pogreba-3.jpg",
+      "alt": "Продухи погреба открыты для проветривания после окуривания, дневной свет",
+      "prompt": "Open ventilation grille of a root cellar wall letting daylight and fresh air in, close-up on the vent opening, brick cellar wall texture, daytime"
+    },
+    {
+      "file": "images/raschet-sernoy-shashki-dlya-pogreba-4.jpg",
+      "alt": "Рулетка измеряет высоту потолка в погребе для расчёта объёма",
+      "prompt": "A tape measure stretched vertically from floor to ceiling inside a root cellar, measuring wall height, dim interior lighting with a work lamp, concrete cellar walls"
+    },
+    {
+      "file": "images/raschet-sernoy-shashki-dlya-pogreba-5.jpg",
+      "alt": "Кухонные весы с отвешенной серой для расчёта дозы на погреб",
+      "prompt": "Kitchen scale on a wooden table displaying a small pile of yellow sulfur powder being weighed, close-up product photography, natural window light"
+    },
+    {
+      "file": "images/raschet-sernoy-shashki-dlya-pogreba-6.jpg",
+      "alt": "Погреб с плотно закрытым герметичным люком во время обработки",
+      "prompt": "A tightly closed wooden cellar hatch sealed with tape around the edges, viewed from above at ground level, outdoor daylight, grass around the hatch frame"
+    }
+  ]
+}
