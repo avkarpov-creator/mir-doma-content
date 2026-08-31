@@ -1,0 +1,36 @@
+{
+  "slug": "skameyka-dlya-dachi-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/skameyka-dlya-dachi-svoimi-rukami.jpg",
+      "alt": "Деревянная скамейка на дачном участке рядом со столом",
+      "prompt": "A wooden garden bench standing next to a matching wooden table on a country house lawn, wide angle, soft afternoon daylight"
+    },
+    {
+      "file": "images/skameyka-dlya-dachi-svoimi-rukami-2.jpg",
+      "alt": "Чертёж скамейки с указанными размерами на листе бумаги",
+      "prompt": "A hand-drawn technical sketch of a wooden bench with dimension lines and measurements on a sheet of paper, flat lay on a wooden workbench, natural light"
+    },
+    {
+      "file": "images/skameyka-dlya-dachi-svoimi-rukami-3.jpg",
+      "alt": "Сборка каркаса скамейки из бруса с уровнем на верстаке",
+      "prompt": "An unfinished wooden bench frame made of timber beams on a workbench with a spirit level resting on top, close-up angle, workshop daylight"
+    },
+    {
+      "file": "images/skameyka-dlya-dachi-svoimi-rukami-4.jpg",
+      "alt": "Нанесение антисептика на деревянную скамейку кистью",
+      "prompt": "A paintbrush applying clear wood antiseptic coating onto a wooden bench plank, close-up product shot, natural daylight, wet coated wood texture"
+    },
+    {
+      "file": "images/skameyka-dlya-dachi-svoimi-rukami-5.jpg",
+      "alt": "Скамейки у беседки на дачном участке",
+      "prompt": "Wooden garden benches placed around a gazebo on a countryside property, wide establishing shot, warm daylight"
+    },
+    {
+      "file": "images/skameyka-dlya-dachi-svoimi-rukami-6.jpg",
+      "alt": "Готовая скамейка со столом на дачном участке",
+      "prompt": "A finished wooden garden bench and table set arranged on a tidy lawn in a countryside garden, wide shot, golden hour daylight"
+    }
+  ]
+}
