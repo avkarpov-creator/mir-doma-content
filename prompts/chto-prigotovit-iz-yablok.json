@@ -1,0 +1,36 @@
+{
+  "slug": "chto-prigotovit-iz-yablok",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chto-prigotovit-iz-yablok.jpg",
+      "alt": "Свежие яблоки с дачи в деревянном ящике на кухонном столе",
+      "prompt": "Fresh red and green apples piled in a wooden crate on a rustic kitchen table, close-up, warm natural window light"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-yablok-2.jpg",
+      "alt": "Готовая шарлотка с яблоками в форме для выпечки",
+      "prompt": "A golden baked apple charlotte cake in a round baking form, fresh out of the oven, close-up, warm kitchen lighting"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-yablok-3.jpg",
+      "alt": "Мочёные яблоки в стеклянной банке с листьями смородины",
+      "prompt": "Whole soaked apples preserved in a large glass jar with currant leaves visible inside the brine, close-up product shot, natural daylight"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-yablok-4.jpg",
+      "alt": "Дольки яблок разложены для сушки на деревянном подносе",
+      "prompt": "Thin apple slices arranged in rows on a wooden drying tray, close-up top-down angle, natural daylight"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-yablok-5.jpg",
+      "alt": "Яблочное повидло в открытой банке с ложкой",
+      "prompt": "A jar of thick apple jam with a spoon resting on top, close-up product shot, warm natural light on a wooden table"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-yablok-6.jpg",
+      "alt": "Печёные яблоки с мёдом и орехами на противне",
+      "prompt": "Baked apples stuffed with honey and walnuts on a baking tray, close-up, warm oven-side lighting"
+    }
+  ]
+}
