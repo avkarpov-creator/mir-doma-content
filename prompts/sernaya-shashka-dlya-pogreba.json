@@ -1,0 +1,36 @@
+{
+  "slug": "sernaya-shashka-dlya-pogreba",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/sernaya-shashka-dlya-pogreba.jpg",
+      "alt": "Серная шашка на подставке в погребе перед поджигом",
+      "prompt": "A sulfur fumigation smoke bomb standing on a metal sheet base in the middle of a dim root cellar, ready to be lit, close-up angle, single work lamp light, concrete cellar walls in the background"
+    },
+    {
+      "file": "images/sernaya-shashka-dlya-pogreba-2.jpg",
+      "alt": "Погреб с вынесенными банками и продуктами перед обработкой",
+      "prompt": "An empty wooden shelf in a root cellar with jars and crates already removed and stacked outside near the open hatch, wide angle, daylight from the hatch opening, bare shelving visible inside"
+    },
+    {
+      "file": "images/sernaya-shashka-dlya-pogreba-3.jpg",
+      "alt": "Щели и продухи погреба заклеены скотчем для герметизации",
+      "prompt": "A cellar wall ventilation grille completely sealed with wide adhesive tape, close-up shot, dim interior lighting, concrete wall texture around the sealed vent"
+    },
+    {
+      "file": "images/sernaya-shashka-dlya-pogreba-4.jpg",
+      "alt": "Дымящаяся серная шашка с тлеющим фитилём в погребе",
+      "prompt": "A sulfur fumigation smoke bomb releasing thick smoke with a smoldering wick, standing on a metal tray inside a dark root cellar, dramatic low light, smoke swirling in the air"
+    },
+    {
+      "file": "images/sernaya-shashka-dlya-pogreba-5.jpg",
+      "alt": "Заржавевший металлический стеллаж после обработки серой",
+      "prompt": "A galvanized metal shelving unit in a cellar covered with heavy orange rust and corrosion spots, close-up on the rusted metal surface, dim ambient light"
+    },
+    {
+      "file": "images/sernaya-shashka-dlya-pogreba-6.jpg",
+      "alt": "Открытый люк погреба и респиратор рядом для проветривания",
+      "prompt": "An open wooden cellar hatch propped up for ventilation with a gas respirator mask resting on the ground next to it, outdoor daylight, grass and soil around the hatch frame"
+    }
+  ]
+}
