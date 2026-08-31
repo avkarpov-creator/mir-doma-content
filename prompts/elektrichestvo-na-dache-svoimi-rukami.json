@@ -1,0 +1,36 @@
+{
+  "slug": "elektrichestvo-na-dache-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/elektrichestvo-na-dache-svoimi-rukami.jpg",
+      "alt": "Электрический щиток с автоматами на деревянной стене дачного дома",
+      "prompt": "An open electrical distribution panel with rows of circuit breakers mounted on a wooden wall inside a country house, close-up angle, warm indoor lighting"
+    },
+    {
+      "file": "images/elektrichestvo-na-dache-svoimi-rukami-2.jpg",
+      "alt": "Мультиметр измеряет напряжение на клеммах электрического автомата",
+      "prompt": "A digital multimeter with probes touching the terminals of a circuit breaker inside an open panel, close-up product shot, indoor daylight"
+    },
+    {
+      "file": "images/elektrichestvo-na-dache-svoimi-rukami-3.jpg",
+      "alt": "Ряд автоматических выключателей и УЗО в разделённых группах щитка",
+      "prompt": "A neat row of miniature circuit breakers and residual current devices mounted on a DIN rail inside an electrical panel, close-up macro shot, studio-like indoor light"
+    },
+    {
+      "file": "images/elektrichestvo-na-dache-svoimi-rukami-4.jpg",
+      "alt": "Кабель-канал с проводкой вдоль стены дачного дома",
+      "prompt": "A white plastic cable duct with electrical wiring running along a wooden interior wall of a country house, wide angle, natural window light"
+    },
+    {
+      "file": "images/elektrichestvo-na-dache-svoimi-rukami-5.jpg",
+      "alt": "Розетка с защитой IP44 на открытой веранде дачного дома",
+      "prompt": "A weatherproof IP44 electrical outlet with a protective flip cover mounted on a wooden veranda wall, close-up, outdoor daylight"
+    },
+    {
+      "file": "images/elektrichestvo-na-dache-svoimi-rukami-6.jpg",
+      "alt": "Контур заземления из металлических штырей у стены дома",
+      "prompt": "Metal grounding rods driven into soil near a house foundation, connected with a bare copper grounding wire, close-up outdoor shot, daylight"
+    }
+  ]
+}
