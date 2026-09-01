@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-generator-nuzhen-dlya-dachi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-generator-nuzhen-dlya-dachi.jpg",
+      "alt": "Бензиновый генератор на дачном участке рядом с домом",
+      "prompt": "A red portable gasoline generator standing on a paved path next to a wooden country house, autumn garden in the background, low afternoon sunlight, three-quarter view"
+    },
+    {
+      "file": "images/kakoy-generator-nuzhen-dlya-dachi-2.jpg",
+      "alt": "Инверторный генератор с подключённым удлинителем",
+      "prompt": "A compact silver inverter generator on a garage floor with an orange extension cable plugged into its socket panel, close-up angle, daylight through a window"
+    },
+    {
+      "file": "images/kakoy-generator-nuzhen-dlya-dachi-3.jpg",
+      "alt": "Щиток с ручным переключателем на резервное питание от генератора",
+      "prompt": "Close-up of a home electrical distribution panel with a manual transfer switch labeled with circuit breakers, wall-mounted, indoor utility room, even studio-like light"
+    },
+    {
+      "file": "images/kakoy-generator-nuzhen-dlya-dachi-4.jpg",
+      "alt": "Проверка уровня топлива в баке генератора перед запуском",
+      "prompt": "A man's hand opening the fuel tank cap of a gasoline generator to check the fuel level, close-up angle, outdoor daylight, generator body visible in foreground"
+    },
+    {
+      "file": "images/kakoy-generator-nuzhen-dlya-dachi-5.jpg",
+      "alt": "Электрокотёл, подключённый через стабилизатор к генератору",
+      "prompt": "A white wall-mounted electric boiler in a utility room with a small voltage stabilizer box and cables connected below it, indoor light, medium shot"
+    },
+    {
+      "file": "images/kakoy-generator-nuzhen-dlya-dachi-6.jpg",
+      "alt": "Генератор на дачном участке в снегу зимой",
+      "prompt": "A portable generator standing outdoors on a wooden deck covered with a light layer of snow, bare winter trees in the background, overcast daylight, wide shot"
+    }
+  ]
+}
