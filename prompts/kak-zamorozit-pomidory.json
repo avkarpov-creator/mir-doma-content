@@ -1,0 +1,36 @@
+{
+  "slug": "kak-zamorozit-pomidory",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-zamorozit-pomidory.jpg",
+      "alt": "Свежие помидоры и контейнер для заморозки на кухонном столе",
+      "prompt": "Fresh red tomatoes next to an open plastic freezer container on a kitchen table, natural daylight, medium shot"
+    },
+    {
+      "file": "images/kak-zamorozit-pomidory-2.jpg",
+      "alt": "Целые помидоры, разложенные на подносе для заморозки",
+      "prompt": "Whole red tomatoes arranged in a single layer on a baking tray lined with parchment paper, top-down angle, natural daylight"
+    },
+    {
+      "file": "images/kak-zamorozit-pomidory-3.jpg",
+      "alt": "Натёртая томатная масса без кожицы в контейнере перед заморозкой",
+      "prompt": "Grated peeled tomato pulp filling a small plastic container on a kitchen counter, close-up angle, soft daylight"
+    },
+    {
+      "file": "images/kak-zamorozit-pomidory-4.jpg",
+      "alt": "Пакеты с замороженными дольками помидоров, подписанные датой",
+      "prompt": "Ziplock bags filled with frozen tomato wedges with a handwritten date label, lying on a frosty freezer shelf, cool white light"
+    },
+    {
+      "file": "images/kak-zamorozit-pomidory-5.jpg",
+      "alt": "Замороженные целые помидоры в пакете с застёжкой",
+      "prompt": "Whole frosted tomatoes inside a clear ziplock freezer bag, close-up angle, cool freezer lighting"
+    },
+    {
+      "file": "images/kak-zamorozit-pomidory-6.jpg",
+      "alt": "Готовый соус из размороженных помидоров в сковороде",
+      "prompt": "A pan of simmering red tomato sauce on a stove, steam rising, close-up angle, warm kitchen light"
+    }
+  ]
+}
