@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-zabor-vybrat-dlya-dachi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-zabor-vybrat-dlya-dachi.jpg",
+      "alt": "Разные виды заборов на дачных участках: профнастил, штакетник, сетка",
+      "prompt": "A collage-like row of different countryside fence sections seen along a rural road — metal profiled sheeting, wooden picket, and wire mesh, daylight, wide angle"
+    },
+    {
+      "file": "images/kakoy-zabor-vybrat-dlya-dachi-2.jpg",
+      "alt": "Сетка рабица между двумя дачными участками",
+      "prompt": "A chain-link mesh fence separating two garden plots with green lawns on both sides, daylight, medium shot"
+    },
+    {
+      "file": "images/kakoy-zabor-vybrat-dlya-dachi-3.jpg",
+      "alt": "Забор из евроштакетника с современной металлической ламелью",
+      "prompt": "A modern metal picket fence with grey polymer-coated slats along a garden path, daylight, medium shot"
+    },
+    {
+      "file": "images/kakoy-zabor-vybrat-dlya-dachi-4.jpg",
+      "alt": "Разметка периметра участка колышками и шнуром перед установкой забора",
+      "prompt": "Wooden stakes with taut string marking a fence line across an empty garden plot, daylight, wide angle"
+    },
+    {
+      "file": "images/kakoy-zabor-vybrat-dlya-dachi-5.jpg",
+      "alt": "Живая изгородь из кустарника вдоль забора дачного участка",
+      "prompt": "A dense green hedge of trimmed shrubs running along a garden fence line, daylight, wide shot"
+    },
+    {
+      "file": "images/kakoy-zabor-vybrat-dlya-dachi-6.jpg",
+      "alt": "Забор из профнастила и кирпичные столбы на границе участка",
+      "prompt": "A metal profiled sheet fence with brick pillars along a property boundary, daylight, medium shot"
+    }
+  ]
+}
