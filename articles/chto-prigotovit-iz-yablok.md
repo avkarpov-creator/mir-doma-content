@@ -9,6 +9,7 @@ tags:
   - яблоки
   - рецепты
   - заготовки на зиму
+adopt_existing: true
 status: draft
 images:
   - images/chto-prigotovit-iz-yablok.jpg
@@ -104,6 +105,8 @@ images:
 Если часть урожая проще не готовить сразу, а заморозить — какие овощи и
 фрукты хорошо переносят заморозку и как их правильно подготовить,
 разобрано в статье [что заморозить на зиму](https://mir-doma.pro/chto-zamorozit-na-zimu/).
+А если после яблок в закромах ещё лежит тыква, для неё тоже пригодится
+своя подборка — [что приготовить из тыквы](https://mir-doma.pro/chto-prigotovit-iz-tykvy/).
 
 ![Дольки яблок разложены для сушки на деревянном подносе](images/chto-prigotovit-iz-yablok-4.jpg)
 

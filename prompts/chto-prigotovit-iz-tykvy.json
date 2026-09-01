@@ -1,0 +1,36 @@
+{
+  "slug": "chto-prigotovit-iz-tykvy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chto-prigotovit-iz-tykvy.jpg",
+      "alt": "Целая тыква и нарезанные ломтики на разделочной доске",
+      "prompt": "A whole orange pumpkin next to sliced wedges on a wooden cutting board, kitchen counter, natural daylight, top-down angle"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-tykvy-2.jpg",
+      "alt": "Тыквенная каша с рисом в тарелке",
+      "prompt": "A bowl of orange pumpkin rice porridge with a pat of butter melting on top, wooden table, soft daylight, close-up angle"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-tykvy-3.jpg",
+      "alt": "Дольки тыквы, запечённые в духовке с мёдом и корицей",
+      "prompt": "Roasted pumpkin wedges on a baking tray drizzled with honey and sprinkled with cinnamon, close-up angle, warm kitchen light"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-tykvy-4.jpg",
+      "alt": "Баночки с тыквенным пюре и соком, подготовленные к заморозке",
+      "prompt": "Small glass jars filled with orange pumpkin puree and pumpkin juice lined up on a kitchen counter, natural daylight, medium shot"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-tykvy-5.jpg",
+      "alt": "Тыква на хранении в тёмном прохладном помещении",
+      "prompt": "Whole pumpkins stored on a wooden shelf in a dim cool pantry room, soft ambient light, wide angle"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-tykvy-6.jpg",
+      "alt": "Тарелка супа-пюре из тыквы со сливками",
+      "prompt": "A bowl of creamy orange pumpkin soup with a swirl of cream on top, wooden table, natural daylight, close-up angle"
+    }
+  ]
+}
