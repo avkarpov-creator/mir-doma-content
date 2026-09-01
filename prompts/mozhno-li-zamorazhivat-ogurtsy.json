@@ -1,0 +1,36 @@
+{
+  "slug": "mozhno-li-zamorazhivat-ogurtsy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/mozhno-li-zamorazhivat-ogurtsy.jpg",
+      "alt": "Свежие огурцы рядом с пакетом для заморозки на кухне",
+      "prompt": "Fresh green cucumbers next to an open ziplock freezer bag on a kitchen counter, natural daylight, medium shot"
+    },
+    {
+      "file": "images/mozhno-li-zamorazhivat-ogurtsy-2.jpg",
+      "alt": "Огуречное пюре в формочках для льда перед заморозкой",
+      "prompt": "Green cucumber puree filling an ice cube tray on a kitchen counter, close-up angle, natural daylight"
+    },
+    {
+      "file": "images/mozhno-li-zamorazhivat-ogurtsy-3.jpg",
+      "alt": "Размороженный огурец, потерявший упругость и форму",
+      "prompt": "A thawed cucumber slice looking limp and watery on a plate, close-up angle, soft indoor light"
+    },
+    {
+      "file": "images/mozhno-li-zamorazhivat-ogurtsy-4.jpg",
+      "alt": "Холодный суп из кефира с добавлением огуречного пюре",
+      "prompt": "A bowl of cold kefir soup with green cucumber puree swirled in, wooden table, natural daylight, close-up angle"
+    },
+    {
+      "file": "images/mozhno-li-zamorazhivat-ogurtsy-5.jpg",
+      "alt": "Кубики льда из огуречного сока в морозильном лотке",
+      "prompt": "Pale green ice cubes made of cucumber juice in a silicone ice tray, close-up angle, cool daylight"
+    },
+    {
+      "file": "images/mozhno-li-zamorazhivat-ogurtsy-6.jpg",
+      "alt": "Зелёный смузи с добавлением замороженного огурца в стакане",
+      "prompt": "A glass of green cucumber smoothie with condensation on the glass, kitchen table, natural daylight, close-up angle"
+    }
+  ]
+}
