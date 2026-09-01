@@ -1,0 +1,36 @@
+{
+  "slug": "izvestkovanie-pochvy-osenyu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/izvestkovanie-pochvy-osenyu.jpg",
+      "alt": "Внесение доломитовой муки на грядку осенью",
+      "prompt": "A gardener's hand scattering white dolomite lime powder from a scoop onto a freshly dug autumn garden bed, close-up angle, overcast daylight"
+    },
+    {
+      "file": "images/izvestkovanie-pochvy-osenyu-2.jpg",
+      "alt": "Гашёная известь и доломитовая мука в мешках рядом с граблями",
+      "prompt": "Paper bags of hydrated lime and dolomite lime powder standing on soil next to a garden rake, outdoor daylight, medium shot"
+    },
+    {
+      "file": "images/izvestkovanie-pochvy-osenyu-3.jpg",
+      "alt": "Заделка известкового материала граблями в верхний слой почвы",
+      "prompt": "A garden rake working white lime powder into the top layer of dark soil on a vegetable bed, close-up angle, natural daylight"
+    },
+    {
+      "file": "images/izvestkovanie-pochvy-osenyu-4.jpg",
+      "alt": "Грядка после известкования и полива, готовая к зиме",
+      "prompt": "A damp dark garden bed with a faint white lime residue on the surface after watering, autumn garden background, overcast light, wide shot"
+    },
+    {
+      "file": "images/izvestkovanie-pochvy-osenyu-5.jpg",
+      "alt": "Древесная зола в ведре рядом с грядкой",
+      "prompt": "A metal bucket filled with grey wood ash standing on soil next to a garden bed, outdoor daylight, close-up angle"
+    },
+    {
+      "file": "images/izvestkovanie-pochvy-osenyu-6.jpg",
+      "alt": "Пакет доломитовой муки на фоне вскопанной осенней грядки",
+      "prompt": "A paper bag of dolomite lime powder standing upright on freshly tilled autumn soil, garden background slightly blurred, soft daylight"
+    }
+  ]
+}
