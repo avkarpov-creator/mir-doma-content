@@ -1,0 +1,36 @@
+{
+  "slug": "chem-otlichaetsya-udarnaya-drel-ot-perforatora",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-otlichaetsya-udarnaya-drel-ot-perforatora.jpg",
+      "alt": "Ударная дрель и перфоратор рядом на верстаке",
+      "prompt": "An impact drill and a rotary hammer drill placed side by side on a wooden workbench, close-up angle, natural workshop daylight"
+    },
+    {
+      "file": "images/chem-otlichaetsya-udarnaya-drel-ot-perforatora-2.jpg",
+      "alt": "Патрон перфоратора SDS-plus крупным планом",
+      "prompt": "Close-up of an SDS-plus chuck on a rotary hammer with a drill bit partially inserted, studio-like lighting, macro angle"
+    },
+    {
+      "file": "images/chem-otlichaetsya-udarnaya-drel-ot-perforatora-3.jpg",
+      "alt": "Штробление стены перфоратором под проводку",
+      "prompt": "A rotary hammer drill cutting a groove into a concrete wall for electrical wiring, dust visible, indoor work light, close-up angle"
+    },
+    {
+      "file": "images/chem-otlichaetsya-udarnaya-drel-ot-perforatora-4.jpg",
+      "alt": "Сверление отверстия в кирпичной стене ударной дрелью",
+      "prompt": "An impact drill boring a hole into a red brick wall, close-up angle, natural daylight"
+    },
+    {
+      "file": "images/chem-otlichaetsya-udarnaya-drel-ot-perforatora-5.jpg",
+      "alt": "Перфоратор в режиме долбления без вращения при демонтаже плитки",
+      "prompt": "A rotary hammer drill in chisel mode removing old ceramic floor tiles, close-up angle, indoor work light"
+    },
+    {
+      "file": "images/chem-otlichaetsya-udarnaya-drel-ot-perforatora-6.jpg",
+      "alt": "Ударная дрель и перфоратор в кейсах на полке гаража",
+      "prompt": "An impact drill and a rotary hammer drill stored in open tool cases on a garage shelf, medium shot, natural daylight"
+    }
+  ]
+}
