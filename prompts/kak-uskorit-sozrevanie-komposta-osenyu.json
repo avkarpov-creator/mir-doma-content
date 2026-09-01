@@ -1,0 +1,36 @@
+{
+  "slug": "kak-uskorit-sozrevanie-komposta-osenyu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-uskorit-sozrevanie-komposta-osenyu.jpg",
+      "alt": "Компостная куча с опавшими листьями и остатками урожая осенью",
+      "prompt": "A wooden compost bin filled with fallen leaves and vegetable garden waste in an autumn backyard, overcast daylight, wide angle"
+    },
+    {
+      "file": "images/kak-uskorit-sozrevanie-komposta-osenyu-2.jpg",
+      "alt": "Слои зелёных и коричневых материалов в компостной куче",
+      "prompt": "Cross-section close-up of a compost pile showing alternating layers of fresh green grass clippings and dry brown leaves, natural daylight"
+    },
+    {
+      "file": "images/kak-uskorit-sozrevanie-komposta-osenyu-3.jpg",
+      "alt": "Перелопачивание компостной кучи вилами",
+      "prompt": "A garden fork turning over a dark compost pile outdoors, close-up angle, autumn daylight"
+    },
+    {
+      "file": "images/kak-uskorit-sozrevanie-komposta-osenyu-4.jpg",
+      "alt": "Укрытая на зиму компостная куча плёнкой",
+      "prompt": "A compost heap covered with black plastic film in a late autumn garden, bare trees in the background, overcast light, wide shot"
+    },
+    {
+      "file": "images/kak-uskorit-sozrevanie-komposta-osenyu-5.jpg",
+      "alt": "Готовый тёмный рассыпчатый компост в руках",
+      "prompt": "A pair of hands holding a scoop of dark crumbly finished compost, close-up angle, soft natural light"
+    },
+    {
+      "file": "images/kak-uskorit-sozrevanie-komposta-osenyu-6.jpg",
+      "alt": "Термометр в компостной куче для проверки температуры",
+      "prompt": "A compost thermometer with a long metal probe inserted into a dark compost pile, close-up angle, outdoor daylight"
+    }
+  ]
+}
