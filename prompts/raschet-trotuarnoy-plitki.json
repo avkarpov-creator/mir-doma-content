@@ -1,0 +1,36 @@
+{
+  "slug": "raschet-trotuarnoy-plitki",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/raschet-trotuarnoy-plitki.jpg",
+      "alt": "Тротуарная плитка, разложенная стопками рядом с размеченной дорожкой",
+      "prompt": "Stacks of grey concrete paving tiles arranged next to a garden path marked out with string lines, outdoor daylight, wide angle"
+    },
+    {
+      "file": "images/raschet-trotuarnoy-plitki-2.jpg",
+      "alt": "Плитка разных размеров и форм разложена для сравнения",
+      "prompt": "Several concrete paving tiles of different sizes and shapes laid out side by side on the ground for comparison, top-down angle, natural daylight"
+    },
+    {
+      "file": "images/raschet-trotuarnoy-plitki-3.jpg",
+      "alt": "Разметка дорожки рулеткой и колышками перед расчётом плитки",
+      "prompt": "A measuring tape stretched across a garden path outline marked with wooden stakes and string, close-up angle, daylight"
+    },
+    {
+      "file": "images/raschet-trotuarnoy-plitki-4.jpg",
+      "alt": "Калькулятор и рулетка на фоне дорожки для расчёта стоимости плитки",
+      "prompt": "A pocket calculator and a measuring tape resting on a notebook on the ground beside a paved garden path, close-up angle, soft daylight"
+    },
+    {
+      "file": "images/raschet-trotuarnoy-plitki-5.jpg",
+      "alt": "Готовая дорожка из тротуарной плитки размера 300х300",
+      "prompt": "A finished garden path paved with square grey concrete tiles running through a green lawn, wide shot, midday sunlight"
+    },
+    {
+      "file": "images/raschet-trotuarnoy-plitki-6.jpg",
+      "alt": "Уложенная плитка на дорожке с ровными швами и бордюром",
+      "prompt": "Close-up of neatly laid concrete paving tiles with even joints and a curb edge along a garden path, low angle, natural daylight"
+    }
+  ]
+}
