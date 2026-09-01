@@ -1,0 +1,36 @@
+{
+  "slug": "kak-postroit-banyu-na-dache",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-postroit-banyu-na-dache.jpg",
+      "alt": "Небольшая деревянная баня на дачном участке",
+      "prompt": "A small wooden bathhouse with a pitched roof standing in a garden plot, surrounded by trees, daylight, wide angle"
+    },
+    {
+      "file": "images/kak-postroit-banyu-na-dache-2.jpg",
+      "alt": "Каркас стен бани из бруса в процессе сборки",
+      "prompt": "Wooden timber beam walls of a bathhouse under construction, corner joints visible, no roof yet, daylight, medium shot"
+    },
+    {
+      "file": "images/kak-postroit-banyu-na-dache-3.jpg",
+      "alt": "Планировка небольшой бани: предбанник, моечная, парная",
+      "prompt": "Interior view through an open wooden door from a small changing room into a bathhouse washing room, natural light, medium shot"
+    },
+    {
+      "file": "images/kak-postroit-banyu-na-dache-4.jpg",
+      "alt": "Установка банной печи-каменки с разделкой дымохода через кровлю",
+      "prompt": "A metal bathhouse stove with a chimney pipe passing through a wooden ceiling with fire-safety insulation collar, indoor work light, close-up angle"
+    },
+    {
+      "file": "images/kak-postroit-banyu-na-dache-5.jpg",
+      "alt": "Готовая парная бани с деревянными полками и печью-каменкой",
+      "prompt": "A finished bathhouse steam room with wooden benches and a stone stove, warm ambient light, medium shot"
+    },
+    {
+      "file": "images/kak-postroit-banyu-na-dache-6.jpg",
+      "alt": "Предбанник с зоной отдыха и вешалками для одежды",
+      "prompt": "A small bathhouse changing room with a wooden bench and clothes hooks on the wall, soft daylight, medium shot"
+    }
+  ]
+}
