@@ -1,0 +1,36 @@
+{
+  "slug": "remont-kryltsa-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/remont-kryltsa-svoimi-rukami.jpg",
+      "alt": "Ремонт крыльца на даче своими руками",
+      "prompt": "A weathered wooden porch with worn cracked steps and a faded railing on a countryside house, front view, overcast daylight showing visible wear and damage"
+    },
+    {
+      "file": "images/remont-kryltsa-svoimi-rukami-2.jpg",
+      "alt": "Замена доски крыльца",
+      "prompt": "A hand removing a rotten wooden porch step board with a crowbar, new replacement board leaning nearby, close-up angle, daylight"
+    },
+    {
+      "file": "images/remont-kryltsa-svoimi-rukami-3.jpg",
+      "alt": "Ремонт косоура крыльца",
+      "prompt": "A wooden porch stringer beam being reinforced with a new timber board bolted alongside the old one, underside view of porch steps, construction scene, daylight"
+    },
+    {
+      "file": "images/remont-kryltsa-svoimi-rukami-4.jpg",
+      "alt": "Облицовка ступеней крыльца",
+      "prompt": "Concrete porch steps being tiled with clinker paving tiles, trowel and tile adhesive visible, close-up construction angle, daylight"
+    },
+    {
+      "file": "images/remont-kryltsa-svoimi-rukami-5.jpg",
+      "alt": "Отремонтированное крыльцо на даче",
+      "prompt": "A freshly repaired and painted wooden porch with new steps and railing on a country house, front three-quarter view, warm afternoon light"
+    },
+    {
+      "file": "images/remont-kryltsa-svoimi-rukami-6.jpg",
+      "alt": "Отремонтированные перила крыльца",
+      "prompt": "Close-up of a sturdy repaired wooden porch railing post freshly secured and varnished, side angle, soft daylight"
+    }
+  ]
+}
