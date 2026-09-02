@@ -1,0 +1,36 @@
+{
+  "slug": "interer-letney-kuhni-na-dache",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/interer-letney-kuhni-na-dache.jpg",
+      "alt": "Интерьер летней кухни на даче",
+      "prompt": "A semi-open outdoor summer kitchen on a garden terrace with a stove, sink and stone countertop under a wooden canopy, wide angle view, warm daylight"
+    },
+    {
+      "file": "images/interer-letney-kuhni-na-dache-2.jpg",
+      "alt": "Рабочий треугольник: плита, мойка, хранение",
+      "prompt": "Close-up of an outdoor kitchen work zone showing a gas stove, sink and open shelving arranged along one wall, stone countertop, daylight"
+    },
+    {
+      "file": "images/interer-letney-kuhni-na-dache-3.jpg",
+      "alt": "Материалы рабочей зоны летней кухни",
+      "prompt": "Close-up of a granite countertop and tiled backsplash in an outdoor summer kitchen, textured stone surface, bright daylight"
+    },
+    {
+      "file": "images/interer-letney-kuhni-na-dache-4.jpg",
+      "alt": "Система хранения посуды на летней кухне",
+      "prompt": "Open wooden shelves holding pots, pans and dishware above an outdoor kitchen countertop, rustic garden setting, daylight"
+    },
+    {
+      "file": "images/interer-letney-kuhni-na-dache-5.jpg",
+      "alt": "Обеденная зона летней кухни",
+      "prompt": "A wooden dining table with chairs set up near an outdoor summer kitchen counter, garden background, warm evening light"
+    },
+    {
+      "file": "images/interer-letney-kuhni-na-dache-6.jpg",
+      "alt": "Готовый интерьер летней кухни на даче",
+      "prompt": "A finished outdoor summer kitchen with stone countertop, stove, sink and dining area under a pergola roof, wide establishing shot, golden hour sunlight"
+    }
+  ]
+}
