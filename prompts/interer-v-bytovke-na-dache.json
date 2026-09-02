@@ -1,0 +1,36 @@
+{
+  "slug": "interer-v-bytovke-na-dache",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/interer-v-bytovke-na-dache.jpg",
+      "alt": "Уютный интерьер бытовки на даче",
+      "prompt": "A cozy small interior of a garden site cabin (bytovka) with a bed, wooden wall paneling and a window, warm daylight, wide angle shot of the whole compact room"
+    },
+    {
+      "file": "images/interer-v-bytovke-na-dache-2.jpg",
+      "alt": "Зонирование бытовки на функциональные зоны",
+      "prompt": "A small cabin room interior divided into sleeping and seating zones by a low open shelving unit, wooden floor, soft daylight through a single window"
+    },
+    {
+      "file": "images/interer-v-bytovke-na-dache-3.jpg",
+      "alt": "Отделка стен бытовки вагонкой",
+      "prompt": "Close-up of light wooden tongue-and-groove paneling (vagonka) covering the interior wall of a small cabin, visible wood grain texture, soft indoor daylight"
+    },
+    {
+      "file": "images/interer-v-bytovke-na-dache-4.jpg",
+      "alt": "Компактная мебель для бытовки",
+      "prompt": "A compact fold-down wooden table attached to a cabin wall with a folding stool tucked beneath it, small room interior, daylight from a nearby window"
+    },
+    {
+      "file": "images/interer-v-bytovke-na-dache-5.jpg",
+      "alt": "Компактное хранение в бытовке",
+      "prompt": "Wall-mounted shelves and hooks near the ceiling of a small cabin room holding folded linens and household items, vertical storage close-up, daylight"
+    },
+    {
+      "file": "images/interer-v-bytovke-na-dache-6.jpg",
+      "alt": "Готовый интерьер бытовки на даче",
+      "prompt": "A finished cozy interior of a small garden cabin with a made bed, wooden wall paneling, a small window with curtain, wide establishing shot, warm afternoon light"
+    }
+  ]
+}
