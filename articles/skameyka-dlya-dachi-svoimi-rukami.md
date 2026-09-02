@@ -10,6 +10,7 @@ tags:
   - скамейка
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/skameyka-dlya-dachi-svoimi-rukami.jpg
   - images/skameyka-dlya-dachi-svoimi-rukami-2.jpg
@@ -102,6 +103,9 @@ images:
 — компактно и не мешает проходу. Проекты этих построек с чертежами
 разобраны в статьях [беседка своими руками](https://mir-doma.pro/besedka-svoimi-rukami/)
 и [навес для мангала своими руками](https://mir-doma.pro/naves-dlya-mangala-svoimi-rukami/).
+Ещё один вариант — поставить пару скамеек под [перголой на даче своими
+руками](https://mir-doma.pro/pergola-na-dache-svoimi-rukami/): решётчатая
+крыша даёт лёгкую тень, а зона отдыха обходится дешевле закрытой беседки.
 
 ![Скамейки у беседки на дачном участке](images/skameyka-dlya-dachi-svoimi-rukami-5.jpg)
 

@@ -1,0 +1,36 @@
+{
+  "slug": "pergola-na-dache-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/pergola-na-dache-svoimi-rukami.jpg",
+      "alt": "Пергола на даче своими руками",
+      "prompt": "A wooden garden pergola with an open lattice roof over a patio area, timber posts and cross beams, standing on a lawn, wide angle view, soft morning sunlight"
+    },
+    {
+      "file": "images/pergola-na-dache-svoimi-rukami-2.jpg",
+      "alt": "Виды перголы на даче",
+      "prompt": "Two wooden pergolas side by side in a garden, one attached to a house wall and one freestanding over a seating area, wide comparison view, daylight"
+    },
+    {
+      "file": "images/pergola-na-dache-svoimi-rukami-3.jpg",
+      "alt": "Монтаж каркаса перголы",
+      "prompt": "Wooden pergola posts being installed with a spirit level and metal brackets, longitudinal beams being attached with bolts, construction scene, daytime, garden background"
+    },
+    {
+      "file": "images/pergola-na-dache-svoimi-rukami-4.jpg",
+      "alt": "Решётка перголы",
+      "prompt": "Close-up of a wooden pergola lattice roof, evenly spaced cross slats casting striped shadows, view from below looking up, bright midday sun"
+    },
+    {
+      "file": "images/pergola-na-dache-svoimi-rukami-5.jpg",
+      "alt": "Пергола с вьющимися растениями",
+      "prompt": "A wooden pergola partially covered with climbing grapevine and green leaves, dappled sunlight filtering through the lattice, garden seating area beneath, warm afternoon light"
+    },
+    {
+      "file": "images/pergola-na-dache-svoimi-rukami-6.jpg",
+      "alt": "Готовая пергола на даче",
+      "prompt": "A finished wooden pergola over a patio with a table and chairs beneath it, garden landscaping around, wide angle establishing shot, golden hour sunlight"
+    }
+  ]
+}
