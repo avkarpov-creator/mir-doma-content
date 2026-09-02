@@ -1,0 +1,36 @@
+{
+  "slug": "domik-dlya-skvazhiny-na-dache",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/domik-dlya-skvazhiny-na-dache.jpg",
+      "alt": "Декоративный домик для скважины на дачном участке",
+      "prompt": "A small decorative wooden well housing box on a garden lawn, gabled roof, painted wood siding, standalone structure hiding a wellhead pipe, wide view, garden background, soft daylight"
+    },
+    {
+      "file": "images/domik-dlya-skvazhiny-na-dache-2.jpg",
+      "alt": "Материалы для сборки домика для скважины",
+      "prompt": "A flat lay of wooden construction materials on the ground: timber beams, boards, insulation panel, screws, hinges, latch, paint can, overhead angle, bright daylight"
+    },
+    {
+      "file": "images/domik-dlya-skvazhiny-na-dache-3.jpg",
+      "alt": "Пошаговая сборка домика для скважины",
+      "prompt": "A wooden frame box under construction around a well pipe, timber posts and cross beams assembled with screws, boards partially attached to the sides, outdoor daytime scene"
+    },
+    {
+      "file": "images/domik-dlya-skvazhiny-na-dache-4.jpg",
+      "alt": "Обслуживание скважины через домик",
+      "prompt": "A wooden well housing box with its front hinged door open, showing a well pipe and valve inside, side angle, garden setting, afternoon light"
+    },
+    {
+      "file": "images/domik-dlya-skvazhiny-na-dache-5.jpg",
+      "alt": "Декоративный домик для скважины на даче",
+      "prompt": "A decorative wooden well house shaped like a small cottage with carved trim and a peaked shingle roof, standing on a lawn among flower beds, wide angle, sunny day"
+    },
+    {
+      "file": "images/domik-dlya-skvazhiny-na-dache-6.jpg",
+      "alt": "Готовый домик для скважины на даче",
+      "prompt": "A finished painted wooden well housing box in soft green tone matching a nearby wooden fence, standing on a garden lawn, front three-quarter view, warm evening light"
+    }
+  ]
+}
