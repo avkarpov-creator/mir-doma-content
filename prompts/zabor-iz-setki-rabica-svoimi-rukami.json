@@ -1,0 +1,36 @@
+{
+  "slug": "zabor-iz-setki-rabica-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/zabor-iz-setki-rabica-svoimi-rukami.jpg",
+      "alt": "Забор из сетки рабица на дачном участке",
+      "prompt": "A chain-link mesh fence (rabitsa) between two garden plots, galvanized steel wire mesh on metal posts, wide angle view along the fence line, green lawn and shrubs on both sides, soft morning daylight"
+    },
+    {
+      "file": "images/zabor-iz-setki-rabica-svoimi-rukami-2.jpg",
+      "alt": "Инструменты для монтажа забора из рабицы",
+      "prompt": "A flat lay of fence-building tools on wooden boards: hand post-hole digger, spirit level, tape measure, pliers, binding wire, work gloves, overhead angle, bright daylight"
+    },
+    {
+      "file": "images/zabor-iz-setki-rabica-svoimi-rukami-3.jpg",
+      "alt": "Натяжка сетки рабица на столбы забора",
+      "prompt": "Close-up of a hand stretching galvanized chain-link mesh and tying it to a metal fence post with wire, taut mesh texture visible, low afternoon sunlight, outdoor garden background blurred"
+    },
+    {
+      "file": "images/zabor-iz-setki-rabica-svoimi-rukami-4.jpg",
+      "alt": "Калитка в заборе из сетки рабица",
+      "prompt": "A metal frame garden gate covered with chain-link mesh, mounted on reinforced steel posts within a rabitsa fence, front view, daytime, countryside garden path in background"
+    },
+    {
+      "file": "images/zabor-iz-setki-rabica-svoimi-rukami-5.jpg",
+      "alt": "Готовый забор из сетки рабица вдоль участка",
+      "prompt": "A finished chain-link mesh fence stretching along a garden boundary, evenly spaced metal posts, neat lawn and flower beds beside it, wide perspective view, golden hour sunlight"
+    },
+    {
+      "file": "images/zabor-iz-setki-rabica-svoimi-rukami-6.jpg",
+      "alt": "Окрашенные столбы забора из сетки рабица",
+      "prompt": "Close-up of freshly painted dark green metal fence posts holding chain-link mesh, visible brush texture on the paint, side angle, late afternoon light"
+    }
+  ]
+}
