@@ -1,0 +1,36 @@
+{
+  "slug": "sistema-poliva-gazona-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/sistema-poliva-gazona-svoimi-rukami.jpg",
+      "alt": "Система автоматического полива газона",
+      "prompt": "An automatic pop-up sprinkler watering a green lawn, water spraying in an arc, close-to-ground angle, garden background, bright morning light"
+    },
+    {
+      "file": "images/sistema-poliva-gazona-svoimi-rukami-2.jpg",
+      "alt": "Схема автополива газона",
+      "prompt": "An overhead top-down photo of a garden lawn with irrigation pipes and sprinkler head positions marked with small flags, layout planning scene, daylight"
+    },
+    {
+      "file": "images/sistema-poliva-gazona-svoimi-rukami-3.jpg",
+      "alt": "Расчёт зон автополива газона",
+      "prompt": "A garden lawn plan sketched on paper with a pencil and tape measure resting on top, marked circles showing sprinkler coverage radius, close overhead angle, daylight"
+    },
+    {
+      "file": "images/sistema-poliva-gazona-svoimi-rukami-4.jpg",
+      "alt": "Монтаж автополива газона",
+      "prompt": "A trench dug in a lawn with polyethylene irrigation pipes being laid and connected to a sprinkler head, hands working with pipe fittings, daytime construction scene"
+    },
+    {
+      "file": "images/sistema-poliva-gazona-svoimi-rukami-5.jpg",
+      "alt": "Работа дождевателя на газоне",
+      "prompt": "A rotary irrigation sprinkler mid-rotation spraying a jet of water across a green lawn, early morning light, dew visible on grass"
+    },
+    {
+      "file": "images/sistema-poliva-gazona-svoimi-rukami-6.jpg",
+      "alt": "Контроллер системы автополива газона",
+      "prompt": "An irrigation timer controller mounted on an exterior wall of a garden shed, wires leading to underground valves, close-up angle, daylight"
+    }
+  ]
+}
