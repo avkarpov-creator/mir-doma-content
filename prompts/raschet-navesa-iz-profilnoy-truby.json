@@ -1,0 +1,36 @@
+{
+  "slug": "raschet-navesa-iz-profilnoy-truby",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/raschet-navesa-iz-profilnoy-truby.jpg",
+      "alt": "Каркас навеса из профильной металлической трубы на этапе сборки",
+      "prompt": "Unfinished carport frame made of square steel profile tube, welded posts and rafters, no roofing installed yet, backyard construction site, three-quarter angle, midday sun"
+    },
+    {
+      "file": "images/raschet-navesa-iz-profilnoy-truby-2.jpg",
+      "alt": "Навес с толстым слоем снега на кровле зимой",
+      "prompt": "Metal profile-tube carport with corrugated steel roof covered by a thick layer of snow, icicles on the edge, snowy backyard, side angle, overcast winter daylight"
+    },
+    {
+      "file": "images/raschet-navesa-iz-profilnoy-truby-3.jpg",
+      "alt": "Сварка каркаса навеса из металлической профильной трубы",
+      "prompt": "Close-up of an arc-welded joint on square steel profile tubes of a carport frame, bright welding sparks, weld seam detail, no visible person, workshop daylight"
+    },
+    {
+      "file": "images/raschet-navesa-iz-profilnoy-truby-4.jpg",
+      "alt": "Готовый навес для машины из профильной трубы с кровлей из профнастила",
+      "prompt": "Finished carport with steel profile-tube frame and corrugated metal roof over a parked car, driveway, three-quarter angle, golden hour sunlight"
+    },
+    {
+      "file": "images/raschet-navesa-iz-profilnoy-truby-5.jpg",
+      "alt": "Узел крепления стропильной фермы к стойке навеса из профильной трубы",
+      "prompt": "Close-up of a bolted steel bracket connecting a square profile-tube rafter truss to a vertical support post of a carport frame, macro detail, natural daylight"
+    },
+    {
+      "file": "images/raschet-navesa-iz-profilnoy-truby-6.jpg",
+      "alt": "Профильные трубы разного сечения для каркаса навеса, разложены для сравнения",
+      "prompt": "Several square steel profile tubes of different cross-section sizes laid out side by side on a workshop floor for comparison, top-down angle, bright daylight"
+    }
+  ]
+}

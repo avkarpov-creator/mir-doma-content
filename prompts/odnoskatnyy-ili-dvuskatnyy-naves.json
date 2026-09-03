@@ -1,0 +1,36 @@
+{
+  "slug": "odnoskatnyy-ili-dvuskatnyy-naves",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/odnoskatnyy-ili-dvuskatnyy-naves.jpg",
+      "alt": "Два навеса рядом — с односкатной и двускатной крышей, для сравнения",
+      "prompt": "Two backyard carports side by side, one with a single-slope roof and one with a gable roof, steel frame and corrugated metal roofing, wide angle, bright daylight"
+    },
+    {
+      "file": "images/odnoskatnyy-ili-dvuskatnyy-naves-2.jpg",
+      "alt": "Снег неравномерно лежит на двускатной крыше навеса — больше на подветренном скате",
+      "prompt": "Gable roof carport with visibly uneven snow drift, deep snowdrift piled on one slope and thin snow on the other, winter backyard, side angle, overcast daylight"
+    },
+    {
+      "file": "images/odnoskatnyy-ili-dvuskatnyy-naves-3.jpg",
+      "alt": "Ветер обдувает открытую конструкцию навеса без стен",
+      "prompt": "Open steel-frame carport with no walls on a windy day, nearby tree branches and grass visibly bent by wind, dynamic outdoor scene, late afternoon light"
+    },
+    {
+      "file": "images/odnoskatnyy-ili-dvuskatnyy-naves-4.jpg",
+      "alt": "Готовый отдельно стоящий навес с двускатной крышей в зоне отдыха",
+      "prompt": "Freestanding backyard gazebo-style carport with a gable roof over a patio seating area, wooden posts, garden setting, three-quarter angle, warm evening light"
+    },
+    {
+      "file": "images/odnoskatnyy-ili-dvuskatnyy-naves-5.jpg",
+      "alt": "Коньковый узел двускатной крыши навеса крупным планом",
+      "prompt": "Close-up of a ridge beam joint where two roof slopes meet on a gable-roof carport frame, steel or timber structure, macro detail, natural daylight"
+    },
+    {
+      "file": "images/odnoskatnyy-ili-dvuskatnyy-naves-6.jpg",
+      "alt": "Односкатный навес для машины, пристроенный к стене дома",
+      "prompt": "Single-slope carport attached to a house wall, steel frame and corrugated metal roof, parked car underneath, driveway, side angle, midday sunlight"
+    }
+  ]
+}
