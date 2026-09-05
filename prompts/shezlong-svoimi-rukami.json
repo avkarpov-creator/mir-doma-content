@@ -1,0 +1,36 @@
+{
+  "slug": "shezlong-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/shezlong-svoimi-rukami.jpg",
+      "alt": "Готовый деревянный шезлонг на даче в саду",
+      "prompt": "Wooden reclining lounge chair with slatted seat on a garden lawn, empty, three-quarter angle, warm afternoon sunlight"
+    },
+    {
+      "file": "images/shezlong-svoimi-rukami-2.jpg",
+      "alt": "Чертёж шезлонга с размерами боковин и настила",
+      "prompt": "Unfinished wooden lounge chair frame with side rails and slat seat, laid on a workshop floor before finishing, wide angle, natural daylight"
+    },
+    {
+      "file": "images/shezlong-svoimi-rukami-3.jpg",
+      "alt": "Сборка рамы шезлонга из деревянных брусков",
+      "prompt": "Close-up of wooden beams joined with screws and a clamp forming a lounge chair frame corner, workshop setting, natural daylight"
+    },
+    {
+      "file": "images/shezlong-svoimi-rukami-4.jpg",
+      "alt": "Готовый шезлонг с отделкой маслом для наружных работ",
+      "prompt": "Wooden lounge chair with a glossy oiled finish on a garden patio, close side angle, soft late afternoon light"
+    },
+    {
+      "file": "images/shezlong-svoimi-rukami-5.jpg",
+      "alt": "Материалы для шезлонга: доски, брус и крепёж разложены перед раскроем",
+      "prompt": "Wooden boards, beams and screws laid out on a workshop table before cutting, top-down angle, bright daylight"
+    },
+    {
+      "file": "images/shezlong-svoimi-rukami-6.jpg",
+      "alt": "Механизм фиксации угла наклона спинки шезлонга крупным планом",
+      "prompt": "Macro close-up of a wooden peg and notch mechanism that locks the backrest angle of a lounge chair, natural daylight"
+    }
+  ]
+}
