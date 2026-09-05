@@ -1,0 +1,36 @@
+{
+  "slug": "chem-zadelat-shcheli-v-derevyannom-dome",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-zadelat-shcheli-v-derevyannom-dome.jpg",
+      "alt": "Деревянная стена сруба с видимой щелью между двумя венцами",
+      "prompt": "Close-up of a log cabin wall with a visible gap between two horizontal log courses, weathered wood texture, daylight, straight-on shot"
+    },
+    {
+      "file": "images/chem-zadelat-shcheli-v-derevyannom-dome-2.jpg",
+      "alt": "Сравнение материалов для заделки щелей: пакля, герметик и шпаклёвка по дереву разложены рядом",
+      "prompt": "Flat lay of oakum fiber, a tube of wood sealant, and wood filler paste with a putty knife arranged side by side on a wooden plank, natural daylight, top-down shot"
+    },
+    {
+      "file": "images/chem-zadelat-shcheli-v-derevyannom-dome-3.jpg",
+      "alt": "Забивание джутового шнура в щель между брёвнами специальной конопаткой",
+      "prompt": "Hands using a caulking chisel tool and mallet to pack jute rope into a gap between two logs on a cabin wall, close-up, daylight, low angle"
+    },
+    {
+      "file": "images/chem-zadelat-shcheli-v-derevyannom-dome-4.jpg",
+      "alt": "Заделанная и подкрашенная трещина в бревне стены дачного дома",
+      "prompt": "Repaired and repainted crack in a wooden log wall, smooth filled seam blending with the surrounding painted wood, daylight, close-up shot"
+    },
+    {
+      "file": "images/chem-zadelat-shcheli-v-derevyannom-dome-5.jpg",
+      "alt": "Готовый ровный шов между венцами, законопаченный джутовым канатом",
+      "prompt": "Neat finished seam between log courses on a cabin wall filled with a visible twisted jute rope caulking cord, daylight, straight-on close-up"
+    },
+    {
+      "file": "images/chem-zadelat-shcheli-v-derevyannom-dome-6.jpg",
+      "alt": "Инструменты для конопатки: конопатка-лопатка, киянка и моток джутового шнура",
+      "prompt": "Flat lay of a traditional caulking chisel tool, a wooden mallet, and a coil of jute rope on rough wooden boards, natural daylight, top-down shot"
+    }
+  ]
+}
