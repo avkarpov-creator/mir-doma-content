@@ -1,0 +1,36 @@
+{
+  "slug": "kuryatnik-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kuryatnik-svoimi-rukami.jpg",
+      "alt": "Готовый деревянный курятник на даче с выгулом",
+      "prompt": "Small wooden chicken coop on low stilts with a fenced outdoor run attached, backyard garden setting, three-quarter angle, bright daylight"
+    },
+    {
+      "file": "images/kuryatnik-svoimi-rukami-2.jpg",
+      "alt": "Каркас курятника на невысоком свайном фундаменте",
+      "prompt": "Unfinished wooden coop frame raised on short stilt posts above the ground, no walls yet, backyard construction site, side angle, midday sunlight"
+    },
+    {
+      "file": "images/kuryatnik-svoimi-rukami-3.jpg",
+      "alt": "Утепление стен курятника минеральной ватой изнутри",
+      "prompt": "Interior wall of a small wooden shed with mineral wool insulation batts installed between wooden studs, close-up angle, natural daylight"
+    },
+    {
+      "file": "images/kuryatnik-svoimi-rukami-4.jpg",
+      "alt": "Курятник зимой в снегу, освещённое окно",
+      "prompt": "Small wooden chicken coop covered in winter snow with a warmly lit window, dusk, snowy backyard, side angle"
+    },
+    {
+      "file": "images/kuryatnik-svoimi-rukami-5.jpg",
+      "alt": "Огороженный сеткой выгул для кур рядом с курятником",
+      "prompt": "Wire mesh fenced outdoor run attached to a small wooden coop, empty enclosure, backyard garden, wide angle, bright daylight"
+    },
+    {
+      "file": "images/kuryatnik-svoimi-rukami-6.jpg",
+      "alt": "Внутреннее устройство курятника: насесты и гнёзда для несушек",
+      "prompt": "Interior of a small wooden coop showing empty wooden roost bars and nesting boxes with straw bedding, no birds, natural daylight through a small window"
+    }
+  ]
+}
