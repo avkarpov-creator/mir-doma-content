@@ -1,0 +1,36 @@
+{
+  "slug": "proplesiny-na-gazone-kak-ispravit",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/proplesiny-na-gazone-kak-ispravit.jpg",
+      "alt": "Газон с несколькими проплешинами разного размера на фоне ровной зелёной травы",
+      "prompt": "Green lawn with several bare brown patches of different sizes surrounded by healthy grass, backyard setting, overcast daylight, wide angle from slightly above"
+    },
+    {
+      "file": "images/proplesiny-na-gazone-kak-ispravit-2.jpg",
+      "alt": "Отогнутый пласт дёрна с видимыми личинками хруща в земле под ним",
+      "prompt": "Peeled-back piece of lawn turf folded over like a carpet, exposing bare soil underneath with small white curled grub larvae visible, close-up macro shot, daylight"
+    },
+    {
+      "file": "images/proplesiny-na-gazone-kak-ispravit-3.jpg",
+      "alt": "Вырезание квадратного куска дёрна лопатой на доноре-участке газона",
+      "prompt": "Gardener cutting a square piece of turf out of a lawn with a flat spade, clean cut edges visible in thick green grass, daylight, low angle close-up"
+    },
+    {
+      "file": "images/proplesiny-na-gazone-kak-ispravit-4.jpg",
+      "alt": "Свежие густые всходы травы на месте бывшей проплешины через две недели",
+      "prompt": "Fresh dense young grass sprouts filling in a previously bare patch on a lawn, slightly lighter green than surrounding grass, close-up eye-level shot, morning light"
+    },
+    {
+      "file": "images/proplesiny-na-gazone-kak-ispravit-5.jpg",
+      "alt": "Уложенный квадратный кусок дёрна на выровненную проплешину газона",
+      "prompt": "Square piece of turf freshly laid onto a leveled bare patch of lawn, edges pressed flush against surrounding grass, hands pressing it down, daylight close-up"
+    },
+    {
+      "file": "images/proplesiny-na-gazone-kak-ispravit-6.jpg",
+      "alt": "Округлое жёлтое пятно от собачьей мочи с тёмно-зелёным кольцом на газоне",
+      "prompt": "Round yellow-brown dead patch on a green lawn with a darker green ring of lush grass around its edge, classic dog urine spot pattern, top-down daylight shot"
+    }
+  ]
+}
