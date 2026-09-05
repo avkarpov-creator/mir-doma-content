@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-fundament-vybrat-dlya-doma",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-fundament-vybrat-dlya-doma.jpg",
+      "alt": "Строительная площадка с размеченным котлованом под фундамент дачного дома",
+      "prompt": "Construction site with a marked-out excavated trench outline for a house foundation, wooden stakes and string lines, bare soil, daylight, wide angle"
+    },
+    {
+      "file": "images/kakoy-fundament-vybrat-dlya-doma-2.jpg",
+      "alt": "Заливка бетона в опалубку ленточного фундамента с арматурным каркасом",
+      "prompt": "Concrete being poured into wooden formwork of a strip foundation with visible steel rebar cage inside, construction site, daylight, low angle shot"
+    },
+    {
+      "file": "images/kakoy-fundament-vybrat-dlya-doma-3.jpg",
+      "alt": "Ряд винтовых свай, вкрученных в грунт под каркас дачного дома",
+      "prompt": "Row of galvanized steel screw piles installed into the ground under a wooden frame house foundation, construction site, daylight, eye-level shot"
+    },
+    {
+      "file": "images/kakoy-fundament-vybrat-dlya-doma-4.jpg",
+      "alt": "Готовый ленточный фундамент с гидроизоляцией перед кладкой стен",
+      "prompt": "Finished concrete strip foundation with black waterproofing membrane applied along the visible surface, ready for wall construction, daylight, wide angle"
+    },
+    {
+      "file": "images/kakoy-fundament-vybrat-dlya-doma-5.jpg",
+      "alt": "Сравнение среза ленточного фундамента и винтовой сваи рядом",
+      "prompt": "Side-by-side comparison photo of a concrete strip foundation cross-section and a galvanized screw pile standing next to it, educational diagram style, neutral background, daylight"
+    },
+    {
+      "file": "images/kakoy-fundament-vybrat-dlya-doma-6.jpg",
+      "alt": "Пробное бурение грунта на участке перед выбором типа фундамента",
+      "prompt": "Hand auger drilling a test soil sample hole on an empty plot of land, soil core visible next to the hole, daylight, close-up shot"
+    }
+  ]
+}
