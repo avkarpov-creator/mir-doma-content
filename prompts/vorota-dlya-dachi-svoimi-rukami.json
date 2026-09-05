@@ -1,0 +1,36 @@
+{
+  "slug": "vorota-dlya-dachi-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/vorota-dlya-dachi-svoimi-rukami.jpg",
+      "alt": "Распашные деревянные ворота для дачи, вид спереди",
+      "prompt": "Wide wooden double-leaf swing gate for a driveway, closed, set between fence posts, front angle, bright daylight"
+    },
+    {
+      "file": "images/vorota-dlya-dachi-svoimi-rukami-2.jpg",
+      "alt": "Чертёж распашных ворот с диагональными раскосами на створках",
+      "prompt": "Two assembled wooden gate leaf frames with visible diagonal braces, laid flat on the ground before mounting, wide angle, natural daylight"
+    },
+    {
+      "file": "images/vorota-dlya-dachi-svoimi-rukami-3.jpg",
+      "alt": "Монтаж петель на столб распашных ворот",
+      "prompt": "Close-up of a heavy-duty metal hinge being fastened to a thick square steel gate post, no visible person, natural daylight"
+    },
+    {
+      "file": "images/vorota-dlya-dachi-svoimi-rukami-4.jpg",
+      "alt": "Готовые распашные ворота, закрытые на центральный запор",
+      "prompt": "Finished wide wooden double-leaf gate closed and latched, driveway entrance, three-quarter angle, golden hour sunlight"
+    },
+    {
+      "file": "images/vorota-dlya-dachi-svoimi-rukami-5.jpg",
+      "alt": "Материалы для ворот: брус, усиленные петли и опорная труба",
+      "prompt": "Thick wooden beams, heavy-duty metal hinges and a square steel post laid out on the ground before assembly, top-down angle, bright daylight"
+    },
+    {
+      "file": "images/vorota-dlya-dachi-svoimi-rukami-6.jpg",
+      "alt": "Диагональный раскос на створке распашных ворот крупным планом",
+      "prompt": "Close-up of a diagonal wooden brace joint in the corner of a gate leaf frame, screws and joinery visible, natural daylight"
+    }
+  ]
+}
