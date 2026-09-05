@@ -1,0 +1,36 @@
+{
+  "slug": "raschet-kapelnic-dlya-poliva",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/raschet-kapelnic-dlya-poliva.jpg",
+      "alt": "Капельная лента с эмиттерами вдоль грядки с рассадой",
+      "prompt": "Close-up of a black drip irrigation tape with built-in emitters running along a vegetable bed with young seedlings, water droplets visible at the emitters, soil moist near the plants, morning light, low angle shot"
+    },
+    {
+      "file": "images/raschet-kapelnic-dlya-poliva-2.jpg",
+      "alt": "Разводка капельных линий от накопительной бочки с указанием расхода",
+      "prompt": "Plastic water storage barrel on a wooden stand with several black polyethylene drip irrigation lines branching out toward garden beds, tap and simple filter visible at the outlet, backyard garden, daylight, wide angle"
+    },
+    {
+      "file": "images/raschet-kapelnic-dlya-poliva-3.jpg",
+      "alt": "Таймер полива на кране, подключённый к нескольким капельным линиям",
+      "prompt": "Mechanical water timer attached to an outdoor tap with multiple black drip irrigation lines connected through a manifold splitter, close-up shot, garden hose in background, daylight"
+    },
+    {
+      "file": "images/raschet-kapelnic-dlya-poliva-4.jpg",
+      "alt": "Ровный ряд рассады с равномерно увлажнённой землёй у корней",
+      "prompt": "Straight row of young vegetable seedlings in a garden bed with evenly moist dark soil around each plant, drip tape barely visible between rows, natural daylight, eye-level shot"
+    },
+    {
+      "file": "images/raschet-kapelnic-dlya-poliva-5.jpg",
+      "alt": "Компенсированная капельница в разрезе с мембраной внутри корпуса",
+      "prompt": "Macro cutaway illustration style photo of a pressure-compensating drip emitter showing the internal silicone membrane and water channel inside a small plastic housing, studio lighting, product photography angle"
+    },
+    {
+      "file": "images/raschet-kapelnic-dlya-poliva-6.jpg",
+      "alt": "Капельницы по кругу приствольного круга молодой яблони",
+      "prompt": "Small drip emitters arranged in a circle around the base of a young apple tree trunk, mulched soil, black tubing visible, orchard setting, daylight, top-down angle"
+    }
+  ]
+}
