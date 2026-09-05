@@ -1,0 +1,36 @@
+{
+  "slug": "kalitka-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kalitka-svoimi-rukami.jpg",
+      "alt": "Деревянная калитка в заборе на даче",
+      "prompt": "Wooden garden gate set into a picket fence, closed, natural stained wood, three-quarter angle, bright daylight"
+    },
+    {
+      "file": "images/kalitka-svoimi-rukami-2.jpg",
+      "alt": "Чертёж рамы калитки с диагональным раскосом",
+      "prompt": "Assembled wooden gate frame with a visible diagonal brace, laid flat on the ground before mounting, close-up angle, natural daylight"
+    },
+    {
+      "file": "images/kalitka-svoimi-rukami-3.jpg",
+      "alt": "Установка петель на деревянную калитку",
+      "prompt": "Close-up of a metal strap hinge being mounted on a wooden gate frame and post, screws visible, no visible person, natural daylight"
+    },
+    {
+      "file": "images/kalitka-svoimi-rukami-4.jpg",
+      "alt": "Готовая калитка, закреплённая на столбе забора",
+      "prompt": "Finished wooden gate mounted on a fence post, slightly ajar, garden path leading through it, side angle, warm afternoon light"
+    },
+    {
+      "file": "images/kalitka-svoimi-rukami-5.jpg",
+      "alt": "Материалы для калитки: брус, петли и защёлка разложены перед сборкой",
+      "prompt": "Wooden beams, metal strap hinges and a gate latch laid out on a workshop table before assembly, top-down angle, bright daylight"
+    },
+    {
+      "file": "images/kalitka-svoimi-rukami-6.jpg",
+      "alt": "Щеколда и защёлка на деревянной калитке крупным планом",
+      "prompt": "Macro close-up of a metal gate latch mounted on a wooden gate board, natural daylight"
+    }
+  ]
+}
