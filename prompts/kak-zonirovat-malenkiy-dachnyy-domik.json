@@ -1,0 +1,36 @@
+{
+  "slug": "kak-zonirovat-malenkiy-dachnyy-domik",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-zonirovat-malenkiy-dachnyy-domik.jpg",
+      "alt": "Однокомнатный дачный домик с чётко разделёнными зонами сна, кухни и отдыха",
+      "prompt": "Interior of a small one-room cabin with a bed area, tiny kitchenette and seating area visible in one open space, wooden walls, daylight through window, wide angle shot"
+    },
+    {
+      "file": "images/kak-zonirovat-malenkiy-dachnyy-domik-2.jpg",
+      "alt": "Стеллаж без задней стенки, разделяющий спальную зону и гостиную в домике",
+      "prompt": "Open wooden shelving unit without a back panel used as a room divider between a bed area and a small living area, books and boxes on the shelves, daylight, eye-level shot"
+    },
+    {
+      "file": "images/kak-zonirovat-malenkiy-dachnyy-domik-3.jpg",
+      "alt": "Спальный подиум с выдвижными ящиками для хранения под кроватью",
+      "prompt": "Raised wooden sleeping platform with pull-out storage drawers built into its base, mattress on top, small room interior, daylight, low angle shot"
+    },
+    {
+      "file": "images/kak-zonirovat-malenkiy-dachnyy-domik-4.jpg",
+      "alt": "Компактная кухонная зона у окна с барной стойкой, отделяющей её от гостиной",
+      "prompt": "Compact kitchenette by a window with a small wooden bar counter separating it from a living area, kettle and dishes on the counter, daylight, eye-level angle"
+    },
+    {
+      "file": "images/kak-zonirovat-malenkiy-dachnyy-domik-5.jpg",
+      "alt": "Раскладной диван-кровать и откидной стол в интерьере маленького домика",
+      "prompt": "Fold-out sofa bed next to a wall-mounted folding table in a small cabin interior, table folded down against the wall, daylight, wide angle"
+    },
+    {
+      "file": "images/kak-zonirovat-malenkiy-dachnyy-domik-6.jpg",
+      "alt": "Встроенные шкафы до потолка вдоль стены маленького дачного домика",
+      "prompt": "Built-in wooden wardrobe cabinets reaching from floor to ceiling along one wall of a small cabin room, closed doors, daylight, straight-on shot"
+    }
+  ]
+}
