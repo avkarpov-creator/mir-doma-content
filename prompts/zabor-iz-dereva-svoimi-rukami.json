@@ -1,0 +1,36 @@
+{
+  "slug": "zabor-iz-dereva-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/zabor-iz-dereva-svoimi-rukami.jpg",
+      "alt": "Готовый деревянный забор из вертикального штакетника на даче",
+      "prompt": "Finished wooden picket fence with vertical slats along a garden property line, natural stained wood, three-quarter angle, bright daylight"
+    },
+    {
+      "file": "images/zabor-iz-dereva-svoimi-rukami-2.jpg",
+      "alt": "Столбы для деревянного забора, размеченные с шагом 2,5 метра",
+      "prompt": "Row of wooden fence posts freshly set in concrete along a marked property line, no fence panels yet, construction site, wide angle, midday sunlight"
+    },
+    {
+      "file": "images/zabor-iz-dereva-svoimi-rukami-3.jpg",
+      "alt": "Монтаж вертикального штакетника на лаги деревянного забора",
+      "prompt": "Close-up of vertical wooden picket boards being fastened with screws to horizontal fence rails, even gap spacing visible, natural daylight"
+    },
+    {
+      "file": "images/zabor-iz-dereva-svoimi-rukami-4.jpg",
+      "alt": "Обработка деревянного забора антисептиком кистью",
+      "prompt": "Close-up of a paintbrush coating a wooden fence board with clear wood preservative, wet glossy stain visible, no visible person, natural daylight"
+    },
+    {
+      "file": "images/zabor-iz-dereva-svoimi-rukami-5.jpg",
+      "alt": "Сгнившая нижняя часть деревянного столба забора без гидроизоляции",
+      "prompt": "Close-up of a wooden fence post base showing rotten, decayed wood at ground level, weathered texture, natural daylight"
+    },
+    {
+      "file": "images/zabor-iz-dereva-svoimi-rukami-6.jpg",
+      "alt": "Деревянный забор с горизонтальным штакетником вдоль участка",
+      "prompt": "Wooden fence with horizontal wood slats running along a garden property boundary, modern style, wide angle, golden hour sunlight"
+    }
+  ]
+}
