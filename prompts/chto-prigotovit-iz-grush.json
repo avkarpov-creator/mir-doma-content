@@ -1,0 +1,36 @@
+{
+  "slug": "chto-prigotovit-iz-grush",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chto-prigotovit-iz-grush.jpg",
+      "alt": "Корзина спелых груш на кухонном столе, подготовленных для переработки",
+      "prompt": "Wicker basket full of ripe garden pears on a rustic wooden kitchen table, soft natural window light"
+    },
+    {
+      "file": "images/pirog-s-grushami.jpg",
+      "alt": "Готовый пирог с грушевыми дольками, вид сверху",
+      "prompt": "Top-down view of a homemade pear cake with visible pear slices arranged on top, on a wooden table, daylight"
+    },
+    {
+      "file": "images/grushevoe-varenye.jpg",
+      "alt": "Грушевое варенье дольками в стеклянной банке",
+      "prompt": "Glass jar filled with pear preserve slices in syrup, close-up on a kitchen counter, warm afternoon light"
+    },
+    {
+      "file": "images/kompot-iz-grush.jpg",
+      "alt": "Банки с грушевым компотом на подготовке к закатке",
+      "prompt": "Glass jars filled with whole pears and syrup for compote, lined up on a kitchen table ready for sealing, natural light"
+    },
+    {
+      "file": "images/sushenye-grushi.jpg",
+      "alt": "Сушёные грушевые дольки на решётке электросушилки",
+      "prompt": "Dried pear slices arranged on a food dehydrator tray, close-up, warm indoor light"
+    },
+    {
+      "file": "images/grushi-v-sirope.jpg",
+      "alt": "Половинки груш в карамели на сковороде",
+      "prompt": "Pear halves caramelizing in a skillet with golden caramel sauce, close-up, warm stovetop lighting"
+    }
+  ]
+}

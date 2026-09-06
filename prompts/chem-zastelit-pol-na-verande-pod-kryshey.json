@@ -1,0 +1,36 @@
+{
+  "slug": "chem-zastelit-pol-na-verande-pod-kryshey",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-zastelit-pol-na-verande-pod-kryshey.jpg",
+      "alt": "Открытая веранда под крышей с настилом из террасной доски, дневной свет",
+      "prompt": "Wide view of an open-sided covered terrace with a wood decking floor, roof overhead but no walls, garden visible beyond the edge, midday sunlight"
+    },
+    {
+      "file": "images/decking-otkrytaya-veranda.jpg",
+      "alt": "Крупный план настила из декинга на открытой веранде под навесом",
+      "prompt": "Close-up texture of grooved WPC composite decking boards on an outdoor terrace floor, soft morning light, dew droplets on the surface"
+    },
+    {
+      "file": "images/plitka-na-verande-pod-kryshey.jpg",
+      "alt": "Керамогранитная плитка на регулируемых опорах на веранде под крышей",
+      "prompt": "Outdoor-grade porcelain stoneware tiles installed on adjustable pedestal supports on a roofed open terrace, visible gap underneath, afternoon light"
+    },
+    {
+      "file": "images/betonnaya-styazhka-veranda.jpg",
+      "alt": "Бетонная стяжка с окраской по бетону на открытой веранде",
+      "prompt": "Painted concrete floor screed on an open covered terrace, slight slope visible toward the outer edge, overcast daylight"
+    },
+    {
+      "file": "images/montazh-lag-otkrytaya-veranda.jpg",
+      "alt": "Монтаж лаг на бетонных столбиках для настила открытой веранды",
+      "prompt": "Wooden floor joists being installed on concrete pier blocks under a terrace roof frame, construction in progress, daylight, no people visible"
+    },
+    {
+      "file": "images/zazor-mezhdu-dokami-decking.jpg",
+      "alt": "Уклон и зазор между досками настила для стока дождевой воды",
+      "prompt": "Extreme close-up of a narrow drainage gap between two terrace decking boards with a raindrop rolling off the edge, natural light"
+    }
+  ]
+}
