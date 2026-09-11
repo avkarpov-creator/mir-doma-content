@@ -1,0 +1,36 @@
+{
+  "slug": "chem-obshit-dom-snaruzhi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-obshit-dom-snaruzhi.jpg",
+      "alt": "Фасад дачного дома, обшитый сайдингом",
+      "prompt": "A country house facade clad in beige vinyl siding panels, wide front view, green lawn in foreground, warm late-afternoon sunlight"
+    },
+    {
+      "file": "images/chem-obshit-dom-snaruzhi-2.jpg",
+      "alt": "Металлический сайдинг на фасаде",
+      "prompt": "Close-up of dark gray metal siding panels on a house wall, horizontal lines, texture detail visible, three-quarter angle, bright midday sunlight"
+    },
+    {
+      "file": "images/chem-obshit-dom-snaruzhi-3.jpg",
+      "alt": "Деревянная вагонка на стене дома",
+      "prompt": "Close-up of natural wood vagonka cladding boards on a house wall, visible wood grain texture, honey-brown tone, soft morning sunlight, slight angle"
+    },
+    {
+      "file": "images/chem-obshit-dom-snaruzhi-4.jpg",
+      "alt": "Дом с термопанелями под камень на цоколе и сайдингом сверху",
+      "prompt": "A country house with stone-look thermal panels on the lower plinth section and light siding on the upper walls, front three-quarter view, clear daylight"
+    },
+    {
+      "file": "images/chem-obshit-dom-snaruzhi-5.jpg",
+      "alt": "Разметка и монтаж обрешётки перед обшивкой фасада",
+      "prompt": "A wooden batten frame installed on a house wall before cladding, vertical and horizontal wooden strips visible over a membrane layer, medium shot, daylight"
+    },
+    {
+      "file": "images/chem-obshit-dom-snaruzhi-6.jpg",
+      "alt": "Вентиляционный зазор между обрешёткой и обшивкой",
+      "prompt": "Extreme close-up cross-section detail of a house wall showing a ventilation gap between wooden battens and exterior siding panel, side angle, natural light"
+    }
+  ]
+}

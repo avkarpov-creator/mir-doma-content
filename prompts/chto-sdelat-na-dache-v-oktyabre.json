@@ -1,0 +1,36 @@
+{
+  "slug": "chto-sdelat-na-dache-v-oktyabre",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chto-sdelat-na-dache-v-oktyabre.jpg",
+      "alt": "Дачный участок в октябре, готовится к зиме",
+      "prompt": "A country garden in October with fallen golden leaves on the ground, bare vegetable beds, a wooden house in the background, soft overcast daylight, wide shot"
+    },
+    {
+      "file": "images/chto-sdelat-na-dache-v-oktyabre-2.jpg",
+      "alt": "Уборка урожая с грядок в октябре",
+      "prompt": "A wicker basket full of freshly harvested carrots and beets sitting on soil between garden beds, autumn leaves scattered nearby, close medium shot, daylight"
+    },
+    {
+      "file": "images/chto-sdelat-na-dache-v-oktyabre-3.jpg",
+      "alt": "Обрезка плодового дерева в саду осенью",
+      "prompt": "Pruning shears cutting a bare branch on a fruit tree in an autumn orchard, close-up angle, fallen leaves on the ground, soft daylight"
+    },
+    {
+      "file": "images/chto-sdelat-na-dache-v-oktyabre-4.jpg",
+      "alt": "Слив воды из системы полива перед зимой",
+      "prompt": "An outdoor garden hose faucet with a valve open and water draining out onto the ground, close-up shot, autumn garden background, daylight"
+    },
+    {
+      "file": "images/chto-sdelat-na-dache-v-oktyabre-5.jpg",
+      "alt": "Хозяйственные постройки на дачном участке поздней осенью",
+      "prompt": "A small wooden shed and a garden fence on a country property in late autumn, bare trees around, overcast daylight, wide shot"
+    },
+    {
+      "file": "images/chto-sdelat-na-dache-v-oktyabre-6.jpg",
+      "alt": "Заснеженный дачный участок в начале зимы, подготовленный заранее",
+      "prompt": "A country house and garden covered with a light first snow, bare trees, calm early winter daylight, wide shot"
+    }
+  ]
+}

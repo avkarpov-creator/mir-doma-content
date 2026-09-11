@@ -1,0 +1,36 @@
+{
+  "slug": "stroitelstvo-pogreba-smeta",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/stroitelstvo-pogreba-smeta.jpg",
+      "alt": "Строительство погреба на дачном участке, земляные работы",
+      "prompt": "A rectangular excavation pit dug in a garden for a cellar construction, exposed soil walls, wide shot, overcast daylight"
+    },
+    {
+      "file": "images/stroitelstvo-pogreba-smeta-2.jpg",
+      "alt": "Кладка стен погреба из кирпича",
+      "prompt": "Red brick walls being laid inside a deep rectangular pit for an underground cellar, visible mortar joints, medium shot, natural daylight from above"
+    },
+    {
+      "file": "images/stroitelstvo-pogreba-smeta-3.jpg",
+      "alt": "Готовое бетонное перекрытие погреба перед засыпкой",
+      "prompt": "A flat concrete slab ceiling covering a finished cellar structure, small square opening for a hatch visible, top-down angle, daylight"
+    },
+    {
+      "file": "images/stroitelstvo-pogreba-smeta-4.jpg",
+      "alt": "Готовый пластиковый погребок перед установкой в котлован",
+      "prompt": "A large dark green plastic cellar tank standing beside a freshly dug pit, ready for installation, wide shot, bright daylight"
+    },
+    {
+      "file": "images/stroitelstvo-pogreba-smeta-5.jpg",
+      "alt": "Обратная засыпка грунта вокруг стен погреба",
+      "prompt": "Soil being backfilled and compacted around the finished brick walls of an underground cellar, half-filled pit, wide angle, daylight"
+    },
+    {
+      "file": "images/stroitelstvo-pogreba-smeta-6.jpg",
+      "alt": "Утеплённый люк и лестница в погреб",
+      "prompt": "An open insulated hatch cover leading down into a cellar with a wooden ladder visible below, close medium shot, soft indoor light"
+    }
+  ]
+}

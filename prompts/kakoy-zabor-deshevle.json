@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-zabor-deshevle",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-zabor-deshevle.jpg",
+      "alt": "Разные виды заборов на дачных участках",
+      "prompt": "A row of different country property fences seen along a rural road, wooden picket, metal profile sheet, and wire mesh sections visible in sequence, wide shot, daylight"
+    },
+    {
+      "file": "images/kakoy-zabor-deshevle-2.jpg",
+      "alt": "Забор из 3D-сетки на металлических столбах",
+      "prompt": "A welded 3D mesh fence panel mounted on metal posts along a garden boundary, close medium shot, bright daylight, green grass visible through the mesh"
+    },
+    {
+      "file": "images/kakoy-zabor-deshevle-3.jpg",
+      "alt": "Забор из евроштакетника коричневого цвета",
+      "prompt": "A brown metal euro-picket fence along a property edge, vertical slats with small gaps, three-quarter angle, warm afternoon light"
+    },
+    {
+      "file": "images/kakoy-zabor-deshevle-4.jpg",
+      "alt": "Ворота и калитка на фоне забора",
+      "prompt": "A metal gate and a smaller wicket door set into a profiled sheet fence, front view, driveway in foreground, clear daylight"
+    },
+    {
+      "file": "images/kakoy-zabor-deshevle-5.jpg",
+      "alt": "Забор из деревянного штакетника вдоль дачного участка",
+      "prompt": "A natural wood picket fence running along a country garden path, vertical wooden slats with even gaps, soft morning sunlight, wide shot"
+    },
+    {
+      "file": "images/kakoy-zabor-deshevle-6.jpg",
+      "alt": "Столбы для забора, вкопанные и забетонированные",
+      "prompt": "A row of metal fence posts set in fresh concrete footings along a marked property line, no fence panels attached yet, close-up angle, overcast daylight"
+    }
+  ]
+}

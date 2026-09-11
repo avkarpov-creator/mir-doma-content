@@ -1,0 +1,36 @@
+{
+  "slug": "skhema-elektroprovodki-na-dache",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/skhema-elektroprovodki-na-dache.jpg",
+      "alt": "Электрический щиток на даче с автоматами",
+      "prompt": "A white electrical distribution panel with a row of circuit breakers mounted on an interior wall, indoor utility room, even daylight, medium shot"
+    },
+    {
+      "file": "images/skhema-elektroprovodki-na-dache-2.jpg",
+      "alt": "Разводка кабеля по группам в распределительном щитке",
+      "prompt": "Close-up inside an open electrical panel showing neatly organized bundles of colored wires connected to separate circuit breakers, indoor light, detail shot"
+    },
+    {
+      "file": "images/skhema-elektroprovodki-na-dache-3.jpg",
+      "alt": "Готовая схема разводки электропроводки по комнатам дачного дома",
+      "prompt": "Several bundles of colored electrical cables routed along a wooden wall corner inside an unfinished house room, close medium shot, natural daylight"
+    },
+    {
+      "file": "images/skhema-elektroprovodki-na-dache-4.jpg",
+      "alt": "Автоматы и УЗО в щитке, подписанные по группам",
+      "prompt": "Close-up row of circuit breakers and residual current devices inside an electrical panel, small blank labels beneath each one, indoor light, detail angle"
+    },
+    {
+      "file": "images/skhema-elektroprovodki-na-dache-5.jpg",
+      "alt": "Заземляющий контур у дачного дома",
+      "prompt": "A metal grounding rod and copper wire connection near the foundation of a country house, outdoor close-up shot, daylight, soil visible around the rod"
+    },
+    {
+      "file": "images/skhema-elektroprovodki-na-dache-6.jpg",
+      "alt": "Готовая проводка в стенах перед финишной отделкой",
+      "prompt": "Electrical cables running through drilled holes in wooden wall studs before finishing, unfinished room interior, medium shot, daylight through a window"
+    }
+  ]
+}

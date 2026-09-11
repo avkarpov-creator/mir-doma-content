@@ -1,0 +1,36 @@
+{
+  "slug": "otoplenie-dachi-chto-deshevle",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/otoplenie-dachi-chto-deshevle.jpg",
+      "alt": "Разные виды отопления дачи: печь, котёл, электрообогреватель",
+      "prompt": "A collage-like indoor scene showing a brick stove, a wall-mounted boiler, and an electric heater in a cozy country house interior, warm evening light, wide shot"
+    },
+    {
+      "file": "images/otoplenie-dachi-chto-deshevle-2.jpg",
+      "alt": "Поленница дров и мешки с углём для отопления",
+      "prompt": "A neat stack of firewood logs next to bags of coal outdoors near a house wall, medium shot, soft afternoon daylight"
+    },
+    {
+      "file": "images/otoplenie-dachi-chto-deshevle-3.jpg",
+      "alt": "Термометр на фоне утеплённой стены дачного дома",
+      "prompt": "An outdoor thermometer mounted on an insulated house wall with visible siding, close-up angle, cold winter daylight, frost visible on the thermometer"
+    },
+    {
+      "file": "images/otoplenie-dachi-chto-deshevle-4.jpg",
+      "alt": "Котёл отопления в техническом помещении дачного дома",
+      "prompt": "A wall-mounted gas boiler with pipes in a small utility room of a country house, indoor artificial light, medium shot"
+    },
+    {
+      "file": "images/otoplenie-dachi-chto-deshevle-5.jpg",
+      "alt": "Пеллетный котёл с автоматической подачей топлива",
+      "prompt": "A pellet heating boiler with an attached fuel hopper in a utility room, wood pellets visible in the hopper, medium shot, indoor light"
+    },
+    {
+      "file": "images/otoplenie-dachi-chto-deshevle-6.jpg",
+      "alt": "Дровяная печь с открытой топкой в интерьере дачи",
+      "prompt": "A cast iron wood stove with an open firebox showing burning logs, cozy country house living room in the background, warm evening light"
+    }
+  ]
+}

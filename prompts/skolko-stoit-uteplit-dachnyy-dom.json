@@ -1,0 +1,36 @@
+{
+  "slug": "skolko-stoit-uteplit-dachnyy-dom",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/skolko-stoit-uteplit-dachnyy-dom.jpg",
+      "alt": "Утеплённый дачный дом снаружи",
+      "prompt": "A cozy insulated country house exterior with light siding, wide front view, green lawn, warm afternoon sunlight, three-quarter angle"
+    },
+    {
+      "file": "images/skolko-stoit-uteplit-dachnyy-dom-2.jpg",
+      "alt": "Монтаж утеплителя на стене каркасного дома",
+      "prompt": "Mineral wool insulation slabs installed between wooden frame studs on a house wall, close-up medium shot, construction site daylight"
+    },
+    {
+      "file": "images/skolko-stoit-uteplit-dachnyy-dom-3.jpg",
+      "alt": "Утепление крыши и мансарды изнутри",
+      "prompt": "Interior view of an attic roof with yellow mineral wool insulation installed between rafters, soft light from a small window, wide angle"
+    },
+    {
+      "file": "images/skolko-stoit-uteplit-dachnyy-dom-4.jpg",
+      "alt": "Готовый утеплённый дачный дом зимой",
+      "prompt": "A finished country house with light siding standing in a snowy winter garden, smoke rising from a chimney, cold clear daylight, wide shot"
+    },
+    {
+      "file": "images/skolko-stoit-uteplit-dachnyy-dom-5.jpg",
+      "alt": "Утепление окна и замена уплотнителя",
+      "prompt": "Close-up of a hand-free view of a window frame with new rubber weatherstrip seal being fitted along the edge, indoor daylight, detail shot"
+    },
+    {
+      "file": "images/skolko-stoit-uteplit-dachnyy-dom-6.jpg",
+      "alt": "Смета и калькулятор утепления дома на бумаге",
+      "prompt": "A handwritten cost estimate sheet with numbers and a pocket calculator lying on a wooden table, house insulation materials sketch visible, soft window light, top-down angle"
+    }
+  ]
+}

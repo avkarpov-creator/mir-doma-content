@@ -1,0 +1,36 @@
+{
+  "slug": "chem-pokrasit-fasad",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-pokrasit-fasad.jpg",
+      "alt": "Покраска деревянного фасада дачного дома кистью",
+      "prompt": "A wide paintbrush applying light beige paint on a wooden facade board, close medium shot, wet paint sheen visible, warm daylight"
+    },
+    {
+      "file": "images/chem-pokrasit-fasad-2.jpg",
+      "alt": "Банки с алкидной эмалью и кисти для покраски",
+      "prompt": "Open cans of alkyd enamel paint with several paintbrushes resting on a wooden bench outdoors, close-up still life, soft daylight"
+    },
+    {
+      "file": "images/chem-pokrasit-fasad-3.jpg",
+      "alt": "Лазурь на деревянной обшивке фасада, видна фактура дерева",
+      "prompt": "Close-up of semi-transparent wood glaze coating on a facade board, wood grain texture clearly visible through the tinted finish, side angle, soft light"
+    },
+    {
+      "file": "images/chem-pokrasit-fasad-4.jpg",
+      "alt": "Покраска фасада в сухую погоду, без прямого солнца",
+      "prompt": "A partially painted wooden house facade in overcast weather, roller and paint tray resting against the wall, wide shot, even diffused daylight"
+    },
+    {
+      "file": "images/chem-pokrasit-fasad-5.jpg",
+      "alt": "Готовый выкрашенный деревянный фасад дачного дома",
+      "prompt": "A freshly painted country house facade in warm terracotta color, wide front view, green garden in foreground, bright clear daylight"
+    },
+    {
+      "file": "images/chem-pokrasit-fasad-6.jpg",
+      "alt": "Инструменты для покраски фасада: кисти, валик, лоток",
+      "prompt": "A flat lay of painting tools: brushes, a paint roller, and a paint tray with beige paint, arranged on a wooden surface outdoors, top-down angle, natural light"
+    }
+  ]
+}
