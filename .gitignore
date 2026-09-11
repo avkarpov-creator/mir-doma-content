@@ -7,3 +7,7 @@ seo/inbox/
 seo/archive/
 seo/reports/
 __pycache__/
+.yandex.token
+.yandex.folder
+.bukvarix.token
+semantics/mutagen/
