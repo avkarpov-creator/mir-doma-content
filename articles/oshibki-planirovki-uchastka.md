@@ -10,6 +10,7 @@ tags:
   - ландшафтный дизайн
   - благоустройство участка
 status: draft
+adopt_existing: true
 images:
   - images/oshibki-planirovki-uchastka.jpg
   - images/oshibka-dom-v-tsentre.jpg

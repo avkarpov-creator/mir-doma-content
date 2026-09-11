@@ -10,6 +10,7 @@ tags:
   - болезни огурцов
   - защита растений
 status: draft
+adopt_existing: true
 images:
   - images/kladosporioz-ogurtsov.jpg
   - images/kladosporioz-plody-yazvy.jpg

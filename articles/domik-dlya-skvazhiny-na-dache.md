@@ -11,6 +11,7 @@ tags:
   - дача своими руками
   - благоустройство участка
 status: draft
+adopt_existing: true
 images:
   - images/domik-dlya-skvazhiny-na-dache.jpg
   - images/domik-dlya-skvazhiny-na-dache-2.jpg

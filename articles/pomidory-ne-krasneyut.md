@@ -10,6 +10,7 @@ tags:
   - выращивание томатов
   - уход за томатами
 status: draft
+adopt_existing: true
 images:
   - images/pomidory-ne-krasneyut.jpg
   - images/pomidory-zhara.jpg

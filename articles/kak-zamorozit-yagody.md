@@ -10,6 +10,7 @@ tags:
   - хранение урожая
   - ягоды
 status: draft
+adopt_existing: true
 images:
   - images/kak-zamorozit-yagody.jpg
   - images/zamorozka-yagod-rossypyu.jpg

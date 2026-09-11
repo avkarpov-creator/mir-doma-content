@@ -10,6 +10,7 @@ tags:
   - овощи
   - уход за огородом
 status: draft
+adopt_existing: true
 images:
   - images/kogda-ubirat-chesnok.jpg
   - images/chesnok-priznaki-zrelosti.jpg

@@ -10,6 +10,7 @@ tags:
   - канализация
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/septik-dlya-dachi.jpg
   - images/septik-vidy.jpg

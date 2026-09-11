@@ -11,6 +11,7 @@ tags:
   - интерьер дачи
 adopt_existing: false
 status: draft
+adopt_existing: true
 images:
   - images/kak-zonirovat-malenkiy-dachnyy-domik.jpg
   - images/kak-zonirovat-malenkiy-dachnyy-domik-2.jpg

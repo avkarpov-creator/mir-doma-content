@@ -10,6 +10,7 @@ tags:
   - выращивание огурцов
   - уход за огурцами
 status: draft
+adopt_existing: true
 images:
   - images/ogurtsy-krivye.jpg
   - images/ogurtsy-krivye-formy.jpg

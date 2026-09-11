@@ -10,6 +10,7 @@ tags:
   - заготовки на зиму
   - урожай
 status: draft
+adopt_existing: true
 images:
   - images/chto-prigotovit-iz-grush.jpg
   - images/pirog-s-grushami.jpg

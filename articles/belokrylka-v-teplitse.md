@@ -10,6 +10,7 @@ tags:
   - теплица
   - уход за огородом
 status: draft
+adopt_existing: true
 images:
   - images/belokrylka-v-teplitse.jpg
   - images/belokrylka-priznaki.jpg

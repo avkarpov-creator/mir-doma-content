@@ -10,6 +10,7 @@ tags:
   - вредители
   - уход за огурцами
 status: draft
+adopt_existing: true
 images:
   - images/pautinnyy-kleshch-ogurtsy.jpg
   - images/kleshch-priznaki-listya.jpg

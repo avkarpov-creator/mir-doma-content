@@ -10,6 +10,7 @@ tags:
   - штакетник
   - заборы и ограждения
 status: draft
+adopt_existing: true
 images:
   - images/zabor-iz-dereva-svoimi-rukami.jpg
   - images/zabor-iz-dereva-svoimi-rukami-2.jpg

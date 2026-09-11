@@ -10,6 +10,7 @@ tags:
   - забор
   - заборы и ограждения
 status: draft
+adopt_existing: true
 images:
   - images/kalitka-svoimi-rukami.jpg
   - images/kalitka-svoimi-rukami-2.jpg

@@ -11,6 +11,7 @@ tags:
   - вершинная гниль
   - защита растений
 status: draft
+adopt_existing: true
 images:
   - images/vershinnaya-gnil-tomat.jpg
   - images/vershinnaya-gnil-priznaki.jpg

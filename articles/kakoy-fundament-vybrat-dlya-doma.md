@@ -11,6 +11,7 @@ tags:
   - дачный дом
 adopt_existing: false
 status: draft
+adopt_existing: true
 images:
   - images/kakoy-fundament-vybrat-dlya-doma.jpg
   - images/kakoy-fundament-vybrat-dlya-doma-2.jpg

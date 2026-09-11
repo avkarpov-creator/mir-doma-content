@@ -10,6 +10,7 @@ tags:
   - болезни огурцов
   - уход за огурцами
 status: draft
+adopt_existing: true
 images:
   - images/peronosporoz-ogurtsov.jpg
   - images/peronosporoz-priznaki-listya.jpg

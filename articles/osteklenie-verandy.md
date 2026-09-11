@@ -10,6 +10,7 @@ tags:
   - строительство
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/osteklenie-verandy.jpg
   - images/holodnoe-alyuminievoe-osteklenie.jpg

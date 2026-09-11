@@ -10,6 +10,7 @@ tags:
   - хозпостройки
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/saray-svoimi-rukami.jpg
   - images/saray-fundament.jpg

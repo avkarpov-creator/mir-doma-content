@@ -10,6 +10,7 @@ tags:
   - ремонт дачного дома
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/remont-kryltsa-svoimi-rukami.jpg
   - images/remont-kryltsa-svoimi-rukami-2.jpg

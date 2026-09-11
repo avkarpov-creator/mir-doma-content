@@ -10,6 +10,7 @@ tags:
   - многолетники
   - ландшафтный дизайн
 status: draft
+adopt_existing: true
 images:
   - images/mnogoletnie-tsvety.jpg
   - images/piony.jpg

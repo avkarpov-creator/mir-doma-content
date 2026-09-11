@@ -11,6 +11,7 @@ tags:
   - конопатка
 adopt_existing: false
 status: draft
+adopt_existing: true
 images:
   - images/chem-zadelat-shcheli-v-derevyannom-dome.jpg
   - images/chem-zadelat-shcheli-v-derevyannom-dome-2.jpg

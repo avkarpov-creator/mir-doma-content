@@ -11,6 +11,7 @@ tags:
   - болезни томатов
   - защита растений
 status: draft
+adopt_existing: true
 images:
   - images/fitoftora-listya.jpg
   - images/fitoftora-stebel.jpg

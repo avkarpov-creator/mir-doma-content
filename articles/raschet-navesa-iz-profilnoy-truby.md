@@ -11,6 +11,7 @@ tags:
   - расчёт материалов
   - каркас
 status: draft
+adopt_existing: true
 images:
   - images/raschet-navesa-iz-profilnoy-truby.jpg
   - images/raschet-navesa-iz-profilnoy-truby-2.jpg

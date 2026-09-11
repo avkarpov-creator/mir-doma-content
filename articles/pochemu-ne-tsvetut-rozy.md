@@ -10,6 +10,7 @@ tags:
   - цветы
   - уход за садом
 status: draft
+adopt_existing: true
 images:
   - images/pochemu-ne-tsvetut-rozy.jpg
   - images/rozy-malo-solnca.jpg

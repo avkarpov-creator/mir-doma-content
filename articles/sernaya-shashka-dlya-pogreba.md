@@ -10,6 +10,7 @@ tags:
   - серная шашка
   - дезинфекция
 status: draft
+adopt_existing: true
 images:
   - images/sernaya-shashka-dlya-pogreba.jpg
   - images/sernaya-shashka-dlya-pogreba-2.jpg

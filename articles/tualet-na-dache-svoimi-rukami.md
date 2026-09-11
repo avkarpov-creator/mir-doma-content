@@ -10,6 +10,7 @@ tags:
   - хозпостройки
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/tualet-na-dache.jpg
   - images/tualet-chertezh.jpg

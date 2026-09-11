@@ -10,6 +10,7 @@ tags:
   - водоснабжение
   - отопление
 status: draft
+adopt_existing: true
 images:
   - images/konservaciya-dachi-na-zimu.jpg
   - images/sliv-vody-iz-sistemy.jpg

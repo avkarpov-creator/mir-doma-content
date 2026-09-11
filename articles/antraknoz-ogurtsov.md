@@ -10,6 +10,7 @@ tags:
   - болезни огурцов
   - защита растений
 status: draft
+adopt_existing: true
 images:
   - images/antraknoz-ogurtsov.jpg
   - images/antraknoz-listya.jpg

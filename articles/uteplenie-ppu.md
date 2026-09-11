@@ -10,6 +10,7 @@ tags:
   - энергосбережение
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/uteplenie-ppu.jpg
   - images/ppu-napylenie-sten.jpg

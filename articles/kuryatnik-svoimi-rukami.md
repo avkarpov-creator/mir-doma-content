@@ -10,6 +10,7 @@ tags:
   - хозяйственные постройки
   - птицеводство
 status: draft
+adopt_existing: true
 images:
   - images/kuryatnik-svoimi-rukami.jpg
   - images/kuryatnik-svoimi-rukami-2.jpg

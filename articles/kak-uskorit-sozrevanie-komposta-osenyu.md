@@ -10,6 +10,7 @@ tags:
   - удобрения
   - осенние работы
 status: draft
+adopt_existing: true
 images:
   - images/kak-uskorit-sozrevanie-komposta-osenyu.jpg
   - images/kak-uskorit-sozrevanie-komposta-osenyu-2.jpg

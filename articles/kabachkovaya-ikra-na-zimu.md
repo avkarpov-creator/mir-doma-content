@@ -11,6 +11,7 @@ tags:
   - заготовки
   - рецепты
 status: draft
+adopt_existing: true
 images:
   - images/kabachkovaya-ikra-na-zimu.jpg
   - images/ikra-ingredienty.jpg

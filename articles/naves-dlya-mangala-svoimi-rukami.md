@@ -10,6 +10,7 @@ tags:
   - мангал
   - хозяйственные постройки
 status: draft
+adopt_existing: true
 images:
   - images/naves-dlya-mangala-svoimi-rukami.jpg
   - images/naves-dlya-mangala-svoimi-rukami-2.jpg

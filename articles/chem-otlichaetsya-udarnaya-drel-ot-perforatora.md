@@ -10,6 +10,7 @@ tags:
   - дрель
   - перфоратор
 status: draft
+adopt_existing: true
 images:
   - images/chem-otlichaetsya-udarnaya-drel-ot-perforatora.jpg
   - images/chem-otlichaetsya-udarnaya-drel-ot-perforatora-2.jpg

@@ -11,6 +11,7 @@ tags:
   - уход за участком
 adopt_existing: false
 status: draft
+adopt_existing: true
 images:
   - images/proplesiny-na-gazone-kak-ispravit.jpg
   - images/proplesiny-na-gazone-kak-ispravit-2.jpg

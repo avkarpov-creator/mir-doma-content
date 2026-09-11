@@ -11,6 +11,7 @@ tags:
   - односкатная крыша
   - двускатная крыша
 status: draft
+adopt_existing: true
 images:
   - images/odnoskatnyy-ili-dvuskatnyy-naves.jpg
   - images/odnoskatnyy-ili-dvuskatnyy-naves-2.jpg

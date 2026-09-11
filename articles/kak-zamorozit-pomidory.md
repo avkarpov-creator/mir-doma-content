@@ -10,6 +10,7 @@ tags:
   - заморозка
   - заготовки на зиму
 status: draft
+adopt_existing: true
 images:
   - images/kak-zamorozit-pomidory.jpg
   - images/kak-zamorozit-pomidory-2.jpg

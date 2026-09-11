@@ -10,6 +10,7 @@ tags:
   - цветы
   - уход за садом
 status: draft
+adopt_existing: true
 images:
   - images/obrezka-roz.jpg
   - images/obrezka-roz-instrument.jpg

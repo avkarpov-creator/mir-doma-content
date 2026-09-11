@@ -10,6 +10,7 @@ tags:
   - терраса
   - открытая веранда
 status: draft
+adopt_existing: true
 images:
   - images/chem-zastelit-pol-na-verande-pod-kryshey.jpg
   - images/decking-otkrytaya-veranda.jpg

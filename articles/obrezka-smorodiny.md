@@ -10,6 +10,7 @@ tags:
   - плодовые деревья
   - уход за садом
 status: draft
+adopt_existing: true
 images:
   - images/obrezka-smorodiny.jpg
   - images/smorodina-formirovanie-kusta.jpg

@@ -10,6 +10,7 @@ tags:
   - выращивание огурцов
   - уход за огурцами
 status: draft
+adopt_existing: true
 images:
   - images/pustotsvet-ogurtsy.jpg
   - images/ogurtsy-muzhskie-zhenskie-tsvety.jpg

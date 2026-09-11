@@ -10,6 +10,7 @@ tags:
   - выращивание помидоров
   - уход за огородом
 status: draft
+adopt_existing: true
 images:
   - images/treskayutsya-pomidory.jpg
   - images/treshchiny-na-pomidorah.jpg

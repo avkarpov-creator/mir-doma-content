@@ -10,6 +10,7 @@ tags:
   - болезни огурцов
   - защита растений
 status: draft
+adopt_existing: true
 images:
   - images/bakterioz-ogurtsov.jpg
   - images/bakterioz-listya.jpg

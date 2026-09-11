@@ -10,6 +10,7 @@ tags:
   - проводка
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/elektrichestvo-na-dache-svoimi-rukami.jpg
   - images/elektrichestvo-na-dache-svoimi-rukami-2.jpg

@@ -10,6 +10,7 @@ tags:
   - вредители
   - защита растений
 status: draft
+adopt_existing: true
 images:
   - images/tripsy-na-ogurtsah.jpg
   - images/tripsy-priznaki-listya.jpg

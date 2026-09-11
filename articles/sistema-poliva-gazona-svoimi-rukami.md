@@ -11,6 +11,7 @@ tags:
   - автополив
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/sistema-poliva-gazona-svoimi-rukami.jpg
   - images/sistema-poliva-gazona-svoimi-rukami-2.jpg

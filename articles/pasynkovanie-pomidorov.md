@@ -11,6 +11,7 @@ tags:
   - выращивание томатов
   - теплица
 status: draft
+adopt_existing: true
 images:
   - images/pasynkovanie-shema.jpg
   - images/pasynok-chto-takoe.jpg

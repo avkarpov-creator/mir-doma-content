@@ -10,6 +10,7 @@ tags:
   - хранение урожая
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/obrabotka-pogreba-osenyu.jpg
   - images/prosushka-pogreba.jpg

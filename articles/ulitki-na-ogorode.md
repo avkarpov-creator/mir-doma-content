@@ -10,6 +10,7 @@ tags:
   - защита растений
   - огород
 status: draft
+adopt_existing: true
 images:
   - images/ulitki-na-ogorode.jpg
   - images/vinogradnaya-ulitka.jpg

@@ -10,6 +10,7 @@ tags:
   - заморозка
   - заготовки на зиму
 status: draft
+adopt_existing: true
 images:
   - images/mozhno-li-zamorazhivat-ogurtsy.jpg
   - images/mozhno-li-zamorazhivat-ogurtsy-2.jpg

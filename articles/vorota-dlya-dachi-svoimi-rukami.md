@@ -10,6 +10,7 @@ tags:
   - забор
   - заборы и ограждения
 status: draft
+adopt_existing: true
 images:
   - images/vorota-dlya-dachi-svoimi-rukami.jpg
   - images/vorota-dlya-dachi-svoimi-rukami-2.jpg

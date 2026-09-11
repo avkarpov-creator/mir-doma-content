@@ -10,6 +10,7 @@ tags:
   - овощи
   - уход за огородом
 status: draft
+adopt_existing: true
 images:
   - images/chesnok-pod-zimu.jpg
   - images/ozimyy-chesnok-zubki.jpg

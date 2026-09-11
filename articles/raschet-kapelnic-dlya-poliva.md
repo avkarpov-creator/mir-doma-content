@@ -11,6 +11,7 @@ tags:
   - огород
 adopt_existing: false
 status: draft
+adopt_existing: true
 images:
   - images/raschet-kapelnic-dlya-poliva.jpg
   - images/raschet-kapelnic-dlya-poliva-2.jpg

@@ -10,6 +10,7 @@ tags:
   - выращивание огурцов
   - уход за огурцами
 status: draft
+adopt_existing: true
 images:
   - images/ogurtsy-gorchat.jpg
   - images/ogurtsy-gorech-prichina.jpg

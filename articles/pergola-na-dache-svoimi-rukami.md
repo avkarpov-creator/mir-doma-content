@@ -11,6 +11,7 @@ tags:
   - дача своими руками
   - ландшафтный дизайн
 status: draft
+adopt_existing: true
 images:
   - images/pergola-na-dache-svoimi-rukami.jpg
   - images/pergola-na-dache-svoimi-rukami-2.jpg

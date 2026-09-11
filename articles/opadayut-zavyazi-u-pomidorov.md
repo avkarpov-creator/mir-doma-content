@@ -10,6 +10,7 @@ tags:
   - выращивание помидоров
   - уход за огородом
 status: draft
+adopt_existing: true
 images:
   - images/opadayut-zavyazi-pomidory.jpg
   - images/zavyazi-tomatov-zhara.jpg

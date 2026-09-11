@@ -11,6 +11,7 @@ tags:
   - картофель
   - народные средства
 status: draft
+adopt_existing: true
 images:
   - images/zhuk-na-kartofele.jpg
   - images/zhuk-lichinki.jpg

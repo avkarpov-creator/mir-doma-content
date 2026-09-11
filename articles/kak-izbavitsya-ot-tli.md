@@ -11,6 +11,7 @@ tags:
   - защита растений
   - народные средства
 status: draft
+adopt_existing: true
 images:
   - images/tlya-rozy.jpg
   - images/tlya-makro.jpg

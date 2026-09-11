@@ -10,6 +10,7 @@ tags:
   - рецепты
   - заготовки
 status: draft
+adopt_existing: true
 images:
   - images/chto-prigotovit-iz-tykvy.jpg
   - images/chto-prigotovit-iz-tykvy-2.jpg

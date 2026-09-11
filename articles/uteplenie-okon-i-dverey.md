@@ -10,6 +10,7 @@ tags:
   - энергосбережение
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/uteplenie-okon-i-dverey.jpg
   - images/poisk-skvoznyakov-okno.jpg

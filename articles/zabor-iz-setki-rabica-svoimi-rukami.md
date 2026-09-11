@@ -11,6 +11,7 @@ tags:
   - заборы и ограждения
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/zabor-iz-setki-rabica-svoimi-rukami.jpg
   - images/zabor-iz-setki-rabica-svoimi-rukami-2.jpg

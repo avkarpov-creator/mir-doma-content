@@ -10,6 +10,7 @@ tags:
   - садовая мебель
   - мебель своими руками
 status: draft
+adopt_existing: true
 images:
   - images/shezlong-svoimi-rukami.jpg
   - images/shezlong-svoimi-rukami-2.jpg

@@ -11,6 +11,7 @@ tags:
   - консервация
   - рецепты
 status: draft
+adopt_existing: true
 images:
   - images/varene-pyatiminutka-smorodina.jpg
   - images/smorodina-s-saharom-sok.jpg

@@ -10,6 +10,7 @@ tags:
   - подготовка почвы
   - осенние работы
 status: draft
+adopt_existing: true
 images:
   - images/izvestkovanie-pochvy-osenyu.jpg
   - images/izvestkovanie-pochvy-osenyu-2.jpg

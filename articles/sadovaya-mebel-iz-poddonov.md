@@ -10,6 +10,7 @@ tags:
   - дача своими руками
   - благоустройство участка
 status: draft
+adopt_existing: true
 images:
   - images/mebel-iz-poddonov.jpg
   - images/divan-iz-poddonov.jpg

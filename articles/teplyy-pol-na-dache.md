@@ -10,6 +10,7 @@ tags:
   - энергосбережение
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/teplyy-pol-na-dache.jpg
   - images/teplyy-pol-kabel.jpg
