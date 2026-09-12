@@ -47,7 +47,7 @@ python3 scripts/mdi.py index && python3 scripts/mdi.py state
   не будет.
 - `seo_title` ≤ 60 символов, `seo_description` ≤ 160.
 - 6 изображений в теле и 6 в frontmatter, у каждой картинки alt.
-- `category` строго из списка 25 рубрик, `status: draft`.
+- `category` строго из списка 26 рубрик, `status: draft`.
 - Никакой смеси кириллицы и латиницы внутри слова.
 - Перед добавлением внутренней ссылки слаг проверяется: `mdi.py check`, а для
   созданных вручную в WordPress записей — по живому сайту. Прецеденты были.
