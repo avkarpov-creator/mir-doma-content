@@ -1,0 +1,36 @@
+{
+  "slug": "fundament-pod-banyu-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/fundament-pod-banyu-svoimi-rukami.jpg",
+      "alt": "Заливка ленточного фундамента под баню",
+      "prompt": "concrete being poured into wooden formwork for a strip foundation trench, construction site, daylight, wide shot"
+    },
+    {
+      "file": "images/fundament-pod-banyu-svoimi-rukami-2.jpg",
+      "alt": "Свайно-винтовой фундамент под каркасную баню",
+      "prompt": "row of screw pile foundations with metal heads sticking out of the ground, small building site, daylight"
+    },
+    {
+      "file": "images/fundament-pod-banyu-svoimi-rukami-3.jpg",
+      "alt": "Гидроизоляция цоколя бани в зоне слива воды",
+      "prompt": "close-up of black bitumen waterproofing coating applied to a concrete foundation plinth, daylight, construction detail"
+    },
+    {
+      "file": "images/fundament-pod-banyu-svoimi-rukami-4.jpg",
+      "alt": "Отдельный фундамент под кирпичную печь-каменку в бане",
+      "prompt": "small separate concrete foundation pad poured inside a building frame for a heavy stove, construction site, daylight"
+    },
+    {
+      "file": "images/fundament-pod-banyu-svoimi-rukami-5.jpg",
+      "alt": "Готовый фундамент бани с продухами в цоколе",
+      "prompt": "finished concrete strip foundation with small ventilation openings in the plinth, exterior view, daylight"
+    },
+    {
+      "file": "images/fundament-pod-banyu-svoimi-rukami-6.jpg",
+      "alt": "Опалубка и арматурный каркас ленточного фундамента бани",
+      "prompt": "wooden formwork with steel rebar cage inside a foundation trench before concrete pouring, construction site, daylight"
+    }
+  ]
+}
