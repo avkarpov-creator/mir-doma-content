@@ -1,0 +1,36 @@
+{
+  "slug": "banya-iz-brusa-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/banya-iz-brusa-svoimi-rukami.jpg",
+      "alt": "Баня из профилированного бруса на даче",
+      "prompt": "small wooden bathhouse built from profiled timber beams, garden setting, sunny daylight, wide exterior shot"
+    },
+    {
+      "file": "images/banya-iz-brusa-svoimi-rukami-2.jpg",
+      "alt": "Укладка венцов бруса с угловым соединением в чашу",
+      "prompt": "close-up of timber log corner joint notched in a cup-style connection, construction site, daylight"
+    },
+    {
+      "file": "images/banya-iz-brusa-svoimi-rukami-3.jpg",
+      "alt": "Обсадная коробка окна с зазором на усадку сруба",
+      "prompt": "wooden window casing frame with a visible gap above it inside a timber log wall opening, close-up, daylight construction site"
+    },
+    {
+      "file": "images/banya-iz-brusa-svoimi-rukami-4.jpg",
+      "alt": "Обработка нижнего венца бани антисептиком",
+      "prompt": "hand applying wood preservative with a brush to the bottom timber log of a building foundation, close-up, daylight"
+    },
+    {
+      "file": "images/banya-iz-brusa-svoimi-rukami-5.jpg",
+      "alt": "Готовая баня из бруса после усадки и конопатки",
+      "prompt": "finished timber bathhouse with visible caulked seams between logs, exterior view, warm daylight, garden background"
+    },
+    {
+      "file": "images/banya-iz-brusa-svoimi-rukami-6.jpg",
+      "alt": "Конопатка швов сруба джутовым утеплителем",
+      "prompt": "close-up of jute fiber insulation being tucked into the seam between timber logs with a caulking tool, daylight"
+    }
+  ]
+}
