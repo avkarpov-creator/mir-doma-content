@@ -1,0 +1,36 @@
+{
+  "slug": "dorozhka-iz-shchebnya-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/dorozhka-iz-shchebnya-svoimi-rukami.jpg",
+      "alt": "Готовая дорожка из щебня с бордюром на даче",
+      "prompt": "garden gravel path with a plastic edging border winding through a green lawn, daylight, wide shot"
+    },
+    {
+      "file": "images/dorozhka-iz-shchebnya-svoimi-rukami-2.jpg",
+      "alt": "Три фракции щебня для разных слоёв дорожки",
+      "prompt": "three piles of crushed stone gravel in different sizes side by side on the ground, close-up, daylight, construction site"
+    },
+    {
+      "file": "images/dorozhka-iz-shchebnya-svoimi-rukami-3.jpg",
+      "alt": "Слои геотекстиля и щебня в разрезе дорожки",
+      "prompt": "cross-section view of a garden path trench showing layers of geotextile fabric and gravel, close-up, daylight"
+    },
+    {
+      "file": "images/dorozhka-iz-shchebnya-svoimi-rukami-4.jpg",
+      "alt": "Установка пластикового бордюра перед насыпкой щебня",
+      "prompt": "hands installing black plastic garden edging border along a path trench before gravel is poured, daylight, close-up"
+    },
+    {
+      "file": "images/dorozhka-iz-shchebnya-svoimi-rukami-5.jpg",
+      "alt": "Подсыпка щебня на дорожку для обслуживания",
+      "prompt": "person raking fresh gravel onto an existing garden path with a rake, daylight, maintenance close-up"
+    },
+    {
+      "file": "images/dorozhka-iz-shchebnya-svoimi-rukami-6.jpg",
+      "alt": "Дорожка из щебня с прорастающей по краям травой из-за отсутствия бордюра",
+      "prompt": "gravel garden path with grass and weeds growing through the edges due to missing border, daylight, close-up"
+    }
+  ]
+}
