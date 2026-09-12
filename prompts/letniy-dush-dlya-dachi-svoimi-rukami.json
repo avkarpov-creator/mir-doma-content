@@ -1,0 +1,36 @@
+{
+  "slug": "letniy-dush-dlya-dachi-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/letniy-dush-dlya-dachi-svoimi-rukami.jpg",
+      "alt": "Летний душ на даче с баком на крыше",
+      "prompt": "wooden outdoor summer shower cabin with a black water tank on top, standing in a sunny garden, daylight, rural dacha setting"
+    },
+    {
+      "file": "images/letniy-dush-dlya-dachi-svoimi-rukami-2.jpg",
+      "alt": "Каркас летнего душа из бруса",
+      "prompt": "wooden timber frame skeleton of a small outdoor shower cabin under construction, garden background, daylight, close-up angle"
+    },
+    {
+      "file": "images/letniy-dush-dlya-dachi-svoimi-rukami-3.jpg",
+      "alt": "Обшивка летнего душа поликарбонатом",
+      "prompt": "outdoor shower cabin frame being covered with translucent polycarbonate panels, close-up, daylight, tools nearby"
+    },
+    {
+      "file": "images/letniy-dush-dlya-dachi-svoimi-rukami-4.jpg",
+      "alt": "Летний душ рядом с хозблоком на даче",
+      "prompt": "small wooden outdoor shower cabin standing next to a garden utility shed, wide shot, daylight, dacha yard"
+    },
+    {
+      "file": "images/letniy-dush-dlya-dachi-svoimi-rukami-5.jpg",
+      "alt": "Готовый летний душ с вагонкой на дачном участке",
+      "prompt": "finished outdoor shower cabin clad with wooden lining boards, water tank on roof, garden setting, warm afternoon light"
+    },
+    {
+      "file": "images/letniy-dush-dlya-dachi-svoimi-rukami-6.jpg",
+      "alt": "Дренажная яма со щебнем под полом летнего душа",
+      "prompt": "drainage pit filled with gravel under a wooden shower cabin floor frame, construction view, daylight, close-up"
+    }
+  ]
+}
