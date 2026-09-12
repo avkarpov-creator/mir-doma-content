@@ -1,0 +1,36 @@
+{
+  "slug": "chem-ukryt-klubniku-na-zimu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-ukryt-klubniku-na-zimu.jpg",
+      "alt": "Грядка клубники, укрытая на зиму",
+      "prompt": "strawberry garden bed covered with straw mulch and white agrofabric for winter, wide shot, overcast autumn daylight, frost on the ground nearby"
+    },
+    {
+      "file": "images/chem-ukryt-klubniku-na-zimu-2.jpg",
+      "alt": "Клубничная грядка перед укрытием: обрезанные листья",
+      "prompt": "close-up of strawberry plants with trimmed dry leaves removed, tidy garden row before winter covering, natural daylight, gardening gloves nearby"
+    },
+    {
+      "file": "images/chem-ukryt-klubniku-na-zimu-3.jpg",
+      "alt": "Укрытие клубники лапником и агроволокном",
+      "prompt": "strawberry bed covered with spruce branches and white spunbond fabric, close-up, cold autumn morning light, garden setting"
+    },
+    {
+      "file": "images/chem-ukryt-klubniku-na-zimu-4.jpg",
+      "alt": "Молодые кусты клубники под укрытием",
+      "prompt": "young strawberry seedlings covered with a light white row cover fabric, close-up, soft daylight, garden bed"
+    },
+    {
+      "file": "images/chem-ukryt-klubniku-na-zimu-5.jpg",
+      "alt": "Клубника весной после снятия укрытия",
+      "prompt": "strawberry plants with fresh green leaves emerging in early spring, uncovered garden bed, soft morning sunlight"
+    },
+    {
+      "file": "images/chem-ukryt-klubniku-na-zimu-6.jpg",
+      "alt": "Клубника под плёнкой преет из-за конденсата",
+      "prompt": "strawberry plants under clear plastic film with visible condensation droplets, close-up, rotting leaves, overcast daylight"
+    }
+  ]
+}
