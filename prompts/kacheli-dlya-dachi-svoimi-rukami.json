@@ -1,0 +1,36 @@
+{
+  "slug": "kacheli-dlya-dachi-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kacheli-dlya-dachi-svoimi-rukami.jpg",
+      "alt": "Деревянные качели на дачном участке",
+      "prompt": "wooden A-frame garden swing with a bench seat on chains, standing in a green garden, sunny daylight, wide shot"
+    },
+    {
+      "file": "images/kacheli-dlya-dachi-svoimi-rukami-2.jpg",
+      "alt": "Сборка А-образной рамы качелей из бруса",
+      "prompt": "wooden A-frame swing structure being assembled from timber beams, tools nearby, daylight, garden construction"
+    },
+    {
+      "file": "images/kacheli-dlya-dachi-svoimi-rukami-3.jpg",
+      "alt": "Крепление рым-болтов и цепей к перекладине качелей",
+      "prompt": "close-up of a metal eye bolt with a chain attached to a wooden crossbeam, daylight, hardware detail shot"
+    },
+    {
+      "file": "images/kacheli-dlya-dachi-svoimi-rukami-4.jpg",
+      "alt": "Готовые качели с сиденьем-скамьёй на цепях",
+      "prompt": "finished wooden garden swing with a bench seat hanging on metal chains, garden setting, warm daylight"
+    },
+    {
+      "file": "images/kacheli-dlya-dachi-svoimi-rukami-5.jpg",
+      "alt": "Качели в общей зоне отдыха рядом с перголой",
+      "prompt": "wooden garden swing next to a pergola covered with climbing plants, outdoor lounge area, sunny daylight, wide shot"
+    },
+    {
+      "file": "images/kacheli-dlya-dachi-svoimi-rukami-6.jpg",
+      "alt": "Три варианта сиденья для садовых качелей",
+      "prompt": "three types of wooden swing seats side by side: a plain board, a slatted bench with backrest, and a hanging cocoon chair, daylight, garden background"
+    }
+  ]
+}
