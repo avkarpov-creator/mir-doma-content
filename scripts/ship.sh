@@ -108,8 +108,16 @@ for line in (m.group(1).splitlines() if m else []):
         if mm: print("articles/" + mm.group(1).strip("\"'"))
         elif line.strip() and not line.startswith((" ", "\t", "-")): break
 PY
-# Статьи-доноры, куда добавлены входящие ссылки.
-git add -u articles 2>/dev/null || true
+# Статьи-доноры, куда добавлены входящие ссылки на $SLUG. Берём только файлы,
+# чей незакоммиченный диф реально содержит новую ссылку на этот слаг — иначе
+# при нескольких статьях, набросанных за один присест, правки доноров для
+# другой статьи утекают в этот коммит.
+while IFS= read -r f; do
+  [ -f "$f" ] || continue
+  if git diff -- "$f" | grep -q "^+.*mir-doma\.pro/$SLUG/"; then
+    git add "$f"
+  fi
+done < <(git diff --name-only -- articles)
 
 git diff --cached --stat | tail -12
 CHANGED=$(git diff --cached --name-only | wc -l)
