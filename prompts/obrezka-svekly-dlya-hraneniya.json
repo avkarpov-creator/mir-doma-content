@@ -1,0 +1,36 @@
+{
+  "slug": "obrezka-svekly-dlya-hraneniya",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/obrezka-svekly-dlya-hraneniya.jpg",
+      "alt": "Свежевыкопанная свёкла с обрезанной ботвой",
+      "prompt": "pile of freshly dug beetroots with trimmed leaf stems lying on dark garden soil, close-up, natural daylight, wooden crate nearby"
+    },
+    {
+      "file": "images/obrezka-svekly-dlya-hraneniya-2.jpg",
+      "alt": "Правильная длина среза ботвы и корешка свёклы",
+      "prompt": "macro close-up of a single beetroot showing trimmed leaf stalks about two centimeters long and the taproot below, on a rustic wooden table, soft daylight"
+    },
+    {
+      "file": "images/obrezka-svekly-dlya-hraneniya-3.jpg",
+      "alt": "Переборка свёклы перед закладкой на хранение",
+      "prompt": "hands sorting beetroots into a wicker basket, separating clean healthy roots from damaged ones on a wooden bench, daylight, farm setting"
+    },
+    {
+      "file": "images/obrezka-svekly-dlya-hraneniya-4.jpg",
+      "alt": "Свёкла с правильно обрезанной ботвой готова к закладке",
+      "prompt": "neat rows of trimmed beetroots with short stem stubs arranged in a wooden crate, ready for cellar storage, natural light, top-down angle"
+    },
+    {
+      "file": "images/obrezka-svekly-dlya-hraneniya-5.jpg",
+      "alt": "Обрезка ботвы свёклы ножом и секатором",
+      "prompt": "hand using pruning shears to trim beetroot leaf stems over a garden table, harvested beets nearby, outdoor daylight, close-up"
+    },
+    {
+      "file": "images/obrezka-svekly-dlya-hraneniya-6.jpg",
+      "alt": "Свёкла на хранении без погреба: ящик на балконе",
+      "prompt": "wooden box of beetroots stored on an apartment balcony floor near a window, soft indoor daylight, cozy home setting"
+    }
+  ]
+}
