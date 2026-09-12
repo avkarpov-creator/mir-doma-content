@@ -1,0 +1,36 @@
+{
+  "slug": "uteplenie-cokolya-fundamenta-penopleksom",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/uteplenie-cokolya-fundamenta-penopleksom.jpg",
+      "alt": "Утеплённый пеноплексом цоколь фундамента дома",
+      "prompt": "house foundation plinth covered with pink extruded polystyrene foam boards, exterior view, daylight, partially finished wall"
+    },
+    {
+      "file": "images/uteplenie-cokolya-fundamenta-penopleksom-2.jpg",
+      "alt": "Плиты пеноплекса разной толщины для цоколя",
+      "prompt": "stack of pink extruded polystyrene foam insulation boards of different thickness leaning against a brick wall, outdoor daylight, close-up"
+    },
+    {
+      "file": "images/uteplenie-cokolya-fundamenta-penopleksom-3.jpg",
+      "alt": "Приклеивание плит пеноплекса к цоколю фундамента",
+      "prompt": "worker applying adhesive with a notched trowel to a foam insulation board before gluing it to a concrete foundation wall, daylight, close-up"
+    },
+    {
+      "file": "images/uteplenie-cokolya-fundamenta-penopleksom-4.jpg",
+      "alt": "Отделка утеплённого цоколя декоративной штукатуркой",
+      "prompt": "close-up of decorative plaster being applied over foam insulation on a house plinth with a trowel, daylight, textured finish"
+    },
+    {
+      "file": "images/uteplenie-cokolya-fundamenta-penopleksom-5.jpg",
+      "alt": "Утеплённый цоколь с готовой отмосткой по периметру дома",
+      "prompt": "finished house exterior with insulated plinth and a new concrete blind area apron around the perimeter, daylight, wide shot"
+    },
+    {
+      "file": "images/uteplenie-cokolya-fundamenta-penopleksom-6.jpg",
+      "alt": "Металлическая сетка от грызунов поверх пеноплекса перед засыпкой",
+      "prompt": "galvanized metal mesh laid over foam insulation boards in a foundation trench before backfilling, daylight, close-up construction site"
+    }
+  ]
+}
