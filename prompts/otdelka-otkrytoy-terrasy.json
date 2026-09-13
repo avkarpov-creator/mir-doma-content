@@ -1,0 +1,36 @@
+{
+  "slug": "otdelka-otkrytoy-terrasy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/otdelka-otkrytoy-terrasy.jpg",
+      "alt": "Открытая терраса с деревянной обшивкой стен и потолка",
+      "prompt": "wide daytime photo of an open outdoor terrace attached to a country house, walls and ceiling clad in vertical larch planken boards, low railing, no glazing, wooden deck flooring, soft afternoon sunlight, realistic photo"
+    },
+    {
+      "file": "images/otdelka-otkrytoy-terrasy-2.jpg",
+      "alt": "Крепление планкена на открытой террасе скрытым крепежом",
+      "prompt": "close-up macro photo of larch planken decking boards mounted with hidden metal clip fasteners, visible ventilation gap between boards, stainless steel screw, daylight, realistic photo"
+    },
+    {
+      "file": "images/otdelka-otkrytoy-terrasy-3.jpg",
+      "alt": "Обшивка потолка открытой террасы вагонкой из термодерева",
+      "prompt": "photo taken from below looking up at an open terrace ceiling clad with thermally treated wood tongue-and-groove boards, exposed wooden beams, natural daylight filtering through the edge of the roof, realistic photo"
+    },
+    {
+      "file": "images/otdelka-otkrytoy-terrasy-4.jpg",
+      "alt": "Готовая отделка стен открытой террасы декингом",
+      "prompt": "photo of a finished open terrace half-wall clad with grey composite decking (WPC) boards, wooden deck floor, garden visible beyond the open side, midday light, realistic photo"
+    },
+    {
+      "file": "images/otdelka-otkrytoy-terrasy-5.jpg",
+      "alt": "Открытая терраса с ограждением и обшивкой из декинга",
+      "prompt": "photo of an open terrace with a wooden deck railing clad in composite decking boards, rain droplets visible on the boards, overcast sky, country garden background, realistic photo"
+    },
+    {
+      "file": "images/otdelka-otkrytoy-terrasy-6.jpg",
+      "alt": "Общий вид отделанной открытой террасы под навесом",
+      "prompt": "wide exterior photo of a country house with an attached open terrace under a pitched canopy roof, wood-clad walls and ceiling, wooden deck, outdoor furniture, golden hour sunlight, realistic photo"
+    }
+  ]
+}
