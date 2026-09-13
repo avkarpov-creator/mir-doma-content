@@ -1,0 +1,36 @@
+{
+  "slug": "molniezashchita-chastnogo-doma",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/molniezashchita-chastnogo-doma.jpg",
+      "alt": "Дом с установленной молниезащитой на коньке крыши",
+      "prompt": "wide photo of a private house roof with a thin metal lightning rod mast mounted on the ridge, clear daylight, realistic photo"
+    },
+    {
+      "file": "images/molniezashchita-chastnogo-doma-2.jpg",
+      "alt": "Схема молниезащиты: приёмник на коньке, токоотвод по фасаду, заземлитель в грунте",
+      "prompt": "photo of a metal down-conductor cable running from a roof lightning rod down along the exterior wall of a house to a ground rod at the base, daylight, realistic photo"
+    },
+    {
+      "file": "images/molniezashchita-chastnogo-doma-3.jpg",
+      "alt": "Токоотвод из оцинкованной стали, закреплённый по фасаду дома",
+      "prompt": "close-up photo of a galvanized steel down-conductor wire fixed to a house facade wall with metal clips, daylight, realistic photo"
+    },
+    {
+      "file": "images/molniezashchita-chastnogo-doma-4.jpg",
+      "alt": "Заглубление заземлителя молниезащиты в грунт на расстоянии от дома",
+      "prompt": "photo of a person driving a metal ground rod into soil near a house foundation with a sledgehammer, daylight, realistic photo"
+    },
+    {
+      "file": "images/molniezashchita-chastnogo-doma-5.jpg",
+      "alt": "Дом с полностью смонтированной системой молниезащиты во время грозы",
+      "prompt": "wide photo of a private house with a lightning rod on the roof against a dramatic stormy sky with dark clouds, dusk light, realistic photo"
+    },
+    {
+      "file": "images/molniezashchita-chastnogo-doma-6.jpg",
+      "alt": "Крепление молниеприёмника на коньке кровли частного дома",
+      "prompt": "close-up photo of a metal lightning rod bracket mounted and bolted to a roof ridge tile, daylight, realistic photo"
+    }
+  ]
+}
