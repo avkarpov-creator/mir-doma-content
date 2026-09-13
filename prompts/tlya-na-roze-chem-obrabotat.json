@@ -1,0 +1,36 @@
+{
+  "slug": "tlya-na-roze-chem-obrabotat",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/tlya-na-roze-chem-obrabotat.jpg",
+      "alt": "Колония тли на бутоне розы",
+      "prompt": "close-up macro photo of a dense green aphid colony covering a rose bud and young stem, dew drops visible, morning daylight, realistic photo"
+    },
+    {
+      "file": "images/tlya-na-roze-chem-obrabotat-2.jpg",
+      "alt": "Сравнение повреждений от тли, паутинного клеща и трипсов на розе",
+      "prompt": "close-up comparison photo of three rose leaves side by side showing different pest damage: aphid-curled leaf, spider mite webbing, thrips silver streaks, natural daylight, realistic photo"
+    },
+    {
+      "file": "images/tlya-na-roze-chem-obrabotat-3.jpg",
+      "alt": "Обработка розы мыльным раствором из пульверизатора вечером",
+      "prompt": "photo of a gardener spraying soapy water solution from a spray bottle onto rose bush buds in a garden, evening golden light, realistic photo"
+    },
+    {
+      "file": "images/tlya-na-roze-chem-obrabotat-4.jpg",
+      "alt": "Бархатцы и лаванда, высаженные рядом с кустом роз как барьер от тли",
+      "prompt": "wide photo of a rose bush in a garden bed bordered by marigolds and lavender planted as companion plants, sunny daylight, realistic photo"
+    },
+    {
+      "file": "images/tlya-na-roze-chem-obrabotat-5.jpg",
+      "alt": "Здоровый цветущий куст розы после обработки от тли",
+      "prompt": "wide photo of a healthy blooming rose bush full of open flowers in a garden, no visible pests, bright daylight, realistic photo"
+    },
+    {
+      "file": "images/tlya-na-roze-chem-obrabotat-6.jpg",
+      "alt": "Крупный план бутона розы без следов тли",
+      "prompt": "close-up macro photo of a clean pink rose bud with dew drops, no pests, soft natural daylight, realistic photo"
+    }
+  ]
+}
