@@ -1,0 +1,36 @@
+{
+  "slug": "ustroystvo-krovli-iz-metallocherepitsy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/ustroystvo-krovli-iz-metallocherepitsy.jpg",
+      "alt": "Кровля дома из металлочерепицы с чётким рисунком волны",
+      "prompt": "wide photo of a country house roof covered with red metal roof tiles showing a clear wave pattern, clear daylight, realistic photo"
+    },
+    {
+      "file": "images/ustroystvo-krovli-iz-metallocherepitsy-2.jpg",
+      "alt": "Обрешётка под металлочерепицу с шагом под волну листа",
+      "prompt": "close-up photo of wooden roof battens (obreshetka) installed at spaced intervals on rafters under a waterproofing membrane, before roofing sheets are installed, daylight, realistic photo"
+    },
+    {
+      "file": "images/ustroystvo-krovli-iz-metallocherepitsy-3.jpg",
+      "alt": "Резка металлочерепицы ножницами по металлу без болгарки",
+      "prompt": "close-up photo of hands using metal tin snips to cut a sheet of red metal roof tile, no angle grinder, daylight, realistic photo"
+    },
+    {
+      "file": "images/ustroystvo-krovli-iz-metallocherepitsy-4.jpg",
+      "alt": "Крепление металлочерепицы саморезами в прогиб волны",
+      "prompt": "close-up photo of a cordless screwdriver driving a rubber-washered roofing screw into the low point of a metal roof tile wave, on a roof, daylight, realistic photo"
+    },
+    {
+      "file": "images/ustroystvo-krovli-iz-metallocherepitsy-5.jpg",
+      "alt": "Готовая кровля из металлочерепицы с установленными снегозадержателями",
+      "prompt": "photo of a finished metal tile roof with snow guard bars installed near the eaves, ridge cap visible on top, clear daylight, realistic photo"
+    },
+    {
+      "file": "images/ustroystvo-krovli-iz-metallocherepitsy-6.jpg",
+      "alt": "Общий вид дома с кровлей из металлочерепицы и водостоком",
+      "prompt": "wide exterior photo of a country house with a brown metal tile roof and an installed rain gutter along the eave, garden around it, sunny daylight, realistic photo"
+    }
+  ]
+}
