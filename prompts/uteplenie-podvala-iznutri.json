@@ -1,0 +1,36 @@
+{
+  "slug": "uteplenie-podvala-iznutri",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/uteplenie-podvala-iznutri.jpg",
+      "alt": "Подвал частного дома с утеплёнными стенами",
+      "prompt": "photo of a basement room in a private house with concrete walls partially covered by rigid foam insulation boards, work light illuminating the space, realistic photo"
+    },
+    {
+      "file": "images/uteplenie-podvala-iznutri-2.jpg",
+      "alt": "Точка росы в стене подвала при утеплении изнутри — конденсат на границе утеплителя",
+      "prompt": "close-up photo of a lifted corner of foam insulation board on a basement concrete wall revealing condensation moisture droplets on the concrete behind it, work light, realistic photo"
+    },
+    {
+      "file": "images/uteplenie-podvala-iznutri-3.jpg",
+      "alt": "Приклейка плит пеноплекса на стену подвала изнутри",
+      "prompt": "close-up photo of hands applying adhesive with a notched trowel to a rigid foam insulation board and pressing it onto a basement concrete wall, work light, realistic photo"
+    },
+    {
+      "file": "images/uteplenie-podvala-iznutri-4.jpg",
+      "alt": "Готовый утеплённый подвал с отделкой стен и вентиляцией",
+      "prompt": "photo of a finished basement room with insulated walls covered by moisture-resistant panels, clean and dry, overhead light fixture, realistic photo"
+    },
+    {
+      "file": "images/uteplenie-podvala-iznutri-5.jpg",
+      "alt": "Вентиляционная решётка в утеплённом подвале частного дома",
+      "prompt": "close-up photo of a white ventilation grille installed in a finished basement wall near the ceiling, realistic photo"
+    },
+    {
+      "file": "images/uteplenie-podvala-iznutri-6.jpg",
+      "alt": "Обустроенный подвал частного дома, используемый как мастерская",
+      "prompt": "wide photo of a private house basement converted into a workshop with a workbench, tools on the wall, insulated finished walls, warm indoor lighting, realistic photo"
+    }
+  ]
+}
