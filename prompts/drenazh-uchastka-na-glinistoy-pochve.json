@@ -1,0 +1,36 @@
+{
+  "slug": "drenazh-uchastka-na-glinistoy-pochve",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/drenazh-uchastka-na-glinistoy-pochve.jpg",
+      "alt": "Лужи стоячей воды на глинистом участке после дождя",
+      "prompt": "photo of standing water puddles on a muddy clay soil garden plot after rain, overcast daylight, realistic photo"
+    },
+    {
+      "file": "images/drenazh-uchastka-na-glinistoy-pochve-2.jpg",
+      "alt": "Схема траншеи глубинного дренажа с трубой в геотекстиле и обсыпке щебнем",
+      "prompt": "close-up photo of an open drainage trench cross-section showing black geotextile fabric lining, gravel bedding, and a perforated drain pipe inside, daylight, realistic photo"
+    },
+    {
+      "file": "images/drenazh-uchastka-na-glinistoy-pochve-3.jpg",
+      "alt": "Укладка перфорированной трубы в геотекстиле на слой щебень",
+      "prompt": "photo of hands placing a black perforated drainage pipe wrapped in geotextile fabric onto a bed of gravel in a trench, daylight, realistic photo"
+    },
+    {
+      "file": "images/drenazh-uchastka-na-glinistoy-pochve-4.jpg",
+      "alt": "Готовая дренажная траншея, засыпанная щебнем",
+      "prompt": "photo of a finished drainage trench filled with gray gravel running across a garden plot, daylight, realistic photo"
+    },
+    {
+      "file": "images/drenazh-uchastka-na-glinistoy-pochve-5.jpg",
+      "alt": "Открытый дренажный лоток для поверхностного отвода воды на глинистом участке",
+      "prompt": "photo of a concrete surface drainage channel with a metal grate installed along a garden path, directing rainwater away, daylight, realistic photo"
+    },
+    {
+      "file": "images/drenazh-uchastka-na-glinistoy-pochve-6.jpg",
+      "alt": "Участок с обустроенным дренажем без застоя воды после дождя",
+      "prompt": "wide photo of a tidy garden plot after rain with no standing water, visible drainage grate along a path, green lawn, daylight, realistic photo"
+    }
+  ]
+}
