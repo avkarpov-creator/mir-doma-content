@@ -1,0 +1,36 @@
+{
+  "slug": "pech-dlya-bani-iz-metalla",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/pech-dlya-bani-iz-metalla.jpg",
+      "alt": "Самодельная металлическая печь для бани с баком для камней",
+      "prompt": "photo of a handmade black metal wood-burning sauna stove with a stone compartment on top, inside a wooden sauna room, warm light, realistic photo"
+    },
+    {
+      "file": "images/pech-dlya-bani-iz-metalla-2.jpg",
+      "alt": "Труба и лист металла для сборки корпуса печи и топки",
+      "prompt": "photo of a large steel pipe section and cut sheet metal plates prepared in a workshop for welding a stove, welding equipment nearby, daylight, realistic photo"
+    },
+    {
+      "file": "images/pech-dlya-bani-iz-metalla-3.jpg",
+      "alt": "Загрузка камней в закрытую каменку банной печи",
+      "prompt": "close-up photo of hands loading dark volcanic sauna stones into the open door of a closed metal stone compartment on a sauna stove, realistic photo"
+    },
+    {
+      "file": "images/pech-dlya-bani-iz-metalla-4.jpg",
+      "alt": "Установленная банная печь с соблюдением отступов от стен",
+      "prompt": "photo of a metal sauna stove installed with a visible protective heat shield and safety gap from the wooden wall behind it, sauna interior, realistic photo"
+    },
+    {
+      "file": "images/pech-dlya-bani-iz-metalla-5.jpg",
+      "alt": "Готовая парная с самодельной металлической печью и камнями",
+      "prompt": "wide photo of a finished wooden sauna room with a black metal stove, stones on top, wooden benches, warm ambient light, realistic photo"
+    },
+    {
+      "file": "images/pech-dlya-bani-iz-metalla-6.jpg",
+      "alt": "Пар от каменки банной печи при поливе камней водой",
+      "prompt": "photo of steam rising from hot sauna stones on a metal stove as water is poured over them with a ladle, warm dim light, realistic photo"
+    }
+  ]
+}
