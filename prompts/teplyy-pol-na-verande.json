@@ -1,0 +1,36 @@
+{
+  "slug": "teplyy-pol-na-verande",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/teplyy-pol-na-verande.jpg",
+      "alt": "Деревянный пол веранды с тёплым полом под ламинатом",
+      "prompt": "photo of a cozy veranda interior with laminate flooring and a wall thermostat panel visible, wooden walls, potted plants, warm daylight, realistic photo"
+    },
+    {
+      "file": "images/teplyy-pol-na-verande-2.jpg",
+      "alt": "Монтаж плёночного инфракрасного тёплого пола на веранде",
+      "prompt": "close-up photo of thin infrared heating film sheets being installed on a wooden subfloor with a reflective foil underlayment, tools nearby, daylight, realistic photo"
+    },
+    {
+      "file": "images/teplyy-pol-na-verande-3.jpg",
+      "alt": "Терморегулятор тёплого пола на стене веранды",
+      "prompt": "close-up photo of a modern digital underfloor heating thermostat mounted on a wooden wall of a veranda, small display showing temperature, indoor daylight, realistic photo"
+    },
+    {
+      "file": "images/teplyy-pol-na-verande-4.jpg",
+      "alt": "Готовая веранда с тёплым полом и ламинатом сверху",
+      "prompt": "wide interior photo of a finished furnished veranda with warm laminate flooring, wicker furniture, large windows, soft afternoon light, realistic photo"
+    },
+    {
+      "file": "images/teplyy-pol-na-verande-5.jpg",
+      "alt": "Тёплый пол на веранде под керамогранитом на бетонном основании",
+      "prompt": "close-up photo of electric heating cable being laid in a spiral pattern on a concrete subfloor before screed, porcelain tile samples nearby, daylight, realistic photo"
+    },
+    {
+      "file": "images/teplyy-pol-na-verande-6.jpg",
+      "alt": "Общий вид тёплой веранды с подогревом пола зимой",
+      "prompt": "wide photo of a snug country house veranda in winter, snow visible through the windows outside, warm-toned wooden floor, cozy armchair, evening light, realistic photo"
+    }
+  ]
+}
