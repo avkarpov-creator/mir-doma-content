@@ -1,0 +1,36 @@
+{
+  "slug": "alpiyskaya-gorka-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/alpiyskaya-gorka-svoimi-rukami.jpg",
+      "alt": "Готовая альпийская горка с камнями и хвойниками",
+      "prompt": "wide photo of a finished alpine rock garden mound in a backyard with large natural stones of varying sizes, dwarf conifers and low succulent plants, sunny daylight, realistic photo"
+    },
+    {
+      "file": "images/alpiyskaya-gorka-svoimi-rukami-2.jpg",
+      "alt": "Дренажный слой из щебня перед укладкой камней альпийской горки",
+      "prompt": "photo of a mound of soil covered with a gravel drainage layer and black geotextile fabric, prepared for a rock garden, before stones are placed, daylight, realistic photo"
+    },
+    {
+      "file": "images/alpiyskaya-gorka-svoimi-rukami-3.jpg",
+      "alt": "Укладка крупных камней у основания альпийской горки",
+      "prompt": "photo of a person placing a large natural boulder at the base of a garden mound, partially buried in soil, daylight, realistic photo"
+    },
+    {
+      "file": "images/alpiyskaya-gorka-svoimi-rukami-4.jpg",
+      "alt": "Карликовые хвойники и очитки на вершине альпийской горки",
+      "prompt": "close-up photo of dwarf conifer shrubs and sedum succulent plants growing among small stones at the top of a rock garden, daylight, realistic photo"
+    },
+    {
+      "file": "images/alpiyskaya-gorka-svoimi-rukami-5.jpg",
+      "alt": "Альпийская горка в саду, вид с зоны отдыха",
+      "prompt": "wide photo of an alpine rock garden seen from a garden patio seating area, wooden chairs in the foreground, sunny daylight, realistic photo"
+    },
+    {
+      "file": "images/alpiyskaya-gorka-svoimi-rukami-6.jpg",
+      "alt": "Цветущие седумы и камнеломки среди камней альпийской горки",
+      "prompt": "close-up macro photo of blooming pink sedum and saxifrage flowers growing between rocks on an alpine rock garden, soft daylight, realistic photo"
+    }
+  ]
+}
