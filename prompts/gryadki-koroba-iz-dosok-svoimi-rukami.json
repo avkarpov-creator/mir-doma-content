@@ -1,0 +1,36 @@
+{
+  "slug": "gryadki-koroba-iz-dosok-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/gryadki-koroba-iz-dosok-svoimi-rukami.jpg",
+      "alt": "Ряд грядок-коробов из досок на огороде",
+      "prompt": "wide photo of a vegetable garden with several raised wooden board garden beds in a row, gravel paths between them, vegetables growing inside, sunny daylight, realistic photo"
+    },
+    {
+      "file": "images/gryadki-koroba-iz-dosok-svoimi-rukami-2.jpg",
+      "alt": "Сборка короба грядки из досок лиственницы",
+      "prompt": "close-up photo of hands assembling a wooden raised garden bed frame from larch boards with a cordless screwdriver, corner post visible, daylight, realistic photo"
+    },
+    {
+      "file": "images/gryadki-koroba-iz-dosok-svoimi-rukami-3.jpg",
+      "alt": "Заполнение короба грядки слоями",
+      "prompt": "cross-section illustration style photo of an empty wooden raised garden bed being filled with visible layers: branches at the bottom, compost in the middle, dark soil on top, daylight, realistic photo"
+    },
+    {
+      "file": "images/gryadki-koroba-iz-dosok-svoimi-rukami-4.jpg",
+      "alt": "Готовые грядки-короба с рассадой на огороде",
+      "prompt": "photo of finished raised wooden garden beds freshly planted with young vegetable seedlings in neat rows, morning daylight, realistic photo"
+    },
+    {
+      "file": "images/gryadki-koroba-iz-dosok-svoimi-rukami-5.jpg",
+      "alt": "Огород с несколькими рядами грядок-коробов и дорожками между ними",
+      "prompt": "wide overhead-angle photo of a vegetable garden with multiple raised wooden garden beds arranged in a grid with walking paths between them, sunny daylight, realistic photo"
+    },
+    {
+      "file": "images/gryadki-koroba-iz-dosok-svoimi-rukami-6.jpg",
+      "alt": "Урожай овощей с грядки-короба",
+      "prompt": "close-up photo of fresh harvested vegetables like carrots and lettuce placed on the edge of a wooden raised garden bed, daylight, realistic photo"
+    }
+  ]
+}
