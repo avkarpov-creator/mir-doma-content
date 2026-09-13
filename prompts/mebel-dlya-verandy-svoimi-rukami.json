@@ -1,0 +1,36 @@
+{
+  "slug": "mebel-dlya-verandy-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/mebel-dlya-verandy-svoimi-rukami.jpg",
+      "alt": "Веранда с компактной встроенной мебелью вдоль стены",
+      "prompt": "wide photo of a narrow country house veranda interior with built-in wooden furniture along the wall, a corner bench, wall-mounted folding table, wooden floor, daylight through windows, realistic photo"
+    },
+    {
+      "file": "images/mebel-dlya-verandy-svoimi-rukami-2.jpg",
+      "alt": "Откидной стол на кронштейнах у стены веранды",
+      "prompt": "close-up photo of a wooden fold-down wall-mounted table on metal folding brackets, mounted on a veranda wall, shown in the open unfolded position, daylight, realistic photo"
+    },
+    {
+      "file": "images/mebel-dlya-verandy-svoimi-rukami-3.jpg",
+      "alt": "Угловая скамья с откидной крышкой и ящиком для хранения",
+      "prompt": "photo of a wooden corner bench built into two adjoining veranda walls, seat lid lifted open showing a storage box underneath, cushions beside it, daylight, realistic photo"
+    },
+    {
+      "file": "images/mebel-dlya-verandy-svoimi-rukami-4.jpg",
+      "alt": "Открытый деревянный стеллаж вдоль стены веранды",
+      "prompt": "photo of a slim open wooden shelving unit mounted on a veranda wall, holding potted plants and garden jars, thin wooden shelves, daylight, realistic photo"
+    },
+    {
+      "file": "images/mebel-dlya-verandy-svoimi-rukami-5.jpg",
+      "alt": "Широкая скамья-лежанка вдоль глухой стены веранды",
+      "prompt": "photo of a wide wooden daybed-style bench along a blank veranda wall, deep seat with cushions, someone's shoes nearby, soft daylight, realistic photo"
+    },
+    {
+      "file": "images/mebel-dlya-verandy-svoimi-rukami-6.jpg",
+      "alt": "Готовая веранда с расставленной мебелью пяти проектов",
+      "prompt": "wide interior photo of a fully furnished country house veranda with a corner storage bench, a small side table, an open wall shelf with plants, wooden floor, warm afternoon light, realistic photo"
+    }
+  ]
+}
