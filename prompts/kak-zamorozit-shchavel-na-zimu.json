@@ -1,0 +1,36 @@
+{
+  "slug": "kak-zamorozit-shchavel-na-zimu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-zamorozit-shchavel-na-zimu.jpg",
+      "alt": "Свежий щавель, собранный для заморозки на зиму",
+      "prompt": "photo of a pile of fresh green sorrel leaves on a wooden kitchen table, natural daylight, realistic photo"
+    },
+    {
+      "file": "images/kak-zamorozit-shchavel-na-zimu-2.jpg",
+      "alt": "Бланшировка щавеля в кипятке перед заморозкой",
+      "prompt": "photo of green sorrel leaves being blanched in a pot of boiling water with a slotted spoon, kitchen stove, realistic photo"
+    },
+    {
+      "file": "images/kak-zamorozit-shchavel-na-zimu-3.jpg",
+      "alt": "Пюре из щавеля, разложенное по формочкам для льда",
+      "prompt": "close-up photo of dark green sorrel puree poured into an ice cube tray on a kitchen counter, realistic photo"
+    },
+    {
+      "file": "images/kak-zamorozit-shchavel-na-zimu-4.jpg",
+      "alt": "Зелёные щи со свежим замороженным щавелем",
+      "prompt": "photo of a bowl of green sorrel soup (shchi) with a boiled egg half on top, steam rising, realistic food photo"
+    },
+    {
+      "file": "images/kak-zamorozit-shchavel-na-zimu-5.jpg",
+      "alt": "Порционные пакеты с замороженным щавелем в морозилке",
+      "prompt": "photo of labeled zip-lock freezer bags filled with chopped green sorrel stacked inside a freezer, realistic photo"
+    },
+    {
+      "file": "images/kak-zamorozit-shchavel-na-zimu-6.jpg",
+      "alt": "Щавелевый суп, приготовленный из замороженной зелени",
+      "prompt": "close-up photo of a bowl of green sorrel soup garnished with fresh herbs and sour cream, warm indoor light, realistic food photo"
+    }
+  ]
+}
