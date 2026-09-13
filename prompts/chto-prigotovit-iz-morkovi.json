@@ -1,0 +1,36 @@
+{
+  "slug": "chto-prigotovit-iz-morkovi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chto-prigotovit-iz-morkovi.jpg",
+      "alt": "Свежий урожай моркови на деревянном столе",
+      "prompt": "photo of a pile of fresh harvested orange carrots with green tops on a rustic wooden table, natural daylight, realistic photo"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-morkovi-2.jpg",
+      "alt": "Морковь по-корейски с чесноком и специями",
+      "prompt": "close-up photo of Korean-style shredded carrot salad with garlic and red pepper flakes in a bowl, realistic food photo"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-morkovi-3.jpg",
+      "alt": "Морковные оладьи на сковороде",
+      "prompt": "photo of golden carrot fritters frying in a pan on a stove, kitchen setting, realistic food photo"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-morkovi-4.jpg",
+      "alt": "Заморозка тёртой моркови порциями по пакетам",
+      "prompt": "photo of shredded carrots portioned into labeled zip-lock freezer bags on a kitchen counter, realistic photo"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-morkovi-5.jpg",
+      "alt": "Готовый морковный кекс с корицей",
+      "prompt": "photo of a sliced homemade carrot cake with cream cheese frosting and walnuts on top, on a wooden board, realistic food photo"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-morkovi-6.jpg",
+      "alt": "Морковный суп-пюре с имбирём в тарелке",
+      "prompt": "photo of a bowl of smooth orange carrot ginger soup with a swirl of cream on top, warm indoor light, realistic food photo"
+    }
+  ]
+}
