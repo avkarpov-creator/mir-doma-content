@@ -1,0 +1,36 @@
+{
+  "slug": "chto-postroit-na-uchastke-zimoy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chto-postroit-na-uchastke-zimoy.jpg",
+      "alt": "Строительство каркасной постройки на участке зимой в снегу",
+      "prompt": "wide photo of a wooden frame structure under construction on screw pile foundations in a snowy countryside plot, workers assembling the frame, clear winter daylight, realistic photo"
+    },
+    {
+      "file": "images/chto-postroit-na-uchastke-zimoy-2.jpg",
+      "alt": "Кровельные работы на участке зимой на фоне снега",
+      "prompt": "photo of a worker installing metal roof sheeting on a house roof frame in winter, snow on the ground below, clear cold daylight, realistic photo"
+    },
+    {
+      "file": "images/chto-postroit-na-uchastke-zimoy-3.jpg",
+      "alt": "Замёрзший грунт и снег на участке зимой",
+      "prompt": "close-up photo of frozen ground with a thin layer of snow and visible ice crystals in the soil, construction site in the background, overcast winter daylight, realistic photo"
+    },
+    {
+      "file": "images/chto-postroit-na-uchastke-zimoy-4.jpg",
+      "alt": "Внутренняя отделка дачного дома зимой с обогревателем",
+      "prompt": "photo of the interior of an unfinished house under renovation with an electric space heater running, exposed insulation on the wall, a worker installing drywall, warm indoor light contrasted with a snowy window, realistic photo"
+    },
+    {
+      "file": "images/chto-postroit-na-uchastke-zimoy-5.jpg",
+      "alt": "Готовая каркасная постройка на винтовых сваях зимой на участке",
+      "prompt": "photo of a finished small wooden outbuilding standing on visible screw pile foundations, snow covering the ground around it, clear winter day, realistic photo"
+    },
+    {
+      "file": "images/chto-postroit-na-uchastke-zimoy-6.jpg",
+      "alt": "Зимний участок с завершённой стройкой под снегом",
+      "prompt": "wide photo of a snowy countryside plot with a completed country house and a small outbuilding, deep snow, footprints in the snow, blue sky, winter daylight, realistic photo"
+    }
+  ]
+}
