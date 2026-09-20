@@ -1,0 +1,36 @@
+{
+  "slug": "prihozhaya-na-dache-kak-obustroit",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/prihozhaya-na-dache-kak-obustroit.jpg",
+      "alt": "Компактная прихожая на даче с обувной полкой и вешалкой",
+      "prompt": "small rustic cottage entryway with wooden shoe shelf and coat hooks, wide shot, warm daylight from a window"
+    },
+    {
+      "file": "images/prihozhaya-na-dache-kak-obustroit-2.jpg",
+      "alt": "Обувница закрытого типа у входа с ковриком-решёткой",
+      "prompt": "closed wooden shoe cabinet next to a plastic grid boot tray at a cottage entrance, close wide shot, natural light"
+    },
+    {
+      "file": "images/prihozhaya-na-dache-kak-obustroit-3.jpg",
+      "alt": "Крючки для верхней одежды и корзины для мелочей на стене прихожей",
+      "prompt": "wall-mounted coat hooks with jackets and wicker storage baskets in a small entryway, daylight, close shot"
+    },
+    {
+      "file": "images/prihozhaya-na-dache-kak-obustroit-4.jpg",
+      "alt": "Готовая зонированная прихожая: обувь у входа, крючки и полка отдельно",
+      "prompt": "wide shot of an organized small cottage entryway with distinct shoe zone near the door and coat storage further inside, daylight"
+    },
+    {
+      "file": "images/prihozhaya-na-dache-kak-obustroit-5.jpg",
+      "alt": "Влагостойкая плитка на полу тамбура вместо ковролина",
+      "prompt": "close-up of gray ceramic tile flooring in a small entryway hall, natural daylight, clean simple texture"
+    },
+    {
+      "file": "images/prihozhaya-na-dache-kak-obustroit-6.jpg",
+      "alt": "Светодиодный светильник и полка для мелочей у входа",
+      "prompt": "small LED ceiling light illuminating a narrow entryway shelf with gloves and gardening tools, warm evening light"
+    }
+  ]
+}
