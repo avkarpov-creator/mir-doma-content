@@ -1,0 +1,36 @@
+{
+  "slug": "kak-hranit-yabloki-zimoy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-hranit-yabloki-zimoy.jpg",
+      "alt": "Яблоки, разложенные для хранения в деревянных ящиках",
+      "prompt": "red and green apples arranged in wooden storage crates in a cellar, wide shot, soft ambient light"
+    },
+    {
+      "file": "images/kak-hranit-yabloki-zimoy-2.jpg",
+      "alt": "Яблоки переложены бумагой в деревянном ящике",
+      "prompt": "close-up of apples individually wrapped in paper inside a wooden crate, soft indoor light"
+    },
+    {
+      "file": "images/kak-hranit-yabloki-zimoy-3.jpg",
+      "alt": "Переборка яблок и удаление подгнивших плодов",
+      "prompt": "hands sorting through a crate of apples, picking out one spoiled apple, close-up, cellar lighting"
+    },
+    {
+      "file": "images/kak-hranit-yabloki-zimoy-4.jpg",
+      "alt": "Термометр и гигрометр для контроля условий хранения в погребе",
+      "prompt": "close-up of a thermometer and hygrometer mounted on a cellar wall next to storage shelves, dim ambient light"
+    },
+    {
+      "file": "images/kak-hranit-yabloki-zimoy-5.jpg",
+      "alt": "Зимние сорта яблок Антоновка на полках погреба",
+      "prompt": "wide shot of wooden cellar shelves lined with pale green winter apples in single layers, dim warm light"
+    },
+    {
+      "file": "images/kak-hranit-yabloki-zimoy-6.jpg",
+      "alt": "Сбор яблок вручную в корзину без потряхивания дерева",
+      "prompt": "hand picking a ripe apple from a tree branch into a wicker basket, outdoor daylight, orchard background"
+    }
+  ]
+}
