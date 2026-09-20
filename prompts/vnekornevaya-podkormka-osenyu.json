@@ -1,0 +1,36 @@
+{
+  "slug": "vnekornevaya-podkormka-osenyu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/vnekornevaya-podkormka-osenyu.jpg",
+      "alt": "Опрыскивание плодового дерева осенью по листу",
+      "prompt": "gardener spraying liquid fertilizer on the leaves of a fruit tree in autumn orchard, wide shot, soft daylight, autumn colors"
+    },
+    {
+      "file": "images/vnekornevaya-podkormka-osenyu-2.jpg",
+      "alt": "Монофосфат калия для приготовления раствора для опрыскивания",
+      "prompt": "close-up of white potassium phosphate fertilizer crystals being dissolved in a bucket of water, garden setting, daylight"
+    },
+    {
+      "file": "images/vnekornevaya-podkormka-osenyu-3.jpg",
+      "alt": "Равномерное опрыскивание кроны дерева садовым распылителем",
+      "prompt": "garden pressure sprayer misting fine liquid over tree foliage, close wide shot, autumn garden background, daylight"
+    },
+    {
+      "file": "images/vnekornevaya-podkormka-osenyu-4.jpg",
+      "alt": "Опрыскивание нижней стороны листа, где больше устьиц",
+      "prompt": "close-up macro shot of a leaf underside covered in fine spray droplets, natural daylight, garden setting"
+    },
+    {
+      "file": "images/vnekornevaya-podkormka-osenyu-5.jpg",
+      "alt": "Обработка молодых кустов смородины перед зимой",
+      "prompt": "gardener spraying young currant bushes with liquid fertilizer in autumn garden, wide shot, overcast daylight"
+    },
+    {
+      "file": "images/vnekornevaya-podkormka-osenyu-6.jpg",
+      "alt": "Опрыскиватель и раствор монофосфата калия готовы к обработке сада",
+      "prompt": "garden sprayer tank standing next to a bucket of mixed fertilizer solution on autumn ground with fallen leaves, daylight"
+    }
+  ]
+}
