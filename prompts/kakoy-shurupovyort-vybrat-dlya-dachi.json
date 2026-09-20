@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-shurupovyort-vybrat-dlya-dachi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-shurupovyort-vybrat-dlya-dachi.jpg",
+      "alt": "Аккумуляторный шуруповёрт на верстаке с набором бит",
+      "prompt": "cordless drill driver tool lying on a wooden workbench next to a set of screwdriver bits in a case, daylight, close wide shot"
+    },
+    {
+      "file": "images/kakoy-shurupovyort-vybrat-dlya-dachi-2.jpg",
+      "alt": "Регулятор крутящего момента на корпусе шуруповёрта",
+      "prompt": "close-up macro shot of the torque adjustment ring and settings on a cordless drill driver body, studio lighting"
+    },
+    {
+      "file": "images/kakoy-shurupovyort-vybrat-dlya-dachi-3.jpg",
+      "alt": "Сборка деревянных грядок-коробов шуруповёртом на улице",
+      "prompt": "person assembling a wooden raised garden bed frame with a cordless drill driver outdoors, sunny daylight, hands holding tool"
+    },
+    {
+      "file": "images/kakoy-shurupovyort-vybrat-dlya-dachi-4.jpg",
+      "alt": "Набор бит и свёрл разного диаметра для шуруповёрта",
+      "prompt": "flat lay of assorted screwdriver bits and drill bits of different sizes arranged on wooden surface, close-up, daylight"
+    },
+    {
+      "file": "images/kakoy-shurupovyort-vybrat-dlya-dachi-5.jpg",
+      "alt": "Линейка инструментов одного бренда на общем аккумуляторе",
+      "prompt": "a row of matching cordless power tools sharing the same battery platform lined up on a workshop shelf, daylight"
+    },
+    {
+      "file": "images/kakoy-shurupovyort-vybrat-dlya-dachi-6.jpg",
+      "alt": "Готовый шуруповёрт на зарядной станции в мастерской",
+      "prompt": "cordless drill driver docked in its battery charging station on a workshop wall, indoor ambient light"
+    }
+  ]
+}
