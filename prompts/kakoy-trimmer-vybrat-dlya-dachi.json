@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-trimmer-vybrat-dlya-dachi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-trimmer-vybrat-dlya-dachi.jpg",
+      "alt": "Три типа триммеров для дачи: бензиновый, аккумуляторный, сетевой",
+      "prompt": "three different garden grass trimmers standing side by side on green lawn, gasoline, cordless battery, and corded electric models, daylight, wide shot"
+    },
+    {
+      "file": "images/kakoy-trimmer-vybrat-dlya-dachi-2.jpg",
+      "alt": "Покос газона аккумуляторным триммером вдоль дорожки",
+      "prompt": "person mowing lawn edge along a garden path with a cordless string trimmer, daytime, sunny garden background"
+    },
+    {
+      "file": "images/kakoy-trimmer-vybrat-dlya-dachi-3.jpg",
+      "alt": "Заправка топливной смеси в бензиновый триммер",
+      "prompt": "close-up of pouring fuel mixture into a gasoline string trimmer tank, hands holding fuel canister, outdoor daylight"
+    },
+    {
+      "file": "images/kakoy-trimmer-vybrat-dlya-dachi-4.jpg",
+      "alt": "Сравнение диаметра реза и режущей головки триммеров",
+      "prompt": "close-up comparison of two trimmer cutting heads, one with plastic line spool and one with metal blade attachment, on wooden table, daylight"
+    },
+    {
+      "file": "images/kakoy-trimmer-vybrat-dlya-dachi-5.jpg",
+      "alt": "Триммер с металлическим ножом для скашивания жёсткой поросли",
+      "prompt": "gasoline string trimmer with metal blade cutting through tall thick weeds and young shrub growth, outdoor daylight, dynamic action shot"
+    },
+    {
+      "file": "images/kakoy-trimmer-vybrat-dlya-dachi-6.jpg",
+      "alt": "Запасной аккумулятор рядом с триммером на зарядке",
+      "prompt": "cordless trimmer battery pack charging on a workbench next to the trimmer tool, indoor garage setting, soft daylight"
+    }
+  ]
+}
