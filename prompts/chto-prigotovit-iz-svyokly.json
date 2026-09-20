@@ -1,0 +1,36 @@
+{
+  "slug": "chto-prigotovit-iz-svyokly",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chto-prigotovit-iz-svyokly.jpg",
+      "alt": "Свежая свёкла с ботвой на разделочной доске",
+      "prompt": "fresh raw beetroots with green leafy tops on a wooden cutting board, kitchen counter, daylight, close wide shot"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-svyokly-2.jpg",
+      "alt": "Свекольная икра в стеклянной банке крупным планом",
+      "prompt": "beet caviar spread in a glass jar, close-up macro shot, rustic wooden table, natural light"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-svyokly-3.jpg",
+      "alt": "Заморозка тёртой свёклы порциями для борща",
+      "prompt": "grated beetroot portioned into freezer bags on a kitchen counter, close-up, natural daylight"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-svyokly-4.jpg",
+      "alt": "Салат из свёклы с чесноком и грецкими орехами",
+      "prompt": "grated beet salad with garlic and walnuts in a bowl, top-down shot, rustic kitchen table, daylight"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-svyokly-5.jpg",
+      "alt": "Тарелка холодного свекольника с яйцом и зеленью",
+      "prompt": "bowl of cold beet soup with boiled egg, cucumber and fresh dill, top-down shot, bright natural light"
+    },
+    {
+      "file": "images/chto-prigotovit-iz-svyokly-6.jpg",
+      "alt": "Банки маринованной свёклы кусочками для хранения зимой",
+      "prompt": "glass jars filled with pickled beet cubes, sealed and lined up on a wooden shelf, warm indoor light"
+    }
+  ]
+}
