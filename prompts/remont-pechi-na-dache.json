@@ -1,0 +1,36 @@
+{
+  "slug": "remont-pechi-na-dache",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/remont-pechi-na-dache.jpg",
+      "alt": "Кирпичная печь на даче с открытой дверцей топки",
+      "prompt": "old brick masonry stove in a rustic cottage room with an open cast iron firebox door, wide shot, warm interior light"
+    },
+    {
+      "file": "images/remont-pechi-na-dache-2.jpg",
+      "alt": "Демонтаж старой чугунной дверцы печи из кладки",
+      "prompt": "close-up of hands removing an old cast iron stove door frame from brick masonry, tools nearby, indoor daylight"
+    },
+    {
+      "file": "images/remont-pechi-na-dache-3.jpg",
+      "alt": "Чистка дымохода печи ёршиком с крыши дома",
+      "prompt": "chimney sweeping brush on a flexible rod being lowered into a brick chimney from a rooftop, daylight, wide shot"
+    },
+    {
+      "file": "images/remont-pechi-na-dache-4.jpg",
+      "alt": "Заделка трещины в кирпичной кладке печи жаростойким раствором",
+      "prompt": "close-up of a trowel applying heat-resistant clay mortar into a crack in brick stove masonry, indoor lighting"
+    },
+    {
+      "file": "images/remont-pechi-na-dache-5.jpg",
+      "alt": "Проверка тяги контрольной растопкой после ремонта печи",
+      "prompt": "small fire burning inside a brick stove firebox with door open, warm glow, indoor evening light"
+    },
+    {
+      "file": "images/remont-pechi-na-dache-6.jpg",
+      "alt": "Готовая печь после ремонта дверцы и заделки трещин",
+      "prompt": "restored brick masonry stove with new cast iron door and smooth plastered surface in a cozy cottage room, warm daylight"
+    }
+  ]
+}
