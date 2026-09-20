@@ -1,0 +1,36 @@
+{
+  "slug": "kakie-kamni-dlya-bannoy-pechi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakie-kamni-dlya-bannoy-pechi.jpg",
+      "alt": "Каменка банной печи, засыпанная разными видами камней",
+      "prompt": "sauna heater stone compartment filled with dark rounded stones, metal furnace body, close wide shot, warm glowing light from below"
+    },
+    {
+      "file": "images/kakie-kamni-dlya-bannoy-pechi-2.jpg",
+      "alt": "Засыпка камней слоями: крупные внизу, мелкие сверху",
+      "prompt": "cross-section illustration style photo of layered sauna stones, larger stones at bottom smaller ones on top, inside metal stove basket, studio lighting"
+    },
+    {
+      "file": "images/kakie-kamni-dlya-bannoy-pechi-3.jpg",
+      "alt": "Проверка камня на трещину простукиванием перед укладкой",
+      "prompt": "hand holding a dark round sauna stone near a metal stove, close-up, checking stone before placement, indoor natural light"
+    },
+    {
+      "file": "images/kakie-kamni-dlya-bannoy-pechi-4.jpg",
+      "alt": "Готовая каменка с уложенным жадеитом крупным планом",
+      "prompt": "close-up macro shot of green jadeite sauna stones neatly stacked in a metal heater basket, warm light reflecting off stone surface"
+    },
+    {
+      "file": "images/kakie-kamni-dlya-bannoy-pechi-5.jpg",
+      "alt": "Разные породы камней для сравнения: жадеит, талькохлорит, дунит",
+      "prompt": "flat lay comparison of different sauna stone types, green jadeite, gray talc-chlorite, dark dunite, arranged on wooden table, daylight studio shot"
+    },
+    {
+      "file": "images/kakie-kamni-dlya-bannoy-pechi-6.jpg",
+      "alt": "Каменка после нескольких сезонов эксплуатации с частично заменённым верхним слоем",
+      "prompt": "weathered sauna stove stone basket with visible wear, mix of old darker stones and fresh lighter replacement stones on top, close shot, warm interior light"
+    }
+  ]
+}
