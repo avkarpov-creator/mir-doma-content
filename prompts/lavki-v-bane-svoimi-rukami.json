@@ -1,0 +1,36 @@
+{
+  "slug": "lavki-v-bane-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/lavki-v-bane-svoimi-rukami.jpg",
+      "alt": "Полки из липы в парилке бани, три яруса",
+      "prompt": "three-tier wooden bath benches made of light linden wood inside a sauna steam room, wide shot, warm interior lighting, wooden wall panels in background"
+    },
+    {
+      "file": "images/lavki-v-bane-svoimi-rukami-2.jpg",
+      "alt": "Угловая расстановка полков в небольшой парилке 2х2 метра",
+      "prompt": "corner arrangement of light wood sauna benches in a small steam room, two adjacent walls fitted with benches, low angle, warm ambient light"
+    },
+    {
+      "file": "images/lavki-v-bane-svoimi-rukami-3.jpg",
+      "alt": "Три яруса полков в бане с размерами по высоте",
+      "prompt": "close-up side view of three stacked wooden sauna bench tiers at different heights on a wall, light-colored wood, natural daylight through small window"
+    },
+    {
+      "file": "images/lavki-v-bane-svoimi-rukami-4.jpg",
+      "alt": "Сборка каркаса полка из бруса перед настилом досок",
+      "prompt": "wooden frame skeleton of a sauna bench under construction, timber beams joined together, workshop setting, daytime natural light, no boards installed yet"
+    },
+    {
+      "file": "images/lavki-v-bane-svoimi-rukami-5.jpg",
+      "alt": "Готовые полки из абаша с закруглёнными кромками в парилке",
+      "prompt": "close-up of finished pale abachi wood sauna bench with rounded smooth edges, texture detail, soft warm light, steam room interior"
+    },
+    {
+      "file": "images/lavki-v-bane-svoimi-rukami-6.jpg",
+      "alt": "Расстановка полков П-образной схемой в семейной бане",
+      "prompt": "U-shaped wooden bench layout along three walls of a spacious sauna steam room, wide angle photo, warm interior lighting, wood-paneled walls"
+    }
+  ]
+}
