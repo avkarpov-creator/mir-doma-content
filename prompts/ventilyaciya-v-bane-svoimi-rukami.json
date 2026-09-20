@@ -1,0 +1,36 @@
+{
+  "slug": "ventilyaciya-v-bane-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/ventilyaciya-v-bane-svoimi-rukami.jpg",
+      "alt": "Схема притока и вытяжки воздуха в парилке бани",
+      "prompt": "interior of a wooden sauna steam room with visible ventilation grille openings near floor and ceiling, wide shot, warm ambient light"
+    },
+    {
+      "file": "images/ventilyaciya-v-bane-svoimi-rukami-2.jpg",
+      "alt": "Расположение приточного отверстия у пола рядом с печью",
+      "prompt": "close-up of a small ventilation grille opening near the floor next to a metal sauna stove, wooden wall, warm interior lighting"
+    },
+    {
+      "file": "images/ventilyaciya-v-bane-svoimi-rukami-3.jpg",
+      "alt": "Вытяжное отверстие с решёткой под потолком парилки",
+      "prompt": "close-up of an exhaust ventilation grille mounted near the ceiling of a wooden sauna room, wood paneling background, soft light"
+    },
+    {
+      "file": "images/ventilyaciya-v-bane-svoimi-rukami-4.jpg",
+      "alt": "Проверка тяги вытяжки с помощью зажжённой свечи",
+      "prompt": "hand holding a lit candle near a wall ventilation grille inside a wooden sauna room, flame bending sideways showing airflow, warm light"
+    },
+    {
+      "file": "images/ventilyaciya-v-bane-svoimi-rukami-5.jpg",
+      "alt": "Общая схема вентиляции каркасной бани с продухами в фундаменте",
+      "prompt": "exterior view of a wooden frame bathhouse foundation with small ventilation openings along the base, daylight, natural outdoor lighting"
+    },
+    {
+      "file": "images/ventilyaciya-v-bane-svoimi-rukami-6.jpg",
+      "alt": "Регулируемая решётка на приточном отверстии вентиляции бани",
+      "prompt": "close-up of an adjustable metal ventilation damper grille installed in a wooden wall, macro detail shot, soft daylight"
+    }
+  ]
+}
