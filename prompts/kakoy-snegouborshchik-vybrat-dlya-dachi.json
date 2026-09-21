@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-snegouborshchik-vybrat-dlya-dachi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-snegouborshchik-vybrat-dlya-dachi.jpg",
+      "alt": "Снегоуборщик расчищает дорожку на дачном участке зимой",
+      "prompt": "Person operating a gas-powered snow blower clearing a snowy garden path in front of a country house, daytime winter scene, snow flying to the side"
+    },
+    {
+      "file": "images/kakoy-snegouborshchik-vybrat-dlya-dachi-2.jpg",
+      "alt": "Двухступенчатый бензиновый снегоуборщик крупным планом",
+      "prompt": "Close-up of a two-stage gas snow blower with auger and discharge chute, standing on snow, daylight, low three-quarter angle"
+    },
+    {
+      "file": "images/kakoy-snegouborshchik-vybrat-dlya-dachi-3.jpg",
+      "alt": "Электрический снегоуборщик у крыльца дачного дома",
+      "prompt": "Compact electric snow blower with a power cord standing next to the porch steps of a country house, light snow on the ground, daytime"
+    },
+    {
+      "file": "images/kakoy-snegouborshchik-vybrat-dlya-dachi-4.jpg",
+      "alt": "Хранение снегоуборщика в сарае летом",
+      "prompt": "A snow blower covered with a light dust sheet stored in the corner of a wooden garden shed, summer daylight through a small window"
+    },
+    {
+      "file": "images/kakoy-snegouborshchik-vybrat-dlya-dachi-5.jpg",
+      "alt": "Ряд снегоуборщиков разных типов на витрине магазина",
+      "prompt": "Row of different snow blowers of varying sizes lined up on display in a hardware store, indoor retail lighting, wide angle"
+    },
+    {
+      "file": "images/kakoy-snegouborshchik-vybrat-dlya-dachi-6.jpg",
+      "alt": "Шнек и крыльчатка снегоуборщика крупным планом",
+      "prompt": "Extreme close-up of a snow blower's metal auger and impeller mechanism, front view, cold outdoor lighting, mechanical detail visible"
+    }
+  ]
+}

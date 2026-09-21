@@ -34,3 +34,24 @@ vi-obogrevateli-maslyanye:
   url: ""
   erid: ""
   note: "Каталог масляных радиаторов, статья kakoy-obogrevatel-vybrat-dlya-dachi"
+
+vi-snegouborshchiki-elektricheskie:
+  network: vseinstrumenti
+  advertiser: "ООО «ВсеИнструменты.ру»"
+  url: ""
+  erid: ""
+  note: "Каталог электрических снегоуборщиков, статья kakoy-snegouborshchik-vybrat-dlya-dachi"
+
+vi-snegouborshchiki-odnostupenchatye:
+  network: vseinstrumenti
+  advertiser: "ООО «ВсеИнструменты.ру»"
+  url: ""
+  erid: ""
+  note: "Каталог одноступенчатых бензиновых снегоуборщиков, статья kakoy-snegouborshchik-vybrat-dlya-dachi"
+
+vi-snegouborshchiki-dvuhstupenchatye:
+  network: vseinstrumenti
+  advertiser: "ООО «ВсеИнструменты.ру»"
+  url: ""
+  erid: ""
+  note: "Каталог двухступенчатых бензиновых снегоуборщиков, статья kakoy-snegouborshchik-vybrat-dlya-dachi"
