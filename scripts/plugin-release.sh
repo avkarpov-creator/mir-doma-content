@@ -59,7 +59,9 @@ if [[ -z "$CHANGED" ]]; then
 fi
 
 # Как выглядит вызов логгера в наших плагинах. Дополняй список, если появится новый.
-LOGGER_RE='md_log|mir_doma_log|->log\(|error_log\(|\$this->logger'
+# \$log\[\] — основной паттерн в mir-doma-git-importer (class-importer/taxonomy/
+# assets/affiliate передают &$log по ссылке и пишут в него, а не в error_log).
+LOGGER_RE='md_log|mir_doma_log|->log\(|error_log\(|\$this->logger|\$log\[\]'
 
 MISSING=()
 while IFS= read -r f; do
