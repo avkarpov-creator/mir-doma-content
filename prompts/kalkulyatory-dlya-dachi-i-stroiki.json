@@ -1,0 +1,36 @@
+{
+  "slug": "kalkulyatory-dlya-dachi-i-stroiki",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kalkulyatory-dlya-dachi-i-stroiki.jpg",
+      "alt": "Ноутбук с открытым калькулятором на экране, рядом рулетка и карандаш на столе",
+      "prompt": "Laptop on a wooden desk showing a simple web calculator interface with input fields and numbers, a tape measure and pencil lying next to it, daylight from a window, slight top-down angle"
+    },
+    {
+      "file": "images/kalkulyatory-dlya-dachi-i-stroiki-2.jpg",
+      "alt": "Рулетка измеряет доску на верстаке крупным планом",
+      "prompt": "Close-up of a metal tape measure extended across a wooden plank on a workbench, sawdust scattered around, daylight, low side angle showing measurement markings"
+    },
+    {
+      "file": "images/kalkulyatory-dlya-dachi-i-stroiki-3.jpg",
+      "alt": "Смартфон с калькулятором в руке на фоне сложенных стройматериалов",
+      "prompt": "Hand holding a smartphone with a basic calculator app open, stacked bricks and lumber blurred in the background, outdoor construction site, daylight, close medium shot"
+    },
+    {
+      "file": "images/kalkulyatory-dlya-dachi-i-stroiki-4.jpg",
+      "alt": "План дачного участка на бумаге с линейкой и карандашом на столе",
+      "prompt": "Hand-drawn site plan of a country plot on paper with a ruler and pencil resting on top, wooden table surface, soft daylight, top-down flat lay angle"
+    },
+    {
+      "file": "images/kalkulyatory-dlya-dachi-i-stroiki-5.jpg",
+      "alt": "Мешки цемента и тачка на стройплощадке дачного дома",
+      "prompt": "Stacked bags of cement next to a wheelbarrow on an outdoor construction site near a half-built wooden house frame, daylight, wide medium shot"
+    },
+    {
+      "file": "images/kalkulyatory-dlya-dachi-i-stroiki-6.jpg",
+      "alt": "Блокнот с расчётами и чеки на стройматериалы на столе",
+      "prompt": "Notebook with handwritten numbers and simple sketches next to a small pile of paper receipts on a wooden table, pen resting on the page, daylight, top-down close angle"
+    }
+  ]
+}
