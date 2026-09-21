@@ -1,0 +1,36 @@
+{
+  "slug": "videonablyudenie-na-dache-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/videonablyudenie-na-dache-svoimi-rukami.jpg",
+      "alt": "Камера видеонаблюдения на фасаде дачного дома под навесом крыши",
+      "prompt": "White plastic bullet security camera mounted under a wooden roof eave of a country house facade, daytime, low front-three-quarter angle looking up at the camera, wooden siding wall in background, cable running along the wall"
+    },
+    {
+      "file": "images/videonablyudenie-na-dache-svoimi-rukami-2.jpg",
+      "alt": "4G-камера видеонаблюдения на столбе забора рядом с солнечной панелью",
+      "prompt": "Compact solar-powered 4G security camera mounted on a wooden fence post next to a small tilted solar panel, outdoor garden fence in background, bright daylight, side angle"
+    },
+    {
+      "file": "images/videonablyudenie-na-dache-svoimi-rukami-3.jpg",
+      "alt": "SIM-карта в слоте 4G-камеры видеонаблюдения крупным планом",
+      "prompt": "Extreme close-up macro shot of a small SIM card being inserted into an open SIM slot on the side of a plastic security camera body, hand fingers holding the card, indoor soft light, shallow depth of field"
+    },
+    {
+      "file": "images/videonablyudenie-na-dache-svoimi-rukami-4.jpg",
+      "alt": "Камера видеонаблюдения крупным планом с инфракрасной подсветкой на кронштейне",
+      "prompt": "Close-up of a black outdoor security camera with visible infrared LED ring around the lens, mounted on a metal wall bracket, overcast daylight, straight-on angle showing lens detail"
+    },
+    {
+      "file": "images/videonablyudenie-na-dache-svoimi-rukami-5.jpg",
+      "alt": "Монтаж кронштейна камеры видеонаблюдения на деревянной стене дома",
+      "prompt": "Hands using a screwdriver to mount a metal camera bracket onto a wooden plank wall of a country house, daytime, medium close-up angle, drill and screws visible on a windowsill nearby"
+    },
+    {
+      "file": "images/videonablyudenie-na-dache-svoimi-rukami-6.jpg",
+      "alt": "Забор и калитка участка в кадре камеры видеонаблюдения",
+      "prompt": "Wooden fence and a garden gate viewed through a slight fisheye security-camera perspective, daytime, on-screen style overlay of a thin corner timestamp bar, rural countryside plot in background"
+    }
+  ]
+}
