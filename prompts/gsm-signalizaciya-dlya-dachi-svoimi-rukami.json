@@ -1,0 +1,36 @@
+{
+  "slug": "gsm-signalizaciya-dlya-dachi-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/gsm-signalizaciya-dlya-dachi-svoimi-rukami.jpg",
+      "alt": "Базовый блок GSM-сигнализации на стене дачного дома",
+      "prompt": "White plastic GSM alarm control panel with a small antenna mounted on an interior wooden wall of a country house, daytime, straight-on medium shot, status LED lights visible on the panel"
+    },
+    {
+      "file": "images/gsm-signalizaciya-dlya-dachi-svoimi-rukami-2.jpg",
+      "alt": "Магнитный датчик на оконной раме дачного дома",
+      "prompt": "Small white magnetic door-window contact sensor mounted on a wooden window frame, close-up angle, two-part sensor visible on frame and sash, daylight through window glass"
+    },
+    {
+      "file": "images/gsm-signalizaciya-dlya-dachi-svoimi-rukami-3.jpg",
+      "alt": "Комплект GSM-сигнализации: базовый блок и датчики на столе",
+      "prompt": "Flat lay of a home alarm kit on a wooden table: control panel, two small motion sensors, two magnetic door sensors, a remote key fob, top-down angle, soft indoor daylight"
+    },
+    {
+      "file": "images/gsm-signalizaciya-dlya-dachi-svoimi-rukami-4.jpg",
+      "alt": "Установка ИК-датчика движения на стене внутри дачного дома",
+      "prompt": "Hand using a screwdriver to mount a small white PIR motion sensor high on an interior wooden wall corner, daytime, medium close-up angle, ladder step visible at the bottom of frame"
+    },
+    {
+      "file": "images/gsm-signalizaciya-dlya-dachi-svoimi-rukami-5.jpg",
+      "alt": "Настройка номеров оповещения в приложении сигнализации на смартфоне",
+      "prompt": "Hands holding a smartphone showing a simple security-app interface with a phone-number list and toggle switches, indoor setting, over-the-shoulder close angle, alarm panel blurred in background"
+    },
+    {
+      "file": "images/gsm-signalizaciya-dlya-dachi-svoimi-rukami-6.jpg",
+      "alt": "Тестирование зоны GSM-сигнализации со смартфоном в руке",
+      "prompt": "Person standing near an open wooden door holding a smartphone showing an incoming call screen, testing a magnetic door sensor visible on the door frame, daylight, medium shot"
+    }
+  ]
+}
