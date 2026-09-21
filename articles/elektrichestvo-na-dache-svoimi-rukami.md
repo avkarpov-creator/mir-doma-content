@@ -119,6 +119,43 @@ images:
 
 ![Контур заземления из металлических штырей у стены дома](images/elektrichestvo-na-dache-svoimi-rukami-6.jpg)
 
+## Что говорит ПУЭ о сопротивлении заземления
+
+<!-- wp:html -->
+<div class="md-sci">
+<div class="md-sci__head">📚 Что говорят нормативы</div>
+<div class="md-sci__body">
+<p><b>ПУЭ, издание 7, п. 1.7.101</b> прямо задаёт цифры, а не общие
+формулировки: <i>«Сопротивление заземляющего устройства, к которому
+присоединены нейтрали генератора или трансформатора… должно быть не
+более 2, 4 и 8 Ом соответственно при линейных напряжениях 660, 380 и
+220 В источника трёхфазного тока»</i>, а для отдельного заземлителя,
+не связанного с нейтралью источника (это и есть контур на самом
+участке), — <i>«не более 15, 30 и 60 Ом соответственно»</i> при тех же
+напряжениях. Для типовой дачи с сетью 380/220 В ориентир —
+не более 30 Ом.</p>
+<p>Тот же пункт разрешает поблажку на плохом грунте: <i>«При удельном
+сопротивлении земли ρ > 100 Ом·м допускается увеличивать указанные
+нормы в 0,01 ρ раз, но не более десятикратного»</i> — то есть на
+песчаном или каменистом участке норму можно и нужно пересчитывать под
+реальное сопротивление грунта, а не мерить одним и тем же числом
+контур в средней полосе и на юге.</p>
+</div>
+<p class="md-sci__src">Источник: <a href="https://zandz.com/ru/pravila_zazemleniya/pue_razdel_17_2/" target="_blank" rel="noopener noreferrer">ПУЭ, глава 1.7 «Заземление и защитные меры электробезопасности», пп. 1.7.101–1.7.103</a></p>
+</div>
+<style>
+.md-sci{max-width:760px;margin:26px auto;padding:0;border:1px solid #dbe6db;border-radius:12px;background:#f7faf7;overflow:hidden;box-sizing:border-box}
+.md-sci *{box-sizing:border-box}
+.md-sci__head{background:#3d7a3d;color:#fff;font-weight:700;font-size:1.05em;padding:12px 18px}
+.md-sci__body{padding:16px 18px 4px}
+.md-sci__body p{margin:0 0 14px;font-size:.95em;line-height:1.6;color:#2c2c2c}
+.md-sci__body b{color:#2c5c2c}
+.md-sci__src{margin:0;padding:10px 18px 14px;font-size:.82em;color:#666;border-top:1px dashed #dbe6db}
+.md-sci__src a{color:#3d7a3d}
+@media (max-width:600px){.md-sci__head,.md-sci__body,.md-sci__src{padding-left:14px;padding-right:14px}}
+</style>
+<!-- /wp:html -->
+
 ## Разводка по дому
 
 От щитка кабель прокладывают по группам, которые определили на этапе

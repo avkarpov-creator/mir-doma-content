@@ -61,6 +61,41 @@ images:
 
 Какой утеплитель выбрать под ваш тип стен (для дерева и камня они разные!), какая нужна толщина и чем вентилируемый фасад отличается от штукатурного — подробно в статье [чем утеплить стены дачи снаружи](https://mir-doma.pro/uteplenie-sten-snaruzhi/). А чем зашить готовый утеплённый каркас снаружи и сколько это будет стоить — в обзоре [чем обшить дом снаружи](https://mir-doma.pro/chem-obshit-dom-snaruzhi/).
 
+<!-- wp:html -->
+<div class="md-sci">
+<div class="md-sci__head">📚 Что говорят нормативы</div>
+<div class="md-sci__body">
+<p><b>СП 50.13330.2012 «Тепловая защита зданий»</b> считает нужную толщину
+утеплителя не «на глаз по региону», а по формуле через градусо-сутки
+отопительного периода (ГСОП): <i>Rreq = 0,00035 × ГСОП + 1,4</i>, где Rreq —
+нормируемое сопротивление теплопередаче стены в м²·°C/Вт (коэффициенты
+0,00035 и 1,4 — для жилых, лечебно-профилактических и детских зданий).
+ГСОП, в свою очередь, — это разница между температурой внутри дома и
+средней температурой отопительного периода на улице, умноженная на его
+длительность в сутках.</p>
+<p>Для Москвы ГСОП по СП 131.13330.2018 составляет <b>4551 °C·сут</b> —
+значит Rreq = 0,00035 × 4551 + 1,4 ≈ <b>3,0 м²·°C/Вт</b>. При теплопроводности
+минеральной ваты около 0,04 Вт/(м·°C) это даёт толщину утеплителя порядка
+12 см — так и получается диапазон «10–15 см», который в средней полосе
+называют на глаз: он не взят с потолка, а следует из этого расчёта. Для
+более холодного региона ГСОП выше, и по той же формуле требуется больше
+сантиметров утеплителя, а не то же самое число «про запас».</p>
+</div>
+<p class="md-sci__src">Источники: <a href="https://docs.cntd.ru/document/1200095525" target="_blank" rel="noopener noreferrer">СП 50.13330.2012 «Тепловая защита зданий»</a> · <a href="https://ceiis.mos.ru/presscenter/news/detail/9533280.html" target="_blank" rel="noopener noreferrer">ГСОП Москвы по СП 131.13330.2018</a></p>
+</div>
+<style>
+.md-sci{max-width:760px;margin:26px auto;padding:0;border:1px solid #dbe6db;border-radius:12px;background:#f7faf7;overflow:hidden;box-sizing:border-box}
+.md-sci *{box-sizing:border-box}
+.md-sci__head{background:#3d7a3d;color:#fff;font-weight:700;font-size:1.05em;padding:12px 18px}
+.md-sci__body{padding:16px 18px 4px}
+.md-sci__body p{margin:0 0 14px;font-size:.95em;line-height:1.6;color:#2c2c2c}
+.md-sci__body b{color:#2c5c2c}
+.md-sci__src{margin:0;padding:10px 18px 14px;font-size:.82em;color:#666;border-top:1px dashed #dbe6db}
+.md-sci__src a{color:#3d7a3d}
+@media (max-width:600px){.md-sci__head,.md-sci__body,.md-sci__src{padding-left:14px;padding-right:14px}}
+</style>
+<!-- /wp:html -->
+
 ## 🔽 Утепление пола
 
 ![Утепление пола по лагам](images/uteplenie-pola.jpg)

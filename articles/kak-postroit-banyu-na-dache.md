@@ -31,6 +31,44 @@ images:
 
 ![Небольшая деревянная баня на дачном участке](images/kak-postroit-banyu-na-dache.jpg)
 
+## Зачем строить баню: что показывают исследования
+
+<!-- wp:html -->
+<div class="md-sci">
+<div class="md-sci__head">📚 Что говорят исследования</div>
+<div class="md-sci__body">
+<p>Крупное финское когортное исследование (<b>Laukkanen et al., «Association
+Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality
+Events», <i>JAMA Internal Medicine</i>, 2015</b>) наблюдало 2315 мужчин
+42–60 лет на протяжении в среднем 20,7 года. У тех, кто ходил в баню
+4–7 раз в неделю, риск смерти от сердечно-сосудистых причин оказался на
+<b>50% ниже</b> (HR 0,50; 95% ДИ 0,33–0,77), а риск смерти от любых причин —
+на <b>40% ниже</b> (HR 0,60; 95% ДИ 0,46–0,80), чем у тех, кто ходил в баню
+раз в неделю.</p>
+<p>Продолжительность сеанса тоже играла роль: у тех, кто парился дольше
+19 минут за раз, риск сердечно-сосудистой смерти был на 24% ниже (HR 0,76;
+95% ДИ 0,59–0,97), чем у тех, кто ограничивался менее чем 11 минутами. Это
+наблюдательное исследование, а не рандомизированный эксперимент — оно
+показывает связь, а не доказывает, что баня сама по себе продлевает жизнь
+(у более здоровых людей и привычки, и возможность часто париться могут
+быть выше), но масштаб выборки и срок наблюдения делают эту связь одной
+из самых изученных в отношении финской сауны.</p>
+</div>
+<p class="md-sci__src">Источник: <a href="https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2130724" target="_blank" rel="noopener noreferrer">Laukkanen et al., JAMA Internal Medicine, 2015</a></p>
+</div>
+<style>
+.md-sci{max-width:760px;margin:26px auto;padding:0;border:1px solid #dbe6db;border-radius:12px;background:#f7faf7;overflow:hidden;box-sizing:border-box}
+.md-sci *{box-sizing:border-box}
+.md-sci__head{background:#3d7a3d;color:#fff;font-weight:700;font-size:1.05em;padding:12px 18px}
+.md-sci__body{padding:16px 18px 4px}
+.md-sci__body p{margin:0 0 14px;font-size:.95em;line-height:1.6;color:#2c2c2c}
+.md-sci__body b{color:#2c5c2c}
+.md-sci__src{margin:0;padding:10px 18px 14px;font-size:.82em;color:#666;border-top:1px dashed #dbe6db}
+.md-sci__src a{color:#3d7a3d}
+@media (max-width:600px){.md-sci__head,.md-sci__body,.md-sci__src{padding-left:14px;padding-right:14px}}
+</style>
+<!-- /wp:html -->
+
 ## С чего начать: место и нормы
 
 Баню с печью на дровах нельзя ставить где угодно — расстояние до соседского
