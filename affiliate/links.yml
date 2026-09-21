@@ -13,3 +13,24 @@
 # раскроет ссылку сам, как только владелец впишет сюда настоящие url и erid,
 # без переимпорта статей. Формат ключа: <магазин>-<категория>, латиница и
 # дефисы. Подробности — SCHEMA.md, раздел «Партнёрские ссылки».
+
+lm-obogrevateli-konvektory:
+  network: admitad
+  advertiser: "Леруа Мерлен"
+  url: ""
+  erid: ""
+  note: "Каталог электроконвекторов, статья kakoy-obogrevatel-vybrat-dlya-dachi"
+
+lm-obogrevateli-infrakrasnye:
+  network: admitad
+  advertiser: "Леруа Мерлен"
+  url: ""
+  erid: ""
+  note: "Каталог инфракрасных обогревателей, статья kakoy-obogrevatel-vybrat-dlya-dachi"
+
+vi-obogrevateli-maslyanye:
+  network: vseinstrumenti
+  advertiser: "ООО «ВсеИнструменты.ру»"
+  url: ""
+  erid: ""
+  note: "Каталог масляных радиаторов, статья kakoy-obogrevatel-vybrat-dlya-dachi"

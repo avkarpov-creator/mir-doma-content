@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-obogrevatel-vybrat-dlya-dachi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-obogrevatel-vybrat-dlya-dachi.jpg",
+      "alt": "Электрический конвектор в интерьере дачной комнаты",
+      "prompt": "White electric wall-mounted convector heater in a cozy wooden-walled country house room, daytime, medium shot, warm ambient light"
+    },
+    {
+      "file": "images/kakoy-obogrevatel-vybrat-dlya-dachi-2.jpg",
+      "alt": "Инфракрасный обогреватель на кронштейне под потолком веранды",
+      "prompt": "Slim infrared heater panel mounted on a bracket under the wooden ceiling of an open veranda, daytime, low upward angle"
+    },
+    {
+      "file": "images/kakoy-obogrevatel-vybrat-dlya-dachi-3.jpg",
+      "alt": "Масляный радиатор в спальне дачного дома вечером",
+      "prompt": "Classic ribbed oil-filled electric radiator standing next to a bed in a small country house bedroom, evening, warm lamp light, medium angle"
+    },
+    {
+      "file": "images/kakoy-obogrevatel-vybrat-dlya-dachi-4.jpg",
+      "alt": "Обогреватель с датчиком опрокидывания на полу дачной комнаты",
+      "prompt": "Close-up of a small portable heater's base showing a tip-over safety switch, standing on a wooden floor, daylight, low angle"
+    },
+    {
+      "file": "images/kakoy-obogrevatel-vybrat-dlya-dachi-5.jpg",
+      "alt": "Три типа обогревателей рядом на полке магазина",
+      "prompt": "Three different types of home heaters (a panel convector, an infrared panel, and an oil-filled radiator) displayed side by side on a hardware store shelf, daytime, retail environment"
+    },
+    {
+      "file": "images/kakoy-obogrevatel-vybrat-dlya-dachi-6.jpg",
+      "alt": "Термостат конвектора крупным планом с индикатором температуры",
+      "prompt": "Extreme close-up of a convector heater's thermostat dial with a temperature display, indoor soft light, shallow depth of field"
+    }
+  ]
+}
