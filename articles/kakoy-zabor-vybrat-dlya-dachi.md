@@ -44,6 +44,139 @@ images:
 | Кирпич, камень | Высокая | 50+ лет | Полная | Сложный, нужен фундамент |
 | Живая изгородь | Низкая на старте, время на рост | Десятки лет при уходе | От средней до полной по мере роста | Минимальный, но нужен уход |
 
+## Квиз: какой забор подойдёт именно вам
+
+Семь строк таблицы выше — это семь разных ответов на три простых вопроса.
+Отметьте, что важнее в вашем случае, — ниже появится конкретный материал и
+ссылка на пошаговый монтаж.
+
+<!-- wp:html -->
+<div id="mdZqQuiz" class="md-zq">
+<div class="md-zq__head">
+<h3 class="md-zq__title">Квиз: подберите забор под свои условия</h3>
+<p class="md-zq__sub">Три вопроса — конкретный материал вместо общего сравнения.</p>
+</div>
+<fieldset class="md-zq__f">
+<legend>Главная задача забора</legend>
+<label class="md-zq__opt"><input type="radio" name="zqGoal" value="privacy" checked> Скрыть участок от посторонних глаз (со стороны улицы)</label>
+<label class="md-zq__opt"><input type="radio" name="zqGoal" value="border"> Просто обозначить границу с соседями</label>
+<label class="md-zq__opt"><input type="radio" name="zqGoal" value="beauty"> Красиво оформить участок, приватность не главное</label>
+</fieldset>
+<fieldset class="md-zq__f">
+<legend>Бюджет</legend>
+<label class="md-zq__opt"><input type="radio" name="zqBudget" value="min" checked> Минимальный</label>
+<label class="md-zq__opt"><input type="radio" name="zqBudget" value="mid"> Средний</label>
+<label class="md-zq__opt"><input type="radio" name="zqBudget" value="high"> Не ограничен, важно качество</label>
+</fieldset>
+<fieldset class="md-zq__f">
+<legend>Готовы обрабатывать забор регулярно (красить, покрывать антисептиком)</legend>
+<label class="md-zq__opt"><input type="radio" name="zqCare" value="yes" checked> Да, не проблема</label>
+<label class="md-zq__opt"><input type="radio" name="zqCare" value="no"> Нет, хочу необслуживаемый вариант</label>
+</fieldset>
+<div class="md-zq__res">
+<div class="md-zq__restitle" id="zqName">Сетка рабица</div>
+<p class="md-zq__restext" id="zqText"></p>
+<div class="md-zq__reslinks" id="zqLinks"></div>
+</div>
+<div class="md-zq__actions">
+<button type="button" id="zqCopy" class="md-zq__btn md-zq__btn--main">Скопировать результат</button>
+<a id="zqVk" class="md-zq__btn md-zq__btn--vk" href="#" target="_blank" rel="noopener noreferrer">Поделиться ВКонтакте</a>
+<a id="zqTg" class="md-zq__btn md-zq__btn--tg" href="#" target="_blank" rel="noopener noreferrer">Поделиться в Telegram</a>
+<button type="button" id="zqShareNative" class="md-zq__btn" hidden>Поделиться…</button>
+</div>
+<p id="zqStatus" class="md-zq__status"></p>
+</div>
+<style>
+.md-zq{--zq-g:#4a7a3d;--zq-bd:#e2e2e2;--zq-bg:#f6f9f5;--zq-vk:#0077ff;--zq-tg:#26a5e4;max-width:760px;margin:28px auto;padding:20px;border:1px solid var(--zq-bd);border-radius:14px;background:#fff;font-family:inherit;color:#222;line-height:1.5;box-sizing:border-box}
+.md-zq *{box-sizing:border-box}
+.md-zq__title{margin:0 0 6px;font-size:1.3em;color:var(--zq-g)}
+.md-zq__sub{margin:0 0 16px;font-size:.9em;color:#666}
+.md-zq__f{border:1px solid var(--zq-bd);border-radius:10px;padding:12px 14px;margin:0 0 12px;display:flex;flex-direction:column;gap:8px}
+.md-zq__f legend{font-size:.9em;font-weight:700;padding:0 4px}
+.md-zq__opt{display:flex;align-items:center;gap:8px;font-size:.92em;font-weight:400;cursor:pointer}
+.md-zq__opt input{margin:0;accent-color:var(--zq-g);width:16px;height:16px;flex:none}
+.md-zq__res{padding:14px;background:var(--zq-bg);border-radius:10px;margin-bottom:10px}
+.md-zq__restitle{font-size:1.15em;font-weight:700;color:var(--zq-g);margin-bottom:6px}
+.md-zq__restext{margin:0 0 8px;font-size:.92em}
+.md-zq__reslinks{display:flex;flex-direction:column;gap:4px;font-size:.9em}
+.md-zq__actions{display:flex;gap:9px;margin-top:4px;flex-wrap:wrap}
+.md-zq__btn{flex:1 1 auto;min-width:130px;padding:12px 16px;border:1px solid var(--zq-g);border-radius:9px;background:#fff;color:var(--zq-g);font-size:.95em;font-family:inherit;font-weight:600;cursor:pointer;text-align:center;text-decoration:none;display:inline-block}
+.md-zq__btn--main{background:var(--zq-g);color:#fff}
+.md-zq__btn--vk{border-color:var(--zq-vk);color:var(--zq-vk)}
+.md-zq__btn--tg{border-color:var(--zq-tg);color:var(--zq-tg)}
+.md-zq__btn:active{opacity:.7}
+.md-zq__status{margin:10px 0 0;font-size:.87em;color:var(--zq-g);min-height:1.2em;text-align:center}
+@media (max-width:600px){.md-zq{padding:15px;border-radius:11px}}
+@media print{.md-zq__actions,.md-zq__status,.md-zq__sub{display:none}.md-zq{border:none;max-width:100%}}
+</style>
+<script>
+(function(){
+var $=function(id){return document.getElementById(id)};
+function val(name){var els=document.getElementsByName(name);for(var i=0;i<els.length;i++){if(els[i].checked) return els[i].value;}return null;}
+var OUTCOMES={
+ rabitsa:{name:'Сетка рабица',text:'Самый бюджетный вариант для границы с соседями — пропускает свет, не затеняет грядки, служит 10–15 лет.',links:[['zabor-iz-setki-rabica-svoimi-rukami','Как построить забор из сетки рабица']]},
+ svarnaya:{name:'Сварная сетка (3D)',text:'Тот же принцип, что и рабица, но полотно не провисает со временем и выглядит аккуратнее. Служит 20–25 лет.',links:[['zabor-iz-setki-rabica-svoimi-rukami','Монтаж столбов и калитки — как у сетки рабица']]},
+ profnastil:{name:'Профнастил',text:'Полная приватность со стороны улицы и самый быстрый монтаж среди сплошных материалов, не требует обработки.',links:[['zabor-iz-profnastila-svoimi-rukami','Как построить забор из профнастила']]},
+ derevo:{name:'Деревянный штакетник внахлёст',text:'Полная приватность и более тёплый вид, чем у профнастила, но нужна регулярная обработка антисептиком от гниения.',links:[['zabor-iz-dereva-svoimi-rukami','Как построить забор из дерева']]},
+ kirpich:{name:'Кирпич или камень с металлическими секциями',text:'Самое капитальное и долговечное решение (50+ лет), но и самое дорогое — нужен фундамент и, скорее всего, подрядчик.',links:[]},
+ evro:{name:'Евроштакетник',text:'Металлические ламели с полимерным покрытием — не требует покраски, богатая палитра цветов, служит 30–50 лет.',links:[['zabor-iz-dereva-svoimi-rukami','Принцип каркаса и монтажа столбов — как у деревянного штакетника']]},
+ zhivaya:{name:'Живая изгородь',text:'Самый дешёвый старт и самый живой вид участка, но плотная стена зелени формируется 2–4 года и нужна регулярная стрижка.',links:[['zhivaya-izgorod','Какие растения выбрать для живой изгороди']]}
+};
+function decide(){
+ var goal=val('zqGoal'), budget=val('zqBudget'), care=val('zqCare');
+ var key;
+ if(goal==='border'){ key = (budget==='min') ? 'rabitsa' : 'svarnaya'; }
+ else if(goal==='privacy'){
+  if(budget==='high') key='kirpich';
+  else key = (care==='yes') ? 'derevo' : 'profnastil';
+ } else {
+  key = (care==='no') ? 'evro' : 'zhivaya';
+ }
+ return OUTCOMES[key];
+}
+function render(){
+ var o=decide();
+ $('zqName').textContent=o.name;
+ $('zqText').textContent=o.text;
+ var linksHtml='';
+ o.links.forEach(function(l){ linksHtml+='<div>→ <a href="https://mir-doma.pro/'+l[0]+'/" target="_blank" rel="noopener noreferrer">'+l[1]+'</a></div>'; });
+ linksHtml+='<div>→ <a href="https://mir-doma.pro/kakoy-zabor-deshevle/" target="_blank" rel="noopener noreferrer">Посчитать смету на этот забор</a></div>';
+ $('zqLinks').innerHTML=linksHtml;
+ return o;
+}
+function shortText(){
+ var o=decide();
+ return 'Мой вариант забора по квизу: '+o.name+'. Расчёт: mir-doma.pro/kakoy-zabor-vybrat-dlya-dachi/';
+}
+function updateShareLinks(){
+ var url=location.href.split('#')[0];
+ var text=shortText();
+ $('zqVk').href='https://vk.com/share.php?url='+encodeURIComponent(url)+'&title='+encodeURIComponent('Квиз: какой забор выбрать')+'&description='+encodeURIComponent(text);
+ $('zqTg').href='https://t.me/share/url?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text);
+}
+function recalc(){ render(); updateShareLinks(); }
+['zqGoal','zqBudget','zqCare'].forEach(function(name){
+ var els=document.getElementsByName(name);
+ for(var i=0;i<els.length;i++){ els[i].addEventListener('change',recalc); }
+});
+function flash(msg){$('zqStatus').textContent=msg;setTimeout(function(){$('zqStatus').textContent='';},2600);}
+$('zqCopy').addEventListener('click',function(){
+ var t=shortText();
+ function done(){flash('Результат скопирован');}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){fb(t,done)});}else fb(t,done);
+});
+function fb(t,cb){var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');cb();}catch(e){}document.body.removeChild(ta);}
+if(navigator.share){
+ $('zqShareNative').hidden=false;
+ $('zqShareNative').addEventListener('click',function(){
+  navigator.share({title:'Квиз: какой забор выбрать',text:shortText(),url:location.href.split('#')[0]}).catch(function(){});
+ });
+}
+recalc();
+})();
+</script>
+<!-- /wp:html -->
+
 ## Для границы с соседями: сетка рабица или сварная сетка
 
 Между соседскими участками закон обычно не требует (и часто прямо не
