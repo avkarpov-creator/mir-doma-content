@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-stabilizator-napryazheniya-vybrat",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-stabilizator-napryazheniya-vybrat.jpg",
+      "alt": "Стабилизатор напряжения на стене электрощитовой дачного дома",
+      "prompt": "Wall-mounted voltage stabilizer unit with digital display next to an electrical panel in a country house utility room, daytime, indoor lighting"
+    },
+    {
+      "file": "images/kakoy-stabilizator-napryazheniya-vybrat-2.jpg",
+      "alt": "Электромеханический стабилизатор напряжения с щёткой на трансформаторе",
+      "prompt": "Close-up of an open electromechanical voltage stabilizer casing showing the internal transformer coil and carbon brush mechanism, workshop lighting, macro angle"
+    },
+    {
+      "file": "images/kakoy-stabilizator-napryazheniya-vybrat-3.jpg",
+      "alt": "Инверторный стабилизатор напряжения в электрощите с автоматами",
+      "prompt": "Modern inverter-type voltage stabilizer installed inside an open electrical distribution cabinet next to circuit breakers, indoor, daylight through a nearby window"
+    },
+    {
+      "file": "images/kakoy-stabilizator-napryazheniya-vybrat-4.jpg",
+      "alt": "Насос скважины подключён через стабилизатор напряжения",
+      "prompt": "Water well pump in a basement utility room wired through a voltage stabilizer box mounted on the wall above it, daytime, functional utilitarian setting"
+    },
+    {
+      "file": "images/kakoy-stabilizator-napryazheniya-vybrat-5.jpg",
+      "alt": "Щиток дачного дома с подписанными автоматами и стабилизатором",
+      "prompt": "Open home electrical panel with labeled circuit breakers and a voltage stabilizer unit mounted beside it, close three-quarter angle, indoor daylight"
+    },
+    {
+      "file": "images/kakoy-stabilizator-napryazheniya-vybrat-6.jpg",
+      "alt": "Ряд стабилизаторов напряжения разной мощности на витрине магазина",
+      "prompt": "Row of voltage stabilizer units of different sizes displayed on a hardware store shelf, indoor retail lighting, wide angle"
+    }
+  ]
+}

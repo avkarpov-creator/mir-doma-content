@@ -55,3 +55,24 @@ vi-snegouborshchiki-dvuhstupenchatye:
   url: ""
   erid: ""
   note: "Каталог двухступенчатых бензиновых снегоуборщиков, статья kakoy-snegouborshchik-vybrat-dlya-dachi"
+
+vi-stabilizatory-releynye:
+  network: vseinstrumenti
+  advertiser: "ООО «ВсеИнструменты.ру»"
+  url: ""
+  erid: ""
+  note: "Каталог релейных стабилизаторов напряжения, статья kakoy-stabilizator-napryazheniya-vybrat"
+
+vi-stabilizatory-elektromehanicheskie:
+  network: vseinstrumenti
+  advertiser: "ООО «ВсеИнструменты.ру»"
+  url: ""
+  erid: ""
+  note: "Каталог электромеханических стабилизаторов напряжения, статья kakoy-stabilizator-napryazheniya-vybrat"
+
+vi-stabilizatory-invertornye:
+  network: vseinstrumenti
+  advertiser: "ООО «ВсеИнструменты.ру»"
+  url: ""
+  erid: ""
+  note: "Каталог инверторных стабилизаторов напряжения, статья kakoy-stabilizator-napryazheniya-vybrat"
