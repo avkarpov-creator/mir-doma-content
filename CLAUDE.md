@@ -47,7 +47,7 @@ python3 scripts/mdi.py index && python3 scripts/mdi.py state
   не будет.
 - `seo_title` ≤ 60 символов, `seo_description` ≤ 160.
 - 6 изображений в теле и 6 в frontmatter, у каждой картинки alt.
-- `category` строго из списка 26 рубрик, `status: draft`.
+- `category` строго из списка 27 рубрик, `status: draft`.
 - **Новая рубрика или метка → сразу описание в `taxonomy/terms.md`.** Плагин
   берёт оттуда title и description для архивной страницы и Yoast; без записи
   архив выходит пустым для SEO. Пиши блок в тот же момент, когда заводишь

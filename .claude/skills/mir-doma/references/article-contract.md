@@ -11,7 +11,7 @@ slug: "translit-slug"
 seo_title: "≤60 символов"
 seo_description: "≤160 символов, с ключом и обещанием пользы"
 focus_keyword: "основной ключ"
-category: "Одна из 26 рубрик"
+category: "Одна из 27 рубрик"
 tags:
   - метка1
   - метка2
