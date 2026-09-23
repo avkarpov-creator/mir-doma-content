@@ -1,0 +1,36 @@
+{
+  "slug": "koptilnya-goryachego-kopcheniya-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/koptilnya-goryachego-kopcheniya-svoimi-rukami.jpg",
+      "alt": "Металлическая коптильня горячего копчения с дымом на садовом участке",
+      "prompt": "A cylindrical metal smoker made from a barrel with light smoke rising from its lid, standing outdoors on a garden patio, daylight, medium exterior shot, no people"
+    },
+    {
+      "file": "images/koptilnya-goryachego-kopcheniya-svoimi-rukami-2.jpg",
+      "alt": "Металлическая бочка, подготовленная для переделки в коптильню",
+      "prompt": "An empty rusty-topped metal 200-liter barrel with its lid removed, standing on grass outdoors, ready for workshop conversion, daylight, wide angle, no people"
+    },
+    {
+      "file": "images/koptilnya-goryachego-kopcheniya-svoimi-rukami-3.jpg",
+      "alt": "Открытая коптильня с видимыми поддонами и решётками внутри",
+      "prompt": "Looking down into an open metal barrel smoker showing a metal drip tray and a wire mesh rack mounted inside at different levels, daylight, top-down angle, no people"
+    },
+    {
+      "file": "images/koptilnya-goryachego-kopcheniya-svoimi-rukami-4.jpg",
+      "alt": "Внутренние опоры и решётки, приваренные внутри бочки для коптильни",
+      "prompt": "Close-up of welded metal angle brackets and a mesh rack fixed to the inner wall of a metal barrel, workshop daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/koptilnya-goryachego-kopcheniya-svoimi-rukami-5.jpg",
+      "alt": "Щепа ольхи для копчения в металлическом поддоне",
+      "prompt": "Close-up of light brown alder wood chips piled in a shallow metal tray, natural daylight, macro angle, no people"
+    },
+    {
+      "file": "images/koptilnya-goryachego-kopcheniya-svoimi-rukami-6.jpg",
+      "alt": "Готовая копчёная рыба на решётке коптильни горячего копчения",
+      "prompt": "Golden-brown smoked fish resting on a metal wire rack inside an open smoker, warm daylight, close-up angle, no people"
+    }
+  ]
+}
