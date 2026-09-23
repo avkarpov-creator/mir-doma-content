@@ -74,6 +74,11 @@ python3 scripts/mdi.py index && python3 scripts/mdi.py state
 После каждой новой статьи: `mdi.py linkplan` → правка 2–4 доноров.
 Регулярно: `mdi.py orphans`.
 
+`mir-doma-indexer` шлёт новые статьи в Яндекс и Bing через IndexNow при
+публикации — это ускоряет обход, а не заменяет перелинковку. Для Google
+плагин ничего не делает (только sitemap Rank Math + входящие ссылки), и на
+факт индексации в целом всё ещё сильнее всего влияют именно ссылки.
+
 ## Приоритизация контента
 
 **приоритет = кликабельность интента × близость сезонного окна × вес кластера**
@@ -96,12 +101,16 @@ python3 scripts/mdi.py index && python3 scripts/mdi.py state
 - Спутник, пересказывающий раздел пиллара. Прецедент: «Чем обшить веранду внутри»
   уронил пиллар с позиции 6,5 на 12,1.
 - Правки родительской темы Root — только дочерняя тема.
-- Класть плагины в этот репозиторий — сюда смотрит импортёр. Нужен отдельный
-  `mir-doma-plugins`.
+- Класть плагины в этот репозиторий — сюда смотрит импортёр. Каждый плагин —
+  свой git-репозиторий в `mir-doma-plugins/` (см. `.claude/skills/mir-doma/
+  references/plugin.md`).
 
 ## Стек
 
 WordPress + тема Root (WPShop) + Rank Math + Smush (ленивая загрузка Smush
 выключена в пользу нативного `loading="lazy"`, обратно не включать — чинили CLS).
-Плагины: `mir-doma-git-importer`, `Mir-Doma Social Publisher` (Telegram + VK).
+Плагины: `mir-doma-git-importer`, `mir-doma-indexer` (IndexNow для Яндекса и
+Bing при публикации — Google не поддерживает IndexNow, туда не шлём и не
+предлагаем Indexing API, только sitemap Rank Math), `Mir-Doma Social
+Publisher` (Telegram + VK).
 Данные: Яндекс.Метрика, Google Search Console, Яндекс.Вебмастер, GA4.
