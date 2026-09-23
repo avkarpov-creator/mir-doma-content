@@ -1,0 +1,36 @@
+{
+  "slug": "veniki-dlya-bani-kak-vyazat",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/veniki-dlya-bani-kak-vyazat.jpg",
+      "alt": "Связка свежесрезанных берёзовых веток для банного веника",
+      "prompt": "A bundle of freshly cut birch branches with soft green leaves tied together into a sauna whisk, lying on a wooden bench outdoors, warm summer daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/veniki-dlya-bani-kak-vyazat-2.jpg",
+      "alt": "Молодая берёзовая ветка с мягким неогрубевшим листом для заготовки веника",
+      "prompt": "Close-up of a young flexible birch branch with soft bright green leaves, natural outdoor daylight, macro angle, no people"
+    },
+    {
+      "file": "images/veniki-dlya-bani-kak-vyazat-3.jpg",
+      "alt": "Процесс вязки банного веника с формированием веерной формы",
+      "prompt": "Close-up of hands tying birch branches into a fan-shaped sauna whisk with twine, wooden table surface, daylight, medium close-up angle"
+    },
+    {
+      "file": "images/veniki-dlya-bani-kak-vyazat-4.jpg",
+      "alt": "Веники для бани, развешенные для сушки в тени сарая",
+      "prompt": "Several birch sauna whisks hanging upside down in neat rows to dry in a shaded wooden shed interior, soft diffused light, wide angle, no people"
+    },
+    {
+      "file": "images/veniki-dlya-bani-kak-vyazat-5.jpg",
+      "alt": "Дубовый веник, запариваемый в деревянном тазу с горячей водой",
+      "prompt": "An oak leaf sauna whisk soaking in a wooden basin filled with steaming hot water, warm dim sauna lighting, close-up angle, no people"
+    },
+    {
+      "file": "images/veniki-dlya-bani-kak-vyazat-6.jpg",
+      "alt": "Готовые связанные веники разных видов — берёзовый, дубовый, хвойный",
+      "prompt": "Three finished sauna whisks of different types - birch, oak, and fir - leaning against a wooden wall side by side, soft indoor light, medium shot, no people"
+    }
+  ]
+}
