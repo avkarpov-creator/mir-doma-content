@@ -1,0 +1,36 @@
+{
+  "slug": "drovyanaya-ili-elektricheskaya-pech-dlya-bani",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/drovyanaya-ili-elektricheskaya-pech-dlya-bani.jpg",
+      "alt": "Дровяная печь-каменка в интерьере бани с открытой топкой",
+      "prompt": "A black metal wood-burning banya stove with a stone-filled top compartment and a small firebox door slightly open showing glowing embers, wooden plank sauna interior walls around it, warm firelight, close-up angle"
+    },
+    {
+      "file": "images/drovyanaya-ili-elektricheskaya-pech-dlya-bani-2.jpg",
+      "alt": "Электрическая печь-каменка с пультом управления в парной",
+      "prompt": "A modern black electric sauna heater with visible stones on top and a small digital control panel with glowing display mounted on a cedar plank wall, dim warm sauna lighting, close-up angle"
+    },
+    {
+      "file": "images/drovyanaya-ili-elektricheskaya-pech-dlya-bani-3.jpg",
+      "alt": "Поленница дров рядом со входом в баню зимой",
+      "prompt": "A neat stack of split birch firewood logs against a log-built banya wall, snow on the ground and roof edge, cold winter daylight, wide angle, no people"
+    },
+    {
+      "file": "images/drovyanaya-ili-elektricheskaya-pech-dlya-bani-4.jpg",
+      "alt": "Электрощиток с трёхфазным автоматом для подключения печи бани",
+      "prompt": "An open grey electrical panel with a wide three-pole circuit breaker among smaller single-pole breakers, labeled cable bundles, indoor artificial light, close-up frontal shot, no people"
+    },
+    {
+      "file": "images/drovyanaya-ili-elektricheskaya-pech-dlya-bani-5.jpg",
+      "alt": "Каменка с камнями крупным планом внутри печи для бани",
+      "prompt": "Extreme close-up of dark rounded sauna stones stacked inside a metal heater basket, faint steam rising, warm ambient light, macro angle"
+    },
+    {
+      "file": "images/drovyanaya-ili-elektricheskaya-pech-dlya-bani-6.jpg",
+      "alt": "Готовая баня из бруса с трубой дымохода зимой",
+      "prompt": "A small timber banya house with a metal chimney pipe releasing light smoke, snow-covered roof and ground, surrounding pine trees, cold winter daylight, wide exterior shot, no people"
+    }
+  ]
+}
