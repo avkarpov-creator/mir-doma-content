@@ -1,0 +1,36 @@
+{
+  "slug": "umnaya-rozetka-dlya-dachi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/umnaya-rozetka-dlya-dachi.jpg",
+      "alt": "Умная розетка с обогревателем на деревянном полу дачного дома",
+      "prompt": "A white smart plug with a small LED indicator and companion app icon plugged into a wall outlet, with an electric convector heater's power cord connected to it, wooden dacha floor and wall in background, warm interior evening light, close-up angle"
+    },
+    {
+      "file": "images/umnaya-rozetka-dlya-dachi-2.jpg",
+      "alt": "Приложение для управления умной розеткой на экране смартфона",
+      "prompt": "A hand holding a smartphone showing an abstract smart-home app interface with a toggle switch and power icon, blurred cozy living room background, indoor evening light, close-up angle, no visible readable text"
+    },
+    {
+      "file": "images/umnaya-rozetka-dlya-dachi-3.jpg",
+      "alt": "Иней и снег на уличном удлинителе с розетками зимой",
+      "prompt": "Frost and snow covering an outdoor extension cord with power sockets mounted on a wooden wall, icicles hanging nearby, cold winter daylight, close-up macro angle"
+    },
+    {
+      "file": "images/umnaya-rozetka-dlya-dachi-4.jpg",
+      "alt": "Электрощиток с автоматами защиты рядом с умной розеткой",
+      "prompt": "An open grey electrical distribution panel with circuit breakers on a wall, a white smart plug visible in a nearby wall outlet below it, indoor artificial light, medium close-up frontal shot"
+    },
+    {
+      "file": "images/umnaya-rozetka-dlya-dachi-5.jpg",
+      "alt": "Насос водоснабжения и умная розетка в подсобном помещении дачи",
+      "prompt": "A small water supply pump unit with pipes standing on a concrete floor in a utility room, connected to a wall outlet with a white smart plug, bare bulb overhead light, medium shot, no people"
+    },
+    {
+      "file": "images/umnaya-rozetka-dlya-dachi-6.jpg",
+      "alt": "Умная розетка крупным планом со светодиодным индикатором",
+      "prompt": "Extreme close-up of a white smart plug adapter plugged into a wall socket, small glowing blue LED indicator visible, matte plastic texture, soft indoor light, shallow depth of field"
+    }
+  ]
+}
