@@ -1,0 +1,36 @@
+{
+  "slug": "kak-uvelichit-moshchnost-elektrichestva-na-uchastke",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-uvelichit-moshchnost-elektrichestva-na-uchastke.jpg",
+      "alt": "Старый однофазный электросчётчик в металлическом щитке на столбе",
+      "prompt": "An old weathered single-phase electricity meter inside a rusty grey metal box mounted on a wooden utility pole outdoors, exposed wiring conduit, overcast daylight, close-up eye-level shot"
+    },
+    {
+      "file": "images/kak-uvelichit-moshchnost-elektrichestva-na-uchastke-2.jpg",
+      "alt": "Столб с проводами и трансформаторная подстанция у дачного посёлка",
+      "prompt": "A wooden power line pole with multiple overhead wires leading toward a small green transformer substation box behind a chain-link fence, dacha rooftops visible in the background, clear daytime sky, wide shot"
+    },
+    {
+      "file": "images/kak-uvelichit-moshchnost-elektrichestva-na-uchastke-3.jpg",
+      "alt": "Папка с документами и печатью на столе — акт технологического присоединения",
+      "prompt": "A manila folder with stacked official paper documents and a rubber stamp resting on a wooden desk, pages slightly fanned out with blurred illegible text, a pen beside it, soft window light, close-up top-down angle"
+    },
+    {
+      "file": "images/kak-uvelichit-moshchnost-elektrichestva-na-uchastke-4.jpg",
+      "alt": "Однофазный и трёхфазный автоматы в открытом электрощите",
+      "prompt": "Open grey metal electrical distribution panel showing rows of circuit breakers, one wide three-pole breaker next to smaller single-pole breakers, labeled cable bundles, indoor artificial light, close-up frontal shot"
+    },
+    {
+      "file": "images/kak-uvelichit-moshchnost-elektrichestva-na-uchastke-5.jpg",
+      "alt": "Кабель электропитания, проложенный к строящемуся дому по участку",
+      "prompt": "A thick black armored electrical cable laid along the ground across a grassy construction plot leading toward an unfinished timber-frame house, daylight, low-angle wide shot, no people"
+    },
+    {
+      "file": "images/kak-uvelichit-moshchnost-elektrichestva-na-uchastke-6.jpg",
+      "alt": "Электрощиток с автоматами и подписанными группами проводки",
+      "prompt": "A neatly organized home electrical panel with rows of circuit breakers and small handwritten-style blank labels beneath each one, tidy cable routing, indoor light, close-up frontal shot"
+    }
+  ]
+}
