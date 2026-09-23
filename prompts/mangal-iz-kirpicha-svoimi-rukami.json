@@ -1,0 +1,36 @@
+{
+  "slug": "mangal-iz-kirpicha-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/mangal-iz-kirpicha-svoimi-rukami.jpg",
+      "alt": "Готовый кирпичный мангал на садовом участке с горящими углями",
+      "prompt": "A finished red brick barbecue grill structure standing in a garden with glowing charcoal embers inside, evening light, medium exterior shot, no people"
+    },
+    {
+      "file": "images/mangal-iz-kirpicha-svoimi-rukami-2.jpg",
+      "alt": "Заливка фундаментной плиты под кирпичный мангал",
+      "prompt": "Wet grey concrete being poured and leveled into a small rectangular wooden formwork on the ground, outdoor construction site, daylight, wide angle, no people"
+    },
+    {
+      "file": "images/mangal-iz-kirpicha-svoimi-rukami-3.jpg",
+      "alt": "Шамотный огнеупорный кирпич для кладки топки мангала",
+      "prompt": "A stack of pale yellow fire-resistant firebrick blocks on a construction pallet outdoors, daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/mangal-iz-kirpicha-svoimi-rukami-4.jpg",
+      "alt": "Пошаговая кладка кирпичного мангала с перевязкой швов",
+      "prompt": "A partially built red brick structure showing staggered brick courses with visible mortar joints, trowel resting on top, daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/mangal-iz-kirpicha-svoimi-rukami-5.jpg",
+      "alt": "Кирпичный мангал со столешницами под навесом на даче",
+      "prompt": "A brick barbecue grill with tiled side countertops standing under a wooden canopy roof in a garden, daylight, wide angle, no people"
+    },
+    {
+      "file": "images/mangal-iz-kirpicha-svoimi-rukami-6.jpg",
+      "alt": "Готовый кирпичный мангал крупным планом с решёткой для шампуров",
+      "prompt": "Close-up of a brick barbecue grill firebox with a metal skewer rack resting across the top opening, daylight, medium close-up angle, no people"
+    }
+  ]
+}
