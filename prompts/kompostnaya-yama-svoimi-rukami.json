@@ -1,0 +1,36 @@
+{
+  "slug": "kompostnaya-yama-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kompostnaya-yama-svoimi-rukami.jpg",
+      "alt": "Деревянный компостный короб на садовом участке с растительными остатками",
+      "prompt": "A wooden slatted compost bin with visible plant scraps and leaves inside, standing in a garden corner, daylight, medium exterior shot, no people"
+    },
+    {
+      "file": "images/kompostnaya-yama-svoimi-rukami-2.jpg",
+      "alt": "Компостная яма в грунте с растительными остатками",
+      "prompt": "A simple earthen pit in garden soil filled with decomposing leaves and plant scraps, daylight, top-down angle, no people"
+    },
+    {
+      "file": "images/kompostnaya-yama-svoimi-rukami-3.jpg",
+      "alt": "Угловые опорные столбы для будущего компостного короба",
+      "prompt": "Four wooden corner posts set into the ground marking out a rectangular frame on grass, no boards attached yet, daylight, wide angle, no people"
+    },
+    {
+      "file": "images/kompostnaya-yama-svoimi-rukami-4.jpg",
+      "alt": "Пошаговая сборка деревянного компостного короба своими руками",
+      "prompt": "Wooden planks being attached to corner posts with visible gaps between boards, partially built compost bin frame, daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/kompostnaya-yama-svoimi-rukami-5.jpg",
+      "alt": "Готовый компост в разрезе секции короба",
+      "prompt": "Close-up of dark crumbly finished compost soil inside a wooden bin section, daylight, top-down angle, no people"
+    },
+    {
+      "file": "images/kompostnaya-yama-svoimi-rukami-6.jpg",
+      "alt": "Готовый компостный короб с тремя секциями на участке",
+      "prompt": "A finished wooden compost bin divided into three side-by-side sections standing in a garden, daylight, wide exterior shot, no people"
+    }
+  ]
+}
