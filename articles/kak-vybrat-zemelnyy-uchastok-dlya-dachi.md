@@ -161,10 +161,10 @@ images:
     var pct=Math.round(((Math.log10(d.p)-min)/(max-min))*100);
     var row=document.createElement('div'); row.className='md-pm__row';
     row.innerHTML='<div class="md-pm__rowhead">'+
-      '<span class="md-pm__name">'+d.n+'</span>'+
-      '<span class="md-pm__barwrap"><span class="md-pm__bar" style="width:'+Math.max(pct,6)+'%;background:'+color(pct)+'"></span></span>'+
-      '<span class="md-pm__price">'+Math.round(d.p/1000)+' тыс ₽</span>'+
-      '</div><div class="md-pm__detail">'+d.c+'</div>';
+      '<span class="md-pm__name">'+d.n+'<\/span>'+
+      '<span class="md-pm__barwrap"><span class="md-pm__bar" style="width:'+Math.max(pct,6)+'%;background:'+color(pct)+'"><\/span><\/span>'+
+      '<span class="md-pm__price">'+Math.round(d.p/1000)+' тыс ₽<\/span>'+
+      '<\/div><div class="md-pm__detail">'+d.c+'<\/div>';
     row.addEventListener('click',function(){ row.classList.toggle('is-open'); });
     root.appendChild(row);
   });
