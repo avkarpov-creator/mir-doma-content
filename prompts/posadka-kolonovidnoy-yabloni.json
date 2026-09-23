@@ -1,0 +1,36 @@
+{
+  "slug": "posadka-kolonovidnoy-yabloni",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/posadka-kolonovidnoy-yabloni.jpg",
+      "alt": "Колоновидная яблоня с плодами прямо на узком стволе",
+      "prompt": "A narrow columnar apple tree with red apples growing directly along its slender trunk without spreading branches, tied to a support stake, garden setting in daylight, medium shot, no people"
+    },
+    {
+      "file": "images/posadka-kolonovidnoy-yabloni-2.jpg",
+      "alt": "Ряд молодых саженцев колоновидных яблонь, посаженных плотно друг к другу",
+      "prompt": "A row of young thin columnar apple tree saplings planted closely together with support stakes, bare garden soil, spring daylight, wide shot, no people"
+    },
+    {
+      "file": "images/posadka-kolonovidnoy-yabloni-3.jpg",
+      "alt": "Посадочная яма для колоновидной яблони с опорным колом",
+      "prompt": "A small dug planting hole in garden soil with a wooden support stake already placed beside it, gardening trowel nearby, daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/posadka-kolonovidnoy-yabloni-4.jpg",
+      "alt": "Мульчирование приствольного круга колоновидной яблони торфом",
+      "prompt": "Close-up of dark peat mulch spread in a circle around the base of a thin young tree trunk, garden soil, soft daylight, top-down angle, no people"
+    },
+    {
+      "file": "images/posadka-kolonovidnoy-yabloni-5.jpg",
+      "alt": "Урожай яблок на колоновидной яблоне осенью",
+      "prompt": "Ripe red apples clustered densely along the narrow trunk of a columnar apple tree, autumn daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/posadka-kolonovidnoy-yabloni-6.jpg",
+      "alt": "Колоновидные яблони разных сортов в ряд на небольшом участке",
+      "prompt": "Several slender columnar apple trees of varying fruit color planted in a tight row along a small garden path, daylight, wide shot, no people"
+    }
+  ]
+}
