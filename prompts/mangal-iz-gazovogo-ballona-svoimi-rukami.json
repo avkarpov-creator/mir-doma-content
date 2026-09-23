@@ -1,0 +1,36 @@
+{
+  "slug": "mangal-iz-gazovogo-ballona-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/mangal-iz-gazovogo-ballona-svoimi-rukami.jpg",
+      "alt": "Мангал, сваренный из газового баллона, на садовом участке",
+      "prompt": "A cylindrical metal barbecue grill welded from a repurposed gas cylinder, standing on welded metal legs in a garden, daylight, medium exterior shot, no people"
+    },
+    {
+      "file": "images/mangal-iz-gazovogo-ballona-svoimi-rukami-2.jpg",
+      "alt": "Заполнение газового баллона водой из шланга перед резкой",
+      "prompt": "A garden hose filling a large metal gas cylinder lying on the ground with water through its open valve, outdoor daylight, wide angle, no people"
+    },
+    {
+      "file": "images/mangal-iz-gazovogo-ballona-svoimi-rukami-3.jpg",
+      "alt": "Инструменты для сварки мангала: болгарка, сварочный аппарат, электроды",
+      "prompt": "An angle grinder, a welding machine, and a handful of welding electrodes laid out on a workshop table, workshop lighting, close-up angle, no people"
+    },
+    {
+      "file": "images/mangal-iz-gazovogo-ballona-svoimi-rukami-4.jpg",
+      "alt": "Сварка ножек к корпусу мангала из газового баллона",
+      "prompt": "Sparks flying as metal angle-iron legs are welded onto a cut cylindrical metal cylinder body, workshop setting, dramatic welding light, close-up angle, no people"
+    },
+    {
+      "file": "images/mangal-iz-gazovogo-ballona-svoimi-rukami-5.jpg",
+      "alt": "Готовый мангал из газового баллона с термостойкой покраской",
+      "prompt": "A finished black heat-resistant painted cylindrical barbecue grill made from a gas cylinder, with a hinged lid and metal legs, daylight, medium shot, no people"
+    },
+    {
+      "file": "images/mangal-iz-gazovogo-ballona-svoimi-rukami-6.jpg",
+      "alt": "Мангал из газового баллона под навесом на дачном участке",
+      "prompt": "A cylindrical metal gas-cylinder barbecue grill standing under a wooden canopy roof in a garden, daylight, wide angle, no people"
+    }
+  ]
+}
