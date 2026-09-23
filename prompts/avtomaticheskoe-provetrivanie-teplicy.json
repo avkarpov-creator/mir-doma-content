@@ -1,0 +1,36 @@
+{
+  "slug": "avtomaticheskoe-provetrivanie-teplicy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/avtomaticheskoe-provetrivanie-teplicy.jpg",
+      "alt": "Автоматический термопривод, открывающий форточку теплицы",
+      "prompt": "A metal cylindrical autovent opener mechanism attached to a greenhouse window frame, extended rod holding the vent open, polycarbonate greenhouse wall visible, daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/avtomaticheskoe-provetrivanie-teplicy-2.jpg",
+      "alt": "Восковой термопривод крупным планом на садовом столе",
+      "prompt": "A cylindrical metal wax-filled greenhouse autovent opener with an extending rod, lying on a wooden garden table, daylight, close-up product shot, no people"
+    },
+    {
+      "file": "images/avtomaticheskoe-provetrivanie-teplicy-3.jpg",
+      "alt": "Форточка теплицы с приводом открыта в жаркий день",
+      "prompt": "An open greenhouse roof vent window propped up by a metal autovent opener, sunny bright daylight, polycarbonate greenhouse exterior, medium shot, no people"
+    },
+    {
+      "file": "images/avtomaticheskoe-provetrivanie-teplicy-4.jpg",
+      "alt": "Установленный термопривод, закреплённый на раме теплицы",
+      "prompt": "Close-up of a metal autovent opener bracket screwed onto an aluminum greenhouse window frame, daylight, close-up angle, no people"
+    },
+    {
+      "file": "images/avtomaticheskoe-provetrivanie-teplicy-5.jpg",
+      "alt": "Теплица из поликарбоната с открытыми форточками на автоматике",
+      "prompt": "A polycarbonate greenhouse in a garden with several roof vent windows propped open, sunny daylight, wide exterior shot, no people"
+    },
+    {
+      "file": "images/avtomaticheskoe-provetrivanie-teplicy-6.jpg",
+      "alt": "Термопривод крупным планом на металлической раме форточки",
+      "prompt": "Extreme close-up of a metal autovent opener's extended piston rod connected to a greenhouse window hinge, daylight, macro angle, no people"
+    }
+  ]
+}
