@@ -1,0 +1,36 @@
+{
+  "slug": "kak-vybrat-zemelnyy-uchastok-dlya-dachi",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-vybrat-zemelnyy-uchastok-dlya-dachi.jpg",
+      "alt": "Земельный участок для дачи с колышками и документами на межевание",
+      "prompt": "An empty rectangular land plot marked with wooden survey stakes and pink string boundary lines, a rolled paper land survey document and a clipboard with papers resting on one stake in the foreground, overgrown grass and a birch forest edge in the background, morning light, wide shot"
+    },
+    {
+      "file": "images/kak-vybrat-zemelnyy-uchastok-dlya-dachi-2.jpg",
+      "alt": "Публичная кадастровая карта с границами земельного участка на экране телефона",
+      "prompt": "Close-up of a smartphone held in hand outdoors showing an abstract cadastral map interface with plot boundary polygons and numbers, a wooden survey stake with string visible slightly out of focus behind the phone, daylight, shallow depth of field"
+    },
+    {
+      "file": "images/kak-vybrat-zemelnyy-uchastok-dlya-dachi-3.jpg",
+      "alt": "Шлагбаум и дорога на въезде в садовое товарищество",
+      "prompt": "A red and white striped boom barrier gate across a gravel road at the entrance to a Russian garden community, small guard booth beside it, wooden fences and tree tops visible past the gate, overcast daylight, eye-level view"
+    },
+    {
+      "file": "images/kak-vybrat-zemelnyy-uchastok-dlya-dachi-4.jpg",
+      "alt": "Соседние дачные участки и заборы вдоль улицы в СНТ",
+      "prompt": "A narrow unpaved street in a Russian dacha settlement lined with different wooden and metal profile-sheet fences of neighboring plots, small dacha houses partly visible over the fences, power line poles along the street, late afternoon light, street-level view"
+    },
+    {
+      "file": "images/kak-vybrat-zemelnyy-uchastok-dlya-dachi-5.jpg",
+      "alt": "Вид на поля и лес рядом с границей дачного участка",
+      "prompt": "Wide open view from the edge of a land plot across a grassy field toward a distant pine and birch forest line under a soft overcast sky, no buildings or people, quiet rural landscape, golden hour light"
+    },
+    {
+      "file": "images/kak-vybrat-zemelnyy-uchastok-dlya-dachi-6.jpg",
+      "alt": "Столб электролинии и скважина на участке — инженерные коммуникации дачи",
+      "prompt": "A wooden power line pole with an electric meter box and a metal water well casing pipe with a cap standing together on a grassy undeveloped land plot, overhead wires leading toward it, clear daytime sky, medium shot"
+    }
+  ]
+}
