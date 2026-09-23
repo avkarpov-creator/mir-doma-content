@@ -1,0 +1,36 @@
+{
+  "slug": "obrezka-plodovyh-derevev-osenyu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/obrezka-plodovyh-derevev-osenyu.jpg",
+      "alt": "Секатор на фоне яблони с осенней жёлтой листвой",
+      "prompt": "A pair of garden pruning shears resting on a tree branch with yellow autumn apple tree foliage in the background, soft golden afternoon light, close-up angle, no people"
+    },
+    {
+      "file": "images/obrezka-plodovyh-derevev-osenyu-2.jpg",
+      "alt": "Сухая сломанная ветка яблони, готовая к санитарной обрезке",
+      "prompt": "Close-up of a dry broken tree branch with cracked grey bark against healthy green foliage, natural daylight, macro angle, no people"
+    },
+    {
+      "file": "images/obrezka-plodovyh-derevev-osenyu-3.jpg",
+      "alt": "Садовый вар на свежем спиле толстой ветки дерева",
+      "prompt": "Extreme close-up of a fresh tree branch cut coated with dark brown garden pruning sealant paste, wood grain visible at the edges, soft daylight, macro angle, no people"
+    },
+    {
+      "file": "images/obrezka-plodovyh-derevev-osenyu-4.jpg",
+      "alt": "Молодая яблоня с тонкими ветвями в осеннем саду",
+      "prompt": "A young slender apple tree with thin branches and sparse yellowing leaves standing in a garden, autumn afternoon light, wide shot, no people"
+    },
+    {
+      "file": "images/obrezka-plodovyh-derevev-osenyu-5.jpg",
+      "alt": "Сад с плодовыми деревьями, подготовленный к зиме",
+      "prompt": "An orchard with several fruit trees, trunks whitewashed and wrapped for winter, fallen autumn leaves on the ground, soft overcast light, wide landscape shot, no people"
+    },
+    {
+      "file": "images/obrezka-plodovyh-derevev-osenyu-6.jpg",
+      "alt": "Инструменты для обрезки сада — секатор и сучкорез на садовом столе",
+      "prompt": "Garden pruning shears and long-handled loppers laid on a rustic wooden outdoor table, autumn leaves scattered nearby, soft daylight, top-down angle, no people"
+    }
+  ]
+}
