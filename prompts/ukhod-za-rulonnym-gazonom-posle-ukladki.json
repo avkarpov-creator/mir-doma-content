@@ -1,0 +1,36 @@
+{
+  "slug": "ukhod-za-rulonnym-gazonom-posle-ukladki",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/ukhod-za-rulonnym-gazonom-posle-ukladki.jpg",
+      "alt": "Свежеуложенный рулонный газон с видимыми стыками полотен",
+      "prompt": "Freshly laid rolled turf strips on garden soil with visible seams between sections, daylight, wide top-down angle, no people"
+    },
+    {
+      "file": "images/ukhod-za-rulonnym-gazonom-posle-ukladki-2.jpg",
+      "alt": "Полив свежеуложенного рулонного газона из шланга с распылителем",
+      "prompt": "A garden hose sprinkler watering fresh green rolled turf, water droplets visible in morning sunlight, wide angle, no people"
+    },
+    {
+      "file": "images/ukhod-za-rulonnym-gazonom-posle-ukladki-3.jpg",
+      "alt": "Проверка укоренения рулонного газона приподниманием края",
+      "prompt": "A hand lifting the corner edge of a turf sod strip to check root growth into soil beneath, daylight, close-up angle"
+    },
+    {
+      "file": "images/ukhod-za-rulonnym-gazonom-posle-ukladki-4.jpg",
+      "alt": "Первая стрижка рулонного газона газонокосилкой",
+      "prompt": "A push lawnmower cutting a lush green lawn in neat stripes, daylight, wide angle, no people"
+    },
+    {
+      "file": "images/ukhod-za-rulonnym-gazonom-posle-ukladki-5.jpg",
+      "alt": "Ухоженный прижившийся рулонный газон спустя месяц после укладки",
+      "prompt": "A lush, seamless, well-established green lawn filling a garden yard, soft daylight, wide landscape shot, no people"
+    },
+    {
+      "file": "images/ukhod-za-rulonnym-gazonom-posle-ukladki-6.jpg",
+      "alt": "Заросшие светлые полосы на месте непросыпанных швов рулонного газона",
+      "prompt": "Close-up of a lawn surface showing pale thin lines where turf seams have dried out against surrounding healthy green grass, daylight, top-down angle, no people"
+    }
+  ]
+}
