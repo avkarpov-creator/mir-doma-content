@@ -1,0 +1,36 @@
+{
+  "slug": "morozilnyy-lar-ili-morozilnaya-kamera",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/morozilnyy-lar-ili-morozilnaya-kamera.jpg",
+      "alt": "Открытый морозильный ларь, заполненный пакетами с замороженными овощами и ягодами",
+      "prompt": "A white chest freezer with its top lid open, filled with neatly stacked labeled ziplock bags of frozen berries and vegetables, frost visible on the inner walls, indoor utility room light, top-down angle, no people"
+    },
+    {
+      "file": "images/morozilnyy-lar-ili-morozilnaya-kamera-2.jpg",
+      "alt": "Вертикальная морозильная камера с выдвижными ящиками на кухне",
+      "prompt": "A tall white upright freezer cabinet with the door open showing several white pull-out drawers, kitchen setting in soft daylight, medium frontal shot, no people"
+    },
+    {
+      "file": "images/morozilnyy-lar-ili-morozilnaya-kamera-3.jpg",
+      "alt": "Сравнение размеров морозильного ларя и морозильной камеры в подсобном помещении",
+      "prompt": "A white horizontal chest freezer standing next to a tall white upright freezer cabinet side by side in a plain utility room, closed lids and doors, soft indoor daylight, wide angle, no people"
+    },
+    {
+      "file": "images/morozilnyy-lar-ili-morozilnaya-kamera-4.jpg",
+      "alt": "Морозильный ларь на неотапливаемой веранде дачного дома зимой",
+      "prompt": "A white chest freezer standing closed on a wooden unheated veranda with frosted windows and bare walls, cold winter daylight coming through, wide angle, no people"
+    },
+    {
+      "file": "images/morozilnyy-lar-ili-morozilnaya-kamera-5.jpg",
+      "alt": "Пакеты с промаркированными замороженными грибами и ягодами",
+      "prompt": "Close-up of several flat ziplock freezer bags filled with frozen mushrooms and berries, each with a blank handwritten-style label area, frost on the bag surfaces, cool indoor light, top-down angle"
+    },
+    {
+      "file": "images/morozilnyy-lar-ili-morozilnaya-kamera-6.jpg",
+      "alt": "Морозильная камера с открытой дверцей и разложенными по полкам продуктами",
+      "prompt": "An open upright freezer door revealing shelves neatly organized with labeled bags and containers of frozen food, soft interior light, medium close-up angle, no people"
+    }
+  ]
+}
