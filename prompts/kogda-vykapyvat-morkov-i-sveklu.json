@@ -1,0 +1,36 @@
+{
+  "slug": "kogda-vykapyvat-morkov-i-sveklu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kogda-vykapyvat-morkov-i-sveklu.jpg",
+      "alt": "Морковь и свёкла, выкопанные из грядки и разложенные для просушки",
+      "prompt": "Freshly dug orange carrots and dark red beets with soil clinging to them, laid out in neat rows on dry garden soil next to an empty bed, autumn daylight, wide top-down angle, no people"
+    },
+    {
+      "file": "images/kogda-vykapyvat-morkov-i-sveklu-2.jpg",
+      "alt": "Признаки готовности свёклы к уборке: желтеющая ботва и выступивший корнеплод",
+      "prompt": "Close-up of a beet root partly protruding above garden soil with yellowing lower leaves and still-green upper leaves, natural daylight, macro angle, no people"
+    },
+    {
+      "file": "images/kogda-vykapyvat-morkov-i-sveklu-3.jpg",
+      "alt": "Морковь с проросшей плотной кожицей, готовая к выкапыванию",
+      "prompt": "Close-up of orange carrot tops emerging from soil in a garden row with slightly yellowed green foliage, morning dew on leaves, macro angle, no people"
+    },
+    {
+      "file": "images/kogda-vykapyvat-morkov-i-sveklu-4.jpg",
+      "alt": "Пасмурное небо с прогнозом дождя над огородом с грядками моркови",
+      "prompt": "Overcast grey sky above rows of carrot foliage in a vegetable garden, moody autumn light suggesting incoming rain, wide landscape shot, no people"
+    },
+    {
+      "file": "images/kogda-vykapyvat-morkov-i-sveklu-5.jpg",
+      "alt": "Ящики с морковью и свёклой, подготовленные к закладке в погреб",
+      "prompt": "Wooden crates filled with cleaned carrots and beets with trimmed tops, stacked in a dim cellar setting, single bulb light, medium angle, no people"
+    },
+    {
+      "file": "images/kogda-vykapyvat-morkov-i-sveklu-6.jpg",
+      "alt": "Морковь и свёкла, разложенные на просушку на воздухе перед закладкой",
+      "prompt": "Carrots and beets with trimmed tops spread out to dry on a wooden garden table in dappled shade, autumn afternoon light, top-down angle, no people"
+    }
+  ]
+}
