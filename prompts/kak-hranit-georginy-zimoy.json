@@ -1,0 +1,36 @@
+{
+  "slug": "kak-hranit-georginy-zimoy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-hranit-georginy-zimoy.jpg",
+      "alt": "Выкопанные клубни георгинов с короткими стеблями на деревянном ящике",
+      "prompt": "Freshly dug dahlia tubers with short cut stems lying on a wooden crate, autumn garden, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-georginy-zimoy-2.jpg",
+      "alt": "Садовые вилы поднимают куст георгина с комом земли",
+      "prompt": "Garden fork lifting a dahlia tuber clump: several elongated finger-like brown tubers radiating from a central woody crown with a thick hollow cut stem stub, not potatoes out of dark soil in an autumn flower bed, blackened frost-damaged dahlia foliage around, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-georginy-zimoy-3.jpg",
+      "alt": "Клубни георгинов в деревянном ящике с опилками в погребе",
+      "prompt": "Dahlia tubers laid in a wooden box with wood shavings in a cool cellar, dim light, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-georginy-zimoy-4.jpg",
+      "alt": "Клубни георгинов, покрытые парафином, на подносе",
+      "prompt": "Dahlia tubers coated with wax lying on a tray, indoor daylight, close-up, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-georginy-zimoy-5.jpg",
+      "alt": "Проверка клубней георгинов: вырезка подгнившего участка ножом",
+      "prompt": "Close-up of a dahlia tuber clump: several elongated finger-like brown tubers radiating from a central woody crown with a thick hollow cut stem stub, not potatoes on a wooden cutting board, one tuber with a small cut-out rotten spot dusted with charcoal powder, a knife beside it, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-georginy-zimoy-6.jpg",
+      "alt": "Разделённые клубни георгинов с проросшими почками перед посадкой весной",
+      "prompt": "Several divisions of a dahlia tuber clump on a potting bench, each division has one elongated tuber attached to a piece of woody crown with a small pink sprout, not potatoes, spring daylight, no people, no hands, no text"
+    }
+  ]
+}
