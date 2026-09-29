@@ -1,0 +1,36 @@
+{
+  "slug": "snegozaderzhateli-na-kryshu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/snegozaderzhateli-na-kryshu.jpg",
+      "alt": "Трубчатые снегозадержатели на металлической крыше дачного дома зимой",
+      "prompt": "Metal tile roof of a country house with tubular snow guards along the eaves holding a layer of snow, winter day, no people, no hands, no text"
+    },
+    {
+      "file": "images/snegozaderzhateli-na-kryshu-2.jpg",
+      "alt": "Сравнение трубчатого, решётчатого и уголкового снегозадержателей на образцах кровли",
+      "prompt": "Three roof snow guard samples side by side on a wooden table: tubular, lattice and angled plate, daylight, product shot, no people, no hands, no text"
+    },
+    {
+      "file": "images/snegozaderzhateli-na-kryshu-3.jpg",
+      "alt": "Крепление кронштейна трубчатого снегозадержателя к нижней волне металлочерепицы",
+      "prompt": "Close-up of a tubular snow guard bracket screwed into the lower wave of a brown metal tile roof, rubber washer screws visible, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/snegozaderzhateli-na-kryshu-4.jpg",
+      "alt": "Разметка линии снегозадержателей шнуром на крыше из профнастила",
+      "prompt": "Chalk line marked across a green corrugated metal roof sheet parallel to the eaves, tape measure lying on the roof, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/snegozaderzhateli-na-kryshu-5.jpg",
+      "alt": "Крыша дачного дома со снегом, удержанным снегозадержателями над крыльцом",
+      "prompt": "Snow held back by lattice snow guards above the entrance porch of a wooden country house, winter afternoon, no people, no hands, no text"
+    },
+    {
+      "file": "images/snegozaderzhateli-na-kryshu-6.jpg",
+      "alt": "Сорванный снегом водосток под крышей без снегозадержателей",
+      "prompt": "Bent and torn off rain gutter hanging from the edge of a metal roof after snow slid off, snow pile below, winter, no people, no hands, no text"
+    }
+  ]
+}
