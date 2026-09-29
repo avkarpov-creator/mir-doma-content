@@ -1,0 +1,36 @@
+{
+  "slug": "burzhuyka-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/burzhuyka-svoimi-rukami.jpg",
+      "alt": "Самодельная металлическая печь-буржуйка с дымоходом в мастерской",
+      "prompt": "Homemade black steel wood stove made from a thick pipe with a chimney pipe going up, standing on a metal sheet in a garage workshop, warm light, no people, no hands, no text"
+    },
+    {
+      "file": "images/burzhuyka-svoimi-rukami-2.jpg",
+      "alt": "Отрезок толстостенной стальной трубы, газовый баллон и лист стали на верстаке",
+      "prompt": "A piece of thick-walled steel pipe, an empty gas cylinder and a steel sheet lying on a workbench, workshop, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/burzhuyka-svoimi-rukami-3.jpg",
+      "alt": "Колосник из арматуры и дверца зольника самодельной буржуйки крупным планом",
+      "prompt": "Close-up of a welded rebar grate and an ash pit door on a homemade steel stove, workshop light, no people, no hands, no text"
+    },
+    {
+      "file": "images/burzhuyka-svoimi-rukami-4.jpg",
+      "alt": "Сварка корпуса самодельной печи из толстостенной трубы",
+      "prompt": "Welding sparks on the seam of a steel pipe stove body clamped on a workbench, workshop, dim light, no people, no hands, no text"
+    },
+    {
+      "file": "images/burzhuyka-svoimi-rukami-5.jpg",
+      "alt": "Буржуйка на металлическом листе с кирпичным экраном у стены гаража",
+      "prompt": "Steel wood stove on a metal floor sheet surrounded by a red brick heat screen near a wooden garage wall, no people, no hands, no text"
+    },
+    {
+      "file": "images/burzhuyka-svoimi-rukami-6.jpg",
+      "alt": "Искрогаситель на выходе металлической трубы дымохода над крышей",
+      "prompt": "Metal chimney pipe with a spark arrester cap above a snowy roof, winter sky, no people, no hands, no text"
+    }
+  ]
+}
