@@ -1,8 +1,8 @@
 ---
 title: "Расчёт навеса из профильной трубы: сечение, шаг стоек и снеговая нагрузка"
 slug: "raschet-navesa-iz-profilnoy-truby"
-seo_title: "Расчёт навеса из профильной трубы: сечение и шаг"
-seo_description: "Как рассчитать навес из профильной трубы: сечение стоек и стропил по снеговой нагрузке, шаг опор, пример расчёта навеса 4×6 м."
+seo_title: "Расчёт навеса из профтрубы: калькулятор сечения и стоек"
+seo_description: "Калькулятор навеса из профильной трубы: введите размеры и снеговой район — получите сечение стоек и стропил, число опор и вес снега. Пример для 4×6 м."
 focus_keyword: "расчет навеса из профильной трубы"
 category: "Строительство на участке"
 tags:
@@ -129,6 +129,80 @@ images:
 ![Узел крепления стропильной фермы к стойке навеса из профильной трубы](images/raschet-navesa-iz-profilnoy-truby-5.jpg)
 
 ![Сварка каркаса навеса из металлической профильной трубы](images/raschet-navesa-iz-profilnoy-truby-3.jpg)
+
+## Калькулятор навеса из профильной трубы
+
+Калькулятор собирает таблицы выше в один расчёт: введите размеры навеса
+и снеговой район, и он покажет, сколько снега ляжет на кровлю, какое нужно
+сечение стоек и стропил и сколько опор ставить. Это ориентир для
+закупки металла. Если калькулятор отправляет к инженеру, значит, навес
+вышел за пределы бытовых таблиц.
+
+<!-- wp:html -->
+<div id="mdNavesCalc" class="md-calc">
+  <p class="md-calc__lead">Калькулятор навеса: снеговая нагрузка, сечение трубы, число стоек</p>
+  <label class="md-calc__label" for="mdNvW">Пролёт (ширина между рядами стоек), м</label>
+  <input type="number" id="mdNvW" class="md-calc__input" min="1" step="0.1" placeholder="например, 4">
+  <label class="md-calc__label" for="mdNvL">Длина навеса, м</label>
+  <input type="number" id="mdNvL" class="md-calc__input" min="1" step="0.1" placeholder="например, 6">
+  <label class="md-calc__label" for="mdNvS">Снеговой район</label>
+  <select id="mdNvS" class="md-calc__input">
+    <option value="1">I — 80 кг/м²</option>
+    <option value="2">II — 120 кг/м²</option>
+    <option value="3" selected>III — 180 кг/м² (средняя полоса)</option>
+    <option value="4">IV — 240 кг/м²</option>
+    <option value="5">V — 320 кг/м²</option>
+    <option value="6">VI — 400 кг/м²</option>
+  </select>
+  <label class="md-calc__label" for="mdNvR">Кровля</label>
+  <select id="mdNvR" class="md-calc__input">
+    <option value="light">Профнастил или поликарбонат</option>
+    <option value="heavy">Металлочерепица или мягкая кровля</option>
+  </select>
+  <div id="mdNvOut" class="md-calc__out">Введите пролёт и длину навеса</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var W=document.getElementById('mdNvW'), L=document.getElementById('mdNvL'),
+      S=document.getElementById('mdNvS'), R=document.getElementById('mdNvR'),
+      out=document.getElementById('mdNvOut');
+  var snow={1:80,2:120,3:180,4:240,5:320,6:400};
+  function calc(){
+    var w=parseFloat(W.value), l=parseFloat(L.value), s=parseInt(S.value,10), heavy=R.value==='heavy';
+    if(!w||!l||w<=0||l<=0){ out.className='md-calc__out'; out.textContent='Введите пролёт и длину навеса'; return; }
+    var area=w*l, load=Math.round(area*snow[s]);
+    var head='Площадь кровли: '+area.toFixed(1)+' м². Снег на кровле при полной норме района: до '+load+' кг ('+(load/1000).toFixed(1)+' т).\n';
+    if(w>6||s>=6||(heavy&&s>=5)){
+      out.className='md-calc__out is-warn';
+      out.textContent=head+'Навес за пределами бытовых таблиц (пролёт больше 6 м, VI район или тяжёлая кровля в V районе). Нужен расчёт инженера-конструктора, ориентир по таблице здесь не годится.';
+      return;
+    }
+    var hi=s>=4, post, raft;
+    if(w<=2){ post=hi?'60×60 мм':'40×40 мм'; raft='40×20 мм'; }
+    else if(w<=4){ post=hi?'60×60 мм, стенка 3 мм':'60×60 мм, стенка 2 мм'; raft=hi?'60×40 мм':'40×40 мм'; }
+    else { post=hi?'80×80 мм, стенка 3–4 мм':'80×80 мм, стенка 2 мм'; raft='60×40 мм'; }
+    if(heavy) raft+=' (тяжёлая кровля: берите ближе к верхней границе и чаще шаг стропил)';
+    var step=hi&&w>4?2.5:3;
+    var perRow=Math.ceil(l/step)+1, posts=perRow*2;
+    out.className='md-calc__out';
+    out.textContent=head+
+      'Стойки: '+post+', '+posts+' шт. (2 ряда по '+perRow+', шаг не больше '+step+' м).\n'+
+      'Стропильные фермы: труба '+raft+', по каждой паре стоек.\n'+
+      'Шаг обрешётки/стропил под кровлю: '+(heavy?'0,3–0,5 м':'0,6–1 м')+'.';
+  }
+  [W,L,S,R].forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+})();
+</script>
+<!-- /wp:html -->
 
 ## Пример расчёта: навес 4×6 м
 

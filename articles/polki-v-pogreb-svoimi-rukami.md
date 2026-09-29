@@ -1,8 +1,8 @@
 ---
 title: "Полки в погреб своими руками: материалы и расчёт нагрузки"
 slug: "polki-v-pogreb-svoimi-rukami"
-seo_title: "Полки в погреб своими руками: материалы и расчёт нагрузки"
-seo_description: "Как сделать полки в погреб своими руками: какой материал выбрать, как рассчитать нагрузку на полку и почему дерево в сыром погребе ведёт себя иначе."
+seo_title: "Полки и стеллаж для банок в погреб своими руками"
+seo_description: "Стеллаж для банок в погреб своими руками: из чего, чтобы не сгнил, калькулятор веса и числа стоек, сборка каркаса по шагам. Сколько выдержит полка."
 focus_keyword: "полки в погреб своими руками"
 category: "Погреба и кладовые"
 tags:
@@ -61,6 +61,62 @@ images:
 ставят дополнительную стойку или ребро жёсткости снизу. Экономить на
 толщине доски ради вида полки — то же самое, что сразу закладывать
 будущий прогиб.
+
+Чтобы не считать вручную под свой погреб, введите длину полки и толщину
+доски: калькулятор покажет, сколько банок встанет в ряд, какой вес
+получится и сколько стоек нужно, чтобы пролёт не превысил безопасный.
+
+<!-- wp:html -->
+<div id="mdShelfCalc" class="md-calc">
+  <p class="md-calc__lead">Калькулятор полки для банок: вес и число стоек</p>
+  <label class="md-calc__label" for="mdShLen">Длина полки, см</label>
+  <input type="number" id="mdShLen" class="md-calc__input" min="30" step="10" placeholder="например, 150">
+  <label class="md-calc__label" for="mdShTh">Толщина доски</label>
+  <select id="mdShTh" class="md-calc__input">
+    <option value="65">20 мм (пролёт до 65 см)</option>
+    <option value="95" selected>25–30 мм (пролёт до 95 см)</option>
+  </select>
+  <label class="md-calc__label" for="mdShJar">Какие банки</label>
+  <select id="mdShJar" class="md-calc__input">
+    <option value="3">3-литровые (около 4,5 кг, диаметр ~15 см)</option>
+    <option value="1">1-литровые (около 1,5 кг, диаметр ~10 см)</option>
+  </select>
+  <label class="md-calc__label" for="mdShRows">Рядов банок на полке (в глубину)</label>
+  <select id="mdShRows" class="md-calc__input">
+    <option value="1">1 ряд</option>
+    <option value="2" selected>2 ряда</option>
+  </select>
+  <div id="mdShOut" class="md-calc__out">Введите длину полки</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+</style>
+<script>
+(function(){
+  var len=document.getElementById('mdShLen'), th=document.getElementById('mdShTh'),
+      jar=document.getElementById('mdShJar'), rows=document.getElementById('mdShRows'),
+      out=document.getElementById('mdShOut');
+  function calc(){
+    var L=parseFloat(len.value);
+    if(!L||L<=0){ out.textContent='Введите длину полки'; return; }
+    var span=parseFloat(th.value), big=jar.value==='3';
+    var d=big?15:10, kg=big?4.5:1.5, r=parseInt(rows.value,10);
+    var perRow=Math.floor(L/d), jars=perRow*r, weight=Math.round(jars*kg);
+    var spans=Math.ceil(L/span), posts=spans+1;
+    out.textContent='В ряд встанет '+perRow+' банок, на полку — '+jars+' шт.\n'+
+      'Вес на полке: около '+weight+' кг.\n'+
+      'Стоек по длине: '+posts+' (пролёт между ними не больше '+span+' см).'+
+      (span===65&&big?'\nДля трёхлитровок лучше доска 25–30 мм: стоек понадобится меньше, а прогиба не будет.':'');
+  }
+  [len,th,jar,rows].forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+})();
+</script>
+<!-- /wp:html -->
 
 ## Почему дерево в погребе ведёт себя иначе
 
