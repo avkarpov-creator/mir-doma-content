@@ -1,0 +1,36 @@
+{
+  "slug": "verstak-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/verstak-svoimi-rukami.jpg",
+      "alt": "Прочный деревянный верстак с тисками в дачной мастерской",
+      "prompt": "Sturdy wooden workbench with a metal vise in a country house workshop, tools on a pegboard wall, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/verstak-svoimi-rukami-2.jpg",
+      "alt": "Рулетка на столешнице верстака для замера высоты под рост",
+      "prompt": "Tape measure lying on the thick wooden top of a workbench, close-up, workshop light, no people, no hands, no text"
+    },
+    {
+      "file": "images/verstak-svoimi-rukami-3.jpg",
+      "alt": "Каркас деревянного верстака из бруса перед установкой столешницы",
+      "prompt": "Unfinished workbench frame made of thick wooden beams with bolts, before the top is installed, workshop, no people, no hands, no text"
+    },
+    {
+      "file": "images/verstak-svoimi-rukami-4.jpg",
+      "alt": "Сварка каркаса металлического верстака из профильной трубы",
+      "prompt": "Welding a steel square tube frame of a workbench, sparks, garage workshop, no people, no hands, no text"
+    },
+    {
+      "file": "images/verstak-svoimi-rukami-5.jpg",
+      "alt": "Верстак с перфорированной панелью для инструментов на стене гаража",
+      "prompt": "Workbench against a garage wall with a pegboard holding hand tools and a drill, no people, no hands, no text"
+    },
+    {
+      "file": "images/verstak-svoimi-rukami-6.jpg",
+      "alt": "Готовый универсальный верстак с тисками и нижней полкой в гараже",
+      "prompt": "Finished workbench with a vise and a lower shelf loaded with boxes in a garage, no people, no hands, no text"
+    }
+  ]
+}
