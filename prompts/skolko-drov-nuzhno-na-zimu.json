@@ -1,0 +1,36 @@
+{
+  "slug": "skolko-drov-nuzhno-na-zimu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/skolko-drov-nuzhno-na-zimu.jpg",
+      "alt": "Поленница берёзовых дров под навесом у дачного дома осенью",
+      "prompt": "Long stack of split birch firewood under a wooden shelter next to a country house, autumn daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/skolko-drov-nuzhno-na-zimu-2.jpg",
+      "alt": "Сравнение поленьев дуба, берёзы, сосны и осины на деревянном столе",
+      "prompt": "Split logs of oak, birch, pine and aspen laid side by side on a wooden table for comparison, daylight, close-up, no people, no hands, no text"
+    },
+    {
+      "file": "images/skolko-drov-nuzhno-na-zimu-3.jpg",
+      "alt": "Дрова навалом в кузове грузовика и та же партия в поленнице для сравнения объёма",
+      "prompt": "Pickup truck bed loosely filled with split firewood next to a neat firewood stack of the same wood, country road, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/skolko-drov-nuzhno-na-zimu-4.jpg",
+      "alt": "Правильно уложенная поленница на поддонах под навесом с торцами клеткой",
+      "prompt": "Firewood stack on wooden pallets under a shed roof with crisscross stacked ends, autumn, no people, no hands, no text"
+    },
+    {
+      "file": "images/skolko-drov-nuzhno-na-zimu-5.jpg",
+      "alt": "Кирпичная печь с горящими сухими берёзовыми дровами в дачном доме",
+      "prompt": "Brick stove in a country house with an open firebox burning dry birch logs, warm light, no people, no hands, no text"
+    },
+    {
+      "file": "images/skolko-drov-nuzhno-na-zimu-6.jpg",
+      "alt": "Навес для дров у забора дачного участка зимой, наполовину пустой",
+      "prompt": "Half-empty firewood shelter near a garden fence in winter, snow on the ground, no people, no hands, no text"
+    }
+  ]
+}
