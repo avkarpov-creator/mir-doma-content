@@ -1,0 +1,36 @@
+{
+  "slug": "lestnica-na-vtoroy-etazh-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/lestnica-na-vtoroy-etazh-svoimi-rukami.jpg",
+      "alt": "Деревянная лестница на косоурах на второй этаж дачного дома",
+      "prompt": "Straight wooden staircase on stringers leading to the second floor of a country house interior, natural light, no people, no hands, no text"
+    },
+    {
+      "file": "images/lestnica-na-vtoroy-etazh-svoimi-rukami-2.jpg",
+      "alt": "Разметка ступеней на косоуре с помощью строительного угольника",
+      "prompt": "Steel framing square on a wide wooden board with pencil marks of stair steps, workshop, close-up, no people, no hands, no text"
+    },
+    {
+      "file": "images/lestnica-na-vtoroy-etazh-svoimi-rukami-3.jpg",
+      "alt": "Установка ступеней на косоуры деревянной лестницы",
+      "prompt": "Wooden treads being fitted onto notched stair stringers, construction stage, indoor daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/lestnica-na-vtoroy-etazh-svoimi-rukami-4.jpg",
+      "alt": "Балясины и поручень деревянной лестницы на второй этаж",
+      "prompt": "Side view of a straight wooden staircase railing: evenly spaced turned wooden balusters standing on the stringer, a straight sloped wooden handrail resting on top of the balusters, a square newel post at the bottom, simple realistic joinery, soft daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/lestnica-na-vtoroy-etazh-svoimi-rukami-5.jpg",
+      "alt": "Проём в перекрытии с усиленными балками над лестницей",
+      "prompt": "View from below of a single rectangular stair opening cut in a wooden ceiling, the cut joists are joined by a thick doubled crosswise header beam, one straight wooden staircase frame rising into the opening, clean simple geometry, construction stage, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/lestnica-na-vtoroy-etazh-svoimi-rukami-6.jpg",
+      "alt": "Готовая деревянная лестница с перилами в интерьере дачного дома",
+      "prompt": "Finished pine staircase with railings in a cosy wooden country house interior, no people, no hands, no text"
+    }
+  ]
+}
