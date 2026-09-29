@@ -1,0 +1,36 @@
+{
+  "slug": "kak-hranit-gladiolusy-zimoy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-hranit-gladiolusy-zimoy.jpg",
+      "alt": "Выкопанные клубнелуковицы гладиолусов с остатками стеблей на газете",
+      "prompt": "Freshly dug gladiolus corms with remaining short stems lying on newspaper, autumn daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-gladiolusy-zimoy-2.jpg",
+      "alt": "Клубнелуковица гладиолуса с детками и обрезанным стеблем на грядке",
+      "prompt": "Gladiolus corm with small cormlets and a trimmed stem lying on garden soil, autumn, close-up, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-gladiolusy-zimoy-3.jpg",
+      "alt": "Клубнелуковицы гладиолусов сушатся в один слой в картонных лотках",
+      "prompt": "Gladiolus corms drying in a single layer in cardboard trays in a warm room, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-gladiolusy-zimoy-4.jpg",
+      "alt": "Клубнелуковицы гладиолусов в бумажных пакетах с подписями сортов в коробке",
+      "prompt": "Gladiolus corms in paper bags in a cardboard box, blank paper labels, indoor light, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-gladiolusy-zimoy-5.jpg",
+      "alt": "Проверка клубнелуковиц гладиолусов зимой: здоровая и поражённая трипсом",
+      "prompt": "Two gladiolus corms side by side on a wooden table: both are flattened round disc-shaped corms with papery tan husk and a flat base, not onions; the left one healthy and firm, the right one with dry sunken brown spots, close-up, no people, no hands, no text"
+    },
+    {
+      "file": "images/kak-hranit-gladiolusy-zimoy-6.jpg",
+      "alt": "Проращивание клубнелуковиц гладиолусов весной на подоконнике",
+      "prompt": "Sprouting gladiolus corms laid out on a windowsill tray in spring sunlight, no people, no hands, no text"
+    }
+  ]
+}
