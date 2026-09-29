@@ -1,0 +1,36 @@
+{
+  "slug": "greyushchiy-kabel-dlya-vodoprovoda",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/greyushchiy-kabel-dlya-vodoprovoda.jpg",
+      "alt": "Водопроводная труба с греющим кабелем и слоем теплоизоляции в траншее",
+      "prompt": "Black plastic water pipe with a flat heating cable taped along its underside and grey foam insulation partly slid over it, lying in an open garden trench, autumn daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/greyushchiy-kabel-dlya-vodoprovoda-2.jpg",
+      "alt": "Отрезок саморегулирующегося греющего кабеля рядом с резистивной секцией на столе",
+      "prompt": "Short coil of flat self-regulating heating cable next to a round resistive heating cable coil on a wooden workbench, soft daylight, close-up, no people, no hands, no text"
+    },
+    {
+      "file": "images/greyushchiy-kabel-dlya-vodoprovoda-3.jpg",
+      "alt": "Греющий кабель закреплён алюминиевым скотчем вдоль пластиковой трубы",
+      "prompt": "Flat heating cable fixed with aluminium foil tape along the bottom of a black plastic water pipe, close-up, workshop light, no people, no hands, no text"
+    },
+    {
+      "file": "images/greyushchiy-kabel-dlya-vodoprovoda-4.jpg",
+      "alt": "Тройник с сальником для ввода греющего кабеля внутрь водопроводной трубы",
+      "prompt": "Brass tee fitting with a cable gland and a thin heating cable entering a plastic water pipe, basement utility room, close-up, no people, no hands, no text"
+    },
+    {
+      "file": "images/greyushchiy-kabel-dlya-vodoprovoda-5.jpg",
+      "alt": "Щиток с дифавтоматом и терморегулятором для греющего кабеля",
+      "prompt": "Small electrical panel with a residual current circuit breaker and a thermostat module for a pipe heating cable, open panel door, indoor light, no people, no hands, no text"
+    },
+    {
+      "file": "images/greyushchiy-kabel-dlya-vodoprovoda-6.jpg",
+      "alt": "Ввод водопроводной трубы в утеплённом кожухе через фундамент дома",
+      "prompt": "Insulated water pipe in a protective corrugated sleeve entering a house foundation through a sealed opening, snowy ground around, winter daylight, no people, no hands, no text"
+    }
+  ]
+}
