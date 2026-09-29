@@ -1,0 +1,36 @@
+{
+  "slug": "planirovka-uchastka-6-sotok",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/planirovka-uchastka-6-sotok.jpg",
+      "alt": "Участок 6 соток с небольшим домом, теплицей и грядками, вид сверху",
+      "prompt": "Aerial drone view of a small rectangular Russian dacha plot about 20 by 30 meters, a compact one-storey wooden house near the street fence, a polycarbonate greenhouse and neat vegetable beds in the back, green lawn, summer daylight, no people"
+    },
+    {
+      "file": "images/planirovka-uchastka-6-sotok-2.jpg",
+      "alt": "Разметка участка шнуром и колышками с отступами от забора",
+      "prompt": "Garden plot marked out with white string lines and wooden stakes near a wooden fence, measuring tape lying on the grass, early morning daylight, low angle, no people"
+    },
+    {
+      "file": "images/planirovka-uchastka-6-sotok-3.jpg",
+      "alt": "Квадратный дачный участок: дом и баня в противоположных углах",
+      "prompt": "Aerial view of a nearly square dacha plot with a small house in the front corner and a small log bathhouse in the opposite back corner, diagonal garden path between them, vegetable beds in the middle, summer daylight, no people"
+    },
+    {
+      "file": "images/planirovka-uchastka-6-sotok-4.jpg",
+      "alt": "Небольшая баня 3×4 метра в углу дачного участка",
+      "prompt": "Small log bathhouse about 3 by 4 meters with a metal chimney standing in the corner of a garden plot near a wooden fence, green grass, late afternoon light, no people"
+    },
+    {
+      "file": "images/planirovka-uchastka-6-sotok-5.jpg",
+      "alt": "Грядки-короба и теплица на маленьком дачном участке",
+      "prompt": "Raised wooden garden bed boxes with vegetables and a polycarbonate greenhouse on a small sunny garden plot, narrow gravel paths between beds, summer daylight, no people"
+    },
+    {
+      "file": "images/planirovka-uchastka-6-sotok-6.jpg",
+      "alt": "План участка 6 соток на миллиметровой бумаге с карандашом и рулеткой",
+      "prompt": "Hand-drawn garden plot plan on graph paper lying on a wooden table, with a pencil, a ruler and a tape measure, soft window daylight, top-down view, no people, no readable text"
+    }
+  ]
+}
