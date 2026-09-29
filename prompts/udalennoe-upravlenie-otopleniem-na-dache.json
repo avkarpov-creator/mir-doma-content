@@ -1,0 +1,36 @@
+{
+  "slug": "udalennoe-upravlenie-otopleniem-na-dache",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/udalennoe-upravlenie-otopleniem-na-dache.jpg",
+      "alt": "Дачный дом зимой с заснеженной крышей и дымком из трубы",
+      "prompt": "Small wooden country house in winter with a snow-covered roof and thin smoke from the chimney, snowy garden and fence, clear frosty morning, no people"
+    },
+    {
+      "file": "images/udalennoe-upravlenie-otopleniem-na-dache-2.jpg",
+      "alt": "GSM-термостат с антенной и выносным датчиком температуры на стене",
+      "prompt": "Wall-mounted white GSM thermostat box with a short antenna and a wired external temperature sensor on a light wooden wall, indoor daylight, close-up, no readable text, no people"
+    },
+    {
+      "file": "images/udalennoe-upravlenie-otopleniem-na-dache-3.jpg",
+      "alt": "Клеммная колодка настенного газового котла с проводами термостата",
+      "prompt": "Terminal block inside the lower panel of a white wall-mounted gas boiler with two thin thermostat wires connected, screwdriver lying nearby, close-up, neutral indoor light, no readable text, no people"
+    },
+    {
+      "file": "images/udalennoe-upravlenie-otopleniem-na-dache-4.jpg",
+      "alt": "Пустая комната дачного дома зимой: радиатор под окном с инеем",
+      "prompt": "Empty tidy room of a wooden country house in winter, white panel radiator under a window with frost patterns on the glass, snowy garden visible outside, wooden floor clean and dry, cold soft daylight, no people, no text, no dials"
+    },
+    {
+      "file": "images/udalennoe-upravlenie-otopleniem-na-dache-5.jpg",
+      "alt": "GSM-термостат с резервным аккумулятором в щитке дачного дома",
+      "prompt": "Electrical distribution panel in a country house with circuit breakers, a small contactor and a GSM relay module with a backup battery, open panel door, indoor light, no readable text, no people"
+    },
+    {
+      "file": "images/udalennoe-upravlenie-otopleniem-na-dache-6.jpg",
+      "alt": "Выносной датчик температуры термостата на стене жилой комнаты",
+      "prompt": "Small white room temperature sensor mounted on a wooden wall of a living room about one meter above the floor, sofa and window in soft focus background, daylight, no people"
+    }
+  ]
+}
