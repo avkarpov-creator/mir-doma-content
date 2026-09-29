@@ -1,0 +1,36 @@
+{
+  "slug": "ukrytie-vinograda-na-zimu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/ukrytie-vinograda-na-zimu.jpg",
+      "alt": "Лоза винограда, уложенная на доски и укрытая лапником у забора осенью",
+      "prompt": "Grapevine canes lying flat along the ground at the base of a garden fence on wooden planks, covered with a thick layer of green spruce branches lying on the ground, bare vine trellis posts above, late autumn garden, overcast, no people, no hands, no text"
+    },
+    {
+      "file": "images/ukrytie-vinograda-na-zimu-2.jpg",
+      "alt": "Связанная в пучок лоза винограда уложена на деревянные доски",
+      "prompt": "Bundled grapevine canes tied with twine lying on wooden planks on the ground, late autumn, no people, no hands, no text"
+    },
+    {
+      "file": "images/ukrytie-vinograda-na-zimu-3.jpg",
+      "alt": "Воздушно-сухое укрытие винограда: дуги, спанбонд и плёнка с продухами",
+      "prompt": "Low wire hoops about 40 cm high over grapevine canes lying flat on the ground, covered with white agrofibre and clear plastic film on top, ends of the tunnel left open for ventilation, bricks holding edges, bare trellis posts nearby, late autumn garden, no people, no hands, no text"
+    },
+    {
+      "file": "images/ukrytie-vinograda-na-zimu-4.jpg",
+      "alt": "Виноградная лоза, засыпанная землёй в неглубокой траншее",
+      "prompt": "Grapevine canes laid in a shallow trench and partly covered with soil, garden spade nearby, autumn, no people, no hands, no text"
+    },
+    {
+      "file": "images/ukrytie-vinograda-na-zimu-5.jpg",
+      "alt": "Мульча из опилок вокруг основания куста винограда осенью",
+      "prompt": "Sawdust mulch around the base of a grapevine trunk in late autumn, no people, no hands, no text"
+    },
+    {
+      "file": "images/ukrytie-vinograda-na-zimu-6.jpg",
+      "alt": "Снятие зимнего укрытия с винограда весной, лоза с набухшими почками",
+      "prompt": "Grapevine cane with swelling buds after removing winter cover, early spring garden, no people, no hands, no text"
+    }
+  ]
+}
