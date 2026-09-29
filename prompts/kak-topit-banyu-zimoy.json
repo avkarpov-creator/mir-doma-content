@@ -1,0 +1,36 @@
+{
+  "slug": "kak-topit-banyu-zimoy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-topit-banyu-zimoy.jpg",
+      "alt": "Деревянная баня в снегу с дымом из трубы зимним вечером",
+      "prompt": "Wooden log bathhouse covered with snow on a winter evening, smoke rising from the metal chimney, warm light in a small window, snowy garden, blue dusk, no people"
+    },
+    {
+      "file": "images/kak-topit-banyu-zimoy-2.jpg",
+      "alt": "Открытая дверца банной печи с горящей лучиной у топки",
+      "prompt": "Black steel sauna stove with its firebox door wide open, a single thin burning wood splinter lying on the edge of the firebox opening, small flame being drawn inward, dim log bathhouse interior, warm firelight, close-up, empty scene, absolutely no people, no hands"
+    },
+    {
+      "file": "images/kak-topit-banyu-zimoy-3.jpg",
+      "alt": "Кирпичная банная печь, первая малая закладка дров",
+      "prompt": "Brick sauna stove with open firebox door showing a small fire of thin split logs, frosty log walls of the bathhouse, cold daylight from a small window, no people"
+    },
+    {
+      "file": "images/kak-topit-banyu-zimoy-4.jpg",
+      "alt": "Открытая дверь бани зимой для просушки после парения",
+      "prompt": "Open wooden door of a bathhouse in winter with steam coming out into the frosty air, snowy yard, wooden steps, daylight, no people"
+    },
+    {
+      "file": "images/kak-topit-banyu-zimoy-5.jpg",
+      "alt": "Капли конденсата на деревянном потолке парилки",
+      "prompt": "Water condensation droplets on a wooden plank ceiling of a sauna steam room, soft warm light, close-up, no people"
+    },
+    {
+      "file": "images/kak-topit-banyu-zimoy-6.jpg",
+      "alt": "Слитый бак и открытый кран в зимней бане после парения",
+      "prompt": "Stainless steel water tank on a sauna stove with an open drain tap, an empty metal bucket on the wooden floor below, log bathhouse interior, small window showing deep snow and frosty winter landscape outside, cold daylight, empty scene, no people, no hands"
+    }
+  ]
+}
