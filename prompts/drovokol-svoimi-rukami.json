@@ -1,0 +1,36 @@
+{
+  "slug": "drovokol-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/drovokol-svoimi-rukami.jpg",
+      "alt": "Самодельный гидравлический дровокол с расколотой чуркой во дворе дачи",
+      "prompt": "Homemade hydraulic log splitter with a bottle jack in a steel channel frame splitting a birch log in a country yard, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/drovokol-svoimi-rukami-2.jpg",
+      "alt": "Ручной дровокол: клин в стальном кольце на деревянном пне",
+      "prompt": "Manual kindling splitter: steel wedge inside a steel ring mounted on a wooden stump, split birch pieces around, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/drovokol-svoimi-rukami-3.jpg",
+      "alt": "Гидравлический дровокол из бутылочного домкрата в раме из швеллера",
+      "prompt": "Close-up of a bottle jack pushing a log toward a welded steel wedge in a channel frame, return springs visible, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/drovokol-svoimi-rukami-4.jpg",
+      "alt": "Винтовой конусный дровокол с защитным кожухом на ремённой передаче",
+      "prompt": "Electric screw cone log splitter on a steel stand with a metal guard over the belt drive, outdoor shed, daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/drovokol-svoimi-rukami-5.jpg",
+      "alt": "Расколотые берёзовые поленья рядом с чурками после работы дровокола",
+      "prompt": "Pile of freshly split birch firewood next to uncut round logs on grass, autumn daylight, no people, no hands, no text"
+    },
+    {
+      "file": "images/drovokol-svoimi-rukami-6.jpg",
+      "alt": "Готовые дрова в поленнице под навесом после колки",
+      "prompt": "Neatly stacked firewood under a wooden shed roof, autumn country yard, no people, no hands, no text"
+    }
+  ]
+}
