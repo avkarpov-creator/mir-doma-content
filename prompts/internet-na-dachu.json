@@ -1,0 +1,36 @@
+{
+  "slug": "internet-na-dachu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/internet-na-dachu.jpg",
+      "alt": "Мачта с 4G-антенной на крыше дачного дома",
+      "prompt": "Small wooden country house in a Russian dacha village with a galvanized mast above the roof ridge holding a flat white MIMO panel antenna and a small grey weatherproof box, birch trees around, blue sky, eye-level view from the garden, summer afternoon"
+    },
+    {
+      "file": "images/internet-na-dachu-2.jpg",
+      "alt": "Замер уровня сигнала LTE приложением на смартфоне во дворе дачи",
+      "prompt": "Hand holding a smartphone showing a signal strength app with graphs and numbers, in the background a dacha garden with a wooden fence and fruit trees, shallow depth of field, daylight"
+    },
+    {
+      "file": "images/internet-na-dachu-3.jpg",
+      "alt": "Панельная MIMO-антенна и герметичный бокс с модемом на мачте над коньком",
+      "prompt": "Close-up of a roof mast with a white flat panel 4G MIMO antenna and a sealed grey plastic enclosure fixed below it, black network cable running down, green grounding wire clamped to the mast, clear sky, low angle"
+    },
+    {
+      "file": "images/internet-na-dachu-4.jpg",
+      "alt": "Спутниковая тарелка на стене дачного дома, направленная на юг",
+      "prompt": "Satellite dish about one meter wide mounted on the wooden wall of a country house facing south, garden and vegetable beds below, early autumn daylight, three-quarter view"
+    },
+    {
+      "file": "images/internet-na-dachu-5.jpg",
+      "alt": "Уличная точка доступа Wi-Fi на стене дачного дома, беседка на заднем плане",
+      "prompt": "Outdoor white wireless access point mounted on the log wall of a dacha house under the roof eave, wooden gazebo with a table in the garden in the background, evening golden light"
+    },
+    {
+      "file": "images/internet-na-dachu-6.jpg",
+      "alt": "Настройка 4G-роутера с ноутбуком на веранде дачи",
+      "prompt": "Laptop and a white 4G router with two small antennas on a wooden table on a dacha veranda, cup of tea, garden visible through the windows, warm daylight"
+    }
+  ]
+}
