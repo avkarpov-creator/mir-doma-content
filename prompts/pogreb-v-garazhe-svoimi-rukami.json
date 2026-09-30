@@ -1,0 +1,36 @@
+{
+  "slug": "pogreb-v-garazhe-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/pogreb-v-garazhe-svoimi-rukami.jpg",
+      "alt": "Открытый утеплённый люк погреба в полу гаража рядом с машиной",
+      "prompt": "Interior of a private brick garage with a parked car, in the far corner an open square cellar hatch in the concrete floor with a thick insulated wooden lid lifted, wooden ladder going down, workbench nearby, eye-level view, soft daylight from open garage gate"
+    },
+    {
+      "file": "images/pogreb-v-garazhe-svoimi-rukami-2.jpg",
+      "alt": "Схема размещения погреба в углу гаража вне колеи машины",
+      "prompt": "Top-down view of a garage floor plan drawn on paper on a workbench: car outline, inspection pit, cellar marked in the far corner away from wheel tracks, pencil and tape measure beside, daylight"
+    },
+    {
+      "file": "images/pogreb-v-garazhe-svoimi-rukami-3.jpg",
+      "alt": "Двойной утеплённый люк погреба: верхняя крышка в уровне пола и нижняя с пенополистиролом",
+      "prompt": "Close-up of a double cellar hatch in a garage floor: upper steel lid with rubber seal raised, second insulated lid with white foam board visible 40 cm below, concrete floor around, top-down angle, cool daylight"
+    },
+    {
+      "file": "images/pogreb-v-garazhe-svoimi-rukami-4.jpg",
+      "alt": "Вентиляционные трубы погреба, выведенные через стену и крышу гаража",
+      "prompt": "Exterior corner of a brick garage with two grey plastic ventilation pipes: one short intake pipe coming out of the wall near the ground, one tall exhaust pipe rising above the roof edge, autumn day, eye-level view"
+    },
+    {
+      "file": "images/pogreb-v-garazhe-svoimi-rukami-5.jpg",
+      "alt": "Кирпичные стены погреба в котловане внутри гаража на этапе строительства",
+      "prompt": "Construction of a cellar inside a garage: rectangular pit with freshly laid red ceramic brick walls, concrete floor at the bottom, bucket and trowel, concrete garage floor cut around the opening, view from above at an angle, work lights"
+    },
+    {
+      "file": "images/pogreb-v-garazhe-svoimi-rukami-6.jpg",
+      "alt": "Ящики с овощами на нижних полках погреба и термометр на стене",
+      "prompt": "Inside a small underground cellar: wooden shelves with crates of potatoes, carrots and cabbage on the lowest shelves near the floor, wall thermometer on a brick wall, warm lamp light, eye-level view"
+    }
+  ]
+}
