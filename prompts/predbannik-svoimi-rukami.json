@@ -1,0 +1,36 @@
+{
+  "slug": "predbannik-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/predbannik-svoimi-rukami.jpg",
+      "alt": "Обшитый вагонкой предбанник бани со столом и лавками",
+      "prompt": "Cozy changing room of a small Russian country bathhouse, walls and ceiling clad in light pine tongue-and-groove boards with oiled finish, simple wooden table by a small window, two wooden benches along the wall, towels on hooks, wide-angle interior view from the entrance door, soft late afternoon daylight"
+    },
+    {
+      "file": "images/predbannik-svoimi-rukami-2.jpg",
+      "alt": "Утепление стены предбанника минватой и пароизоляционной плёнкой перед обшивкой",
+      "prompt": "Wall of a bathhouse changing room under renovation: mineral wool insulation between wooden studs covered with translucent vapor barrier film, seams sealed with tape, thin wooden battens fixed on top, close-up at chest height, daylight from a window"
+    },
+    {
+      "file": "images/predbannik-svoimi-rukami-3.jpg",
+      "alt": "Деревянный пол и порог между моечной и предбанником",
+      "prompt": "Wooden plank floor of a bathhouse changing room with a raised wooden threshold at the open door to the washing room, washing room floor with a drain visible beyond, low angle view, warm indoor light"
+    },
+    {
+      "file": "images/predbannik-svoimi-rukami-4.jpg",
+      "alt": "Топка банной печи, выведенная в предбанник, с экраном и металлическим листом на полу",
+      "prompt": "Firebox door of a metal sauna stove passing through a brick-lined wall into a wooden changing room, stone tile heat shield around the door, steel sheet on the wooden floor in front, small metal log holder with firewood nearby, eye-level view, evening warm light"
+    },
+    {
+      "file": "images/predbannik-svoimi-rukami-5.jpg",
+      "alt": "Стол, лавки и вешалка в обустроенном предбаннике",
+      "prompt": "Furnished bathhouse changing room: solid pine table with a teapot and mugs, wide wooden benches, wall hooks with towels and a shelf above, shoe rack on the floor, pine board walls, three-quarter view, soft evening light from a moisture-proof ceiling lamp"
+    },
+    {
+      "file": "images/predbannik-svoimi-rukami-6.jpg",
+      "alt": "Обшивка стены предбанника вагонкой на кляммеры по обрешётке",
+      "prompt": "Hands installing a pine tongue-and-groove board on a bathhouse wall using small metal clips on horizontal wooden battens, spirit level on the board, close-up side view, daylight"
+    }
+  ]
+}
