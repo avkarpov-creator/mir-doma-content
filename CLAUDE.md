@@ -76,7 +76,7 @@ python3 scripts/mdi.py index && python3 scripts/mdi.py state
 
 `mir-doma-indexer` шлёт новые статьи в Яндекс и Bing через IndexNow при
 публикации — это ускоряет обход, а не заменяет перелинковку. Для Google
-плагин ничего не делает (только sitemap Rank Math + входящие ссылки), и на
+плагин ничего не делает (только sitemap Yoast + входящие ссылки), и на
 факт индексации в целом всё ещё сильнее всего влияют именно ссылки.
 
 ## Приоритизация контента
@@ -107,10 +107,10 @@ python3 scripts/mdi.py index && python3 scripts/mdi.py state
 
 ## Стек
 
-WordPress + тема Root (WPShop) + Rank Math + Smush (ленивая загрузка Smush
+WordPress + тема Root (WPShop) + Yoast SEO + Smush (ленивая загрузка Smush
 выключена в пользу нативного `loading="lazy"`, обратно не включать — чинили CLS).
 Плагины: `mir-doma-git-importer`, `mir-doma-indexer` (IndexNow для Яндекса и
 Bing при публикации — Google не поддерживает IndexNow, туда не шлём и не
-предлагаем Indexing API, только sitemap Rank Math), `Mir-Doma Social
+предлагаем Indexing API, только sitemap Yoast), `Mir-Doma Social
 Publisher` (Telegram + VK).
 Данные: Яндекс.Метрика, Google Search Console, Яндекс.Вебмастер, GA4.
