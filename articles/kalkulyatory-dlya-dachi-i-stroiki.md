@@ -8,6 +8,7 @@ category: "Инструменты и материалы"
 tags:
   - калькулятор
   - расчёт материалов
+adopt_existing: true
 status: draft
 images:
   - images/kalkulyatory-dlya-dachi-i-stroiki.jpg
@@ -34,6 +35,7 @@ images:
 - [Брус на сруб бани](https://mir-doma.pro/banya-iz-brusa-svoimi-rukami/#mdBbCalc) — количество бруса и венцов по размерам сруба.
 - [Бетон на фундамент бани](https://mir-doma.pro/fundament-pod-banyu-svoimi-rukami/#mdFbCalc) — объём бетона на ленточный фундамент.
 - [Масса камней для каменки](https://mir-doma.pro/pech-dlya-bani-iz-metalla/#mdPbCalc) — сколько камней нужно на печь-каменку по объёму топки.
+- [Обшивка предбанника](https://mir-doma.pro/predbannik-svoimi-rukami/#mdPbCalc) — вагонка, кляммеры, утеплитель и пароизоляция по размерам предбанника.
 
 ## Кровля и фасады
 
@@ -83,6 +85,7 @@ images:
 ## Погреба и кладовые
 
 - [Строительство погреба](https://mir-doma.pro/stroitelstvo-pogreba-smeta/#mdPgCalc) — смета на погреб по размерам и материалу стен.
+- [Погреб в гараже](https://mir-doma.pro/pogreb-v-garazhe-svoimi-rukami/#mdPgCalc) — объём котлована, бетон или кирпич на стены, гидроизоляция.
 
 ## Хозяйственные постройки
 
@@ -107,6 +110,7 @@ images:
 
 - [Трафик 4G-камеры](https://mir-doma.pro/videonablyudenie-na-dache-svoimi-rukami/#mdVnCalc) — расход мобильного трафика в месяц по разрешению видео.
 - [Зоны GSM-сигнализации](https://mir-doma.pro/gsm-signalizaciya-dlya-dachi-svoimi-rukami/#mdGsCalc) — количество зон и подбор ёмкости панели.
+- [Трафик интернета на даче](https://mir-doma.pro/internet-na-dachu/#mdNetCalc) — сколько гигабайт уходит за месяц и какой тариф брать.
 
 ![Блокнот с расчётами и чеки на стройматериалы на столе](images/kalkulyatory-dlya-dachi-i-stroiki-6.jpg)
 
