@@ -1,0 +1,36 @@
+{
+  "slug": "potolok-v-bane-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/potolok-v-bane-svoimi-rukami.jpg",
+      "alt": "Потолок парилки из липовой вагонки над полками бани",
+      "prompt": "Interior of a Russian sauna steam room: smooth light linden tongue-and-groove ceiling boards running across, two-tier wooden benches below, a warm wall lamp in a wooden shade, view from the doorway slightly upward, soft warm light"
+    },
+    {
+      "file": "images/potolok-v-bane-svoimi-rukami-2.jpg",
+      "alt": "Базальтовая вата между балками подшивного потолка бани и мембрана на чердаке",
+      "prompt": "Cutaway view in an unfinished bathhouse attic: wooden ceiling joists with grey basalt mineral wool slabs fitted between them, white breathable membrane partly rolled over the insulation, rough board walkway, daylight from a gable window"
+    },
+    {
+      "file": "images/potolok-v-bane-svoimi-rukami-3.jpg",
+      "alt": "Фольга с проклеенными стыками и рейки контробрешётки на потолке парилки",
+      "prompt": "Close-up of a sauna ceiling under construction viewed from below: shiny aluminium foil fixed across the joists with overlapping seams sealed by silver aluminium tape, thin wooden battens nailed over the foil, work lamp light"
+    },
+    {
+      "file": "images/potolok-v-bane-svoimi-rukami-4.jpg",
+      "alt": "Подшивка потолка бани липовой вагонкой по рейкам контробрешётки",
+      "prompt": "Worker on wooden trestles nailing light linden lining boards to the ceiling battens of a small bathhouse room, aluminium foil visible above the battens where boards are not yet installed, daylight from a small window"
+    },
+    {
+      "file": "images/potolok-v-bane-svoimi-rukami-5.jpg",
+      "alt": "Настильный потолок маленькой бани с утеплителем сверху",
+      "prompt": "Small bathhouse under construction without attic: thick wooden boards laid tightly across the top of the log walls forming the ceiling, mineral wool slabs on top, roof rafters above, overcast daylight"
+    },
+    {
+      "file": "images/potolok-v-bane-svoimi-rukami-6.jpg",
+      "alt": "Потолок парилки, обработанный маслом для полков",
+      "prompt": "Close-up of a sauna steam room ceiling of linden boards treated with clear oil, slight satin sheen, wooden ventilation grille in the wall just below the ceiling, warm light"
+    }
+  ]
+}
