@@ -1,0 +1,36 @@
+{
+  "slug": "kak-ukrasit-dachu-na-novyy-god",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-ukrasit-dachu-na-novyy-god.jpg",
+      "alt": "Деревянный дачный дом с тёплой гирляндой по карнизу и украшенной елью у крыльца зимним вечером",
+      "prompt": "Wooden country house in a Russian dacha garden on a snowy winter evening, warm white string lights along the roof eaves and gable, a spruce tree by the porch wrapped in warm lights, cleared snowy path leading to the porch, blue twilight sky"
+    },
+    {
+      "file": "images/kak-ukrasit-dachu-na-novyy-god-2.jpg",
+      "alt": "Каучуковые уличные гирлянды с маркировкой IP65 и блоком питания на верстаке",
+      "prompt": "Outdoor Christmas string lights with black rubber cable coiled on a wooden workbench next to a plug-in power supply unit and plastic gutter clips, close-up, daylight"
+    },
+    {
+      "file": "images/kak-ukrasit-dachu-na-novyy-god-3.jpg",
+      "alt": "Гирлянда-бахрома по карнизу и подсвеченный контур окна деревянного дома",
+      "prompt": "Close-up of a wooden house facade at dusk in winter: icicle-style warm white light curtain hanging along the roof edge, a window outlined with a glowing rope light, snow on the windowsill"
+    },
+    {
+      "file": "images/kak-ukrasit-dachu-na-novyy-god-4.jpg",
+      "alt": "Растущая на участке ель, украшенная гирляндой по спирали и деревянными игрушками",
+      "prompt": "Living spruce tree growing in a snowy garden decorated with a spiral of warm string lights and simple wooden and felt ornaments, wooden fence behind, early winter evening"
+    },
+    {
+      "file": "images/kak-ukrasit-dachu-na-novyy-god-5.jpg",
+      "alt": "Ледяные фонари со свечами вдоль заснеженной дорожки к дому",
+      "prompt": "Row of homemade ice lanterns with burning candles inside, frozen rowan berries and spruce twigs in the ice, placed along a snowy garden path to a country house, dusk"
+    },
+    {
+      "file": "images/kak-ukrasit-dachu-na-novyy-god-6.jpg",
+      "alt": "Новогодняя веранда дачи с пледами, еловыми ветками и тёплым светом гирлянды",
+      "prompt": "Glazed winter veranda of a country house decorated for New Year: wool blankets and cushions on a wooden bench, spruce branches and pine cones in a basket, warm festoon light bulbs under the ceiling, frosty window, evening"
+    }
+  ]
+}
