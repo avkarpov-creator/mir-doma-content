@@ -1,0 +1,36 @@
+{
+  "slug": "kesson-dlya-skvazhiny-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kesson-dlya-skvazhiny-svoimi-rukami.jpg",
+      "alt": "Пластиковый кессон для скважины в котловане на дачном участке",
+      "prompt": "Black ribbed polyethylene well caisson about 1.2 m in diameter standing in a freshly dug round pit on a Russian dacha plot, steel well casing pipe rising through the bottom, sandy soil walls, shovel and wheelbarrow nearby, overcast autumn day"
+    },
+    {
+      "file": "images/kesson-dlya-skvazhiny-svoimi-rukami-2.jpg",
+      "alt": "Пластиковый и металлический кессоны для скважины рядом перед установкой",
+      "prompt": "Two well caissons side by side on grass before installation: a black ribbed plastic caisson and a cylindrical steel caisson painted with dark protective coating, both with a round neck and lid, garden fence in background, daylight"
+    },
+    {
+      "file": "images/kesson-dlya-skvazhiny-svoimi-rukami-3.jpg",
+      "alt": "Монтаж кессона: обсадная труба проходит через гильзу в днище, пазухи засыпают песком",
+      "prompt": "Installation of a plastic well caisson in a pit: the well casing pipe passes through a sealed sleeve in the caisson bottom, workers in boots backfilling the space around the caisson with sand from a wheelbarrow, view from above at an angle, daylight"
+    },
+    {
+      "file": "images/kesson-dlya-skvazhiny-svoimi-rukami-4.jpg",
+      "alt": "Утепление крышки кессона плитами экструдированного пенополистирола",
+      "prompt": "Round lid of a well caisson being insulated: grey-blue extruded polystyrene foam boards cut to fit and laid on top of the lid and around the neck, gloved hands pressing a board, cut-off pieces and a utility knife nearby, autumn leaves on the ground"
+    },
+    {
+      "file": "images/kesson-dlya-skvazhiny-svoimi-rukami-5.jpg",
+      "alt": "Оборудование в кессоне: оголовок скважины, кран, фильтр и реле давления",
+      "prompt": "Inside view of a well caisson from the open hatch: well head on the steel casing, blue ball valve, filter with a transparent bowl, pressure switch with gauge and a small blue pressure tank on a stand, ladder on the wall, flashlight lighting"
+    },
+    {
+      "file": "images/kesson-dlya-skvazhiny-svoimi-rukami-6.jpg",
+      "alt": "Горловина кессона с утеплённой крышкой над газоном зимой",
+      "prompt": "Insulated round hatch of a well caisson rising slightly above a snow-covered lawn of a country house garden, a small vent pipe next to it, frosty winter morning, low sun"
+    }
+  ]
+}
