@@ -1,0 +1,36 @@
+{
+  "slug": "prolivnoy-pol-v-bane-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/prolivnoy-pol-v-bane-svoimi-rukami.jpg",
+      "alt": "Проливной деревянный пол с зазорами между досками в моечной бани",
+      "prompt": "Washing room of a Russian wooden bathhouse: floor of larch boards with even narrow gaps between them, a wooden bench with a basin and ladle, log walls, water droplets on the boards, soft daylight from a small window"
+    },
+    {
+      "file": "images/prolivnoy-pol-v-bane-svoimi-rukami-2.jpg",
+      "alt": "Бетонный поддон с уклоном к приямку под будущим проливным полом бани",
+      "prompt": "Bathhouse under construction: freshly poured concrete floor slab inside the foundation with a visible slope toward a plastic floor drain with a grate in the corner, brick foundation walls with small vent openings, daylight"
+    },
+    {
+      "file": "images/prolivnoy-pol-v-bane-svoimi-rukami-3.jpg",
+      "alt": "Сборка щитов проливного пола из доски лиственницы с зазорами на лагах",
+      "prompt": "Carpenter assembling a removable floor panel from larch boards screwed onto cross battens with equal gaps between boards, spacer wedges in the gaps, on a workbench in a garden workshop, daylight"
+    },
+    {
+      "file": "images/prolivnoy-pol-v-bane-svoimi-rukami-4.jpg",
+      "alt": "Укладка лаг на кирпичные столбики над бетонным поддоном с трапом",
+      "prompt": "Wooden floor joists treated with antiseptic laid on short brick posts with black waterproofing pads, above a sloped concrete base with a floor drain, inside a bathhouse washing room under construction"
+    },
+    {
+      "file": "images/prolivnoy-pol-v-bane-svoimi-rukami-5.jpg",
+      "alt": "Утеплённый поддон под проливным полом: плиты пенополистирола под стяжкой",
+      "prompt": "Floor of a bathhouse under construction: grey-blue extruded polystyrene foam boards laid over a compacted sand bed, steel reinforcement mesh on top and a plastic drain pipe outlet, ready for pouring concrete, daylight"
+    },
+    {
+      "file": "images/prolivnoy-pol-v-bane-svoimi-rukami-6.jpg",
+      "alt": "Сушка снятых щитов проливного пола бани на солнце",
+      "prompt": "Removable wooden floor panels from a bathhouse leaning against a wooden fence to dry in the sun on a dacha plot, grass and garden in the background, sunny day"
+    }
+  ]
+}
