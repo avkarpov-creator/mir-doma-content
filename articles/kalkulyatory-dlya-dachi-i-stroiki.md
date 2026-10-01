@@ -36,6 +36,8 @@ images:
 - [Бетон на фундамент бани](https://mir-doma.pro/fundament-pod-banyu-svoimi-rukami/#mdFbCalc) — объём бетона на ленточный фундамент.
 - [Масса камней для каменки](https://mir-doma.pro/pech-dlya-bani-iz-metalla/#mdPbCalc) — сколько камней нужно на печь-каменку по объёму топки.
 - [Обшивка предбанника](https://mir-doma.pro/predbannik-svoimi-rukami/#mdPbCalc) — вагонка, кляммеры, утеплитель и пароизоляция по размерам предбанника.
+- [Высота дымохода бани](https://mir-doma.pro/kakoy-dymokhod-luchshe-dlya-bani/#mdDhCalc) — высота трубы над кровлей по расстоянию до конька и общая высота от колосника.
+- [Искрогаситель на дымоход](https://mir-doma.pro/iskrogasitel-na-dymokhod-dlya-bani/#mdIgCalc) — высота сетчатого цилиндра, заготовка сетки и размер колпака под диаметр трубы.
 
 ## Кровля и фасады
 
@@ -55,10 +57,16 @@ images:
 
 - [Стоимость отопления](https://mir-doma.pro/otoplenie-dachi-chto-deshevle/#mdOtCalc) — расходы на сезон по виду топлива и площади.
 - [Тёплый пол на веранде](https://mir-doma.pro/teplyy-pol-na-verande/#mdTvCalc) — мощность и стоимость тёплого пола по площади.
+- [Мощность обогревателя](https://mir-doma.pro/kakoy-obogrevatel-vybrat-dlya-dachi/#mdObCalc) — сколько киловатт нужно по площади, высоте потолка и утеплению.
 
 ## Электрика и сантехника
 
 - [Электропроводка на даче](https://mir-doma.pro/skhema-elektroprovodki-na-dache/#mdEpCalc) — сечение кабеля и номинал автомата по нагрузке.
+- [Мощность стабилизатора](https://mir-doma.pro/kakoy-stabilizator-napryazheniya-vybrat/#mdStCalc) — мощность стабилизатора напряжения по нагрузке приборов и качеству сети.
+
+## Водоемы и системы полива
+
+- [Кессон для скважины](https://mir-doma.pro/kesson-dlya-skvazhiny-svoimi-rukami/#mdKsCalc) — глубина кессона по промерзанию, объём котлована, бетон на плиту и утеплитель.
 
 ![Смартфон с калькулятором в руке на фоне сложенных стройматериалов](images/kalkulyatory-dlya-dachi-i-stroiki-3.jpg)
 
