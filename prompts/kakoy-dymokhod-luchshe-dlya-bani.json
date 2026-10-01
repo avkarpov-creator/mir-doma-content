@@ -1,0 +1,36 @@
+{
+  "slug": "kakoy-dymokhod-luchshe-dlya-bani",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kakoy-dymokhod-luchshe-dlya-bani.jpg",
+      "alt": "Дымоход банной печи из нержавеющей стали выходит через потолок деревянной парной",
+      "prompt": "Interior of a small Russian wooden bathhouse steam room: black metal wood-burning sauna stove with stones, a shiny stainless steel chimney pipe rising straight up and passing through a square stainless steel ceiling plate in the light linden-board ceiling, wooden benches on the side, warm evening light from a small window"
+    },
+    {
+      "file": "images/kakoy-dymokhod-luchshe-dlya-bani-2.jpg",
+      "alt": "Одностенная труба над печью и переход на утеплённый сэндвич-дымоход",
+      "prompt": "Close-up of a sauna stove chimney: the first one-meter section is a single-wall stainless steel pipe slightly tinted golden-blue from heat, joined by an adapter to a thicker insulated double-wall stainless steel chimney section going up, wooden wall clad with boards behind with a metal heat shield, daylight"
+    },
+    {
+      "file": "images/kakoy-dymokhod-luchshe-dlya-bani-3.jpg",
+      "alt": "Дымоход бани, выведенный через стену и поднятый по деревянному фасаду на кронштейнах",
+      "prompt": "Exterior of a small log bathhouse in a Russian countryside garden, an insulated stainless steel chimney exits horizontally through the log wall via a tee and rises vertically along the facade, fixed with metal wall brackets, reaching above the roof edge, overcast autumn day"
+    },
+    {
+      "file": "images/kakoy-dymokhod-luchshe-dlya-bani-4.jpg",
+      "alt": "Потолочно-проходной узел из нержавейки с засыпкой керамзитом на чердаке бани",
+      "prompt": "Attic of a wooden bathhouse: square stainless steel ceiling pass-through box around an insulated chimney pipe, filled to the top with expanded clay pellets, wooden ceiling joists and rafters around with clearance, mineral board covering the edges of the opening, light from a work lamp"
+    },
+    {
+      "file": "images/kakoy-dymokhod-luchshe-dlya-bani-5.jpg",
+      "alt": "Оголовок дымохода бани над кровлей с искроуловителем и мастер-флешем",
+      "prompt": "Insulated stainless steel chimney emerging from a metal tile roof of a small bathhouse, red silicone roof flashing boot sealed around the pipe, conical cap with a mesh spark arrester on top, smoke rising, clear frosty winter day with snow on the roof"
+    },
+    {
+      "file": "images/kakoy-dymokhod-luchshe-dlya-bani-6.jpg",
+      "alt": "Чистка дымохода бани ершом через ревизию",
+      "prompt": "Man in work gloves cleaning a stainless steel sauna chimney with a round wire brush on flexible rods through an inspection opening, bucket for soot on the wooden floor, view at waist height, daylight from a small window"
+    }
+  ]
+}
