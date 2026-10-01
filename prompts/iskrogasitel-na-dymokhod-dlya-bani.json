@@ -1,0 +1,36 @@
+{
+  "slug": "iskrogasitel-na-dymokhod-dlya-bani",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/iskrogasitel-na-dymokhod-dlya-bani.jpg",
+      "alt": "Самодельный сетчатый искрогаситель из нержавейки на дымоходе бани",
+      "prompt": "Homemade spark arrester on a stainless steel chimney of a small wooden bathhouse: short cylinder of stainless steel wire mesh with a conical stainless cap on three legs above it, soft-shingle roof below, birch trees in the background, early autumn evening light"
+    },
+    {
+      "file": "images/iskrogasitel-na-dymokhod-dlya-bani-2.jpg",
+      "alt": "Три вида искрогасителей: сетчатый цилиндр, колпак с отражателем и вставка в трубу",
+      "prompt": "Three different chimney spark arresters laid side by side on a wooden workbench: a stainless mesh cylinder with a conical cap, a cap with an inverted cone deflector underneath, and a small mesh basket insert, top-down view, daylight"
+    },
+    {
+      "file": "images/iskrogasitel-na-dymokhod-dlya-bani-3.jpg",
+      "alt": "Материалы для искрогасителя: сетка из нержавейки, обрезок трубы, лист для колпака и заклёпки",
+      "prompt": "Materials on a wooden workbench in a garage: roll of stainless steel wire mesh with 5 mm openings, short piece of stainless chimney pipe, sheet of thin stainless steel, pop rivets, metal shears, hand riveter, hose clamp, tape measure, daylight from a window"
+    },
+    {
+      "file": "images/iskrogasitel-na-dymokhod-dlya-bani-4.jpg",
+      "alt": "Сборка искрогасителя: сетка свёрнута в цилиндр и закреплена хомутом на патрубке",
+      "prompt": "Hands in work gloves fixing a stainless steel mesh cylinder onto a short stainless chimney pipe section with a hose clamp on a workbench, close-up, daylight"
+    },
+    {
+      "file": "images/iskrogasitel-na-dymokhod-dlya-bani-5.jpg",
+      "alt": "Установка искрогасителя на дымоход бани на крыше",
+      "prompt": "Man on a roof ladder installing a homemade mesh spark arrester with a conical cap onto the top of a bathhouse chimney pipe, metal tile roof, clear cool autumn day, view from slightly below"
+    },
+    {
+      "file": "images/iskrogasitel-na-dymokhod-dlya-bani-6.jpg",
+      "alt": "Чистка сетки искрогасителя от сажи металлической щёткой",
+      "prompt": "Sooty stainless steel mesh of a chimney spark arrester being cleaned with a steel wire brush outdoors over a bucket, close-up, half of the mesh already clean and shiny, daylight"
+    }
+  ]
+}
