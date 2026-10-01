@@ -38,6 +38,8 @@ images:
 - [Обшивка предбанника](https://mir-doma.pro/predbannik-svoimi-rukami/#mdPbCalc) — вагонка, кляммеры, утеплитель и пароизоляция по размерам предбанника.
 - [Высота дымохода бани](https://mir-doma.pro/kakoy-dymokhod-luchshe-dlya-bani/#mdDhCalc) — высота трубы над кровлей по расстоянию до конька и общая высота от колосника.
 - [Искрогаситель на дымоход](https://mir-doma.pro/iskrogasitel-na-dymokhod-dlya-bani/#mdIgCalc) — высота сетчатого цилиндра, заготовка сетки и размер колпака под диаметр трубы.
+- [Потолок бани](https://mir-doma.pro/potolok-v-bane-svoimi-rukami/#mdPtCalc) — вагонка, фольга, алюминиевый скотч, рейки вентзазора и утеплитель по размерам потолка.
+- [Проливной пол бани](https://mir-doma.pro/prolivnoy-pol-v-bane-svoimi-rukami/#mdPpCalc) — доски с учётом зазора, лаги, перепад поддона и бетон на поддон.
 
 ## Кровля и фасады
 
@@ -67,6 +69,10 @@ images:
 ## Водоемы и системы полива
 
 - [Кессон для скважины](https://mir-doma.pro/kesson-dlya-skvazhiny-svoimi-rukami/#mdKsCalc) — глубина кессона по промерзанию, объём котлована, бетон на плиту и утеплитель.
+
+## Интерьер дачи
+
+- [Гирлянды для дачи](https://mir-doma.pro/kak-ukrasit-dachu-na-novyy-god/#mdNgCalc) — длина гирлянд на карниз, окна и деревья, количество и мощность.
 
 ![Смартфон с калькулятором в руке на фоне сложенных стройматериалов](images/kalkulyatory-dlya-dachi-i-stroiki-3.jpg)
 
