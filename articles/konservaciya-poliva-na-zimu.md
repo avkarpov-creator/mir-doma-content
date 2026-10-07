@@ -144,7 +144,7 @@ images:
     if(len<=0){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
     var buckets=Math.ceil(total/10);
     out.className='md-calc__out';
-    out.textContent='В трубах около '+total.toFixed(1).replace('.',',')+' л воды на '+Math.round(len)+' м трассы. Это примерно '+buckets+' ведр'+(buckets===1?'о':(buckets<5?'а':''))+' по 10 л.\n'+
+    out.textContent='В трубах около '+total.toFixed(1).replace('.',',')+' л воды на '+Math.round(len)+' м трассы. Это примерно '+buckets+' '+(function(n){var m10=n%10,m100=n%100;return (m10===1&&m100!==11)?'ведро':(m10>=2&&m10<=4&&(m100<12||m100>14))?'ведра':'вёдер';})(buckets)+' по 10 л.\n'+
       'Прибавьте 0,3–1 л на каждый фильтр и редуктор: их корпуса сливают отдельно.\n'+
       'Если при сливе стекло меньше двух третей этого объёма, вода стоит в провисших участках. Их нужно продуть.';
   }
