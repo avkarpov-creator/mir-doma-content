@@ -53,6 +53,8 @@ images:
 - [Кровельные материалы](https://mir-doma.pro/chem-pokryt-kryshu-dachi/#mdRoofCalc) — расход материала по площади и уклону кровли.
 - [Водосток](https://mir-doma.pro/vodostok-svoimi-rukami/#mdVodCalc) — длина желобов, число воронок и колен по периметру крыши.
 - [Снегозадержатели](https://mir-doma.pro/snegozaderzhateli-na-kryshu/#mdSnowCalc) — сколько рядов и секций трубчатых снегозадержателей нужно на скат.
+- [Крыша из профнастила](https://mir-doma.pro/krysha-iz-profnastila-svoimi-rukami/#mdPnkCalc) — листы по полезной ширине и длине ската, саморезы, плёнка, конёк и планки.
+- [Кровля из металлочерепицы](https://mir-doma.pro/ustroystvo-krovli-iz-metallocherepitsy/#mdMchCalc) — листы кратно шагу волны, ряды обрешётки, саморезы и доборы.
 
 ![Рулетка измеряет доску на верстаке крупным планом](images/kalkulyatory-dlya-dachi-i-stroiki-2.jpg)
 

@@ -69,6 +69,71 @@ images:
 даёт дорогую крышу из-за подрезки и доборов — в статье [чем покрыть крышу
 дачи](https://mir-doma.pro/chem-pokryt-kryshu-dachi/).
 
+Калькулятор ниже посчитает листы с длиной, кратной шагу волны, ряды
+обрешётки, саморезы и доборные планки.
+
+<!-- wp:html -->
+<div id="mdMchCalc" class="md-calc">
+  <p class="md-calc__lead">Кровля из металлочерепицы: листы, обрешётка, доборы</p>
+  <label class="md-calc__label" for="mdMchE">Длина ската по карнизу, м</label>
+  <input type="number" id="mdMchE" class="md-calc__input" min="1" step="0.1" value="8">
+  <label class="md-calc__label" for="mdMchS">Длина ската от конька до края свеса, м</label>
+  <input type="number" id="mdMchS" class="md-calc__input" min="1" step="0.1" value="4">
+  <label class="md-calc__label" for="mdMchN">Скатов</label>
+  <select id="mdMchN" class="md-calc__input">
+    <option value="1">1 (односкатная)</option>
+    <option value="2" selected>2 (двускатная)</option>
+  </select>
+  <label class="md-calc__label" for="mdMchM">Материал</label>
+  <select id="mdMchM" class="md-calc__input">
+    <option value="1.1|0">Профнастил С20 — полезная ширина 1,1 м</option>
+    <option value="1.0|0">Профнастил С21, НС35 — 1,0 м</option>
+    <option value="0.845|0">Профнастил Н60 — 0,845 м</option>
+    <option value="1.1|0.35" selected>Металлочерепица «Монтеррей» — 1,1 м, волна 350 мм</option>
+  </select>
+  <label class="md-calc__label" for="mdMchX">Максимальная длина листа, которую привезут, м</label>
+  <input type="number" id="mdMchX" class="md-calc__input" min="2" step="0.5" value="6">
+  <div id="mdMchOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdMchE','mdMchS','mdMchN','mdMchM','mdMchX'], el={}, out=document.getElementById('mdMchOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var e=parseFloat(el['mdMchE'].value), s=parseFloat(el['mdMchS'].value), n=parseInt(el['mdMchN'].value,10),
+        m=el['mdMchM'].value.split('|'), w=parseFloat(m[0]), wave=parseFloat(m[1]), mx=parseFloat(el['mdMchX'].value)||6;
+    if(!e||!s){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var cols=Math.ceil(e/w), rows=Math.ceil((s-0.15)/(mx-0.15)), len=s/rows+(rows>1?0.15:0);
+    if(wave>0) len=Math.ceil((len-0.1)/wave)*wave+0.1;
+    var sheets=cols*rows*n, area=e*s*n;
+    var lines=['Листов: '+sheets+' шт. длиной '+f(len)+' м ('+cols+' в ряд по карнизу'+(rows>1?', '+rows+' ряда по скату с нахлёстом 15 см':'')+(n>1?', на каждый скат':'')+').',
+      'Площадь кровли: '+f(area)+' м². Саморезы кровельные: около '+Math.ceil(area*7)+' шт. (6–8 на 1 м²).',
+      'Гидроизоляционная плёнка: '+Math.ceil(area*1.15)+' м².',
+      (n>1?'Конёк: '+f(e)+' м. ':'')+'Торцевые (ветровые) планки: '+f(2*s*n)+' м. Карнизные планки: '+f(e*n)+' м. Планки берите с нахлёстом 5–10 см.'];
+    if(wave>0){ var bat=Math.ceil((s-0.05)/wave)+1; lines.push('Обрешётка под волну '+Math.round(wave*1000)+' мм: '+bat+' рядов на скат, доска 32×100 мм — около '+Math.ceil(bat*e*n*1.05)+' пог. м. Шаг сверьте с паспортом марки.'); }
+    var warn=rows>1;
+    if(warn) lines.push('Лист короче ската: будут поперечные стыки. Если можно, закажите листы во весь скат.');
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
+
 ## Инструменты
 
 Ножницы по металлу или электролобзик с полотном по металлу для подрезки —
