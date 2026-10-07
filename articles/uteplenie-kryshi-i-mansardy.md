@@ -52,6 +52,75 @@ images:
 
 На потолке экономить бессмысленно — это самое выгодное вложение в тепло. Если толщины стропил не хватает, их наращивают дополнительными брусками, чтобы уместить нужный слой.
 
+### Калькулятор утеплителя для крыши
+
+Выберите, что утепляете: скаты мансарды или перекрытие холодного
+чердака. Калькулятор посчитает площадь с учётом уклона, утеплитель в
+упаковках, плёнки и проверит, хватает ли высоты стропил под нужный
+слой.
+
+<!-- wp:html -->
+<div id="mdRoofCalc" class="md-calc">
+  <p class="md-calc__lead">Утепление крыши: площадь и материал</p>
+  <label class="md-calc__label" for="mdKrT">Что утепляем</label>
+  <select id="mdKrT" class="md-calc__input">
+    <option value="slope" selected>Скаты мансарды</option>
+    <option value="attic">Перекрытие холодного чердака</option>
+  </select>
+  <label class="md-calc__label" for="mdKrL">Длина дома, м</label>
+  <input type="number" id="mdKrL" class="md-calc__input" min="2" step="0.1" value="8">
+  <label class="md-calc__label" for="mdKrW">Ширина дома (пролёт под крышей), м</label>
+  <input type="number" id="mdKrW" class="md-calc__input" min="2" step="0.1" value="6">
+  <label class="md-calc__label" for="mdKrA">Уклон скатов, градусов</label>
+  <input type="number" id="mdKrA" class="md-calc__input" min="10" max="60" step="1" value="40">
+  <label class="md-calc__label" for="mdKrS">Толщина утеплителя, мм</label>
+  <select id="mdKrS" class="md-calc__input">
+    <option value="150">150 мм</option>
+    <option value="200" selected>200 мм</option>
+    <option value="250">250 мм</option>
+  </select>
+  <label class="md-calc__label" for="mdKrR">Высота стропил или балок перекрытия, мм</label>
+  <input type="number" id="mdKrR" class="md-calc__input" min="50" step="10" value="150">
+  <label class="md-calc__label" for="mdKrK">Площадь упаковки при толщине 50 мм, м²</label>
+  <input type="number" id="mdKrK" class="md-calc__input" min="1" step="0.01" value="5.76">
+  <div id="mdKrOut2" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdKrT','mdKrL','mdKrW','mdKrA','mdKrS','mdKrR','mdKrK'], el={}, out=document.getElementById('mdKrOut2');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var slope=el.mdKrT.value==='slope', l=parseFloat(el.mdKrL.value), w=parseFloat(el.mdKrW.value),
+        a=parseFloat(el.mdKrA.value)||40, t=parseInt(el.mdKrS.value,10), r=parseFloat(el.mdKrR.value)||0, k=parseFloat(el.mdKrK.value);
+    if(!l||!w||!k){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var area=slope?l*w/Math.cos(a*Math.PI/180):l*w;
+    var layers=t/50, ins=area*layers*1.07, packs=Math.ceil(ins/k), lines=[];
+    lines.push((slope?'Площадь скатов изнутри':'Площадь перекрытия')+': '+f(area)+' м².');
+    lines.push('Утеплитель '+t+' мм ('+layers+' слоя по 50 мм вразбежку): '+Math.round(ins)+' м² с запасом 7% — '+packs+' упаковок.');
+    lines.push('Пароизоляция: '+Math.ceil(area*1.15)+' м².'+(slope?' Ветро-влагозащитная мембрана: '+Math.ceil(area*1.15)+' м².':''));
+    var warn=false;
+    if(slope && r>0 && r<t){ warn=true; lines.push('Стропила '+r+' мм ниже слоя '+t+' мм: нарастите их брусками на '+(t-r)+' мм или уложите недостающий слой поперёк стропил изнутри. Вентзазор над утеплителем не занимайте.'); }
+    if(!slope && r>0 && r<t) lines.push('Балки '+r+' мм ниже слоя: на холодном чердаке это не проблема, верхний слой кладут поверх балок поперёк.');
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 Утепление крыши обычно дороже стен за м² — расчёт по всему дому с разбивкой по зонам и калькулятор есть в статье [сколько стоит утеплить дачный дом](https://mir-doma.pro/skolko-stoit-uteplit-dachnyy-dom/).
 
 ## 🥪 Кровельный пирог мансарды
