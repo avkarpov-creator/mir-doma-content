@@ -1,5 +1,5 @@
 ---
-title: "Электроотопление дачи: расчёт и расходы дом"
+title: "Электрическое отопление дачи: расчёт мощности и расходов"
 slug: "elektricheskoe-otoplenie-dachi"
 seo_title: "Электрическое отопление дачи: чем обогреть"
 seo_description: "Электрическое отопление дачи: сколько киловатт нужно и сколько стоит отопить дом, виды обогревателей, расчёт расхода и способы сэкономить."
@@ -122,6 +122,84 @@ images:
 - умножьте на ваш тариф — получите сумму в рублях.
 
 В сильные морозы приборы работают дольше, и расход растёт; в межсезонье — падает вдвое и больше. Умножьте свой тариф на 1800 кВт·ч, и станет ясно, почему электроотопление считают дорогим: это счёт уровня целой зарплаты в северных регионах.
+
+### Калькулятор мощности и расходов
+
+Калькулятор применяет поправки из таблицы выше и считает расход за
+месяц. Доля времени, когда приборы с термостатом реально греют, взята по
+ориентирам из этого раздела: около 30% в межсезонье и около 50% в
+морозы.
+
+<!-- wp:html -->
+<div id="mdElCalc" class="md-calc">
+  <p class="md-calc__lead">Электроотопление дачи: мощность и счёт за месяц</p>
+  <label class="md-calc__label" for="mdElS">Отапливаемая площадь, м²</label>
+  <input type="number" id="mdElS" class="md-calc__input" min="5" step="1" value="60">
+  <label class="md-calc__label" for="mdElU">Утепление</label>
+  <select id="mdElU" class="md-calc__input">
+    <option value="0.75">Хорошее: утеплённые стены, стеклопакеты</option>
+    <option value="1" selected>Среднее</option>
+    <option value="1.75">Почти нет: старый дом, старые окна</option>
+  </select>
+  <label class="md-calc__label" for="mdElR">Регион</label>
+  <select id="mdElR" class="md-calc__input">
+    <option value="1" selected>Средняя полоса</option>
+    <option value="1.4">Север, Урал, Сибирь</option>
+    <option value="0.8">Юг</option>
+  </select>
+  <label class="md-calc__label" for="mdElH">Потолки</label>
+  <select id="mdElH" class="md-calc__input">
+    <option value="1" selected>2,5–3 м</option>
+    <option value="1.12">Выше 3 м</option>
+  </select>
+  <label class="md-calc__label" for="mdElM">Месяц</label>
+  <select id="mdElM" class="md-calc__input">
+    <option value="0.3">Октябрь, апрель</option>
+    <option value="0.4" selected>Ноябрь, март</option>
+    <option value="0.5">Декабрь — февраль</option>
+  </select>
+  <label class="md-calc__label" for="mdElT">Тариф, руб. за кВт·ч</label>
+  <input type="number" id="mdElT" class="md-calc__input" min="1" step="0.1" value="6">
+  <label class="md-calc__label" for="mdElP">Выделенная мощность участка, кВт</label>
+  <input type="number" id="mdElP" class="md-calc__input" min="1" step="1" value="15">
+  <div id="mdElOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdElS','mdElU','mdElR','mdElH','mdElM','mdElT','mdElP'], el={}, out=document.getElementById('mdElOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var s=parseFloat(el.mdElS.value), t=parseFloat(el.mdElT.value), lim=parseFloat(el.mdElP.value)||0;
+    if(!s||!t){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var kw=s/10*parseFloat(el.mdElU.value)*parseFloat(el.mdElR.value)*parseFloat(el.mdElH.value);
+    var duty=parseFloat(el.mdElM.value), kwh=kw*24*duty*30;
+    var lines=['Мощность обогревателей: около '+f(kw)+' кВт.',
+      'Расход за месяц: около '+Math.round(kwh).toLocaleString('ru-RU')+' кВт·ч, это '+Math.round(kwh*t).toLocaleString('ru-RU')+' руб.',
+      'Расчёт для постоянных +20…+22 °C во всём доме. Если поддерживать +5 °C между приездами, расход будет в разы меньше.'];
+    var warn=lim>0&&kw>lim*0.7;
+    if(warn) lines.push('Отопление займёт '+Math.round(kw/lim*100)+'% выделенной мощности. На чайник, насос и плиту почти ничего не остаётся: утеплите дом или добавьте другой источник тепла.');
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Сколько стоит держать дом на дежурных +5 °C между приездами и прогревать
+его к выходным по команде с телефона, посчитано в статье [удалённое
+управление отоплением на даче](https://mir-doma.pro/udalennoe-upravlenie-otopleniem-na-dache/).
 
 **Что радикально меняет цифру:**
 
