@@ -131,6 +131,7 @@ images:
 ## Инструменты и материалы
 
 - [Мощность генератора](https://mir-doma.pro/kakoy-generator-nuzhen-dlya-dachi/#mdGenCalc) — суммарная нагрузка приборов и нужная мощность генератора.
+- [Напильник для заточки цепи](https://mir-doma.pro/napilnik-dlya-zatochki-cepi-benzopily/#mdNpCalc) — шаг цепи по замеру заклёпок, диаметр напильника и высота ограничителя глубины.
 
 ## Умный дом и автоматика для дачи
 
