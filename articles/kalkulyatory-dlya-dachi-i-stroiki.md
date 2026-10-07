@@ -45,6 +45,7 @@ images:
 - [Замена нижних венцов в бане](https://mir-doma.pro/zamena-nizhnih-vencov-v-bane/#mdVnCalc) — масса сруба с крышей, подбор домкратов, объём нового венца и высота подъёма.
 - [Вентиляция в бане](https://mir-doma.pro/ventilyaciya-v-bane-svoimi-rukami/#mdVbCalc) — сечение притока и вытяжки по мощности печи, диаметр трубы и размер короба.
 - [Полки в бане](https://mir-doma.pro/lavki-v-bane-svoimi-rukami/#mdLvCalc) — высота ярусов по потолку, длина лежака по росту и число досок настила.
+- [Обкладка печи кирпичом](https://mir-doma.pro/kak-oblozhit-pech-v-bane-kirpichom/#mdObCalc) — кирпич, печная смесь и вес кожуха под размеры печи и зазор.
 
 ## Кровля и фасады
 
