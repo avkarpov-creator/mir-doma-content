@@ -54,6 +54,7 @@ images:
 
 - [Утепление дачного дома](https://mir-doma.pro/skolko-stoit-uteplit-dachnyy-dom/#mdSuCalc) — стоимость утепления по площади дома.
 - [Пеноплекс, дюбели и клей на цоколь](https://mir-doma.pro/uteplenie-cokolya-fundamenta-penopleksom/#mdCkCalc) — материал на утепление цоколя с учётом толщины.
+- [Пакля и джут для конопатки](https://mir-doma.pro/chem-zadelat-shcheli-v-derevyannom-dome/#mdShCalc) — длина швов сруба, масса пакли и длина джутового шнура нужного диаметра.
 
 ## Системы отопления
 
