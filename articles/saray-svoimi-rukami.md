@@ -78,6 +78,57 @@ images:
 
 Все деревянные элементы обрабатывают антисептиком — это главное условие долговечности. Каркас собирают на оцинкованный крепёж — гвозди, саморезы, металлические уголки и пластины; они придают конструкции прочность и не ржавеют.
 
+### Калькулятор каркаса сарая
+
+Калькулятор считает каркас по схеме из этого раздела: обвязка из бруса
+100×100 мм, стойки и лаги 50×100 мм с шагом 60 см, обшивка стен OSB
+1250×2500 мм. Проёмы двери и окна не вычитаются: обрезки уйдут на
+перемычки и раскосы.
+
+<!-- wp:html -->
+<div id="mdSaCalc" class="md-calc">
+  <p class="md-calc__lead">Каркасный сарай: брус, доска, OSB</p>
+  <label class="md-calc__label" for="mdSaL">Длина сарая, м</label>
+  <input type="number" id="mdSaL" class="md-calc__input" min="1" step="0.1" value="3">
+  <label class="md-calc__label" for="mdSaW">Ширина сарая, м</label>
+  <input type="number" id="mdSaW" class="md-calc__input" min="1" step="0.1" value="2">
+  <label class="md-calc__label" for="mdSaH">Высота стен, м</label>
+  <input type="number" id="mdSaH" class="md-calc__input" min="1.8" step="0.1" value="2.2">
+  <div id="mdSaOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdSaL','mdSaW','mdSaH'], el={}, out=document.getElementById('mdSaOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var l=parseFloat(el.mdSaL.value), w=parseFloat(el.mdSaW.value), h=parseFloat(el.mdSaH.value);
+    if(!l||!w||!h){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var per=2*(l+w), studs=2*(Math.ceil(l/0.6)+1)+2*(Math.ceil(w/0.6)-1)+4;
+    var joists=Math.ceil(l/0.6)+1, beam=per*2;
+    var osb=Math.ceil(per*h*1.1/3.125), floor=l*w;
+    var lines=['Брус 100×100 мм на нижнюю и верхнюю обвязку: '+f(beam)+' пог. м.',
+      'Стойки 50×100 мм длиной '+f(h)+' м: '+studs+' шт. (шаг 60 см, плюс по одной на угол под дверь).',
+      'Лаги пола 50×100 мм длиной '+f(w)+' м: '+joists+' шт.',
+      'OSB на стены: '+osb+' лист. 1250×2500 мм (запас 10%).',
+      'Пол: '+f(floor)+' м² — доска 25–40 мм или OSB 18–22 мм.'];
+    out.className='md-calc__out'; out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
 ## 🏠 Крыша
 
 ![Односкатная крыша сарая](images/saray-krysha.jpg)

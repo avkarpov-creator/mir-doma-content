@@ -132,6 +132,8 @@ images:
 
 - [Бак для летнего душа](https://mir-doma.pro/letniy-dush-dlya-dachi-svoimi-rukami/#mdDsCalc) — объём бака по числу пользователей в сутки.
 - [Курятник](https://mir-doma.pro/kuryatnik-svoimi-rukami/#mdKuCalc) — площадь пола, длина насеста и число гнёзд под поголовье.
+- [Туалет на даче](https://mir-doma.pro/tualet-na-dache-svoimi-rukami/#mdTuCalc) — через сколько лет заполнится выгребная яма под вашу семью и сезон.
+- [Каркасный сарай](https://mir-doma.pro/saray-svoimi-rukami/#mdSaCalc) — брус на обвязку, стойки и лаги с шагом 60 см, листы OSB.
 
 ![Мешки цемента и тачка на стройплощадке дачного дома](images/kalkulyatory-dlya-dachi-i-stroiki-5.jpg)
 

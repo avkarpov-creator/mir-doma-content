@@ -62,6 +62,67 @@ images:
 
 Для пудр-клозета яма не нужна — под сиденьем ставят выдвижную ёмкость, а отходы пересыпают торфом. Объём ямы рассчитывают по числу пользователей: для семьи обычно достаточно ямы на 1,5–2 кубометра, которую при наполнении откачивают или, в случае простой ямы, домик переносят на новое место.
 
+Насколько хватит ямы, зависит от её типа и от того, сколько людей и как
+долго живут на даче. В яме с грунтовым дном жидкость уходит в землю, и
+копится только осадок: по инженерным рекомендациям ВОЗ для выгребных
+уборных — 40–60 л на человека в год. Герметичная яма под откачку
+собирает всё, около 1,5 л на человека в сутки, и наполняется во много
+раз быстрее.
+
+<!-- wp:html -->
+<div id="mdTuCalc" class="md-calc">
+  <p class="md-calc__lead">Сколько лет прослужит выгребная яма</p>
+  <label class="md-calc__label" for="mdTuN">Сколько человек пользуется туалетом</label>
+  <input type="number" id="mdTuN" class="md-calc__input" min="1" step="1" value="4">
+  <label class="md-calc__label" for="mdTuD">Дней на даче за год (сезон наездами — около 60, всё лето — 120)</label>
+  <input type="number" id="mdTuD" class="md-calc__input" min="1" max="365" step="1" value="90">
+  <label class="md-calc__label" for="mdTuW">Ширина ямы, м</label>
+  <input type="number" id="mdTuW" class="md-calc__input" min="0.5" step="0.1" value="1">
+  <label class="md-calc__label" for="mdTuL">Длина ямы, м</label>
+  <input type="number" id="mdTuL" class="md-calc__input" min="0.5" step="0.1" value="1">
+  <label class="md-calc__label" for="mdTuH">Глубина ямы, м</label>
+  <input type="number" id="mdTuH" class="md-calc__input" min="0.5" step="0.1" value="1.8">
+  <label class="md-calc__label" for="mdTuM">Тип ямы</label>
+  <select id="mdTuM" class="md-calc__input">
+    <option value="0.06">С грунтовым дном (низкие грунтовые воды)</option>
+    <option value="sealed" selected>Герметичная, под откачку</option>
+  </select>
+  <div id="mdTuOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdTuN','mdTuD','mdTuW','mdTuL','mdTuH','mdTuM'], el={}, out=document.getElementById('mdTuOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var n=parseFloat(el.mdTuN.value), d=Math.min(365,parseFloat(el.mdTuD.value)||0), w=parseFloat(el.mdTuW.value), l=parseFloat(el.mdTuL.value), h=parseFloat(el.mdTuH.value), sealed=el.mdTuM.value==='sealed', r=sealed?0:parseFloat(el.mdTuM.value);
+    if(!n||!d||!w||!l||!h){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    /* полезный объём — до 0,5 м от поверхности земли */
+    var useful=w*l*Math.max(h-0.5,0), perYear=sealed?n*d*0.0015:n*d/365*r, years=useful/perYear;
+    var lines=['Полезный объём ямы (до 0,5 м от верха): '+f(useful)+' м³.',
+      'Накапливается за год: около '+Math.round(perYear*1000)+' л.',
+      (sealed?'Откачка нужна примерно раз в ':'Яма заполнится примерно за ')+(years>=1?f(years)+' '+(years<5?'года':'лет'):Math.max(1,Math.round(years*12))+' мес.')+'.'];
+    var warn=sealed?false:years<2;
+    if(warn) lines.push('Меньше двух лет: сделайте яму больше, герметичную под откачку или поставьте пудр-клозет с торфом.');
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 ## 🧱 Основание и каркас
 
 ![Сборка каркаса дачного туалета](images/tualet-karkas.jpg)
