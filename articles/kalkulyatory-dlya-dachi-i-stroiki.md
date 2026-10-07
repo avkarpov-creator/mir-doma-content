@@ -40,6 +40,7 @@ images:
 - [Искрогаситель на дымоход](https://mir-doma.pro/iskrogasitel-na-dymokhod-dlya-bani/#mdIgCalc) — высота сетчатого цилиндра, заготовка сетки и размер колпака под диаметр трубы.
 - [Потолок бани](https://mir-doma.pro/potolok-v-bane-svoimi-rukami/#mdPtCalc) — вагонка, фольга, алюминиевый скотч, рейки вентзазора и утеплитель по размерам потолка.
 - [Проливной пол бани](https://mir-doma.pro/prolivnoy-pol-v-bane-svoimi-rukami/#mdPpCalc) — доски с учётом зазора, лаги, перепад поддона и бетон на поддон.
+- [Стоимость протопки бани](https://mir-doma.pro/drovyanaya-ili-elektricheskaya-pech-dlya-bani/#mdBanyaCalc) — во что обходится одна протопка дровяной и электрической печью.
 
 ## Кровля и фасады
 
@@ -47,6 +48,7 @@ images:
 - [Краска для фасада](https://mir-doma.pro/chem-pokrasit-fasad/#mdPfCalc) — количество краски по площади и числу слоёв.
 - [Кровельные материалы](https://mir-doma.pro/chem-pokryt-kryshu-dachi/#mdRoofCalc) — расход материала по площади и уклону кровли.
 - [Водосток](https://mir-doma.pro/vodostok-svoimi-rukami/#mdVodCalc) — длина желобов, число воронок и колен по периметру крыши.
+- [Снегозадержатели](https://mir-doma.pro/snegozaderzhateli-na-kryshu/#mdSnowCalc) — сколько рядов и секций трубчатых снегозадержателей нужно на скат.
 
 ![Рулетка измеряет доску на верстаке крупным планом](images/kalkulyatory-dlya-dachi-i-stroiki-2.jpg)
 
@@ -61,11 +63,14 @@ images:
 - [Стоимость отопления](https://mir-doma.pro/otoplenie-dachi-chto-deshevle/#mdOtCalc) — расходы на сезон по виду топлива и площади.
 - [Тёплый пол на веранде](https://mir-doma.pro/teplyy-pol-na-verande/#mdTvCalc) — мощность и стоимость тёплого пола по площади.
 - [Мощность обогревателя](https://mir-doma.pro/kakoy-obogrevatel-vybrat-dlya-dachi/#mdObCalc) — сколько киловатт нужно по площади, высоте потолка и утеплению.
+- [Мощность буржуйки](https://mir-doma.pro/burzhuyka-svoimi-rukami/#mdBurCalc) — какой мощности нужна печь под площадь и тип помещения.
+- [Сколько дров на зиму](https://mir-doma.pro/skolko-drov-nuzhno-na-zimu/#mdWoodCalc) — кубы дров на сезон по площади, утеплению, региону, породе и влажности дров.
 
 ## Электрика и сантехника
 
 - [Электропроводка на даче](https://mir-doma.pro/skhema-elektroprovodki-na-dache/#mdEpCalc) — сечение кабеля и номинал автомата по нагрузке.
 - [Мощность стабилизатора](https://mir-doma.pro/kakoy-stabilizator-napryazheniya-vybrat/#mdStCalc) — мощность стабилизатора напряжения по нагрузке приборов и качеству сети.
+- [Греющий кабель для водопровода](https://mir-doma.pro/greyushchiy-kabel-dlya-vodoprovoda/#mdCableCalc) — длина и мощность кабеля, расход электричества в месяц.
 
 ## Водоемы и системы полива
 
@@ -98,11 +103,13 @@ images:
 
 - [Дренажная траншея](https://mir-doma.pro/drenazh-uchastka-na-glinistoy-pochve/#mdDrCalc) — объём земляных работ и щебня на дренаж участка.
 - [Планировка участка 15 соток](https://mir-doma.pro/planirovka-uchastka-15-sotok/#md15Calc) — сколько земли займут дом, баня, гараж, теплицы и сад и что останется под огород и отдых.
+- [Планировка участка 6 соток](https://mir-doma.pro/planirovka-uchastka-6-sotok/#md6Calc) — влезет ли отдельная баня в 8 м от дома и сколько останется под огород.
 
 ## Погреба и кладовые
 
 - [Строительство погреба](https://mir-doma.pro/stroitelstvo-pogreba-smeta/#mdPgCalc) — смета на погреб по размерам и материалу стен.
 - [Погреб в гараже](https://mir-doma.pro/pogreb-v-garazhe-svoimi-rukami/#mdPgCalc) — объём котлована, бетон или кирпич на стены, гидроизоляция.
+- [Полки для банок в погреб](https://mir-doma.pro/polki-v-pogreb-svoimi-rukami/#mdShelfCalc) — вес банок на полке и сколько нужно стоек.
 
 ## Хозяйственные постройки
 
@@ -114,6 +121,7 @@ images:
 
 - [Подвес качелей](https://mir-doma.pro/kacheli-dlya-dachi-svoimi-rukami/#mdKcCalc) — длина цепи или троса подвеса по высоте сиденья.
 - [Доски на скамью с ящиком](https://mir-doma.pro/mebel-dlya-verandy-svoimi-rukami/#mdMvCalc) — количество досок и бруска на скамью по размерам.
+- [Высота верстака](https://mir-doma.pro/verstak-svoimi-rukami/#mdBenchCalc) — высота столешницы под ваш рост для столярной и слесарной работы.
 
 ## Овощи и зелень
 
@@ -128,8 +136,22 @@ images:
 - [Трафик 4G-камеры](https://mir-doma.pro/videonablyudenie-na-dache-svoimi-rukami/#mdVnCalc) — расход мобильного трафика в месяц по разрешению видео.
 - [Зоны GSM-сигнализации](https://mir-doma.pro/gsm-signalizaciya-dlya-dachi-svoimi-rukami/#mdGsCalc) — количество зон и подбор ёмкости панели.
 - [Трафик интернета на даче](https://mir-doma.pro/internet-na-dachu/#mdNetCalc) — сколько гигабайт уходит за месяц и какой тариф брать.
+- [Дежурное отопление](https://mir-doma.pro/udalennoe-upravlenie-otopleniem-na-dache/#mdDutyCalc) — сколько стоит месяц отопления при +20 °C и при дежурных +5 °C.
+- [Умная розетка](https://mir-doma.pro/umnaya-rozetka-dlya-dachi/#mdSocketCalc) — какой ток должна выдерживать розетка под ваш прибор.
 
 ![Блокнот с расчётами и чеки на стройматериалы на столе](images/kalkulyatory-dlya-dachi-i-stroiki-6.jpg)
+
+## Ремонт дачного дома
+
+- [Лестница на второй этаж](https://mir-doma.pro/lestnica-na-vtoroy-etazh-svoimi-rukami/#mdStairCalc) — число и высота ступеней, глубина проступи, угол и длина косоура.
+
+## Заморозка
+
+- [Объём морозильника](https://mir-doma.pro/morozilnyy-lar-ili-morozilnaya-kamera/#mdFreezeCalc) — сколько литров морозильника нужно под ваш урожай и заготовки.
+
+## Строительство на участке
+
+- [Навес из профильной трубы](https://mir-doma.pro/raschet-navesa-iz-profilnoy-truby/#mdNavesCalc) — снеговая нагрузка, сечение трубы и число стоек.
 
 ## Частые вопросы
 
