@@ -134,6 +134,7 @@ python3 scripts/mdi.py check            # битые слаги по всему 
 - `scripts/plugin-release.sh` — версия + CHANGELOG + контроль логирования
 - `references/article-contract.md` — формат статьи и frontmatter (грузить при написании)
 - `references/priorities.md` — формула приоритизации и правила контент-плана
+- `references/development.md` — автономный режим: тест полезности, порядок задач, границы
 - `references/plugin.md` — правила работы с плагинами
 
 ### Полный цикл выпуска статьи
