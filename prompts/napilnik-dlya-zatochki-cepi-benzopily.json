@@ -1,0 +1,36 @@
+{
+  "slug": "napilnik-dlya-zatochki-cepi-benzopily",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/napilnik-dlya-zatochki-cepi-benzopily.jpg",
+      "alt": "Круглый напильник в держателе на цепи бензопилы, закреплённой на шине в тисках",
+      "prompt": "Chainsaw guide bar clamped in a bench vise with the chain on it, a round file in a metal file guide holder resting on a cutter tooth, workshop bench with wood shavings, daylight"
+    },
+    {
+      "file": "images/napilnik-dlya-zatochki-cepi-benzopily-2.jpg",
+      "alt": "Набор для заточки цепи: круглые напильники, держатель, плоский напильник и шаблон",
+      "prompt": "Chainsaw sharpening kit laid out on a wooden workbench: two round files, a file guide holder with angle markings, a flat file and a depth gauge tool, top-down view"
+    },
+    {
+      "file": "images/napilnik-dlya-zatochki-cepi-benzopily-3.jpg",
+      "alt": "Измерение расстояния между заклёпками цепи бензопилы штангенциркулем",
+      "prompt": "Close-up of a digital caliper measuring the distance between three rivets on a chainsaw chain lying on a wooden board, sharp focus on the chain"
+    },
+    {
+      "file": "images/napilnik-dlya-zatochki-cepi-benzopily-4.jpg",
+      "alt": "Заточка режущего зуба цепи круглым напильником в держателе под углом 30 градусов",
+      "prompt": "Extreme close-up of a round file in a guide holder sharpening a chainsaw cutter tooth at a 30 degree angle, metal filings visible, chain on the bar"
+    },
+    {
+      "file": "images/napilnik-dlya-zatochki-cepi-benzopily-5.jpg",
+      "alt": "Изношенная и новая цепь бензопилы рядом для сравнения длины режущих зубьев",
+      "prompt": "Worn chainsaw chain and a brand new chain lying side by side on a wooden plank for comparison of cutter tooth length, top-down, soft light"
+    },
+    {
+      "file": "images/napilnik-dlya-zatochki-cepi-benzopily-6.jpg",
+      "alt": "Плоский напильник и шаблон для ограничителей глубины на цепи бензопилы",
+      "prompt": "Flat file and a depth gauge tool placed on a chainsaw chain to file down the depth gauges, close-up on a guide bar in a vise"
+    }
+  ]
+}
