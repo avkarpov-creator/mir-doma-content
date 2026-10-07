@@ -1,0 +1,36 @@
+{
+  "slug": "planirovka-uchastka-15-sotok",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/planirovka-uchastka-15-sotok.jpg",
+      "alt": "Участок 15 соток с домом, баней, садом и огородом, вид сверху",
+      "prompt": "Aerial drone view of a spacious rectangular Russian country plot of about 1500 square meters: a two-storey wooden house near the street with a carport, a green lawn with a gazebo in the middle, a polycarbonate greenhouse, vegetable beds along one side, a small log sauna by a pond at the far end, young fruit trees along the back fence, late summer afternoon"
+    },
+    {
+      "file": "images/planirovka-uchastka-15-sotok-2.jpg",
+      "alt": "Разметка зон на участке колышками и шнуром перед строительством",
+      "prompt": "Empty grassy country plot marked out with wooden stakes and taut white string lines dividing future zones, a measuring tape lying on the grass, wooden fence in the background, overcast autumn morning"
+    },
+    {
+      "file": "images/planirovka-uchastka-15-sotok-3.jpg",
+      "alt": "Прямоугольный участок 30 на 50 метров с домом у улицы и баней в глубине",
+      "prompt": "High aerial view of a long rectangular dacha plot: house with a terrace close to the road at the front, lawn and greenhouse in the middle, a log bathhouse at the far back end next to fruit trees, straight gravel path along one side, summer midday"
+    },
+    {
+      "file": "images/planirovka-uchastka-15-sotok-4.jpg",
+      "alt": "Квадратный участок с домом в глубине и садом перед ним",
+      "prompt": "Aerial view of a nearly square country plot: front garden with young trees and a gravel driveway leading to a house set deep inside the plot, a private lawn and terrace hidden behind the house, a small sauna in the far corner, early autumn"
+    },
+    {
+      "file": "images/planirovka-uchastka-15-sotok-5.jpg",
+      "alt": "Молодой плодовый сад рядами вдоль границы дачного участка",
+      "prompt": "Rows of young apple and pear trees on dwarf rootstock planted along a wooden boundary fence of a country garden, mown grass between rows, trunks painted white, golden October light"
+    },
+    {
+      "file": "images/planirovka-uchastka-15-sotok-6.jpg",
+      "alt": "План дачного участка на миллиметровой бумаге с карандашом и линейкой",
+      "prompt": "Top-down view of a hand-drawn site plan of a country plot on graph paper with a pencil, a ruler and a compass, zones sketched for house, bathhouse, garden and vegetable beds, on a wooden table, soft daylight"
+    }
+  ]
+}
