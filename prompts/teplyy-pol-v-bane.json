@@ -1,0 +1,36 @@
+{
+  "slug": "teplyy-pol-v-bane",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/teplyy-pol-v-bane.jpg",
+      "alt": "Моечная бани с плиточным полом с подогревом и деревянной решёткой",
+      "prompt": "Washing room of a Russian wooden bathhouse with a light beige ceramic tile floor and a removable wooden slatted duckboard on it, a floor drain grate, wooden bench and wash basin, soft warm light from a small window"
+    },
+    {
+      "file": "images/teplyy-pol-v-bane-2.jpg",
+      "alt": "Петли трубы тёплого пола на утеплителе перед заливкой стяжки в бане",
+      "prompt": "White PEX underfloor heating pipe laid in a spiral loop pattern on grey extruded polystyrene insulation boards with a marked reflective layer, inside an unfinished log bathhouse room before screed pouring, daylight"
+    },
+    {
+      "file": "images/teplyy-pol-v-bane-3.jpg",
+      "alt": "Греющий мат на основании пола моечной перед укладкой плитки",
+      "prompt": "Thin orange electric underfloor heating mat with a black cable unrolled on a primed grey concrete floor of a small bathhouse washroom, a corrugated sensor tube between the cable lines, wooden log walls"
+    },
+    {
+      "file": "images/teplyy-pol-v-bane-4.jpg",
+      "alt": "Разрез пирога тёплого пола в бане: утеплитель, стяжка, плитка",
+      "prompt": "Cross-section cutaway model of a heated floor layers: concrete slab, waterproofing membrane, extruded polystyrene insulation, heating pipe in cement screed, tile adhesive and ceramic tile, studio product shot on a neutral background"
+    },
+    {
+      "file": "images/teplyy-pol-v-bane-5.jpg",
+      "alt": "Укладка противоскользящей плитки на клей поверх тёплого пола в моечной",
+      "prompt": "Anti-slip matte ceramic floor tiles being laid on fresh tile adhesive with a notched trowel lying beside them, in a bathhouse washroom with wooden walls, close-up, no people"
+    },
+    {
+      "file": "images/teplyy-pol-v-bane-6.jpg",
+      "alt": "Терморегулятор тёплого пола на стене предбанника бани",
+      "prompt": "White digital thermostat for underfloor heating mounted on a pine clapboard wall in a bathhouse changing room, a wooden bench and towels below, warm evening light"
+    }
+  ]
+}
