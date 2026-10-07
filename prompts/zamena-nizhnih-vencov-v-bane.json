@@ -1,0 +1,36 @@
+{
+  "slug": "zamena-nizhnih-vencov-v-bane",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/zamena-nizhnih-vencov-v-bane.jpg",
+      "alt": "Старая бревенчатая баня с потемневшим нижним венцом над столбчатым фундаментом",
+      "prompt": "Old small log bathhouse with a darkened, rotten bottom log row above a low column foundation, grass around, overcast autumn day, rural Russian dacha"
+    },
+    {
+      "file": "images/zamena-nizhnih-vencov-v-bane-2.jpg",
+      "alt": "Сгнивший нижний венец бани с трухой у фундамента, крупный план",
+      "prompt": "Close-up of a rotten bottom log of a wooden bathhouse with crumbling brown wood and black mold near a concrete foundation, a screwdriver stuck into the soft wood"
+    },
+    {
+      "file": "images/zamena-nizhnih-vencov-v-bane-3.jpg",
+      "alt": "Баня на домкратах и брусовых клетях, нижний венец удалён, видна гидроизоляция на фундаменте",
+      "prompt": "Small log bathhouse lifted on red bottle jacks and stacked timber cribbing at the corners, the bottom log removed, black bitumen waterproofing roll laid on the concrete foundation, daylight"
+    },
+    {
+      "file": "images/zamena-nizhnih-vencov-v-bane-4.jpg",
+      "alt": "Вставка нового фрагмента бревна в угол бани с замком в полдерева",
+      "prompt": "New light larch log section inserted into the corner of an old darker log wall with a half-lap joint, wooden dowels visible, close-up"
+    },
+    {
+      "file": "images/zamena-nizhnih-vencov-v-bane-5.jpg",
+      "alt": "Кирпичная кладка вместо нижнего венца под срубом бани",
+      "prompt": "Red brick masonry course replacing the bottom log under a log bathhouse wall, black waterproofing layer between brick and the first log, close-up"
+    },
+    {
+      "file": "images/zamena-nizhnih-vencov-v-bane-6.jpg",
+      "alt": "Баня после ремонта с новым нижним венцом из лиственницы, отмосткой и продухами",
+      "prompt": "Renovated log bathhouse with a fresh larch bottom log, concrete blind area around the base, small ventilation openings in the plinth, summer evening light"
+    }
+  ]
+}
