@@ -1,0 +1,36 @@
+{
+  "slug": "kak-oblozhit-pech-v-bane-kirpichom",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-oblozhit-pech-v-bane-kirpichom.jpg",
+      "alt": "Металлическая банная печь, обложенная красным кирпичом, с открытой каменкой сверху",
+      "prompt": "Black steel sauna stove enclosed in a red solid brick casing with an open stone heater on top, inside a wooden steam room with linden benches, warm light"
+    },
+    {
+      "file": "images/kak-oblozhit-pech-v-bane-kirpichom-2.jpg",
+      "alt": "Красный полнотелый и шамотный кирпич рядом с мешком печной кладочной смеси",
+      "prompt": "Stack of red solid ceramic bricks and yellow fireclay bricks next to a bag of stove masonry mortar mix on a concrete floor, a trowel on top"
+    },
+    {
+      "file": "images/kak-oblozhit-pech-v-bane-kirpichom-3.jpg",
+      "alt": "Бетонное основание под печь и кирпичный кожух в строящейся бане",
+      "prompt": "Concrete slab base with black waterproofing layer under a steel sauna stove in a log bathhouse under construction, first course of red bricks laid around with a gap"
+    },
+    {
+      "file": "images/kak-oblozhit-pech-v-bane-kirpichom-4.jpg",
+      "alt": "Кладка кирпичного кожуха вокруг банной печи с зазором и продухами в нижнем ряду",
+      "prompt": "Red brick casing being laid around a black metal sauna stove with a visible air gap between brick and metal and vent openings in the bottom course, mason tools nearby, no people"
+    },
+    {
+      "file": "images/kak-oblozhit-pech-v-bane-kirpichom-5.jpg",
+      "alt": "Кирпичный экран на ребро за банной печью у деревянной стены",
+      "prompt": "Brick heat shield wall laid on edge behind a steel sauna stove near a wooden log wall, with a gap between the brick screen and the wall"
+    },
+    {
+      "file": "images/kak-oblozhit-pech-v-bane-kirpichom-6.jpg",
+      "alt": "Готовая обложенная кирпичом печь в парилке с полками и каменкой",
+      "prompt": "Finished steam room with a brick-encased sauna stove, stones on top, wooden benches in tiers, soft warm light, cozy Russian banya"
+    }
+  ]
+}
