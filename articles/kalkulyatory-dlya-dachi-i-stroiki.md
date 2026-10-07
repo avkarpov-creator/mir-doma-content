@@ -101,6 +101,9 @@ images:
 
 - [Забор](https://mir-doma.pro/kakoy-zabor-deshevle/#mdZbCalc) — стоимость забора на разный периметр и материал.
 - [Откатные ворота](https://mir-doma.pro/otkatnye-vorota-svoimi-rukami/#mdOvCalc) — длина створки с противовесом, вес, класс комплекта, закладная и бетон на фундамент.
+- [Забор из профнастила](https://mir-doma.pro/zabor-iz-profnastila-svoimi-rukami/#mdZpCalc) — листы по полезной ширине, столбы, лаги, саморезы и бетон.
+- [Забор из рабицы](https://mir-doma.pro/zabor-iz-setki-rabica-svoimi-rukami/#mdRbCalc) — рулоны сетки, столбы, проволока-катанка и крючки.
+- [Деревянный забор из штакетника](https://mir-doma.pro/zabor-iz-dereva-svoimi-rukami/#mdDzCalc) — доски по ширине и зазору, столбы, лаги и саморезы.
 
 ## Газоны и дорожки
 

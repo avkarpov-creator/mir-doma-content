@@ -49,6 +49,61 @@ images:
 и забора](https://mir-doma.pro/rasstoyanie-ot-doma-do-bani-zabora/), чтобы не
 пришлось переносить забор после установки.
 
+Под свою длину забора всё это посчитает калькулятор.
+
+<!-- wp:html -->
+<div id="mdRbCalc" class="md-calc">
+  <p class="md-calc__lead">Забор из рабицы: рулоны, столбы, проволока</p>
+  <label class="md-calc__label" for="mdRbL">Длина забора, м</label>
+  <input type="number" id="mdRbL" class="md-calc__input" min="2" step="0.5" value="40">
+  <label class="md-calc__label" for="mdRbH">Высота сетки, м</label>
+  <select id="mdRbH" class="md-calc__input">
+    <option value="1.2">1,2 м</option>
+    <option value="1.5" selected>1,5 м</option>
+    <option value="1.8">1,8 м</option>
+    <option value="2">2 м</option>
+  </select>
+  <label class="md-calc__label" for="mdRbS">Шаг столбов, м</label>
+  <select id="mdRbS" class="md-calc__input">
+    <option value="2.5" selected>2,5 м</option>
+    <option value="3">3 м</option>
+  </select>
+  <label class="md-calc__label" for="mdRbD">Глубина столбов, м</label>
+  <input type="number" id="mdRbD" class="md-calc__input" min="0.6" step="0.1" value="1.2">
+  <div id="mdRbOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdRbL','mdRbH','mdRbS','mdRbD'], el={}, out=document.getElementById('mdRbOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var l=parseFloat(el.mdRbL.value), h=parseFloat(el.mdRbH.value), s=parseFloat(el.mdRbS.value), d=parseFloat(el.mdRbD.value)||1.2;
+    if(!l){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var rolls=Math.ceil(l*1.03/10), posts=Math.ceil(l/s)+1, wires=h>1.5?3:2;
+    var lines=['Сетка: '+rolls+' рулон. по 10 м высотой '+String(h).replace('.',',')+' м (с запасом на нахлёсты).',
+      'Столбы: '+posts+' шт. длиной '+f(h+d+0.1)+' м.',
+      'Проволока-катанка 6 мм: '+Math.ceil(l*wires*1.05)+' пог. м ('+wires+' ряда: верх, низ'+(wires>2?', середина':'')+').',
+      'Крючки или хомуты: '+posts*(h>1.5?4:3)+' шт.',
+      'Бетон на столбы (яма Ø 20 см): около '+f(posts*Math.PI*0.1*0.1*d)+' м³.'];
+    out.className='md-calc__out'; out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 ## Инструменты для работы
 
 Ручной бур или лопата под столбы, уровень, рулетка, сварочный аппарат или

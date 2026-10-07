@@ -67,11 +67,60 @@ images:
 4. **Крепёж** — саморезы по дереву 2 шт. на каждое крепление доски к
    лаге, у вертикального штакетника это 4 самореза на доску (по 2 лаги).
 
-Точный расход уточняйте под свой периметр — калькулятор количества
-плитки для дорожек считается похожим способом, через площадь и
-запас, разбор в статье [расчёт тротуарной
-плитки](https://mir-doma.pro/raschet-trotuarnoy-plitki/), если заодно
-кладёте дорожку вдоль забора.
+Под свою длину, ширину доски и зазор расход посчитает калькулятор.
+
+<!-- wp:html -->
+<div id="mdDzCalc" class="md-calc">
+  <p class="md-calc__lead">Деревянный забор из штакетника: сколько материала</p>
+  <label class="md-calc__label" for="mdDzL">Длина забора без ворот, м</label>
+  <input type="number" id="mdDzL" class="md-calc__input" min="2" step="0.5" value="40">
+  <label class="md-calc__label" for="mdDzH">Высота штакетника, м</label>
+  <input type="number" id="mdDzH" class="md-calc__input" min="0.6" step="0.1" value="1.8">
+  <label class="md-calc__label" for="mdDzB">Ширина доски, см</label>
+  <input type="number" id="mdDzB" class="md-calc__input" min="5" step="1" value="10">
+  <label class="md-calc__label" for="mdDzG">Зазор между досками, см</label>
+  <input type="number" id="mdDzG" class="md-calc__input" min="0" step="0.5" value="4">
+  <label class="md-calc__label" for="mdDzS">Шаг столбов, м</label>
+  <select id="mdDzS" class="md-calc__input">
+    <option value="2">2 м</option>
+    <option value="2.5" selected>2,5 м</option>
+  </select>
+  <div id="mdDzOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdDzL','mdDzH','mdDzB','mdDzG','mdDzS'], el={}, out=document.getElementById('mdDzOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function calc(){
+    var l=parseFloat(el.mdDzL.value), h=parseFloat(el.mdDzH.value), b=parseFloat(el.mdDzB.value), g=Math.max(0,parseFloat(el.mdDzG.value)||0), s=parseFloat(el.mdDzS.value);
+    if(!l||!h||!b){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var boards=Math.ceil(l*100/(b+g)*1.03), posts=Math.ceil(l/s)+1, rows=h>1.5?3:2;
+    var lines=['Штакетник: '+boards+' досок высотой '+String(h).replace('.',',')+' м (запас 3% на брак).',
+      'Столбы: '+posts+' шт.',
+      'Лаги 50×50 или 40×60 мм в '+rows+' ряда: '+Math.ceil(l*rows*1.05)+' пог. м.',
+      'Саморезы по дереву: '+boards*rows*2+' шт. (2 на каждое крепление к лаге).'];
+    if(g<3){ lines.push('Зазор меньше 3 см: после дождей доски разбухнут и начнут упираться друг в друга.'); out.className='md-calc__out is-warn'; }
+    else out.className='md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Если заодно кладёте дорожку вдоль забора, плитку считают по площади с
+запасом: калькулятор есть в статье [расчёт тротуарной
+плитки](https://mir-doma.pro/raschet-trotuarnoy-plitki/).
 
 ![Столбы для деревянного забора, размеченные с шагом 2,5 метра](images/zabor-iz-dereva-svoimi-rukami-2.jpg)
 

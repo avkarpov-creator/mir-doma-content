@@ -57,6 +57,69 @@ images:
 
 К рассчитанному количеству добавьте небольшой запас на подрезку и нахлёст. Полезная (рабочая) ширина листа меньше полной как раз на величину нахлёста — это учитывают при расчёте числа листов. Профлист продают и стандартной длины, и под заказ по вашим размерам, что удобно: тогда не придётся резать листы по высоте.
 
+#### Калькулятор забора из профнастила
+
+<!-- wp:html -->
+<div id="mdZpCalc" class="md-calc">
+  <p class="md-calc__lead">Забор из профнастила: листы, столбы, лаги, бетон</p>
+  <label class="md-calc__label" for="mdZpP">Длина забора, м</label>
+  <input type="number" id="mdZpP" class="md-calc__input" min="2" step="0.5" value="60">
+  <label class="md-calc__label" for="mdZpG">Ворота и калитки (ширина проёмов), м</label>
+  <input type="number" id="mdZpG" class="md-calc__input" min="0" step="0.5" value="5">
+  <label class="md-calc__label" for="mdZpH">Высота забора, м</label>
+  <input type="number" id="mdZpH" class="md-calc__input" min="1" step="0.1" value="2">
+  <label class="md-calc__label" for="mdZpM">Марка профнастила (полезная ширина)</label>
+  <select id="mdZpM" class="md-calc__input">
+    <option value="1.15">С8 — 1,15 м</option>
+    <option value="1.1" selected>С10, С20 — 1,1 м</option>
+    <option value="1.0">С21 — 1,0 м</option>
+  </select>
+  <label class="md-calc__label" for="mdZpS">Шаг столбов, м</label>
+  <select id="mdZpS" class="md-calc__input">
+    <option value="2">2 м (ветреный участок)</option>
+    <option value="2.5" selected>2,5 м</option>
+  </select>
+  <label class="md-calc__label" for="mdZpD">Глубина столбов (ниже промерзания), м</label>
+  <input type="number" id="mdZpD" class="md-calc__input" min="0.8" step="0.1" value="1.2">
+  <div id="mdZpOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdZpP','mdZpG','mdZpH','mdZpM','mdZpS','mdZpD'], el={}, out=document.getElementById('mdZpOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var p=parseFloat(el.mdZpP.value), g=Math.max(0,parseFloat(el.mdZpG.value)||0), h=parseFloat(el.mdZpH.value),
+        w=parseFloat(el.mdZpM.value), s=parseFloat(el.mdZpS.value), d=parseFloat(el.mdZpD.value)||1.2;
+    if(!p||!h){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var len=Math.max(p-g,0), sheets=Math.ceil(len/w), posts=Math.ceil(len/s)+1+(g>0?2:0);
+    var rows=h>2.2?3:2, lag=len*rows*1.05, area=len*h;
+    var postLen=h+d+0.1, conc=posts*Math.PI*0.11*0.11*d;
+    var lines=['Профнастил: '+sheets+' лист. высотой '+f(h)+' м (по полезной ширине '+String(w).replace('.',',')+' м).',
+      'Столбы 60×60 мм: '+posts+' шт. длиной '+f(postLen)+' м — всего '+Math.ceil(posts*postLen)+' пог. м.',
+      'Лаги 40×20 мм в '+rows+' ряда: '+Math.ceil(lag)+' пог. м.',
+      'Кровельные саморезы: около '+Math.ceil(area*6)+' шт. (6 на 1 м²).',
+      'Бетон на столбы (яма Ø 22 см): около '+f(conc)+' м³.',
+      'Заглушки на столбы: '+posts+' шт.'];
+    out.className='md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 ## 🧰 Инструменты для работы
 
 ![Профнастил, профильные трубы и инструменты для забора](images/zabor-instrumenty.jpg)
