@@ -1,0 +1,36 @@
+{
+  "slug": "otkatnye-vorota-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/otkatnye-vorota-svoimi-rukami.jpg",
+      "alt": "Откатные ворота из профнастила на дачном участке, створка частично открыта",
+      "prompt": "Brown corrugated steel cantilever sliding gate partly open on a country house plot, matching corrugated sheet fence, gravel driveway, overcast autumn day"
+    },
+    {
+      "file": "images/otkatnye-vorota-svoimi-rukami-2.jpg",
+      "alt": "Схема откатных ворот: створка с противовесом, опоры на закладной и ловители",
+      "prompt": "Technical illustration of a cantilever sliding gate structure: gate leaf with triangular counterweight tail, guide beam along the bottom, two roller carriages on a concrete foundation beside the opening, catchers on the receiving post, clean diagram style on white background, no text"
+    },
+    {
+      "file": "images/otkatnye-vorota-svoimi-rukami-3.jpg",
+      "alt": "Швеллер закладной с приваренным арматурным каркасом в траншее перед заливкой бетона",
+      "prompt": "Steel U-channel welded on top of a rebar cage set in a dug trench, ready for concrete pouring, wooden stakes and string line around, soil walls, daylight"
+    },
+    {
+      "file": "images/otkatnye-vorota-svoimi-rukami-4.jpg",
+      "alt": "Сварная рама откатных ворот из профильной трубы с треугольным противовесом",
+      "prompt": "Welded rectangular steel tube frame of a sliding gate with a triangular counterweight section lying on sawhorses in a yard, primer grey, welding helmet and angle grinder nearby"
+    },
+    {
+      "file": "images/otkatnye-vorota-svoimi-rukami-5.jpg",
+      "alt": "Роликовые опоры на закладной и направляющая балка откатных ворот крупным планом",
+      "prompt": "Close-up of two galvanized roller carriages bolted on a steel channel embedded in concrete, a guide beam of the gate running over them, gravel around"
+    },
+    {
+      "file": "images/otkatnye-vorota-svoimi-rukami-6.jpg",
+      "alt": "Электропривод откатных ворот с зубчатой рейкой на балке",
+      "prompt": "Electric sliding gate motor mounted on a concrete pad beside the gate, a steel gear rack fixed along the bottom beam of the gate, close-up, daylight"
+    }
+  ]
+}
