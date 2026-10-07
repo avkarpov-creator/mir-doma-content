@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/mdi.py *)",
+      "Bash(python3 scripts/live.py *)",
+      "Bash(python3 scripts/validate.py*)",
+      "Bash(python3 scripts/calc-smoke.py*)",
+      "Bash(python3 scripts/images.py *)",
+      "Bash(python3 scripts/mutagen.py *)",
+      "Bash(python3 scripts/seo.py *)",
+      "Bash(python3 scripts/wordstat.py *)",
+      "Bash(./scripts/ship.sh *)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git show*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git pull*)",
+      "Bash(git fetch*)",
+      "Bash(git push)",
+      "Bash(git push -q)",
+      "Bash(ls *)",
+      "Bash(wc *)",
+      "Bash(grep *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(sed -n *)",
+      "Bash(curl -s https://mir-doma.pro/*)",
+      "Bash(curl -s -o /dev/null -w * https://mir-doma.pro/*)",
+      "Edit(articles/**)",
+      "Edit(prompts/**)",
+      "Edit(seo/**)",
+      "Edit(semantics/**)",
+      "Edit(taxonomy/**)",
+      "WebFetch(domain:mir-doma.pro)"
+    ],
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git reset --hard*)",
+      "Bash(rm -rf *)",
+      "Read(~/.config/mir-doma/**)",
+      "Read(./.gemini.token)",
+      "Read(./.mutagen.token)",
+      "Read(./.yandex.token)",
+      "Read(./.bukvarix.token)"
+    ]
+  }
+}
