@@ -10,6 +10,7 @@ tags:
   - ландшафтный дизайн
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/planirovka-uchastka-15-sotok.jpg
   - images/planirovka-uchastka-15-sotok-2.jpg

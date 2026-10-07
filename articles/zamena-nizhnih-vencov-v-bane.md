@@ -10,6 +10,7 @@ tags:
   - баня своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/zamena-nizhnih-vencov-v-bane.jpg
   - images/zamena-nizhnih-vencov-v-bane-2.jpg

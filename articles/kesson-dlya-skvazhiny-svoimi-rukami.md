@@ -10,6 +10,7 @@ tags:
   - водоснабжение
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/kesson-dlya-skvazhiny-svoimi-rukami.jpg
   - images/kesson-dlya-skvazhiny-svoimi-rukami-2.jpg

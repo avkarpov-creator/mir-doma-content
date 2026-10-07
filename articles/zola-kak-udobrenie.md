@@ -10,6 +10,7 @@ tags:
   - огород
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/zola-kak-udobrenie.jpg
   - images/zola-kak-udobrenie-2.jpg

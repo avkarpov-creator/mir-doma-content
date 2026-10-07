@@ -11,6 +11,7 @@ tags:
   - дрова
   - дача своими руками
 status: draft
+adopt_existing: true
 images:
   - images/drovokol-svoimi-rukami.jpg
   - images/drovokol-svoimi-rukami-2.jpg

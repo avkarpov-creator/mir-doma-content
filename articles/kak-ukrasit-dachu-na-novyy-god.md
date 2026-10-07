@@ -11,6 +11,7 @@ tags:
   - электрика
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/kak-ukrasit-dachu-na-novyy-god.jpg
   - images/kak-ukrasit-dachu-na-novyy-god-2.jpg

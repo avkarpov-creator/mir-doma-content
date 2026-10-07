@@ -9,6 +9,7 @@ tags:
   - баня своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/prolivnoy-pol-v-bane-svoimi-rukami.jpg
   - images/prolivnoy-pol-v-bane-svoimi-rukami-2.jpg

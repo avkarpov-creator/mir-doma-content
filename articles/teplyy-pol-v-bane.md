@@ -10,6 +10,7 @@ tags:
   - баня своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/teplyy-pol-v-bane.jpg
   - images/teplyy-pol-v-bane-2.jpg

@@ -10,6 +10,7 @@ tags:
   - баня своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/iskrogasitel-na-dymokhod-dlya-bani.jpg
   - images/iskrogasitel-na-dymokhod-dlya-bani-2.jpg

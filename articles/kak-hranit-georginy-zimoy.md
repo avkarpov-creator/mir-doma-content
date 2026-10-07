@@ -11,6 +11,7 @@ tags:
   - хранение
   - подготовка к зиме
 status: draft
+adopt_existing: true
 images:
   - images/kak-hranit-georginy-zimoy.jpg
   - images/kak-hranit-georginy-zimoy-2.jpg

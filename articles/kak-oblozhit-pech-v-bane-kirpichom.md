@@ -10,6 +10,7 @@ tags:
   - баня своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/kak-oblozhit-pech-v-bane-kirpichom.jpg
   - images/kak-oblozhit-pech-v-bane-kirpichom-2.jpg

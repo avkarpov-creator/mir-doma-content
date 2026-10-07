@@ -11,6 +11,7 @@ tags:
   - подготовка к зиме
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/snegozaderzhateli-na-kryshu.jpg
   - images/snegozaderzhateli-na-kryshu-2.jpg

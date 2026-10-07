@@ -10,6 +10,7 @@ tags:
   - забор
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/otkatnye-vorota-svoimi-rukami.jpg
   - images/otkatnye-vorota-svoimi-rukami-2.jpg

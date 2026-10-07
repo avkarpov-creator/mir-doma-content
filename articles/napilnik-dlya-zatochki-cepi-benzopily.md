@@ -10,6 +10,7 @@ tags:
   - дрова
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/napilnik-dlya-zatochki-cepi-benzopily.jpg
   - images/napilnik-dlya-zatochki-cepi-benzopily-2.jpg

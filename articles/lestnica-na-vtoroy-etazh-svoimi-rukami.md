@@ -11,6 +11,7 @@ tags:
   - деревянный дом
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/lestnica-na-vtoroy-etazh-svoimi-rukami.jpg
   - images/lestnica-na-vtoroy-etazh-svoimi-rukami-2.jpg

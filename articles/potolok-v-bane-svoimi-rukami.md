@@ -10,6 +10,7 @@ tags:
   - утепление
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/potolok-v-bane-svoimi-rukami.jpg
   - images/potolok-v-bane-svoimi-rukami-2.jpg

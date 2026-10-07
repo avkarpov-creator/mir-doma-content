@@ -10,6 +10,7 @@ tags:
   - баня своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/kakoy-dymokhod-luchshe-dlya-bani.jpg
   - images/kakoy-dymokhod-luchshe-dlya-bani-2.jpg
