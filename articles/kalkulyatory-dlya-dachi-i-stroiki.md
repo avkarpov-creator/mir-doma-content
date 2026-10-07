@@ -96,6 +96,7 @@ images:
 ## Заборы и ограждения
 
 - [Забор](https://mir-doma.pro/kakoy-zabor-deshevle/#mdZbCalc) — стоимость забора на разный периметр и материал.
+- [Откатные ворота](https://mir-doma.pro/otkatnye-vorota-svoimi-rukami/#mdOvCalc) — длина створки с противовесом, вес, класс комплекта, закладная и бетон на фундамент.
 
 ## Газоны и дорожки
 
