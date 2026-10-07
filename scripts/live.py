@@ -174,7 +174,17 @@ def slug_of(url):
 def cmd_gsc(days="28"):
     a, b = period(days)
     for typ in ("web", "image"):
-        rows = gsc({"startDate": a, "endDate": b, "dimensions": ["page"], "type": typ, "rowLimit": 25000})
+        raw = gsc({"startDate": a, "endDate": b, "dimensions": ["page"], "type": typ, "rowLimit": 25000})
+        agg = {}
+        for r in raw:
+            u = r["keys"][0].split("#")[0]
+            g = agg.setdefault(u, {"keys": [u], "impressions": 0, "clicks": 0, "_p": 0.0})
+            g["impressions"] += r["impressions"]; g["clicks"] += r["clicks"]; g["_p"] += r["position"] * r["impressions"]
+        rows = []
+        for g in agg.values():
+            g["position"] = g["_p"] / g["impressions"] if g["impressions"] else 0
+            g["ctr"] = g["clicks"] / g["impressions"] if g["impressions"] else 0
+            rows.append(g)
         rows.sort(key=lambda r: -r["impressions"])
         imp = sum(r["impressions"] for r in rows); clk = sum(r["clicks"] for r in rows)
         print(f"GSC {typ} {a}…{b}: страниц {len(rows)}, показов {int(imp)}, кликов {int(clk)}")
@@ -198,11 +208,17 @@ def cmd_gsc_queries(slug=None, days="28"):
 def cmd_grow(days="28"):
     a, b = period(days)
     rows = gsc({"startDate": a, "endDate": b, "dimensions": ["page", "query"], "type": "web", "rowLimit": 25000})
-    pick = [r for r in rows if 5 <= r["position"] <= 20 and r["impressions"] >= 5]
-    pick.sort(key=lambda r: -r["impressions"])
-    print(f"Позиции 5–20 с показами ≥5, {a}…{b} — кандидаты на доработку:")
-    for r in pick[:25]:
-        print(f"  {int(r['impressions']):>4} | поз {r['position']:5.1f} | {slug_of(r['keys'][0])} | {r['keys'][1]}")
+    # якорные URL (#раздел) Google считает отдельными страницами — складываем по статье
+    agg = {}
+    for r in rows:
+        k = (slug_of(r["keys"][0].split("#")[0]), r["keys"][1])
+        g = agg.setdefault(k, [0, 0.0, 0])
+        g[0] += r["impressions"]; g[1] += r["position"] * r["impressions"]; g[2] += r["clicks"]
+    pick = [(k, v[0], v[1] / v[0], v[2]) for k, v in agg.items() if v[0] >= 5 and 5 <= v[1] / v[0] <= 20]
+    pick.sort(key=lambda x: -x[1])
+    print(f"Позиции 5–20 с показами ≥5, {a}…{b} — кандидаты на доработку (показы | клики | позиция):")
+    for (slug, q), imp, pos, clk in pick[:25]:
+        print(f"  {int(imp):>4} | {int(clk):>2} | поз {pos:5.1f} | {slug} | {q}")
 
 
 def cmd_ga4(days="7"):
