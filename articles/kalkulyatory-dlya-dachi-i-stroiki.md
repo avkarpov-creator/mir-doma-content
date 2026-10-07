@@ -60,6 +60,7 @@ images:
 - [Пакля и джут для конопатки](https://mir-doma.pro/chem-zadelat-shcheli-v-derevyannom-dome/#mdShCalc) — длина швов сруба, масса пакли и длина джутового шнура нужного диаметра.
 - [Утепление подвала изнутри](https://mir-doma.pro/uteplenie-podvala-iznutri/#mdPdCalc) — плиты ЭППС по зонам глубины, клей, дюбели, пена и пароизоляция.
 - [Утепление стен снаружи](https://mir-doma.pro/uteplenie-sten-snaruzhi/#mdUsCalc) — утеплитель в упаковках, мембрана, брусок на обрешётку и дюбели по размерам дома.
+- [Утепление веранды изнутри](https://mir-doma.pro/chem-uteplit-verandu-iznutri/#mdVeCalc) — толщина минваты по региону, утеплитель и плёнки для стен, потолка и пола.
 
 ## Системы отопления
 

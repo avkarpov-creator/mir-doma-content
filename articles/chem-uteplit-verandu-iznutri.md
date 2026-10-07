@@ -77,6 +77,81 @@ images:
 
 **Практическое правило укладки:** если нужен слой 100 мм, а плиты по 50 — берите **два слоя вразбежку**, со смещением стыков. Перекрытые швы убирают мостики холода, и это заметно эффективнее одного толстого слоя.
 
+### Калькулятор утеплителя для веранды
+
+Введите размеры веранды и площадь окон. Калькулятор подберёт толщину
+минваты по региону из таблицы выше и посчитает утеплитель и плёнки для
+стен, потолка и пола. Стена, которой веранда примыкает к дому, не
+утепляется: она тёплая.
+
+<!-- wp:html -->
+<div id="mdVeCalc" class="md-calc">
+  <p class="md-calc__lead">Утепление веранды изнутри: сколько материала</p>
+  <label class="md-calc__label" for="mdVeL">Длина веранды вдоль дома, м</label>
+  <input type="number" id="mdVeL" class="md-calc__input" min="1" step="0.1" value="6">
+  <label class="md-calc__label" for="mdVeW">Ширина веранды (от дома), м</label>
+  <input type="number" id="mdVeW" class="md-calc__input" min="1" step="0.1" value="3">
+  <label class="md-calc__label" for="mdVeH">Высота стен, м</label>
+  <input type="number" id="mdVeH" class="md-calc__input" min="1.8" step="0.1" value="2.5">
+  <label class="md-calc__label" for="mdVeO">Окна и дверь, м²</label>
+  <input type="number" id="mdVeO" class="md-calc__input" min="0" step="0.5" value="8">
+  <label class="md-calc__label" for="mdVeR">Регион</label>
+  <select id="mdVeR" class="md-calc__input">
+    <option value="2">Юг (50–80 мм)</option>
+    <option value="3" selected>Средняя полоса (100–150 мм)</option>
+    <option value="3n">Северо-Запад (150 мм)</option>
+    <option value="4">Урал, Сибирь, Север (150–200 мм)</option>
+  </select>
+  <label class="md-calc__label" for="mdVeC">Что утепляем кроме стен</label>
+  <select id="mdVeC" class="md-calc__input">
+    <option value="cf" selected>Потолок и пол</option>
+    <option value="c">Только потолок</option>
+    <option value="0">Только стены</option>
+  </select>
+  <label class="md-calc__label" for="mdVeK">Площадь упаковки минваты при толщине 50 мм, м²</label>
+  <input type="number" id="mdVeK" class="md-calc__input" min="1" step="0.01" value="5.76">
+  <div id="mdVeOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdVeL','mdVeW','mdVeH','mdVeO','mdVeR','mdVeC','mdVeK'], el={}, out=document.getElementById('mdVeOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  /* слоёв по 50 мм: стены — по региону, потолок — на слой толще (тепло уходит вверх), пол — как стены */
+  var WALL={'2':2,'3':3,'3n':3,'4':4}, CEIL={'2':3,'3':4,'3n':4,'4':4};
+  function calc(){
+    var l=parseFloat(el.mdVeL.value), w=parseFloat(el.mdVeW.value), h=parseFloat(el.mdVeH.value),
+        o=Math.max(0,parseFloat(el.mdVeO.value)||0), k=parseFloat(el.mdVeK.value), r=el.mdVeR.value, c=el.mdVeC.value;
+    if(!l||!w||!h||!k){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var walls=(l+2*w)*h-o, floor=l*w, lines=[];
+    if(walls<=0){ out.className='md-calc__out is-warn'; out.textContent='Окон больше, чем стен: проверьте цифры.'; return; }
+    var nw=WALL[r], nc=CEIL[r], total=walls*nw;
+    lines.push('Стены: '+walls.toFixed(1).replace('.',',')+' м², минвата '+nw*50+' мм ('+nw+' слоя по 50 мм вразбежку).');
+    if(c!=='0'){ total+=floor*nc; lines.push('Потолок: '+floor.toFixed(1).replace('.',',')+' м², '+nc*50+' мм.'); }
+    if(c==='cf'){ total+=floor*nw; lines.push('Пол: '+floor.toFixed(1).replace('.',',')+' м², '+nw*50+' мм между лагами.'); }
+    var area=walls+(c!=='0'?floor:0)+(c==='cf'?floor:0);
+    lines.push('Утеплителя всего: '+Math.round(total*1.07)+' м² по 50 мм с запасом 7% — '+Math.ceil(total*1.07/k)+' упаковок.');
+    lines.push('Пароизоляция: '+Math.ceil(area*1.15)+' м². Ветрозащитная мембрана: '+Math.ceil(area*1.15)+' м².');
+    var glass=o/((l+2*w)*h);
+    if(glass>0.4){ lines.push('Окна занимают '+Math.round(glass*100)+'% стен: через них уйдёт больше тепла, чем через утеплённые стены. Начните с окон.'); out.className='md-calc__out is-warn'; }
+    else out.className='md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 Не забывайте, что стены — лишь часть контура: через холодный пол уходит не меньше. Как утеплить его, разобрано в статье про [утепление пола на даче](https://mir-doma.pro/uteplenie-pola-na-dache/).
 
 ## 🥪 Пирог стены: два варианта
