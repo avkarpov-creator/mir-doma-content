@@ -42,6 +42,7 @@ images:
 - [Проливной пол бани](https://mir-doma.pro/prolivnoy-pol-v-bane-svoimi-rukami/#mdPpCalc) — доски с учётом зазора, лаги, перепад поддона и бетон на поддон.
 - [Стоимость протопки бани](https://mir-doma.pro/drovyanaya-ili-elektricheskaya-pech-dlya-bani/#mdBanyaCalc) — во что обходится одна протопка дровяной и электрической печью.
 - [Тёплый пол в бане](https://mir-doma.pro/teplyy-pol-v-bane/#mdTpCalc) — мощность и длина кабеля с расходом за визит или длина трубы и объём антифриза для контура от печи.
+- [Замена нижних венцов в бане](https://mir-doma.pro/zamena-nizhnih-vencov-v-bane/#mdVnCalc) — масса сруба с крышей, подбор домкратов, объём нового венца и высота подъёма.
 
 ## Кровля и фасады
 
