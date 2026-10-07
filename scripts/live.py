@@ -24,6 +24,7 @@ live — прямые запросы к Метрике, Вебмастеру, Se
     python3 scripts/live.py grow [дней]           GSC: позиции 5–20 с показами — что дописать
     python3 scripts/live.py ywm                   Вебмастер: индекс и популярные запросы
     python3 scripts/live.py ga4 [дней]            GA4: сеансы по страницам
+    python3 scripts/live.py week                  неделя к неделе: рост, падение, индекс (для брифа)
 
 Значения секретов скрипт никогда не печатает.
 """
@@ -245,8 +246,91 @@ def cmd_check(_=None):
         print(f"  {k:<20} {'задано' if ok else 'нет'}")
 
 
+# ---------- Неделя к неделе ----------
+
+SNAP = Path(__file__).resolve().parent.parent / "seo" / "live" / "snapshots.jsonl"
+
+
+def metrika_period(a, b, dims):
+    return metrika({"metrics": "ym:s:visits,ym:s:pageDepth,ym:s:bounceRate", "dimensions": dims,
+                    "date1": a, "date2": b, "sort": "-ym:s:visits", "limit": 50})
+
+
+def gsc_pages(a, b, typ):
+    agg = {}
+    for r in gsc({"startDate": a, "endDate": b, "dimensions": ["page"], "type": typ, "rowLimit": 25000}):
+        k = slug_of(r["keys"][0].split("#")[0])
+        g = agg.setdefault(k, [0, 0, 0.0])
+        g[0] += r["impressions"]; g[1] += r["clicks"]; g[2] += r["position"] * r["impressions"]
+    return {k: (v[0], v[1], v[2] / v[0] if v[0] else 0) for k, v in agg.items()}
+
+
+def gsc_queries(a, b):
+    out = {}
+    for r in gsc({"startDate": a, "endDate": b, "dimensions": ["query"], "type": "web", "rowLimit": 25000}):
+        out[r["keys"][0]] = (r["impressions"], r["clicks"], r["position"])
+    return out
+
+
+def cmd_week(_=None):
+    """Последние 7 дней против предыдущих 7 — окна не пересекаются."""
+    t = date.today()
+    y1, y0 = str(t - timedelta(days=7)), str(t - timedelta(days=1))
+    p1, p0 = str(t - timedelta(days=14)), str(t - timedelta(days=8))
+    pct = lambda a, b: ("+" if a >= b else "") + (f"{(a-b)/b*100:.0f}%" if b else "новое")
+    print(f"НЕДЕЛЯ {y1}…{y0} против {p1}…{p0}")
+    # Метрика
+    cur, prev = metrika_period(y1, y0, "ym:s:lastTrafficSource"), metrika_period(p1, p0, "ym:s:lastTrafficSource")
+    tc, tp = cur["totals"], prev["totals"]
+    print(f"Метрика: визиты {int(tc[0])} (было {int(tp[0])}, {pct(tc[0], tp[0])}), глубина {tc[1]:.2f} (было {tp[1]:.2f}), отказы {tc[2]:.0f}% (было {tp[2]:.0f}%)")
+    pv = {x["dimensions"][0]["name"]: x["metrics"][0] for x in prev["data"]}
+    print("  источники:", "; ".join(f"{x['dimensions'][0]['name']} {int(x['metrics'][0])} (было {int(pv.get(x['dimensions'][0]['name'], 0))})" for x in cur["data"]))
+    ce, pe = metrika_period(y1, y0, "ym:s:searchEngineRoot"), metrika_period(p1, p0, "ym:s:searchEngineRoot")
+    pev = {x["dimensions"][0]["name"]: x["metrics"][0] for x in pe["data"]}
+    print("  поисковики:", "; ".join(f"{x['dimensions'][0]['name']} {int(x['metrics'][0])} (было {int(pev.get(x['dimensions'][0]['name'], 0))})" for x in ce["data"][:4]))
+    # GSC: данные отстают на 2 дня
+    g1, g0 = str(t - timedelta(days=9)), str(t - timedelta(days=3))
+    h1, h0 = str(t - timedelta(days=16)), str(t - timedelta(days=10))
+    for typ in ("web", "image"):
+        c, p = gsc_pages(g1, g0, typ), gsc_pages(h1, h0, typ)
+        ci, pi = sum(v[0] for v in c.values()), sum(v[0] for v in p.values())
+        cc, pc = sum(v[1] for v in c.values()), sum(v[1] for v in p.values())
+        print(f"GSC {typ} {g1}…{g0}: показы {int(ci)} (было {int(pi)}, {pct(ci, pi)}), клики {int(cc)} (было {int(pc)})")
+        if typ == "web":
+            keys = set(c) | set(p)
+            d = sorted(((c.get(k, (0, 0, 0))[0] - p.get(k, (0, 0, 0))[0], k) for k in keys))
+            print("  выросли:", "; ".join(f"{k} +{int(x)} (поз {c.get(k,(0,0,0))[2]:.1f})" for x, k in reversed(d[-6:]) if x > 0) or "—")
+            def fell(k, x):
+                if k not in c or not c[k][0]:
+                    return f"{k} {int(x)} (выпала из выдачи, была поз {p[k][2]:.1f})"
+                return f"{k} {int(x)} (поз {c[k][2]:.1f}, было {p.get(k,(0,0,0))[2]:.1f})"
+            print("  упали:", "; ".join(fell(k, x) for x, k in d[:6] if x < 0) or "—")
+            new = [k for k in c if k not in p and c[k][0] >= 3]
+            if new: print("  новые в выдаче:", ", ".join(new[:10]))
+    cq, pq = gsc_queries(g1, g0), gsc_queries(h1, h0)
+    ups = sorted(((pq[q][2] - cq[q][2], q) for q in cq if q in pq and cq[q][0] >= 5), reverse=True)
+    print("  запросы поднялись:", "; ".join(f"{q} {pq[q][2]:.1f}→{cq[q][2]:.1f}" for x, q in ups[:5] if x >= 1) or "—")
+    print("  запросы опустились:", "; ".join(f"{q} {pq[q][2]:.1f}→{cq[q][2]:.1f}" for x, q in ups[::-1][:5] if x <= -1) or "—")
+    # Вебмастер: снимок раз в неделю
+    try:
+        s = ywm("/summary")
+        snap = {"date": str(t), "ywm_searchable": s.get("searchable_pages_count"),
+                "ywm_excluded": s.get("excluded_pages_count"), "sqi": s.get("sqi")}
+        hist = [json.loads(l) for l in SNAP.read_text(encoding="utf-8").splitlines()] if SNAP.exists() else []
+        old = [h for h in hist if h["date"] <= str(t - timedelta(days=6))]
+        o = old[-1] if old else None
+        print(f"Вебмастер: в поиске {snap['ywm_searchable']}" + (f" (было {o['ywm_searchable']} на {o['date']})" if o else "") +
+              f", исключено {snap['ywm_excluded']}, ИКС {snap['sqi']}" + (f" (было {o['sqi']})" if o else ""))
+        if not hist or hist[-1]["date"] != snap["date"]:
+            SNAP.parent.mkdir(parents=True, exist_ok=True)
+            with SNAP.open("a", encoding="utf-8") as fh:
+                fh.write(json.dumps(snap, ensure_ascii=False) + "\n")
+    except SystemExit as e:
+        print("Вебмастер недоступен:", e)
+
+
 CMDS = {"check": cmd_check, "traffic": cmd_traffic, "landing": cmd_landing, "gsc": cmd_gsc,
-        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "ywm": cmd_ywm, "ga4": cmd_ga4}
+        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "ywm": cmd_ywm, "ga4": cmd_ga4, "week": cmd_week}
 
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help") or sys.argv[1] not in CMDS:

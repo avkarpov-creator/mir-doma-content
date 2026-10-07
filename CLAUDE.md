@@ -24,6 +24,12 @@ python3 scripts/mdi.py index && python3 scripts/mdi.py state
 что оставляю владельцу) — `.claude/skills/mir-doma/references/development.md`.
 Читай его в начале сессии после `state`.
 
+**Недельный бриф — без напоминаний.** Если последнему файлу в
+`seo/briefs/` 7 дней и больше, сессия начинается с нового брифа по
+`.claude/skills/mir-doma/references/weekly-brief.md`: что выросло, что
+упало, что сделано и как сработало, пути развития, что нужно от
+владельца. Данные — `scripts/live.py week`.
+
 ## Два закона экономии
 
 1. **Не читай `articles/*.md` целиком.** Только `mdi.py toc <слаг>` и
