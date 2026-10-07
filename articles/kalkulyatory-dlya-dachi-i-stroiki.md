@@ -112,6 +112,7 @@ images:
 - [Строительство погреба](https://mir-doma.pro/stroitelstvo-pogreba-smeta/#mdPgCalc) — смета на погреб по размерам и материалу стен.
 - [Погреб в гараже](https://mir-doma.pro/pogreb-v-garazhe-svoimi-rukami/#mdPgCalc) — объём котлована, бетон или кирпич на стены, гидроизоляция.
 - [Полки для банок в погреб](https://mir-doma.pro/polki-v-pogreb-svoimi-rukami/#mdShelfCalc) — вес банок на полке и сколько нужно стоек.
+- [Серные шашки для погреба](https://mir-doma.pro/raschet-sernoy-shashki-dlya-pogreba/#mdSsCalc) — объём погреба, сера по норме и число шашек по весу или по данным упаковки.
 
 ## Хозяйственные постройки
 

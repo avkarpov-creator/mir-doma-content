@@ -65,14 +65,86 @@ images:
 
 ## Сравнение форматов серных шашек
 
-| Формат | Вес | Заявленный объём обработки | Особенности |
+| Формат | Вес | Объём по норме 50 г/м³ | Особенности |
 |---|---|---|---|
-| Малая шашка (Fas, аналоги) | 100 г | 5–10 м³ | Для небольших погребов и кладовых, самая распространённая в продаже |
-| Средняя шашка | 300 г | 15–30 м³ | Для погребов среднего размера, реже нужно брать несколько штук |
-| Крупная шашка / брикет | 500 г и больше | 30–50 м³ | Для погребов под всем домом, гаражных ям большого объёма |
-| Комплект из нескольких малых шашек | 100 г × N | Складывается по количеству | Удобен, когда нужный объём не кратен одному формату — точнее подгонка под расчёт |
+| Малая шашка | 100 г | около 2 м³ | Для кладовой, небольшой ямы или в комплекте из нескольких штук |
+| Средняя шашка | 300 г | около 6 м³ | Самый ходовой формат для дачного погреба |
+| Крупная шашка или брикет | 500 г и больше | от 10 м³ | Для погребов под домом и больших гаражных ям |
+| Комплект из нескольких малых | 100 г × N | складывается по числу | Удобно, когда объём не кратен одному формату |
+
+Производители часто пишут на упаковке больший объём, чем даёт общая
+норма: состав шашек разный, и в одних серы больше, чем в других. Если
+на упаковке указан объём для вашей задачи (профилактика или борьба с
+плесенью), ориентируйтесь на него. Если не указан — считайте по норме.
 
 ![Разные форматы серных шашек на весах, сравнение размеров, крупный план](images/raschet-sernoy-shashki-dlya-pogreba-2.jpg)
+
+## Калькулятор серных шашек
+
+Введите размеры погреба и вес шашки, которую нашли в магазине. Калькулятор
+посчитает объём, нужное количество серы по норме и число шашек. Если на
+упаковке указан объём, на который рассчитана одна шашка, впишите его:
+калькулятор покажет и расчёт производителя. Если два расчёта расходятся,
+ориентируйтесь на упаковку. Состав шашек разный, и производитель знает
+свою дозировку лучше общей нормы.
+
+<!-- wp:html -->
+<div id="mdSsCalc" class="md-calc">
+  <p class="md-calc__lead">Сколько серных шашек нужно на погреб</p>
+  <label class="md-calc__label" for="mdSsL">Длина погреба, м</label>
+  <input type="number" id="mdSsL" class="md-calc__input" min="0.5" step="0.1" value="2">
+  <label class="md-calc__label" for="mdSsW">Ширина погреба, м</label>
+  <input type="number" id="mdSsW" class="md-calc__input" min="0.5" step="0.1" value="2">
+  <label class="md-calc__label" for="mdSsH">Высота до самой высокой точки потолка, м</label>
+  <input type="number" id="mdSsH" class="md-calc__input" min="0.5" step="0.1" value="2">
+  <label class="md-calc__label" for="mdSsX">Приямок, ниша, лаз — дополнительный объём, м³</label>
+  <input type="number" id="mdSsX" class="md-calc__input" min="0" step="0.1" value="0">
+  <label class="md-calc__label" for="mdSsM">Обработка</label>
+  <select id="mdSsM" class="md-calc__input">
+    <option value="p" selected>Профилактическая (50–60 г/м³)</option>
+    <option value="u">Усиленная: плесень, грибок (100–150 г/м³)</option>
+  </select>
+  <label class="md-calc__label" for="mdSsG">Вес одной шашки, г</label>
+  <input type="number" id="mdSsG" class="md-calc__input" min="10" step="10" value="300">
+  <label class="md-calc__label" for="mdSsV">На упаковке: одна шашка на сколько м³ (0 — не указано)</label>
+  <input type="number" id="mdSsV" class="md-calc__input" min="0" step="0.5" value="0">
+  <div id="mdSsOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdSsL','mdSsW','mdSsH','mdSsX','mdSsM','mdSsG','mdSsV'], el={}, out=document.getElementById('mdSsOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return (Math.round(v*10)/10).toString().replace('.',','); }
+  function calc(){
+    var l=parseFloat(el.mdSsL.value), w=parseFloat(el.mdSsW.value), h=parseFloat(el.mdSsH.value),
+        x=Math.max(0,parseFloat(el.mdSsX.value)||0), g=parseFloat(el.mdSsG.value), pv=parseFloat(el.mdSsV.value)||0;
+    if(!l||!w||!h||!g){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var vol=l*w*h+x, u=el.mdSsM.value==='u', lo=u?100:50, hi=u?150:60;
+    var sLo=vol*lo, sHi=vol*hi;
+    var nLo=Math.ceil(sLo/g), nHi=Math.ceil(sHi/g);
+    var lines=['Объём погреба: '+f(vol)+' м³.',
+      'Серы по норме: '+Math.round(sLo)+'–'+Math.round(sHi)+' г.',
+      'Шашек по '+Math.round(g)+' г: '+(nLo===nHi?nLo:nLo+'–'+nHi)+' шт.'];
+    if(pv>0) lines.push('По данным упаковки: '+Math.ceil(vol/pv)+' шт. (одна шашка на '+f(pv)+' м³).');
+    lines.push('Все шашки поджигают одновременно, расставив по погребу на негорючих подставках.');
+    out.className=(nHi>=6||vol>40)?'md-calc__out is-warn':'md-calc__out';
+    if(nHi>=6||vol>40) lines.push('Объём большой: работайте вдвоём, поджигайте от дальней шашки к выходу и заранее продумайте путь выхода.');
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
 
 ## Пример расчёта на типовой погреб
 
