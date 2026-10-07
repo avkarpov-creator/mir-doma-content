@@ -9,7 +9,6 @@ tags:
   - газон
   - ремонт газона
   - уход за участком
-adopt_existing: false
 status: draft
 adopt_existing: true
 images:
