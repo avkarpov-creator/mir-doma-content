@@ -11,6 +11,7 @@ tags:
   - печь
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/skolko-drov-nuzhno-na-zimu.jpg
   - images/skolko-drov-nuzhno-na-zimu-2.jpg
@@ -188,6 +189,85 @@ images:
 
 ![Дрова навалом в кузове грузовика и та же партия в поленнице для сравнения объёма](images/skolko-drov-nuzhno-na-zimu-3.jpg)
 
+### Куб дров — это сколько: вес, машина, цена
+
+Один и тот же «куб» весит по-разному в зависимости от того, какой это
+кубометр, какая порода и насколько дрова сухие. Складочный кубометр
+сухой берёзы весит около 450 кг, сырой — около 600 кг. Калькулятор
+переведёт любой кубометр в другие, покажет вес и посчитает, сколько вы
+на самом деле платите за складочный куб. Если дрова привезли навалом,
+введите размеры кузова: калькулятор посчитает, сколько там дров в
+пересчёте на поленницу.
+
+<!-- wp:html -->
+<div id="mdKubCalc" class="md-calc">
+  <p class="md-calc__lead">Перевод кубов дров, вес и цена</p>
+  <label class="md-calc__label" for="mdKubT">Как продают</label>
+  <select id="mdKubT" class="md-calc__input">
+    <option value="0.7" selected>Складочный куб (в поленнице)</option>
+    <option value="0.5">Насыпной куб (навалом)</option>
+    <option value="1">Плотный куб (круглый лес)</option>
+  </select>
+  <label class="md-calc__label" for="mdKubV">Объём, м³ (0 — посчитать по кузову)</label>
+  <input type="number" id="mdKubV" class="md-calc__input" min="0" step="0.5" value="5">
+  <label class="md-calc__label" for="mdKubL">Кузов: длина × ширина × высота дров, м</label>
+  <input type="text" id="mdKubL" class="md-calc__input" value="4.2 2.0 1.0">
+  <label class="md-calc__label" for="mdKubP">Порода</label>
+  <select id="mdKubP" class="md-calc__input">
+    <option value="650" selected>Берёза</option>
+    <option value="700">Дуб</option>
+    <option value="530">Ольха</option>
+    <option value="500">Осина</option>
+    <option value="520">Сосна</option>
+    <option value="460">Ель</option>
+  </select>
+  <label class="md-calc__label" for="mdKubW">Влажность</label>
+  <select id="mdKubW" class="md-calc__input">
+    <option value="1" selected>Сухие (до 20%)</option>
+    <option value="1.3">Свежие, сырые</option>
+  </select>
+  <label class="md-calc__label" for="mdKubC">Цена за названный объём, руб. (0 — не считать)</label>
+  <input type="number" id="mdKubC" class="md-calc__input" min="0" step="100" value="0">
+  <div id="mdKubOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdKubT','mdKubV','mdKubL','mdKubP','mdKubW','mdKubC'], el={}, out=document.getElementById('mdKubOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var k=parseFloat(el.mdKubT.value), v=parseFloat(el.mdKubV.value)||0, rho=parseFloat(el.mdKubP.value)*parseFloat(el.mdKubW.value),
+        price=parseFloat(el.mdKubC.value)||0, lines=[], byTruck=false;
+    if(v<=0){
+      var d=(el.mdKubL.value||'').replace(/,/g,'.').split(/[^0-9.]+/).map(parseFloat).filter(function(x){return x>0;});
+      if(d.length<3){ out.className='md-calc__out'; out.textContent='Введите объём или три размера кузова через пробел'; return; }
+      v=d[0]*d[1]*d[2]; k=0.5; byTruck=true;
+      lines.push('Кузов: '+f(v)+' м³ навалом.');
+    }
+    var solid=v*k, stacked=solid/0.7, bulk=solid/0.5, kg=solid*rho;
+    lines.push('Плотной древесины: '+f(solid)+' м³.');
+    lines.push('В поленнице (складочных): '+f(stacked)+' м³. Навалом (насыпных): '+f(bulk)+' м³.');
+    lines.push('Вес: около '+(kg>=1000?f(kg/1000)+' т':Math.round(kg)+' кг')+' — складочный куб весит около '+Math.round(0.7*rho)+' кг.');
+    if(price>0&&!byTruck) lines.push('Цена за складочный куб: около '+Math.round(price/stacked).toLocaleString('ru-RU')+' руб.');
+    out.className='md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 ## Почему сырые дрова дороже
 
 Свежесрубленная берёза содержит до половины воды по массе. Пока вода
@@ -268,6 +348,12 @@ images:
 
 Под навесом с продувом — около года. Колотые сохнут быстрее, чем
 чурки.
+
+### 1 куб дров — это сколько
+
+Зависит от того, какой куб. Складочный — поленница 1×1×1 м, в ней около
+0,7 м³ древесины. Насыпной — дрова навалом, древесины около 0,5 м³.
+Складочный куб сухой берёзы весит около 450 кг, сырой — около 600 кг.
 
 ### Чем складочный кубометр отличается от насыпного
 
