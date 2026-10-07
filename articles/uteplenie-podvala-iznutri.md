@@ -2,7 +2,7 @@
 title: "Утепление подвала изнутри в частном доме: чем и как не развести плесень"
 slug: "uteplenie-podvala-iznutri"
 seo_title: "Утепление подвала изнутри: чем утеплить без плесени"
-seo_description: "Утепление подвала изнутри в частном доме: чем утеплить стены, как избежать конденсата и точки росы в стене. Материалы, порядок работ, частые ошибки."
+seo_description: "Утепление подвала изнутри: чем и какой толщины утеплять стены и пол, как избежать конденсата и плесени. Порядок работ и калькулятор материалов."
 focus_keyword: "утепление подвала изнутри"
 category: "Утепление и энергосбережение"
 tags:
@@ -10,6 +10,7 @@ tags:
   - подвал
   - пеноплекс
 status: draft
+adopt_existing: true
 images:
   - images/uteplenie-podvala-iznutri.jpg
   - images/uteplenie-podvala-iznutri-2.jpg
@@ -69,6 +70,28 @@ images:
   на границе со стеной. Для утепления изнутри без вентзазора наружу вату не
   используют.
 
+## Какой толщины утеплитель и где
+
+Стена подвала остывает неравномерно. Верх стены граничит с
+промерзающим грунтом и цоколем на улице, а ниже глубины промерзания
+грунт зимой держится около +5…+10 °C. Поэтому утеплитель разной
+толщины по высоте стены — не экономия на качестве, а разумный расчёт:
+
+- **Надземная часть и цоколь** — ЭППС 100 мм. Здесь стена граничит с
+  морозным воздухом, и это самое холодное место.
+- **От уровня земли до глубины промерзания** — 80–100 мм. Глубина
+  промерзания в средней полосе — 1,2–1,6 м. Точное значение для своего
+  района смотрите в СП 131.13330 или у местных строителей.
+- **Ниже глубины промерзания** — 50 мм. Этого хватит, чтобы стена не
+  холодила помещение, а конденсат не выпадал на бетоне.
+- **Пол** теряет меньше всего тепла. Если он уже залит и сухой, его не
+  трогают. Если пол переделывают, под новую стяжку кладут ЭППС 30–50
+  мм поверх гидроизоляции.
+
+Если подвал жилой, с котлом или постоянной мастерской, верхнюю зону
+утепляют по всей толщине без экономии. Для кладовой с температурой
++10…+12 °C хватит 50 мм по всей высоте.
+
 ## Порядок утепления подвала изнутри
 
 1. Просушить и обработать стены антисептиком от плесени до утепления — под
@@ -86,6 +109,81 @@ images:
    для проветривания.
 
 ![Приклейка плит пеноплекса на стену подвала изнутри](images/uteplenie-podvala-iznutri-3.jpg)
+
+## Калькулятор материалов для утепления подвала
+
+Введите размеры подвала. Калькулятор разделит стены на зоны по
+глубине, посчитает площадь каждой зоны и число плит ЭППС, клей, дюбели
+и монтажную пену для швов. Площадь окон и дверей не вычитается: обрезки
+уйдут на откосы и подрезку.
+
+<!-- wp:html -->
+<div id="mdPdCalc" class="md-calc">
+  <p class="md-calc__lead">Калькулятор утепления подвала изнутри</p>
+  <label class="md-calc__label" for="mdPdP">Периметр стен подвала изнутри, м</label>
+  <input type="number" id="mdPdP" class="md-calc__input" min="4" step="0.5" value="32">
+  <label class="md-calc__label" for="mdPdH">Высота стен подвала, м</label>
+  <input type="number" id="mdPdH" class="md-calc__input" min="1" step="0.1" value="2.4">
+  <label class="md-calc__label" for="mdPdA">Сколько стены выше уровня земли, м</label>
+  <input type="number" id="mdPdA" class="md-calc__input" min="0" step="0.1" value="0.5">
+  <label class="md-calc__label" for="mdPdF">Глубина промерзания грунта, м</label>
+  <input type="number" id="mdPdF" class="md-calc__input" min="0.5" step="0.1" value="1.4">
+  <label class="md-calc__label" for="mdPdM">Режим подвала</label>
+  <select id="mdPdM" class="md-calc__input">
+    <option value="warm" selected>Тёплый: жилой, котельная, мастерская</option>
+    <option value="cool">Прохладный: кладовая, +10…+12 °C</option>
+  </select>
+  <label class="md-calc__label" for="mdPdS">Пол, м² (0 — пол не утепляем)</label>
+  <input type="number" id="mdPdS" class="md-calc__input" min="0" step="1" value="0">
+  <div id="mdPdOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdPdP','mdPdH','mdPdA','mdPdF','mdPdM','mdPdS'], el={}, out=document.getElementById('mdPdOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  /* плита ЭППС 1185×585 мм с Г-кромкой: полезная площадь 0,693 м², +5% на подрезку */
+  var SHEET=0.693;
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function sheets(a){ return Math.ceil(a*1.05/SHEET); }
+  function calc(){
+    var p=parseFloat(el.mdPdP.value), h=parseFloat(el.mdPdH.value), a=Math.max(0,parseFloat(el.mdPdA.value)||0),
+        fr=parseFloat(el.mdPdF.value)||0, warm=el.mdPdM.value==='warm', fl=Math.max(0,parseFloat(el.mdPdS.value)||0);
+    if(!p||!h||p<=0||h<=0){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    a=Math.min(a,h);
+    var mid=Math.min(Math.max(h-a,0),fr), low=Math.max(h-a-mid,0);
+    var lines=[], wall=p*h;
+    if(warm){
+      lines.push('Верх стены (над землёй и до глубины промерзания), '+f(p*(a+mid))+' м²: ЭППС 100 мм — '+sheets(p*(a+mid))+' плит.');
+      if(low>0) lines.push('Низ стены (ниже промерзания), '+f(p*low)+' м²: ЭППС 50 мм — '+sheets(p*low)+' плит.');
+    } else {
+      lines.push('Стены, '+f(wall)+' м²: ЭППС 50 мм — '+sheets(wall)+' плит.');
+    }
+    if(fl>0) lines.push('Пол, '+f(fl)+' м²: ЭППС 50 мм под стяжку — '+sheets(fl)+' плит.');
+    lines.push('Клей для пенополистирола: '+Math.ceil(wall*5)+' кг (около 5 кг/м²), это '+Math.ceil(wall*5/25)+' мешков по 25 кг.');
+    lines.push('Дюбели-грибки: '+Math.ceil(wall*4)+' шт. (4 на 1 м²), длина — толщина плиты плюс 50 мм.');
+    lines.push('Монтажная пена для швов: '+Math.max(1,Math.ceil(wall/15))+' баллонов по 750 мл (примерно 1 баллон на 15 м²).');
+    lines.push('Пароизоляционная плёнка: '+Math.ceil(wall*1.15)+' м² с нахлёстами.');
+    out.className='md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Расход клея зависит от ровности стены. На ровный бетон уходит 4 кг на
+1 м², на старые стены с перепадами — до 6 кг. Если стена кривая,
+сначала выровняйте её штукатуркой, а не толстым слоем клея.
 
 ## Вентиляция после утепления — не опция
 
@@ -113,6 +211,19 @@ images:
   бетон изнутри.
 
 ## Частые вопросы
+
+### Какой толщины пеноплекс нужен для утепления подвала изнутри
+
+Для тёплого подвала — 100 мм в верхней части стены, над землёй и до
+глубины промерзания, и 50 мм ниже. Для прохладной кладовой хватит 50 мм
+по всей высоте. Пол утепляют 30–50 мм, только если его всё равно
+переделывают.
+
+### Сколько клея нужно на пеноплекс
+
+Около 4–6 кг сухой смеси на 1 м² стены: меньше на ровном бетоне,
+больше на старой неровной стене. Калькулятор в статье посчитает клей,
+плиты, дюбели и пену для швов под ваш подвал.
 
 ### Чем отличается утепление подвала от утепления погреба
 
