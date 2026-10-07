@@ -1,0 +1,238 @@
+#!/usr/bin/env python3
+"""
+live — прямые запросы к Метрике, Вебмастеру, Search Console и GA4.
+
+Печатает короткие сводки (20–30 строк), а не сырые таблицы: в контекст
+попадают выводы. Доступ только на чтение. Без внешних зависимостей:
+стандартная библиотека Python + openssl для подписи запроса Google.
+
+Секреты — в ~/.config/mir-doma/secrets.env (вне репозитория, chmod 600):
+
+    YANDEX_OAUTH_TOKEN=...        # права metrika:read и webmaster (чтение)
+    METRIKA_COUNTER=...           # номер счётчика Метрики
+    WEBMASTER_HOST_ID=https:mir-doma.pro:443
+    GOOGLE_SA_KEY=/путь/к/ключу-сервисного-аккаунта.json
+    GSC_SITE=sc-domain:mir-doma.pro     # или https://mir-doma.pro/
+    GA4_PROPERTY=...              # числовой ID ресурса GA4
+
+Команды:
+    python3 scripts/live.py check                 какие источники настроены
+    python3 scripts/live.py traffic [дней]        Метрика: визиты по дням и источники
+    python3 scripts/live.py landing [дней]        Метрика: страницы входа
+    python3 scripts/live.py gsc [дней]            GSC: страницы, веб и картинки отдельно
+    python3 scripts/live.py gsc-queries <слаг> [дней]   GSC: запросы одной страницы
+    python3 scripts/live.py grow [дней]           GSC: позиции 5–20 с показами — что дописать
+    python3 scripts/live.py ywm                   Вебмастер: индекс и популярные запросы
+    python3 scripts/live.py ga4 [дней]            GA4: сеансы по страницам
+
+Значения секретов скрипт никогда не печатает.
+"""
+import base64, json, os, subprocess, sys, tempfile, time, urllib.parse, urllib.request
+from datetime import date, timedelta
+from pathlib import Path
+
+SECRETS = Path(os.environ.get("MD_SECRETS", Path.home() / ".config" / "mir-doma" / "secrets.env"))
+SITE = "https://mir-doma.pro/"
+
+
+def load_env():
+    env = {}
+    if SECRETS.exists():
+        for line in SECRETS.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                env[k.strip()] = v.strip().strip('"').strip("'")
+    for k in list(env):
+        env[k] = os.environ.get(k, env[k])
+    return env
+
+
+ENV = load_env()
+
+
+def need(*keys):
+    miss = [k for k in keys if not ENV.get(k)]
+    if miss:
+        sys.exit(f"Не настроено: {', '.join(miss)}. Заполните {SECRETS} (см. справку: live.py -h).")
+
+
+def http(url, data=None, headers=None, method=None):
+    req = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "ignore")[:300]
+        sys.exit(f"HTTP {e.code} от {urllib.parse.urlparse(url).netloc}: {body}")
+
+
+# ---------- Яндекс ----------
+
+def metrika(params):
+    need("YANDEX_OAUTH_TOKEN", "METRIKA_COUNTER")
+    q = {"ids": ENV["METRIKA_COUNTER"], "accuracy": "full", "limit": 100000}
+    q.update(params)
+    url = "https://api-metrika.yandex.net/stat/v1/data?" + urllib.parse.urlencode(q, doseq=True)
+    return http(url, headers={"Authorization": "OAuth " + ENV["YANDEX_OAUTH_TOKEN"]})
+
+
+def cmd_traffic(days="7"):
+    d = int(days)
+    r = metrika({"metrics": "ym:s:visits,ym:s:users,ym:s:pageDepth,ym:s:bounceRate",
+                 "dimensions": "ym:s:date", "date1": f"{d}daysAgo", "date2": "today", "sort": "ym:s:date"})
+    print(f"Метрика, {d} дн.: дата | визиты | посетители | глубина | отказы %")
+    for row in r["data"]:
+        m = row["metrics"]
+        print(f"  {row['dimensions'][0]['name']} | {int(m[0])} | {int(m[1])} | {m[2]:.2f} | {m[3]:.0f}")
+    t = r["totals"]
+    print(f"  ИТОГО | {int(t[0])} | {int(t[1])} | {t[2]:.2f} | {t[3]:.0f}")
+    s = metrika({"metrics": "ym:s:visits", "dimensions": "ym:s:lastTrafficSource",
+                 "date1": f"{d}daysAgo", "date2": "today", "sort": "-ym:s:visits"})
+    print("Источники:", ", ".join(f"{x['dimensions'][0]['name']} {int(x['metrics'][0])}" for x in s["data"]))
+    e = metrika({"metrics": "ym:s:visits", "dimensions": "ym:s:searchEngine",
+                 "date1": f"{d}daysAgo", "date2": "today", "sort": "-ym:s:visits"})
+    if e["data"]:
+        print("Поисковики:", ", ".join(f"{x['dimensions'][0]['name']} {int(x['metrics'][0])}" for x in e["data"][:5]))
+
+
+def cmd_landing(days="7"):
+    d = int(days)
+    r = metrika({"metrics": "ym:s:visits,ym:s:pageDepth,ym:s:avgVisitDurationSeconds",
+                 "dimensions": "ym:s:startURLPath", "date1": f"{d}daysAgo", "date2": "today",
+                 "sort": "-ym:s:visits", "limit": 25})
+    print(f"Страницы входа, {d} дн.: визиты | глубина | сек | путь")
+    for row in r["data"]:
+        m = row["metrics"]
+        print(f"  {int(m[0]):>4} | {m[1]:.2f} | {int(m[2]):>4} | {row['dimensions'][0]['name']}")
+
+
+def ywm(path):
+    need("YANDEX_OAUTH_TOKEN")
+    h = {"Authorization": "OAuth " + ENV["YANDEX_OAUTH_TOKEN"]}
+    uid = http("https://api.webmaster.yandex.net/v4/user", headers=h)["user_id"]
+    host = urllib.parse.quote(ENV.get("WEBMASTER_HOST_ID", "https:mir-doma.pro:443"), safe="")
+    return http(f"https://api.webmaster.yandex.net/v4/user/{uid}/hosts/{host}{path}", headers=h)
+
+
+def cmd_ywm(_=None):
+    s = ywm("/summary")
+    print("Вебмастер: страниц в поиске", s.get("searchable_pages_count"), "| исключено", s.get("excluded_pages_count"),
+          "| ИКС", s.get("sqi"), "| проблем", s.get("site_problems"))
+    q = ywm("/search-queries/popular?order_by=TOTAL_SHOWS&query_indicator=TOTAL_SHOWS"
+            "&query_indicator=TOTAL_CLICKS&query_indicator=AVG_SHOW_POSITION")
+    print("Популярные запросы (показы | клики | позиция):")
+    for x in q.get("queries", [])[:20]:
+        i = x.get("indicators", {})
+        print(f"  {int(i.get('TOTAL_SHOWS', 0)):>4} | {int(i.get('TOTAL_CLICKS', 0)):>3} | "
+              f"{i.get('AVG_SHOW_POSITION', 0):.1f} | {x.get('query_text')}")
+
+
+# ---------- Google ----------
+
+def google_token(scope):
+    need("GOOGLE_SA_KEY")
+    key = json.loads(Path(ENV["GOOGLE_SA_KEY"]).read_text(encoding="utf-8"))
+    b64 = lambda b: base64.urlsafe_b64encode(b).rstrip(b"=")
+    now = int(time.time())
+    head = b64(json.dumps({"alg": "RS256", "typ": "JWT"}).encode())
+    claim = b64(json.dumps({"iss": key["client_email"], "scope": scope,
+                            "aud": "https://oauth2.googleapis.com/token", "iat": now, "exp": now + 3600}).encode())
+    msg = head + b"." + claim
+    with tempfile.TemporaryDirectory() as td:
+        pem = Path(td) / "k.pem"
+        pem.write_text(key["private_key"], encoding="utf-8")
+        os.chmod(pem, 0o600)
+        sig = subprocess.run(["openssl", "dgst", "-sha256", "-sign", str(pem)],
+                             input=msg, capture_output=True, check=True).stdout
+    jwt = msg + b"." + b64(sig)
+    body = urllib.parse.urlencode({"grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+                                   "assertion": jwt.decode()}).encode()
+    return http("https://oauth2.googleapis.com/token", data=body,
+                headers={"Content-Type": "application/x-www-form-urlencoded"})["access_token"]
+
+
+def gsc(body):
+    need("GSC_SITE")
+    tok = google_token("https://www.googleapis.com/auth/webmasters.readonly")
+    site = urllib.parse.quote(ENV["GSC_SITE"], safe="")
+    return http(f"https://www.googleapis.com/webmasters/v3/sites/{site}/searchAnalytics/query",
+                data=json.dumps(body).encode(), headers={"Authorization": "Bearer " + tok,
+                                                         "Content-Type": "application/json"}).get("rows", [])
+
+
+def period(days):
+    end = date.today() - timedelta(days=2)  # данные GSC отстают на 2 дня
+    return str(end - timedelta(days=int(days) - 1)), str(end)
+
+
+def slug_of(url):
+    p = urllib.parse.urlparse(url).path.strip("/")
+    return p or "/"
+
+
+def cmd_gsc(days="28"):
+    a, b = period(days)
+    for typ in ("web", "image"):
+        rows = gsc({"startDate": a, "endDate": b, "dimensions": ["page"], "type": typ, "rowLimit": 25000})
+        rows.sort(key=lambda r: -r["impressions"])
+        imp = sum(r["impressions"] for r in rows); clk = sum(r["clicks"] for r in rows)
+        print(f"GSC {typ} {a}…{b}: страниц {len(rows)}, показов {int(imp)}, кликов {int(clk)}")
+        for r in rows[:15]:
+            print(f"  {int(r['impressions']):>5} | {int(r['clicks']):>3} | CTR {r['ctr']*100:4.1f} | поз {r['position']:5.1f} | {slug_of(r['keys'][0])}")
+
+
+def cmd_gsc_queries(slug=None, days="28"):
+    if not slug:
+        sys.exit("Укажите слаг: live.py gsc-queries <слаг> [дней]")
+    a, b = period(days)
+    rows = gsc({"startDate": a, "endDate": b, "dimensions": ["query"], "type": "web", "rowLimit": 200,
+                "dimensionFilterGroups": [{"filters": [{"dimension": "page", "operator": "contains",
+                                                        "expression": f"/{slug}/"}]}]})
+    rows.sort(key=lambda r: -r["impressions"])
+    print(f"Запросы страницы {slug}, {a}…{b} (показы | клики | позиция):")
+    for r in rows[:30]:
+        print(f"  {int(r['impressions']):>4} | {int(r['clicks']):>3} | {r['position']:5.1f} | {r['keys'][0]}")
+
+
+def cmd_grow(days="28"):
+    a, b = period(days)
+    rows = gsc({"startDate": a, "endDate": b, "dimensions": ["page", "query"], "type": "web", "rowLimit": 25000})
+    pick = [r for r in rows if 5 <= r["position"] <= 20 and r["impressions"] >= 5]
+    pick.sort(key=lambda r: -r["impressions"])
+    print(f"Позиции 5–20 с показами ≥5, {a}…{b} — кандидаты на доработку:")
+    for r in pick[:25]:
+        print(f"  {int(r['impressions']):>4} | поз {r['position']:5.1f} | {slug_of(r['keys'][0])} | {r['keys'][1]}")
+
+
+def cmd_ga4(days="7"):
+    need("GA4_PROPERTY")
+    tok = google_token("https://www.googleapis.com/auth/analytics.readonly")
+    body = {"dateRanges": [{"startDate": f"{int(days)}daysAgo", "endDate": "today"}],
+            "dimensions": [{"name": "pagePath"}],
+            "metrics": [{"name": "sessions"}, {"name": "engagementRate"}, {"name": "averageSessionDuration"}],
+            "orderBys": [{"metric": {"metricName": "sessions"}, "desc": True}], "limit": 25}
+    r = http(f"https://analyticsdata.googleapis.com/v1beta/properties/{ENV['GA4_PROPERTY']}:runReport",
+             data=json.dumps(body).encode(), headers={"Authorization": "Bearer " + tok,
+                                                      "Content-Type": "application/json"})
+    print(f"GA4, {days} дн.: сеансы | вовлечённость % | сек | путь")
+    for row in r.get("rows", []):
+        m = [x["value"] for x in row["metricValues"]]
+        print(f"  {int(m[0]):>4} | {float(m[1])*100:4.0f} | {float(m[2]):5.0f} | {row['dimensionValues'][0]['value']}")
+
+
+def cmd_check(_=None):
+    print("Файл секретов:", SECRETS, "— есть" if SECRETS.exists() else "— НЕТ")
+    for k in ["YANDEX_OAUTH_TOKEN", "METRIKA_COUNTER", "WEBMASTER_HOST_ID", "GOOGLE_SA_KEY", "GSC_SITE", "GA4_PROPERTY"]:
+        v = ENV.get(k)
+        ok = bool(v) and (k != "GOOGLE_SA_KEY" or Path(v).exists())
+        print(f"  {k:<20} {'задано' if ok else 'нет'}")
+
+
+CMDS = {"check": cmd_check, "traffic": cmd_traffic, "landing": cmd_landing, "gsc": cmd_gsc,
+        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "ywm": cmd_ywm, "ga4": cmd_ga4}
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help") or sys.argv[1] not in CMDS:
+        print(__doc__); sys.exit(0)
+    CMDS[sys.argv[1]](*sys.argv[2:])
