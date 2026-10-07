@@ -43,6 +43,7 @@ images:
 - [Стоимость протопки бани](https://mir-doma.pro/drovyanaya-ili-elektricheskaya-pech-dlya-bani/#mdBanyaCalc) — во что обходится одна протопка дровяной и электрической печью.
 - [Тёплый пол в бане](https://mir-doma.pro/teplyy-pol-v-bane/#mdTpCalc) — мощность и длина кабеля с расходом за визит или длина трубы и объём антифриза для контура от печи.
 - [Замена нижних венцов в бане](https://mir-doma.pro/zamena-nizhnih-vencov-v-bane/#mdVnCalc) — масса сруба с крышей, подбор домкратов, объём нового венца и высота подъёма.
+- [Вентиляция в бане](https://mir-doma.pro/ventilyaciya-v-bane-svoimi-rukami/#mdVbCalc) — сечение притока и вытяжки по мощности печи, диаметр трубы и размер короба.
 
 ## Кровля и фасады
 

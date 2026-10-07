@@ -79,6 +79,61 @@ images:
 создаёт лёгкое разрежение, которое стабильно вытягивает воздух наружу, а не
 позволяет ему застаиваться под потолком.
 
+### Калькулятор сечения вентиляции бани
+
+Введите мощность печи. Если её не знаете, впишите объём парилки:
+калькулятор оценит мощность по ориентиру 1 кВт на 1 м³ и пересчитает
+сечение в диаметр трубы и размер прямоугольного короба.
+
+<!-- wp:html -->
+<div id="mdVbCalc" class="md-calc">
+  <p class="md-calc__lead">Размер приточного и вытяжного отверстий в бане</p>
+  <label class="md-calc__label" for="mdVbP">Мощность печи, кВт (0 — не знаю)</label>
+  <input type="number" id="mdVbP" class="md-calc__input" min="0" step="0.5" value="12">
+  <label class="md-calc__label" for="mdVbV">Объём парилки, м³ (если мощность не знаете)</label>
+  <input type="number" id="mdVbV" class="md-calc__input" min="0" step="0.5" value="0">
+  <div id="mdVbOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var P=document.getElementById('mdVbP'), V=document.getElementById('mdVbV'), out=document.getElementById('mdVbOut');
+  /* приток по мощности печи: до 8 кВт 100–120 см², 8–12 кВт 120–150 см², от 12 кВт от 150 см² */
+  function inflow(kw){
+    if(kw<=8) return 100+Math.max(kw-4,0)/4*20;
+    if(kw<=12) return 120+(kw-8)/4*30;
+    return 150+(kw-12)*8;
+  }
+  function dia(cm2){ return Math.sqrt(cm2*4/Math.PI)*10; }
+  function std(mm){ var S=[100,110,125,150,160,200]; for(var i=0;i<S.length;i++) if(S[i]>=mm) return S[i]; return 200; }
+  function calc(){
+    var kw=parseFloat(P.value)||0, v=parseFloat(V.value)||0, note='';
+    if(kw<=0&&v>0){ kw=v; note='Мощность оценена по объёму: около '+Math.round(kw)+' кВт.\n'; }
+    if(kw<=0){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var a=Math.round(inflow(kw)), b=Math.round(a*1.2);
+    var lines=[note+'Приток: '+a+' см² — труба '+std(dia(a))+' мм или короб '+Math.ceil(a/10)+'×10 см.',
+      'Вытяжка (на 20% больше): '+b+' см² — труба '+std(dia(b))+' мм или короб '+Math.ceil(b/10)+'×10 см.',
+      'Решётки и задвижки берите с живым сечением не меньше этих цифр: у решётки отверстия занимают только 50–70% её площади.'];
+    var warn=kw>16;
+    if(warn) lines.push('Печь мощнее 16 кВт: сделайте приток с двух сторон парилки.');
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  [P,V].forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 ![Расположение приточного отверстия у пола рядом с печью](images/ventilyaciya-v-bane-svoimi-rukami-2.jpg)
 
 ## Схема для разных типов бани
