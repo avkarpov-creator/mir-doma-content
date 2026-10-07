@@ -1,0 +1,36 @@
+{
+  "slug": "zola-kak-udobrenie",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/zola-kak-udobrenie.jpg",
+      "alt": "Ведро древесной золы и садовый совок на краю вскопанной грядки",
+      "prompt": "Galvanized metal bucket full of grey wood ash with a small garden trowel resting on it, at the edge of a freshly dug dark soil vegetable bed, autumn garden in the background, overcast daylight"
+    },
+    {
+      "file": "images/zola-kak-udobrenie-2.jpg",
+      "alt": "Металлическое ведро с крышкой для хранения древесной золы у печи",
+      "prompt": "Metal bucket with a lid filled with fine grey wood ash standing on a brick floor next to a cast iron wood stove in a rustic bathhouse, warm light"
+    },
+    {
+      "file": "images/zola-kak-udobrenie-3.jpg",
+      "alt": "Рассыпанная древесная зола по приствольному кругу молодой яблони осенью",
+      "prompt": "Grey wood ash scattered evenly in a circle around the trunk of a young apple tree on dark soil, fallen yellow leaves around, October garden, close-up"
+    },
+    {
+      "file": "images/zola-kak-udobrenie-4.jpg",
+      "alt": "Ведро с настоем золы и лейка на грядке с огурцами",
+      "prompt": "Bucket of cloudy grey ash infusion water and a green watering can standing between rows of cucumber plants in a vegetable garden, summer morning"
+    },
+    {
+      "file": "images/zola-kak-udobrenie-5.jpg",
+      "alt": "Полоса древесной золы вокруг куста капусты для защиты от слизней",
+      "prompt": "Ring of dry grey wood ash spread on the soil around a young cabbage plant in a garden bed to protect from slugs, close-up, morning dew on the leaves"
+    },
+    {
+      "file": "images/zola-kak-udobrenie-6.jpg",
+      "alt": "Сухая древесная зола в закрытом мешке на полке сарая",
+      "prompt": "Closed paper sack and a lidded metal container of dry wood ash on a wooden shelf in a garden shed, gardening gloves beside them, soft daylight from a window"
+    }
+  ]
+}
