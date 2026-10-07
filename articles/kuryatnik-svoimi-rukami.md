@@ -48,6 +48,54 @@ images:
   2–3 гнёзд. Гнёзда ставят в затемнённом углу, ниже уровня насестов, —
   иначе куры будут спать в гнёздах, а не на насесте, и пачкать их.
 
+Калькулятор ниже переводит эти нормы в размеры под ваше поголовье.
+
+<!-- wp:html -->
+<div id="mdKuCalc" class="md-calc">
+  <p class="md-calc__lead">Курятник: площадь, насесты, гнёзда</p>
+  <label class="md-calc__label" for="mdKuN">Сколько кур</label>
+  <input type="number" id="mdKuN" class="md-calc__input" min="1" step="1" value="10">
+  <label class="md-calc__label" for="mdKuW">Содержание</label>
+  <select id="mdKuW" class="md-calc__input">
+    <option value="3" selected>Круглый год, зимой без выгула (3 курицы на 1 м²)</option>
+    <option value="4">Летний, с выгулом весь день (4 курицы на 1 м²)</option>
+  </select>
+  <div id="mdKuOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var N=document.getElementById('mdKuN'), W=document.getElementById('mdKuW'), out=document.getElementById('mdKuOut');
+  var SIZES=[[2,1.5],[2,2],[3,2],[3,2.5],[3,3],[4,3],[4,4],[5,4],[6,4]];
+  function calc(){
+    var n=parseInt(N.value,10);
+    if(!n||n<1){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var area=n/parseFloat(W.value), s=null;
+    for(var i=0;i<SIZES.length;i++){ if(SIZES[i][0]*SIZES[i][1]>=area){ s=SIZES[i]; break; } }
+    var perch=Math.ceil(n*0.25*10)/10, nests=Math.max(1,Math.ceil(n/4.5));
+    var lines=['Площадь пола: от '+area.toFixed(1).replace('.',',')+' м²'+(s?', подойдёт '+s[0]+'×'+String(s[1]).replace('.',',')+' м':'')+'.',
+      'Насест: '+perch.toString().replace('.',',')+' пог. м (25 см на курицу), на высоте 50–60 см, жерди через 35 см.',
+      'Гнёзда 30×30×30 см: '+nests+' шт., в тёмном углу ниже насестов.',
+      'Высота курятника: 1,8–2 м.'];
+    out.className=s?'md-calc__out':'md-calc__out is-warn';
+    if(!s) lines.push('Поголовье большое: разделите курятник на две секции.');
+    out.textContent=lines.join('\n');
+  }
+  [N,W].forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 ## Фундамент и каркас
 
 Курятник, в отличие от [сарая](https://mir-doma.pro/saray-svoimi-rukami/),

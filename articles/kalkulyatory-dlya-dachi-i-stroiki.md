@@ -126,6 +126,7 @@ images:
 ## Хозяйственные постройки
 
 - [Бак для летнего душа](https://mir-doma.pro/letniy-dush-dlya-dachi-svoimi-rukami/#mdDsCalc) — объём бака по числу пользователей в сутки.
+- [Курятник](https://mir-doma.pro/kuryatnik-svoimi-rukami/#mdKuCalc) — площадь пола, длина насеста и число гнёзд под поголовье.
 
 ![Мешки цемента и тачка на стройплощадке дачного дома](images/kalkulyatory-dlya-dachi-i-stroiki-5.jpg)
 
@@ -166,6 +167,7 @@ images:
 ## Строительство на участке
 
 - [Навес из профильной трубы](https://mir-doma.pro/raschet-navesa-iz-profilnoy-truby/#mdNavesCalc) — снеговая нагрузка, сечение трубы и число стоек.
+- [Теплица из поликарбоната](https://mir-doma.pro/teplitsa-iz-polikarbonata-svoimi-rukami/#mdTpkCalc) — длина дуги, листы на свод и торцы, дуги, профиль и термошайбы.
 
 ## Удобрения и подкормки
 

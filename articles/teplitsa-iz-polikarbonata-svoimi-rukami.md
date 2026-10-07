@@ -98,6 +98,66 @@ images:
 
 По толщине поликарбоната ориентир такой: **4 мм** — бюджетный вариант для лёгких сезонных теплиц, **6 мм** — оптимум по прочности и теплу, **8–10 мм** — для капитальных и зимних теплиц. Брать тоньше 4 мм не стоит: такой лист хрупкий и быстро выходит из строя. Из инструментов нужны шуруповёрт, ножовка или электролобзик, канцелярский нож, рулетка, уровень и стремянка.
 
+### Калькулятор поликарбоната и каркаса
+
+Калькулятор считает арочную теплицу: длину дуги по ширине и высоте,
+листы 2,1×6 м на свод и торцы, число дуг и профиль на каркас. Если
+дуга получается длиннее 6 м, один лист её не закроет. Тогда лучше
+уменьшить высоту или ширину.
+
+<!-- wp:html -->
+<div id="mdTpkCalc" class="md-calc">
+  <p class="md-calc__lead">Арочная теплица: листы и каркас</p>
+  <label class="md-calc__label" for="mdTkW">Ширина, м</label>
+  <input type="number" id="mdTkW" class="md-calc__input" min="1.5" step="0.1" value="3">
+  <label class="md-calc__label" for="mdTkH">Высота в коньке, м</label>
+  <input type="number" id="mdTkH" class="md-calc__input" min="1.5" step="0.1" value="2">
+  <label class="md-calc__label" for="mdTkL">Длина, м</label>
+  <input type="number" id="mdTkL" class="md-calc__input" min="2" step="0.1" value="6">
+  <label class="md-calc__label" for="mdTkS">Шаг дуг, м</label>
+  <select id="mdTkS" class="md-calc__input">
+    <option value="0.67">0,67 м (снеговые регионы)</option>
+    <option value="1" selected>1 м</option>
+  </select>
+  <div id="mdTkOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdTkW','mdTkH','mdTkL','mdTkS'], el={}, out=document.getElementById('mdTkOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var w=parseFloat(el.mdTkW.value), h=parseFloat(el.mdTkH.value), l=parseFloat(el.mdTkL.value), st=parseFloat(el.mdTkS.value);
+    if(!w||!h||!l){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    /* полуэллипс: половина периметра по Рамануджану */
+    var a=w/2, b=h, arc=Math.PI*(3*(a+b)-Math.sqrt((3*a+b)*(a+3*b)))/2;
+    var roof=Math.ceil(l/2.05)*Math.ceil(arc/6);
+    var ends=2*Math.PI*a*b/2, endSheets=Math.ceil(ends*1.2/12.6);
+    var arches=Math.round(l/st)+1, profile=arches*arc+l*5;
+    var lines=['Длина дуги: '+f(arc)+' м.',
+      'Поликарбонат 2,1×6 м: '+roof+' лист. на свод'+(arc>6?' (дуга длиннее листа — стык по своду)':'')+' и '+endSheets+' на торцы — всего '+(roof+endSheets)+'.',
+      'Дуг: '+arches+'. Профиль на дуги и 5 продольных стяжек: около '+Math.ceil(profile)+' пог. м.',
+      'Брус основания по периметру: '+f(2*(w+l))+' м.',
+      'Термошайбы: около '+Math.ceil(arches*arc/0.35+2*w/0.35*2)+' шт. (шаг 30–40 см по дугам и торцам).'];
+    out.className=arc>6?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 ## 🏗️ Основание для теплицы
 
 Многие ставят теплицу прямо на грунт, но это ошибка: конструкцию ведёт при пучении почвы, снизу задувает холод и пролезают сорняки. Поэтому теплице нужно основание.
