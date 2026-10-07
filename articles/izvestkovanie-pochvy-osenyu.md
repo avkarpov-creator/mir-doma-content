@@ -76,6 +76,78 @@ images:
 сильнее. Точную норму лучше уточнить по результату теста кислотности:
 чем ниже pH, тем ближе к верхней границе диапазона.
 
+### Калькулятор нормы известкования
+
+Калькулятор берёт нормы из списка выше и уточняет их по pH. Кислотность
+делится на классы по стандартной агрохимической шкале: сильнокислая —
+до 4,5, среднекислая — 4,6–5,0, слабокислая — 5,1–5,5, близкая к
+нейтральной — 5,6–6,0. Если pH не измеряли, выберите «не знаю»:
+калькулятор возьмёт середину диапазона.
+
+<!-- wp:html -->
+<div id="mdIzCalc" class="md-calc">
+  <p class="md-calc__lead">Сколько доломитовой муки или извести внести</p>
+  <label class="md-calc__label" for="mdIzA">Площадь, м²</label>
+  <input type="number" id="mdIzA" class="md-calc__input" min="1" step="1" value="100">
+  <label class="md-calc__label" for="mdIzS">Почва</label>
+  <select id="mdIzS" class="md-calc__input">
+    <option value="300,400">Песчаная, супесь</option>
+    <option value="400,500" selected>Суглинок</option>
+    <option value="500,600">Тяжёлая глинистая</option>
+  </select>
+  <label class="md-calc__label" for="mdIzP">pH по тесту</label>
+  <select id="mdIzP" class="md-calc__input">
+    <option value="1">До 4,5 — сильнокислая</option>
+    <option value="0.5">4,6–5,0 — среднекислая</option>
+    <option value="0">5,1–5,5 — слабокислая</option>
+    <option value="-1">5,6–6,0 — близкая к нейтральной</option>
+    <option value="-2">Выше 6,0 — нейтральная</option>
+    <option value="0.5x" selected>Не знаю, признаки кислой почвы есть</option>
+  </select>
+  <label class="md-calc__label" for="mdIzM">Материал</label>
+  <select id="mdIzM" class="md-calc__input">
+    <option value="1" selected>Доломитовая мука</option>
+    <option value="1m">Мел молотый</option>
+    <option value="0.5">Гашёная известь (пушонка)</option>
+  </select>
+  <div id="mdIzOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var A=document.getElementById('mdIzA'), S=document.getElementById('mdIzS'), P=document.getElementById('mdIzP'), M=document.getElementById('mdIzM'), out=document.getElementById('mdIzOut');
+  function calc(){
+    var a=parseFloat(A.value);
+    if(!a||a<=0){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var r=S.value.split(','), lo=parseFloat(r[0]), hi=parseFloat(r[1]), pv=P.value, k=parseFloat(M.value), lines=[];
+    if(pv==='-2'){ out.className='md-calc__out'; out.textContent='Известковать не нужно. При pH выше 6 известь только навредит: растения перестанут усваивать железо, марганец и бор.'; return; }
+    if(pv==='-1'){ out.className='md-calc__out'; out.textContent='Для большинства овощей кислотность подходящая, известковать не нужно. Если планируете капусту или свёклу, хватит поддерживающей дозы: '+Math.round(lo/2*k)+' г на 1 м², то есть '+(Math.round(lo/2*k*a/100)/10).toString().replace('.',',')+' кг на участок.'; return; }
+    var t=pv==='0.5x'?0.5:parseFloat(pv);
+    var g=Math.round((lo+(hi-lo)*t)*k), kg=g*a/1000;
+    var name=M.value==='0.5'?'гашёной извести':(M.value==='1m'?'мела':'доломитовой муки');
+    lines.push('Норма: около '+g+' г '+name+' на 1 м².');
+    lines.push('На '+Math.round(a)+' м²: '+(Math.round(kg*10)/10).toString().replace('.',',')+' кг. Это '+Math.ceil(kg/25)+' мешков по 25 кг.');
+    lines.push('Удобная мерка: стакан 200 мл вмещает около 200–250 г доломитовой муки.');
+    if(M.value==='0.5') lines.push('Пушонку вносят только осенью под перекопку. Навоз и азотные удобрения разнесите с ней минимум на 3–4 недели.');
+    if(pv==='0.5x') lines.push('Без теста взята середина диапазона. Тест-полоски стоят меньше мешка муки и избавят от лишнего внесения.');
+    out.className=M.value==='0.5'?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  [A,S,P,M].forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 ## Пошаговая инструкция
 
 1. Уберите с грядки растительные остатки и перекопайте почву на глубину
