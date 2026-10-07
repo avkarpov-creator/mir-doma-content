@@ -108,6 +108,72 @@ images:
 
 **Практический совет по обрешётке:** ставьте стойки с шагом **на 1–2 см меньше ширины плиты**. Тогда минвата встанет враспор, не оставит щелей по краям и не сползёт со временем — это одна из главных причин, почему утеплённая стена всё равно продувается.
 
+### Калькулятор материалов для утепления стен
+
+Введите размеры дома и толщину утеплителя. Калькулятор считает по
+порядку из этого раздела: площадь стен минус проёмы, запас 7% на
+подрезку, слои по 50 мм вразбежку. Площадь упаковки берите с пачки
+выбранного утеплителя: у плит 1200×600×50 мм в одной пачке обычно около
+5,8 м².
+
+<!-- wp:html -->
+<div id="mdUsCalc" class="md-calc">
+  <p class="md-calc__lead">Утепление стен снаружи: сколько материала</p>
+  <label class="md-calc__label" for="mdUsP">Периметр дома, м</label>
+  <input type="number" id="mdUsP" class="md-calc__input" min="4" step="0.5" value="32">
+  <label class="md-calc__label" for="mdUsH">Высота утепляемых стен, м</label>
+  <input type="number" id="mdUsH" class="md-calc__input" min="1" step="0.1" value="2.8">
+  <label class="md-calc__label" for="mdUsG">Фронтоны (треугольники под крышей), м² всего</label>
+  <input type="number" id="mdUsG" class="md-calc__input" min="0" step="1" value="0">
+  <label class="md-calc__label" for="mdUsO">Окна и двери, м²</label>
+  <input type="number" id="mdUsO" class="md-calc__input" min="0" step="0.5" value="10">
+  <label class="md-calc__label" for="mdUsT">Толщина утеплителя</label>
+  <select id="mdUsT" class="md-calc__input">
+    <option value="1">50 мм</option>
+    <option value="2" selected>100 мм (2 слоя по 50)</option>
+    <option value="3">150 мм (3 слоя по 50)</option>
+  </select>
+  <label class="md-calc__label" for="mdUsK">Площадь одной упаковки при толщине 50 мм, м²</label>
+  <input type="number" id="mdUsK" class="md-calc__input" min="1" step="0.01" value="5.76">
+  <div id="mdUsOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdUsP','mdUsH','mdUsG','mdUsO','mdUsT','mdUsK'], el={}, out=document.getElementById('mdUsOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function calc(){
+    var p=parseFloat(el.mdUsP.value), h=parseFloat(el.mdUsH.value), g=Math.max(0,parseFloat(el.mdUsG.value)||0),
+        o=Math.max(0,parseFloat(el.mdUsO.value)||0), n=parseInt(el.mdUsT.value,10), k=parseFloat(el.mdUsK.value);
+    if(!p||!h||!k){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var area=p*h+g-o;
+    if(area<=0){ out.className='md-calc__out is-warn'; out.textContent='Проёмов больше, чем стен: проверьте цифры.'; return; }
+    var ins=area*1.07*n, packs=Math.ceil(ins/k);
+    /* стойки обрешётки с шагом 0,6 м по высоте стены + 10% на углы и проёмы; контробрешётка — столько же */
+    var studs=Math.ceil((p/0.6+1)*h*1.1);
+    var mem=Math.ceil(area*1.15);
+    var lines=['Площадь утепления: '+Math.round(area)+' м².',
+      'Утеплитель: '+Math.round(ins)+' м² по 50 мм'+(n>1?' ('+n+' слоя вразбежку)':'')+' — '+packs+' упаковок.',
+      'Ветро-влагозащитная мембрана: '+mem+' м² с нахлёстами.',
+      'Брусок на обрешётку (шаг 60 см): около '+studs+' пог. м. На контробрешётку под вентзазор — ещё столько же.',
+      'Если плиты крепят без каркаса, под штукатурку: дюбели-грибки '+Math.ceil(area*6)+' шт. (6 на 1 м²).'];
+    out.className='md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
 ![Расчёт и раскладка утеплителя по фасаду](images/uteplenie-sten-raschet.jpg)
 
 ## 💰 Сколько стоит утеплить стены снаружи
