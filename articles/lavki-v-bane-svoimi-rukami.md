@@ -11,6 +11,7 @@ tags:
   - парилка
 adopt_existing: false
 status: draft
+adopt_existing: true
 images:
   - images/lavki-v-bane-svoimi-rukami.jpg
   - images/lavki-v-bane-svoimi-rukami-2.jpg
@@ -89,6 +90,64 @@ images:
 скапливаются на поверхности, доски дольше сохнут и быстрее гниют изнутри.
 
 ![Три яруса полков в бане с размерами по высоте](images/lavki-v-bane-svoimi-rukami-3.jpg)
+
+### Подбор полков под вашу парилку
+
+Введите высоту потолка, свой рост и длину стены под полок. Калькулятор
+расставит ярусы по нормам из этого раздела: над верхним полком должно
+остаться не меньше 110–120 см. Он же посчитает, сколько досок уйдёт на
+настил с зазором 15–20 мм.
+
+<!-- wp:html -->
+<div id="mdLvCalc" class="md-calc">
+  <p class="md-calc__lead">Полки в бане: ярусы и доски</p>
+  <label class="md-calc__label" for="mdLvH">Высота потолка парилки, см</label>
+  <input type="number" id="mdLvH" class="md-calc__input" min="180" step="5" value="220">
+  <label class="md-calc__label" for="mdLvR">Ваш рост, см</label>
+  <input type="number" id="mdLvR" class="md-calc__input" min="140" step="1" value="180">
+  <label class="md-calc__label" for="mdLvL">Длина стены под полок, см</label>
+  <input type="number" id="mdLvL" class="md-calc__input" min="100" step="5" value="220">
+  <label class="md-calc__label" for="mdLvB">Ширина доски настила, мм</label>
+  <select id="mdLvB" class="md-calc__input">
+    <option value="70">70 мм</option>
+    <option value="90" selected>90 мм</option>
+    <option value="120">120 мм</option>
+  </select>
+  <div id="mdLvOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var H=document.getElementById('mdLvH'), R=document.getElementById('mdLvR'), L=document.getElementById('mdLvL'), B=document.getElementById('mdLvB'), out=document.getElementById('mdLvOut');
+  function calc(){
+    var h=parseFloat(H.value), r=parseFloat(R.value), l=parseFloat(L.value), b=parseFloat(B.value)/10;
+    if(!h||!r||!l){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var top=Math.min(110,h-115), lines=[], warn=false, tiers=[];
+    if(top>=90){ tiers=[['Нижний',25,45],['Средний',Math.round(Math.min(65,Math.max(50,top-45))),65],['Верхний',Math.round(top),90]]; }
+    else if(top>=50){ tiers=[['Нижний',25,45],['Верхний',Math.round(top),90]]; warn=true; lines.push('Потолок низкий: третий ярус не помещается, делайте два.'); }
+    else { out.className='md-calc__out is-warn'; out.textContent='Потолок ниже 165 см: полноценный верхний полок не встанет. Сделайте один ярус 50–60 см и лежак не выше 40 см.'; return; }
+    tiers.forEach(function(t){ lines.push(t[0]+' полок: высота '+t[1]+' см от пола, глубина '+t[2]+' см.'); });
+    var need=r+20, lie=l>=need;
+    lines.push('Длина лежака под ваш рост: от '+need+' см. '+(lie?'Стена '+l+' см — лечь можно.':'Стена '+l+' см — коротка для лежания, поставьте полок Г-образно или лежите с согнутыми ногами.'));
+    if(!lie) warn=true;
+    var boards=0; tiers.forEach(function(t){ boards+=Math.ceil(t[2]/(b+1.7)); });
+    lines.push('Досок настила длиной '+l+' см: '+boards+' шт. с зазором 15–20 мм.');
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  [H,R,L,B].forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
 
 ## Три схемы расстановки под размер парилки
 

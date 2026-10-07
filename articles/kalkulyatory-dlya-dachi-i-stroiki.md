@@ -44,6 +44,7 @@ images:
 - [Тёплый пол в бане](https://mir-doma.pro/teplyy-pol-v-bane/#mdTpCalc) — мощность и длина кабеля с расходом за визит или длина трубы и объём антифриза для контура от печи.
 - [Замена нижних венцов в бане](https://mir-doma.pro/zamena-nizhnih-vencov-v-bane/#mdVnCalc) — масса сруба с крышей, подбор домкратов, объём нового венца и высота подъёма.
 - [Вентиляция в бане](https://mir-doma.pro/ventilyaciya-v-bane-svoimi-rukami/#mdVbCalc) — сечение притока и вытяжки по мощности печи, диаметр трубы и размер короба.
+- [Полки в бане](https://mir-doma.pro/lavki-v-bane-svoimi-rukami/#mdLvCalc) — высота ярусов по потолку, длина лежака по росту и число досок настила.
 
 ## Кровля и фасады
 
