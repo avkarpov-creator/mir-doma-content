@@ -8,6 +8,7 @@ category: "Баня и сауна"
 tags:
   - веник для бани
 status: draft
+adopt_existing: true
 images:
   - images/veniki-dlya-bani-kak-vyazat.jpg
   - images/veniki-dlya-bani-kak-vyazat-2.jpg

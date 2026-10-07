@@ -10,6 +10,7 @@ tags:
   - подготовка к зиме
   - садовая земляника
 status: draft
+adopt_existing: true
 images:
   - images/chem-ukryt-klubniku-na-zimu.jpg
   - images/chem-ukryt-klubniku-na-zimu-2.jpg

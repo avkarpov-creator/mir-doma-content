@@ -9,6 +9,7 @@ tags:
   - альпийская горка
   - ландшафтный дизайн
 status: draft
+adopt_existing: true
 images:
   - images/alpiyskaya-gorka-svoimi-rukami.jpg
   - images/alpiyskaya-gorka-svoimi-rukami-2.jpg

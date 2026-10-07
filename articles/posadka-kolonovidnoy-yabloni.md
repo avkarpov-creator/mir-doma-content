@@ -9,6 +9,7 @@ tags:
   - колоновидная яблоня
   - яблоня
 status: draft
+adopt_existing: true
 images:
   - images/posadka-kolonovidnoy-yabloni.jpg
   - images/posadka-kolonovidnoy-yabloni-2.jpg

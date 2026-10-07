@@ -9,7 +9,7 @@ tags:
   - хранение яблок
   - урожай
   - погреб
-adopt_existing: false
+adopt_existing: true
 status: draft
 images:
   - images/kak-hranit-yabloki-zimoy.jpg

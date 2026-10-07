@@ -10,6 +10,7 @@ tags:
   - открытые конструкции
   - обшивка
 status: draft
+adopt_existing: true
 images:
   - images/otdelka-otkrytoy-terrasy.jpg
   - images/otdelka-otkrytoy-terrasy-2.jpg

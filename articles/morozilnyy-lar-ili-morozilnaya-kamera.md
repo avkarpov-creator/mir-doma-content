@@ -9,6 +9,7 @@ tags:
   - морозильный ларь
   - заморозка
 status: draft
+adopt_existing: true
 images:
   - images/morozilnyy-lar-ili-morozilnaya-kamera.jpg
   - images/morozilnyy-lar-ili-morozilnaya-kamera-2.jpg

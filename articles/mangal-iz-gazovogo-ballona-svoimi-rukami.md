@@ -8,6 +8,7 @@ category: "Хозяйственные постройки"
 tags:
   - мангал
 status: draft
+adopt_existing: true
 images:
   - images/mangal-iz-gazovogo-ballona-svoimi-rukami.jpg
   - images/mangal-iz-gazovogo-ballona-svoimi-rukami-2.jpg

@@ -9,6 +9,7 @@ tags:
   - плодовые деревья
   - обрезка
 status: draft
+adopt_existing: true
 images:
   - images/obrezka-plodovyh-derevev-osenyu.jpg
   - images/obrezka-plodovyh-derevev-osenyu-2.jpg

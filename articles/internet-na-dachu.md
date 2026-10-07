@@ -10,6 +10,7 @@ tags:
   - дача своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/internet-na-dachu.jpg
   - images/internet-na-dachu-2.jpg

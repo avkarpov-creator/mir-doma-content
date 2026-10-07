@@ -8,6 +8,7 @@ category: "Хозяйственные постройки"
 tags:
   - коптильня
 status: draft
+adopt_existing: true
 images:
   - images/koptilnya-goryachego-kopcheniya-svoimi-rukami.jpg
   - images/koptilnya-goryachego-kopcheniya-svoimi-rukami-2.jpg

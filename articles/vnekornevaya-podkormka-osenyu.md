@@ -9,7 +9,7 @@ tags:
   - внекорневая подкормка
   - подготовка сада к зиме
   - осенние подкормки
-adopt_existing: false
+adopt_existing: true
 status: draft
 images:
   - images/vnekornevaya-podkormka-osenyu.jpg

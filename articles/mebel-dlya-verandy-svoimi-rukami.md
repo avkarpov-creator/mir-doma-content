@@ -10,6 +10,7 @@ tags:
   - мебель своими руками
   - стеллажи
 status: draft
+adopt_existing: true
 images:
   - images/mebel-dlya-verandy-svoimi-rukami.jpg
   - images/mebel-dlya-verandy-svoimi-rukami-2.jpg

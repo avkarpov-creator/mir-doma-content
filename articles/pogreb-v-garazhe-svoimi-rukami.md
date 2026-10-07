@@ -11,6 +11,7 @@ tags:
   - гидроизоляция
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/pogreb-v-garazhe-svoimi-rukami.jpg
   - images/pogreb-v-garazhe-svoimi-rukami-2.jpg

@@ -11,6 +11,7 @@ tags:
   - дача своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/verstak-svoimi-rukami.jpg
   - images/verstak-svoimi-rukami-2.jpg

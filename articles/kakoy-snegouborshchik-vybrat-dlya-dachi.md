@@ -9,6 +9,7 @@ tags:
   - снегоуборщик
   - инструменты
 status: draft
+adopt_existing: true
 images:
   - images/kakoy-snegouborshchik-vybrat-dlya-dachi.jpg
   - images/kakoy-snegouborshchik-vybrat-dlya-dachi-2.jpg

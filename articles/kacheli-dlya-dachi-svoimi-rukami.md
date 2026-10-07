@@ -10,6 +10,7 @@ tags:
   - мебель для дачи
   - зона отдыха
 status: draft
+adopt_existing: true
 images:
   - images/kacheli-dlya-dachi-svoimi-rukami.jpg
   - images/kacheli-dlya-dachi-svoimi-rukami-2.jpg

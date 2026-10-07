@@ -10,6 +10,7 @@ tags:
   - щебень
   - благоустройство участка
 status: draft
+adopt_existing: true
 images:
   - images/dorozhka-iz-shchebnya-svoimi-rukami.jpg
   - images/dorozhka-iz-shchebnya-svoimi-rukami-2.jpg

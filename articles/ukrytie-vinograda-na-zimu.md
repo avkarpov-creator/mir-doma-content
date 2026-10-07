@@ -10,6 +10,7 @@ tags:
   - подготовка сада к зиме
   - уход за садом
 status: draft
+adopt_existing: true
 images:
   - images/ukrytie-vinograda-na-zimu.jpg
   - images/ukrytie-vinograda-na-zimu-2.jpg

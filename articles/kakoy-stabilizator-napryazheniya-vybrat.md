@@ -9,6 +9,7 @@ tags:
   - стабилизатор напряжения
   - электрика
 status: draft
+adopt_existing: true
 images:
   - images/kakoy-stabilizator-napryazheniya-vybrat.jpg
   - images/kakoy-stabilizator-napryazheniya-vybrat-2.jpg

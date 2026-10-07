@@ -10,6 +10,7 @@ tags:
   - Россети
   - электричество
 status: draft
+adopt_existing: true
 images:
   - images/kak-uvelichit-moshchnost-elektrichestva-na-uchastke.jpg
   - images/kak-uvelichit-moshchnost-elektrichestva-na-uchastke-2.jpg

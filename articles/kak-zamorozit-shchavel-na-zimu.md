@@ -10,6 +10,7 @@ tags:
   - хранение урожая
   - щавель
 status: draft
+adopt_existing: true
 images:
   - images/kak-zamorozit-shchavel-na-zimu.jpg
   - images/kak-zamorozit-shchavel-na-zimu-2.jpg

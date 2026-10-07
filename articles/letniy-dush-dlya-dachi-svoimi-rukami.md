@@ -10,6 +10,7 @@ tags:
   - хозпостройки
   - водоснабжение дачи
 status: draft
+adopt_existing: true
 images:
   - images/letniy-dush-dlya-dachi-svoimi-rukami.jpg
   - images/letniy-dush-dlya-dachi-svoimi-rukami-2.jpg

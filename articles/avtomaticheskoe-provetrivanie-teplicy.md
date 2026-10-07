@@ -9,6 +9,7 @@ tags:
   - теплица
   - термопривод
 status: draft
+adopt_existing: true
 images:
   - images/avtomaticheskoe-provetrivanie-teplicy.jpg
   - images/avtomaticheskoe-provetrivanie-teplicy-2.jpg

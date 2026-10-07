@@ -9,6 +9,7 @@ tags:
   - молниезащита
   - электрика
 status: draft
+adopt_existing: true
 images:
   - images/molniezashchita-chastnogo-doma.jpg
   - images/molniezashchita-chastnogo-doma-2.jpg

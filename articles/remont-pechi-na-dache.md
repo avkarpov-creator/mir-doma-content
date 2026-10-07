@@ -9,7 +9,7 @@ tags:
   - ремонт печи
   - дымоход
   - отопление дачи
-adopt_existing: false
+adopt_existing: true
 status: draft
 images:
   - images/remont-pechi-na-dache.jpg

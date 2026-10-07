@@ -10,6 +10,7 @@ tags:
   - конвектор
   - отопление дачи
 status: draft
+adopt_existing: true
 images:
   - images/kakoy-obogrevatel-vybrat-dlya-dachi.jpg
   - images/kakoy-obogrevatel-vybrat-dlya-dachi-2.jpg

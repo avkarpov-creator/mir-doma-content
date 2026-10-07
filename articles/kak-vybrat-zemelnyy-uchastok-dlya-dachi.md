@@ -10,6 +10,7 @@ tags:
   - СНТ
   - чек-лист
 status: draft
+adopt_existing: true
 images:
   - images/kak-vybrat-zemelnyy-uchastok-dlya-dachi.jpg
   - images/kak-vybrat-zemelnyy-uchastok-dlya-dachi-2.jpg

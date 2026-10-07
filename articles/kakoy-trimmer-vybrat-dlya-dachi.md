@@ -9,7 +9,7 @@ tags:
   - триммер для дачи
   - садовый инструмент
   - выбор техники
-adopt_existing: false
+adopt_existing: true
 status: draft
 images:
   - images/kakoy-trimmer-vybrat-dlya-dachi.jpg

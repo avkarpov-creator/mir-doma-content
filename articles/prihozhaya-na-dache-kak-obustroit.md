@@ -9,7 +9,7 @@ tags:
   - прихожая на даче
   - интерьер дачи
   - хранение
-adopt_existing: false
+adopt_existing: true
 status: draft
 images:
   - images/prihozhaya-na-dache-kak-obustroit.jpg

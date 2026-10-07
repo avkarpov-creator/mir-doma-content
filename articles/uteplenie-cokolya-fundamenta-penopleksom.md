@@ -10,6 +10,7 @@ tags:
   - пеноплекс
   - цоколь
 status: draft
+adopt_existing: true
 images:
   - images/uteplenie-cokolya-fundamenta-penopleksom.jpg
   - images/uteplenie-cokolya-fundamenta-penopleksom-2.jpg

@@ -10,6 +10,7 @@ tags:
   - хранение урожая
   - уборка урожая
 status: draft
+adopt_existing: true
 images:
   - images/obrezka-svekly-dlya-hraneniya.jpg
   - images/obrezka-svekly-dlya-hraneniya-2.jpg

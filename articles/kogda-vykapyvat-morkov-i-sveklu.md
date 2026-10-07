@@ -10,6 +10,7 @@ tags:
   - свёкла
   - уборка урожая
 status: draft
+adopt_existing: true
 images:
   - images/kogda-vykapyvat-morkov-i-sveklu.jpg
   - images/kogda-vykapyvat-morkov-i-sveklu-2.jpg

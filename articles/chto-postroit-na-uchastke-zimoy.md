@@ -10,6 +10,7 @@ tags:
   - скважина
   - зимнее строительство
 status: draft
+adopt_existing: true
 images:
   - images/chto-postroit-na-uchastke-zimoy.jpg
   - images/chto-postroit-na-uchastke-zimoy-2.jpg

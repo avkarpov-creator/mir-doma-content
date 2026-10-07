@@ -10,6 +10,7 @@ tags:
   - розы
   - вредители
 status: draft
+adopt_existing: true
 images:
   - images/tlya-na-roze-chem-obrabotat.jpg
   - images/tlya-na-roze-chem-obrabotat-2.jpg

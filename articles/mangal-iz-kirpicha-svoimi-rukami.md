@@ -8,6 +8,7 @@ category: "Хозяйственные постройки"
 tags:
   - мангал
 status: draft
+adopt_existing: true
 images:
   - images/mangal-iz-kirpicha-svoimi-rukami.jpg
   - images/mangal-iz-kirpicha-svoimi-rukami-2.jpg

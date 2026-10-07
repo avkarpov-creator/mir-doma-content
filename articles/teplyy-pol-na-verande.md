@@ -10,6 +10,7 @@ tags:
   - отопление
   - энергосбережение
 status: draft
+adopt_existing: true
 images:
   - images/teplyy-pol-na-verande.jpg
   - images/teplyy-pol-na-verande-2.jpg

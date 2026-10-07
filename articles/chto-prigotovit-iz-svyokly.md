@@ -9,7 +9,7 @@ tags:
   - свёкла
   - рецепты из урожая
   - заготовки на зиму
-adopt_existing: false
+adopt_existing: true
 status: draft
 images:
   - images/chto-prigotovit-iz-svyokly.jpg

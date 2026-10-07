@@ -8,6 +8,7 @@ category: "Газоны и дорожки"
 tags:
   - рулонный газон
 status: draft
+adopt_existing: true
 images:
   - images/ukhod-za-rulonnym-gazonom-posle-ukladki.jpg
   - images/ukhod-za-rulonnym-gazonom-posle-ukladki-2.jpg

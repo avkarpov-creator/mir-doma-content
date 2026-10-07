@@ -9,6 +9,7 @@ tags:
   - огород
   - грядки-короба
 status: draft
+adopt_existing: true
 images:
   - images/gryadki-koroba-iz-dosok-svoimi-rukami.jpg
   - images/gryadki-koroba-iz-dosok-svoimi-rukami-2.jpg

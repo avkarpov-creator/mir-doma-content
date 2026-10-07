@@ -10,6 +10,7 @@ tags:
   - рецепты
   - заготовки
 status: draft
+adopt_existing: true
 images:
   - images/chto-prigotovit-iz-morkovi.jpg
   - images/chto-prigotovit-iz-morkovi-2.jpg
