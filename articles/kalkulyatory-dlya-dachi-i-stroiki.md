@@ -147,6 +147,7 @@ images:
 ## Ремонт дачного дома
 
 - [Лестница на второй этаж](https://mir-doma.pro/lestnica-na-vtoroy-etazh-svoimi-rukami/#mdStairCalc) — число и высота ступеней, глубина проступи, угол и длина косоура.
+- [Ступени крыльца](https://mir-doma.pro/remont-kryltsa-svoimi-rukami/#mdKrCalc) — число и высота ступеней под высоту порога, глубина проступи и площадки.
 
 ## Заморозка
 
