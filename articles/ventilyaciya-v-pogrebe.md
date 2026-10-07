@@ -60,6 +60,60 @@ images:
 | 8 м² | ~208 см² | ~160 мм |
 | 10 м² | ~260 см² | 180–200 мм |
 
+Чтобы не считать вручную, введите размеры погреба. Калькулятор посчитает
+нужное сечение и подберёт ближайшую стандартную трубу с учётом толщины
+стенки: у канализационной трубы 110 мм внутренний диаметр около 104 мм.
+
+<!-- wp:html -->
+<div id="mdVpCalc" class="md-calc">
+  <p class="md-calc__lead">Расчёт диаметра вентиляционных труб погреба</p>
+  <label class="md-calc__label" for="mdVpL">Длина погреба, м</label>
+  <input type="number" id="mdVpL" class="md-calc__input" min="0.5" step="0.1" value="2.5">
+  <label class="md-calc__label" for="mdVpW">Ширина погреба, м</label>
+  <input type="number" id="mdVpW" class="md-calc__input" min="0.5" step="0.1" value="2">
+  <div id="mdVpOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var L=document.getElementById('mdVpL'), W=document.getElementById('mdVpW'), out=document.getElementById('mdVpOut');
+  /* наружный диаметр ПВХ-трубы, мм, и её внутренний диаметр */
+  var PIPES=[[110,104],[125,118],[160,152],[200,190],[250,238]];
+  function pick(sec){ for(var i=0;i<PIPES.length;i++){ var d=PIPES[i][1]/10; if(Math.PI*d*d/4>=sec) return PIPES[i]; } return null; }
+  function calc(){
+    var l=parseFloat(L.value), w=parseFloat(W.value);
+    if(!l||!w||l<=0||w<=0){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var area=l*w, sec=area*26, d=Math.sqrt(sec*4/Math.PI)*10, p=pick(sec), lines=[];
+    lines.push('Площадь: '+area.toFixed(1).replace('.',',')+' м², нужное сечение: '+Math.round(sec)+' см² (внутренний диаметр от '+Math.round(d)+' мм).');
+    if(p){
+      var up=PIPES[Math.min(PIPES.indexOf(p)+1,PIPES.length-1)];
+      lines.push('Приточная труба: '+p[0]+' мм.');
+      lines.push('Вытяжная труба: '+(up[0]>p[0]?up[0]+' мм (на размер больше, тяга устойчивее) или '+p[0]+' мм':p[0]+' мм')+'.');
+      out.className='md-calc__out';
+    } else {
+      var half=pick(sec/2);
+      lines.push('Одна труба такого сечения неудобна: поставьте две приточные и две вытяжные по '+(half?half[0]:250)+' мм.');
+      out.className='md-calc__out is-warn';
+    }
+    lines.push('Приток: низ трубы в 20–50 см от пола, снаружи 0,8–1 м над землёй.');
+    lines.push('Вытяжка: низ трубы в 5–10 см от потолка, снаружи выше конька крыши. Трубы — в противоположных углах.');
+    out.textContent=lines.join('\n');
+  }
+  [L,W].forEach(function(el){el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+
 Для типового дачного погреба 4–8 м² обычно берут **трубы диаметром 110–160 мм**. Вытяжную часто делают чуть большего сечения, чем приточную, — так тяга устойчивее. Слишком узкие трубы не справятся с влагой, слишком широкие зимой быстро выстудят погреб (но это решается задвижками).
 
 Материал — пластиковые канализационные или вентиляционные трубы, реже оцинкованные. Пластик дешевле, не ржавеет и легко монтируется.

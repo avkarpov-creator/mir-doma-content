@@ -113,6 +113,7 @@ images:
 - [Погреб в гараже](https://mir-doma.pro/pogreb-v-garazhe-svoimi-rukami/#mdPgCalc) — объём котлована, бетон или кирпич на стены, гидроизоляция.
 - [Полки для банок в погреб](https://mir-doma.pro/polki-v-pogreb-svoimi-rukami/#mdShelfCalc) — вес банок на полке и сколько нужно стоек.
 - [Серные шашки для погреба](https://mir-doma.pro/raschet-sernoy-shashki-dlya-pogreba/#mdSsCalc) — объём погреба, сера по норме и число шашек по весу или по данным упаковки.
+- [Вентиляция погреба](https://mir-doma.pro/ventilyaciya-v-pogrebe/#mdVpCalc) — сечение и диаметр приточной и вытяжной трубы по площади погреба.
 
 ## Хозяйственные постройки
 
