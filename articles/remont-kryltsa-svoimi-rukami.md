@@ -186,7 +186,7 @@ images:
     if(!h||h<=0){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
     /* площадка на 3–5 см ниже порога, чтобы дверь не цепляла наледь */
     var top=h-4, n=Math.max(1,Math.round(top/16)), rise=top/n;
-    if(rise>18){ n++; rise=top/n; }
+    if(rise>17){ n++; rise=top/n; }
     var tread=Math.min(35,Math.max(28,63-2*rise)), steps=n-1, run=steps*tread;
     var pad=O.value==='out'?d+30:100;
     var lines=['Площадка на 4 см ниже порога: высота '+f(top)+' см от земли.',
