@@ -22,6 +22,7 @@ live — прямые запросы к Метрике, Вебмастеру, Se
     python3 scripts/live.py gsc [дней]            GSC: страницы, веб и картинки отдельно
     python3 scripts/live.py gsc-queries <слаг> [дней]   GSC: запросы одной страницы
     python3 scripts/live.py inspect <слаг> [...]   GSC URL Inspection: в индексе ли, канонический, последний обход
+    python3 scripts/live.py gindex                все опубликованные через URL Inspection (20+ мин) → seo/live/google-index.json
     python3 scripts/live.py grow [дней]           GSC: позиции 5–20 с показами — что дописать
     python3 scripts/live.py ywm                   Вебмастер: индекс и популярные запросы
     python3 scripts/live.py ga4 [дней]            GA4: сеансы по страницам
@@ -207,6 +208,14 @@ def cmd_gsc_queries(slug=None, days="28"):
         print(f"  {int(r['impressions']):>4} | {int(r['clicks']):>3} | {r['position']:5.1f} | {r['keys'][0]}")
 
 
+def inspect_url(tok, slug):
+    url = f"https://mir-doma.pro/{slug}/"
+    r = http("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
+             data=json.dumps({"inspectionUrl": url, "siteUrl": ENV["GSC_SITE"]}).encode(),
+             headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+    return r.get("inspectionResult", {}).get("indexStatusResult", {})
+
+
 def cmd_inspect(*slugs):
     """Состояние страницы в индексе Google — когда страница пропала из выдачи."""
     if not slugs:
@@ -214,11 +223,7 @@ def cmd_inspect(*slugs):
     need("GSC_SITE")
     tok = google_token("https://www.googleapis.com/auth/webmasters.readonly")
     for slug in slugs:
-        url = f"https://mir-doma.pro/{slug}/"
-        r = http("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
-                 data=json.dumps({"inspectionUrl": url, "siteUrl": ENV["GSC_SITE"]}).encode(),
-                 headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
-        x = r.get("inspectionResult", {}).get("indexStatusResult", {})
+        x = inspect_url(tok, slug)
         print(f"{slug}: {x.get('verdict')} | {x.get('coverageState')}")
         print(f"  обход {x.get('lastCrawlTime', '—')} | робот {x.get('crawledAs', '—')} | "
               f"fetch {x.get('pageFetchState', '—')} | robots {x.get('robotsTxtState', '—')}")
@@ -227,6 +232,52 @@ def cmd_inspect(*slugs):
             print(f"  ВНИМАНИЕ: Google выбрал канонический {gc} (наш {uc})")
         refs = x.get("referringUrls") or []
         print(f"  ссылаются (известные Google): {len(refs)}" + (f" — {', '.join(slug_of(u) for u in refs[:5])}" if refs else ""))
+
+
+GINDEX = Path(__file__).resolve().parent.parent / "seo" / "live" / "google-index.json"
+
+
+def cmd_gindex(_=None):
+    """Все опубликованные записи через URL Inspection: что в индексе Google. ~5 с на URL, 200+ URL — 20+ минут.
+    Снимок по слагам — seo/live/google-index.json, итог дописывается в snapshots.jsonl."""
+    need("GSC_SITE")
+    slugs, page = [], 1
+    while True:
+        try:
+            d = http(f"https://mir-doma.pro/wp-json/wp/v2/posts?per_page=100&page={page}&_fields=slug,date")
+        except SystemExit:
+            break
+        if not d:
+            break
+        slugs += [(x["slug"], x["date"][:10]) for x in d]
+        page += 1
+    tok, t0 = google_token("https://www.googleapis.com/auth/webmasters.readonly"), time.time()
+    out = {}
+    for i, (s, dt) in enumerate(slugs, 1):
+        if time.time() - t0 > 3000:  # токен живёт час
+            tok, t0 = google_token("https://www.googleapis.com/auth/webmasters.readonly"), time.time()
+        for attempt in range(3):
+            try:
+                x = inspect_url(tok, s)
+                out[s] = {"date": dt, "cov": x.get("coverageState"), "crawl": x.get("lastCrawlTime", "")[:10],
+                          "gcanon": x.get("googleCanonical")}
+                break
+            except (SystemExit, Exception) as e:  # сеть на WSL иногда отваливается — повторяем
+                out[s] = {"date": dt, "cov": "ERR " + str(e)[:60]}
+                time.sleep(5)
+        if i % 25 == 0:
+            print(f"  …{i}/{len(slugs)}", file=sys.stderr)
+    GINDEX.parent.mkdir(parents=True, exist_ok=True)
+    GINDEX.write_text(json.dumps(out, ensure_ascii=False, indent=0), encoding="utf-8")
+    grp = lambda c: ("indexed" if c.startswith("Submitted") or c == "Indexed, not submitted in sitemap"
+                     else "unknown" if "unknown" in c else "crawled_not_indexed" if "not indexed" in c else "other")
+    cnt = {}
+    for v in out.values():
+        k = grp(v["cov"] or "")
+        cnt[k] = cnt.get(k, 0) + 1
+    print(f"Google, {len(out)} опубликованных: " + " | ".join(f"{k} {v}" for k, v in sorted(cnt.items())))
+    with SNAP.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps({"date": str(date.today()), **{"g_" + k: v for k, v in cnt.items()}}) + "\n")
 
 
 def cmd_grow(days="28"):
@@ -353,7 +404,7 @@ def cmd_week(_=None):
 
 
 CMDS = {"check": cmd_check, "traffic": cmd_traffic, "landing": cmd_landing, "gsc": cmd_gsc,
-        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "inspect": cmd_inspect, "ywm": cmd_ywm, "ga4": cmd_ga4, "week": cmd_week}
+        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "inspect": cmd_inspect, "gindex": cmd_gindex, "ywm": cmd_ywm, "ga4": cmd_ga4, "week": cmd_week}
 
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help") or sys.argv[1] not in CMDS:
