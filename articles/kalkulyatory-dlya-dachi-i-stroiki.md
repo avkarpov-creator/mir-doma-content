@@ -139,6 +139,7 @@ images:
 
 ## Хозяйственные постройки
 
+- [Беседка своими руками](https://mir-doma.pro/besedka-svoimi-rukami/#mdBsCalc) — брус на каркас, лаги и стропила, доска на пол, площадь кровли и число опор.
 - [Бак для летнего душа](https://mir-doma.pro/letniy-dush-dlya-dachi-svoimi-rukami/#mdDsCalc) — объём бака по числу пользователей в сутки.
 - [Курятник](https://mir-doma.pro/kuryatnik-svoimi-rukami/#mdKuCalc) — площадь пола, длина насеста и число гнёзд под поголовье.
 - [Туалет на даче](https://mir-doma.pro/tualet-na-dache-svoimi-rukami/#mdTuCalc) — через сколько лет заполнится выгребная яма под вашу семью и сезон.

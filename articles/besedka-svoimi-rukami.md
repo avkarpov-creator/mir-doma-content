@@ -97,6 +97,85 @@ images:
 
 Из инструментов нужны: лопата или бур для ям, бетономешалка или ёмкость для замеса, уровень, рулетка, угольник, ножовка или циркулярная пила, шуруповёрт, молоток, кисти для пропитки. Покупая пиломатериал, выбирайте брус и доску камерной сушки без трещин, синевы и большого числа сучков — сырое дерево «поведёт» при высыхании, и каркас перекосит. Перед началом работ весь пиломатериал стоит обработать антисептиком, уделяя особое внимание торцам и нижним элементам — это продлит срок службы беседки на годы.
 
+### Калькулятор материалов на беседку
+
+Таблица выше показывает, что нужно, а калькулятор — сколько. Считается прямоугольная деревянная беседка на столбчатом фундаменте: брус 100×100 на обвязку и стойки, 50×100 на лаги и стропила. Шаг лаг 50 см, стропил 80 см. Площадь кровли считается со свесами и уклоном и одинакова для односкатной, двускатной и четырёхскатной крыши с одним уклоном.
+
+<!-- wp:html -->
+<div id="mdBsCalc" class="md-calc">
+  <p class="md-calc__lead">Материалы на деревянную беседку</p>
+  <label class="md-calc__label" for="mdBsA">Длина, м</label>
+  <input type="number" id="mdBsA" class="md-calc__input" min="1.5" max="8" step="0.1" value="3">
+  <label class="md-calc__label" for="mdBsB">Ширина, м</label>
+  <input type="number" id="mdBsB" class="md-calc__input" min="1.5" max="6" step="0.1" value="3">
+  <label class="md-calc__label" for="mdBsH">Высота стоек, м</label>
+  <input type="number" id="mdBsH" class="md-calc__input" min="2" max="3" step="0.1" value="2.4">
+  <label class="md-calc__label" for="mdBsR">Крыша</label>
+  <select id="mdBsR" class="md-calc__input">
+    <option value="2" selected>Двускатная</option>
+    <option value="1">Односкатная</option>
+    <option value="4">Четырёхскатная</option>
+  </select>
+  <label class="md-calc__label" for="mdBsU">Уклон крыши, градусов</label>
+  <input type="number" id="mdBsU" class="md-calc__input" min="5" max="45" step="1" value="25">
+  <label class="md-calc__label" for="mdBsO">Свес кровли, см</label>
+  <input type="number" id="mdBsO" class="md-calc__input" min="0" max="60" step="5" value="30">
+  <label class="md-calc__label" for="mdBsF">Пол</label>
+  <select id="mdBsF" class="md-calc__input">
+    <option value="1" selected>Деревянный настил на лагах</option>
+    <option value="0">Без деревянного пола (плитка, гравий)</option>
+  </select>
+  <div id="mdBsOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdBsA','mdBsB','mdBsH','mdBsR','mdBsU','mdBsO','mdBsF'], el={}, out=document.getElementById('mdBsOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function v(i){ return parseFloat(el[i].value)||0; }
+  function f(x){ return x.toFixed(1).replace('.',','); }
+  function calc(){
+    var a=Math.max(v('mdBsA'),v('mdBsB')), b=Math.min(v('mdBsA'),v('mdBsB')), h=v('mdBsH'), r=el.mdBsR.value, u=v('mdBsU'), o=v('mdBsO')/100, floor=el.mdBsF.value==='1';
+    if(!a||!b||!h||!u){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var cos=Math.cos(u*Math.PI/180);
+    /* опоры фундамента: сетка с шагом не больше 1,5 м (3×3 м — 9 опор, как в статье) */
+    var nx=Math.ceil(a/1.5)+1, ny=Math.ceil(b/1.5)+1, piles=floor?nx*ny:(2*nx+2*ny-4);
+    /* стойки: по углам и не реже чем через 3 м по сторонам */
+    var px=Math.ceil(a/3)+1, py=Math.ceil(b/3)+1, posts=2*px+2*py-4;
+    var per=2*(a+b), b100=(per*(floor?2:1)+posts*h)*1.1;
+    var lags=floor?(Math.ceil(a/0.5)+1)*b:0;
+    var raft=0, nr=Math.ceil(a/0.8)+1;
+    if(r==='2') raft=nr*2*(b/2+o)/cos;
+    else if(r==='1') raft=nr*(b+2*o)/cos;
+    var b50=(lags+raft)*1.1;
+    var roof=(a+2*o)*(b+2*o)/cos, deck=a*b*1.1;
+    var lines=['Опоры фундамента: '+piles+' шт.'+(floor?' (сетка под лаги)':' (только по периметру)')+', стоек каркаса: '+posts+' шт.',
+      'Брус 100×100: около '+Math.ceil(b100)+' м — это '+Math.ceil(b100/6)+' шт. по 6 м (обвязка'+(floor?' низ и верх':' верх')+', стойки, +10%).',
+      'Брус 50×100: около '+Math.ceil(b50)+' м — '+Math.ceil(b50/6)+' шт. по 6 м ('+(floor?'лаги ':'')+(r==='4'?'без стропил':'и стропила')+', +10%).'];
+    if(floor) lines.push('Доска на пол: '+f(deck)+' м² с запасом 10%.');
+    lines.push('Кровля: '+f(roof)+' м² по скатам со свесами. Покупайте с учётом нахлёстов: профнастил +10–15%, мягкая черепица +5–10%.');
+    var warn=false;
+    if(r==='4'){ lines.push('Стропила четырёхскатной крыши считают по чертежу: есть диагональные и укороченные стропила, их длины разные.'); }
+    if(b>4){ warn=true; lines.push('Ширина больше 4 м: стропилам 50×100 нужен промежуточный упор или сечение побольше. Уточните по таблицам пролётов.'); }
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Если вместо дерева хочется каркас из профильной трубы под поликарбонат или профнастил, сечения труб и шаг стоек по снеговой нагрузке считает калькулятор в статье про [расчёт навеса из профильной трубы](https://mir-doma.pro/raschet-navesa-iz-profilnoy-truby/).
+
 ## 🏗️ Фундамент для беседки
 
 Фундамент — основа долговечности беседки. Деревянная конструкция лёгкая, поэтому массивное основание ей не нужно, но и без фундамента нельзя: дерево, стоящее прямо на земле, тянет влагу и за пару сезонов сгнивает. Чаще всего выбирают один из трёх вариантов:
