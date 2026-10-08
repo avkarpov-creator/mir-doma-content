@@ -49,6 +49,74 @@ images:
 
 Поэтому утепляют дом со всех сторон — только тогда он станет по-настоящему тёплым. Если утеплить, например, лишь стены, тепло всё равно будет уходить через холодный потолок и пол, и эффект окажется скромным.
 
+### С чего начать именно в вашем доме
+
+Отметьте, что сейчас с каждой частью дома. Подборщик выстроит очередь работ: сначала дешёвое и быстрое, что даёт заметный эффект уже этой зимой, потом крупные работы. Каждый пункт ведёт на разбор с калькулятором материалов.
+
+<!-- wp:html -->
+<div id="mdUdCalc" class="md-calc">
+  <p class="md-calc__lead">Очерёдность утепления дачного дома</p>
+  <label class="md-calc__label" for="mdUdGap">Сквозняки, щели между брёвнами или вокруг коробок</label>
+  <select id="mdUdGap" class="md-calc__input"><option value="2" selected>Дует заметно</option><option value="1">Немного</option><option value="0">Не дует</option></select>
+  <label class="md-calc__label" for="mdUdWin">Окна и входная дверь</label>
+  <select id="mdUdWin" class="md-calc__input"><option value="2" selected>Старые деревянные, дует</option><option value="1">Стеклопакеты, но есть щели</option><option value="0">В порядке</option></select>
+  <label class="md-calc__label" for="mdUdRoof">Потолок и чердак</label>
+  <select id="mdUdRoof" class="md-calc__input"><option value="2" selected>Не утеплён</option><option value="1">Тонкий слой, старый утеплитель</option><option value="0">Утеплён</option></select>
+  <label class="md-calc__label" for="mdUdFloor">Пол</label>
+  <select id="mdUdFloor" class="md-calc__input"><option value="2" selected>Холодный, под домом продуваемое подполье</option><option value="1">Прохладный</option><option value="0">Тёплый</option></select>
+  <label class="md-calc__label" for="mdUdWall">Стены</label>
+  <select id="mdUdWall" class="md-calc__input"><option value="2">Каркас без утеплителя или тонкий брус</option><option value="1" selected>Брус или бревно без утепления</option><option value="0">Утеплены</option></select>
+  <label class="md-calc__label" for="mdUdBase">Цоколь и фундамент</label>
+  <select id="mdUdBase" class="md-calc__input"><option value="1" selected>Открыт, промерзает</option><option value="0">Утеплён или закрыт</option></select>
+  <div id="mdUdOut" class="md-calc__out"></div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5}
+.md-calc__out ol{margin:6px 0 0 18px;padding:0}
+.md-calc__out li{margin-bottom:8px}
+.md-calc__out a{color:#2d5a2d;font-weight:600}
+</style>
+<script>
+(function(){
+  var out=document.getElementById('mdUdOut'), B='https://mir-doma.pro/';
+  /* вес: доля потерь × дешевизна; при одинаковом состоянии выше то, что дешевле и быстрее */
+  var W=[
+    {id:'mdUdGap', w:9, name:'Заделать щели и сквозняки', why:'Самое дешёвое: герметик, джут, пена. Один выходной.', url:'chem-zadelat-shcheli-v-derevyannom-dome/#mdShCalc'},
+    {id:'mdUdWin', w:8, name:'Уплотнить окна и входную дверь', why:'Уплотнитель и щётка под дверь стоят копейки и убирают сквозняк у пола.', url:'uteplenie-okon-i-dverey/#mdOkCalc'},
+    {id:'mdUdRoof',w:7, name:'Утеплить потолок или чердак', why:'Тёплый воздух уходит вверх. Засыпать или уложить утеплитель на чердачное перекрытие проще и дешевле, чем утеплять стены.', url:'uteplenie-kryshi-i-mansardy/#mdRoofCalc'},
+    {id:'mdUdFloor',w:6,name:'Утеплить пол', why:'Над продуваемым подпольем пол — главная причина «ноги мёрзнут, голова в жаре».', url:'uteplenie-pola-na-dache/#mdPlCalc'},
+    {id:'mdUdBase',w:5, name:'Закрыть и утеплить цоколь', why:'Перестанет продувать подполье, и пол станет теплее даже без вскрытия.', url:'uteplenie-cokolya-fundamenta-penopleksom/#mdCkCalc'},
+    {id:'mdUdWall',w:4, name:'Утеплить стены снаружи', why:'Самая большая и дорогая работа. Её делают в тёплый сезон, когда всё остальное уже закрыто.', url:'uteplenie-sten-snaruzhi/#mdUsCalc'}
+  ];
+  function calc(){
+    var list=[];
+    W.forEach(function(x){ var st=parseFloat(document.getElementById(x.id).value)||0; if(st>0) list.push({x:x, score:x.w*st}); });
+    list.sort(function(a,b){ return b.score-a.score; });
+    while(out.firstChild) out.removeChild(out.firstChild);
+    if(!list.length){ out.appendChild(document.createTextNode('Дом утеплён по всем пунктам. Если всё равно холодно, проверьте вентиляцию и мощность отопления.')); return; }
+    out.appendChild(document.createTextNode('Ваш порядок работ:'));
+    var ol=document.createElement('ol');
+    list.forEach(function(it){
+      var li=document.createElement('li'), a=document.createElement('a');
+      a.href=B+it.x.url; a.textContent=it.x.name;
+      li.appendChild(a); li.appendChild(document.createTextNode(' — '+it.x.why));
+      ol.appendChild(li);
+    });
+    out.appendChild(ol);
+  }
+  W.forEach(function(x){ var el=document.getElementById(x.id); el.addEventListener('change',calc); el.addEventListener('input',calc); });
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Порядок «от дешёвого к дорогому» выбран не случайно. Щели, окна и двери закрываются за выходные и копейки, а сквозняк ощущается сильнее, чем недостающие сантиметры утеплителя в стене. Капитальные работы по стенам и полу всё равно лучше делать летом, в сухую погоду.
+
 ## 🧱 Утепление стен
 
 ![Утепление стен дачного дома](images/uteplenie-sten.jpg)

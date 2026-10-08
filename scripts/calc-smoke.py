@@ -10,8 +10,9 @@
 
 Нужен node: в PATH или в переменной MD_NODE. Если node нет, официальный
 бинарник с nodejs.org можно распаковать во временную папку и указать в MD_NODE.
-Виджеты, которые строят разметку через appendChild (карты, списки), дают
-ложное «empty output» — смотрите их глазами.
+Виджеты, которые строят разметку через appendChild, проверяются по накопленному
+textContent; карты и сложные списки всё ещё могут давать ложное «empty output» —
+смотрите их глазами.
 """
 import re,sys,json,glob,os,subprocess,tempfile,shutil
 node=os.environ.get('MD_NODE') or shutil.which('node')
@@ -40,9 +41,9 @@ for f in sorted(glob.glob('articles/*.md')):
         js='''
 var V=%s, IDS=%s, els={};
 function mk(id){var v=V[id]||{value:'',checked:false};return {id:id,value:v.value,checked:v.checked,type:v.type,textContent:'',innerHTML:'',className:'',style:{},dataset:{},
- classList:{add(){},remove(){},toggle(){},contains(){return false}},_h:[],addEventListener(t,f){if(t==='input'||t==='change')this._h.push(f)},click(){},setAttribute(){},getAttribute(){return null},appendChild(){},querySelector(){return mk('_q')},querySelectorAll(){return []},closest(){return null},focus(){},select(){},remove(){}};}
+ classList:{add(){},remove(){},toggle(){},contains(){return false}},_h:[],addEventListener(t,f){if(t==='input'||t==='change')this._h.push(f)},click(){},setAttribute(){},getAttribute(){return null},_c:[],firstChild:null,appendChild(c){this._c.push(c);this.firstChild=this._c[0];this.textContent+=(c&&c.textContent)||'';return c},removeChild(c){this._c.splice(this._c.indexOf(c),1);this.firstChild=this._c[0]||null;if(!this._c.length)this.textContent='';return c},querySelector(){return mk('_q')},querySelectorAll(){return []},closest(){return null},focus(){},select(){},remove(){}};}
 IDS.forEach(function(i){els[i]=mk(i)});
-var document={getElementById:function(i){return els[i]||null},getElementsByName:function(n){return IDS.filter(function(i){return i.indexOf(n)>=0}).map(function(i){return els[i]})},querySelector:function(){return null},querySelectorAll:function(){return []},createElement:function(){return mk('_c')},addEventListener(){},body:mk('_b')};
+var document={getElementById:function(i){return els[i]||null},getElementsByName:function(n){return IDS.filter(function(i){return i.indexOf(n)>=0}).map(function(i){return els[i]})},querySelector:function(){return null},querySelectorAll:function(){return []},createElement:function(){return mk('_c')},createTextNode:function(t){return {textContent:String(t)}},addEventListener(){},body:mk('_b')};
 var window={print(){},addEventListener(){},location:{href:''},navigator:{clipboard:{writeText(){return Promise.resolve()}}}}; var navigator=window.navigator; var location=window.location; var alert=function(){}; var localStorage={getItem(){return null},setItem(){}};
 try{ %s
  IDS.forEach(function(i){els[i]._h.forEach(function(f){try{f.call(els[i],{target:els[i],preventDefault(){}})}catch(e){throw e}})});

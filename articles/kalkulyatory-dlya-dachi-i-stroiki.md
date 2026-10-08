@@ -61,6 +61,7 @@ images:
 
 ## Утепление и энергосбережение
 
+- [С чего начать утепление дачи](https://mir-doma.pro/kak-uteplit-dachnyy-dom/#mdUdCalc) — очерёдность работ по состоянию дома, от щелей до стен, со ссылками на расчёты.
 - [Утепление окон и дверей](https://mir-doma.pro/uteplenie-okon-i-dverey/#mdOkCalc) — метры уплотнителя, профиль E/P/D под замеренный зазор, плёнка и щётка на двери.
 - [Утепление дачного дома](https://mir-doma.pro/skolko-stoit-uteplit-dachnyy-dom/#mdSuCalc) — стоимость утепления по площади дома.
 - [Пеноплекс, дюбели и клей на цоколь](https://mir-doma.pro/uteplenie-cokolya-fundamenta-penopleksom/#mdCkCalc) — материал на утепление цоколя с учётом толщины.
