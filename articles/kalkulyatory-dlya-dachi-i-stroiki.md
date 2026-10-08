@@ -83,6 +83,7 @@ images:
 
 ## Электрика и сантехника
 
+- [Объём септика](https://mir-doma.pro/septik-dlya-dachi/#mdSeptCalc) — объём по СП 32.13330 (3 суточных притока) и частота откачки накопительной ёмкости.
 - [Электропроводка на даче](https://mir-doma.pro/skhema-elektroprovodki-na-dache/#mdEpCalc) — сечение кабеля и номинал автомата по нагрузке.
 - [Мощность стабилизатора](https://mir-doma.pro/kakoy-stabilizator-napryazheniya-vybrat/#mdStCalc) — мощность стабилизатора напряжения по нагрузке приборов и качеству сети.
 - [Греющий кабель для водопровода](https://mir-doma.pro/greyushchiy-kabel-dlya-vodoprovoda/#mdCableCalc) — длина и мощность кабеля, расход электричества в месяц.

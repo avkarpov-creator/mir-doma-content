@@ -87,6 +87,72 @@ images:
 
 Расположение септика стоит продумать ещё на этапе [планировки участка](https://mir-doma.pro/planirovka-uchastka-10-sotok/) — его размещают с учётом санитарных норм, о которых ниже.
 
+### Калькулятор объёма септика
+
+Норма для септиков с отстаиванием — СП 32.13330.2018 «Канализация. Наружные сети и сооружения», п. 9.2.13.3: если септик обслуживает до 25 человек, его расчётный объём должен быть не меньше трёх суточных притоков стоков. Суточный приток — это сколько воды все жильцы тратят за день. Ниже даны ориентиры на человека. Если в доме стоит счётчик, подставьте свой реальный расход.
+
+<!-- wp:html -->
+<div id="mdSeptCalc" class="md-calc">
+  <p class="md-calc__lead">Объём септика и частота откачки</p>
+  <label class="md-calc__label" for="mdSeptN">Сколько человек живёт одновременно</label>
+  <input type="number" id="mdSeptN" class="md-calc__input" min="1" max="25" step="1" value="4">
+  <label class="md-calc__label" for="mdSeptQ">Водоснабжение в доме</label>
+  <select id="mdSeptQ" class="md-calc__input">
+    <option value="50">Только умывальник и кухня, воду носим</option>
+    <option value="120" selected>Водопровод, душ, унитаз</option>
+    <option value="200">Плюс ванна и стиральная машина</option>
+  </select>
+  <label class="md-calc__label" for="mdSeptD">Сколько дней в неделю живёте</label>
+  <select id="mdSeptD" class="md-calc__input">
+    <option value="2" selected>Только выходные (2 дня)</option>
+    <option value="4">3–4 дня</option>
+    <option value="7">Постоянно</option>
+  </select>
+  <label class="md-calc__label" for="mdSeptV">Объём ёмкости, если уже выбрали, м³ (необязательно)</label>
+  <input type="number" id="mdSeptV" class="md-calc__input" min="0" step="0.5" value="">
+  <div id="mdSeptOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdSeptN','mdSeptQ','mdSeptD','mdSeptV'], el={}, out=document.getElementById('mdSeptOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var n=parseFloat(el.mdSeptN.value), q=parseFloat(el.mdSeptQ.value), d=parseFloat(el.mdSeptD.value), v=parseFloat(el.mdSeptV.value)||0;
+    if(!n||n<=0){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var day=n*q/1000, need=day*3, week=day*d;
+    var lines=['Стоки в день проживания: около '+f(day)+' м³, за неделю — '+f(week)+' м³.',
+      'Переливной септик или станция: рабочий объём не меньше '+f(need)+' м³ (3 суточных притока по СП 32.13330).'];
+    var warn=false;
+    if(need<1){ lines.push('Меньше 1 м³ септики почти не выпускают. Берите самую маленькую модель или накопительную ёмкость.'); }
+    if(v>0){
+      var weeks=v/week;
+      lines.push('Накопительная ёмкость '+f(v)+' м³ заполнится примерно за '+(weeks>=1?Math.round(weeks)+' нед.':Math.round(v/day)+' дн. проживания')+'. Столько времени будет проходить между откачками.');
+      if(v<need){ warn=true; lines.push('Для переливного септика этого объёма мало: стоки не успеют отстояться, и в грунт уйдёт мутная вода.'); }
+      if(weeks<2){ warn=true; lines.push('Откачка чаще чем раз в две недели обходится дорого. Подумайте о переливном септике или станции.'); }
+    } else {
+      lines.push('Для накопительной ёмкости впишите её объём выше, и калькулятор покажет, как часто придётся вызывать ассенизатора.');
+    }
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Ориентиры расхода на человека — средние бытовые значения, а не норма. Реальный расход сильно зависит от привычек: одна стирка в машине — это 40–60 литров. Поэтому при сомнениях берите ёмкость на ступень больше.
+
 ## 🛠️ Установка септика: основные этапы
 
 Монтаж готового септика вполне реально выполнить своими руками или с минимальной помощью техники.
@@ -156,7 +222,7 @@ images:
 
 ### Какой объём септика нужен для дачи?
 
-Объём подбирают по числу пользователей и суточному расходу воды: обычно берут трёхкратный суточный объём стоков, чтобы они успевали отстаиваться. Для семьи из 3–4 человек, постоянно живущей на даче, нужен заметно больший септик, чем для редких визитов.
+Объём подбирают по числу пользователей и суточному расходу воды: обычно берут трёхкратный суточный объём стоков, чтобы они успевали отстаиваться. Это требование СП 32.13330.2018 для септиков на 25 человек и меньше. Посчитать под свою семью можно в [калькуляторе объёма септика](#mdSeptCalc). Для семьи из 3–4 человек, постоянно живущей на даче, нужен заметно больший септик, чем для редких визитов.
 
 ### Замёрзнет ли септик зимой?
 
