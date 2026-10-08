@@ -1,0 +1,36 @@
+{
+  "slug": "natyazhnoy-potolok-na-neotaplivaemoy-dache",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/natyazhnoy-potolok-na-neotaplivaemoy-dache.jpg",
+      "alt": "Натяжной потолок в дачном доме зимой",
+      "prompt": "Interior of a small wooden country house living room in winter, smooth white matte stretch ceiling, frosty window with snow outside, wooden walls, soft daylight, wide angle"
+    },
+    {
+      "file": "images/natyazhnoy-potolok-na-neotaplivaemoy-dache-2.jpg",
+      "alt": "ПВХ-плёнка и тканевое полотно для натяжного потолка",
+      "prompt": "Close-up comparison of two stretch ceiling material samples on a wooden table: glossy thin PVC film sheet and textured white polyester fabric sheet, daylight from window"
+    },
+    {
+      "file": "images/natyazhnoy-potolok-na-neotaplivaemoy-dache-3.jpg",
+      "alt": "Дачный дом с дежурным отоплением зимой",
+      "prompt": "Small wooden dacha house in snowy garden in winter, smoke-free chimney, warm light in one window, wall-mounted electric convector visible through window, overcast afternoon"
+    },
+    {
+      "file": "images/natyazhnoy-potolok-na-neotaplivaemoy-dache-4.jpg",
+      "alt": "Монтаж тканевого натяжного потолка без нагрева",
+      "prompt": "Two workers installing a white fabric stretch ceiling into an aluminum wall profile in a wooden room using a spatula, no heater, ladder, daylight"
+    },
+    {
+      "file": "images/natyazhnoy-potolok-na-neotaplivaemoy-dache-5.jpg",
+      "alt": "Пароизоляция на потолке перед монтажом натяжного полотна",
+      "prompt": "Ceiling of a wooden country house covered with vapor barrier membrane with taped seams before stretch ceiling installation, ceiling joists, electrical wires in corrugated conduit, daylight"
+    },
+    {
+      "file": "images/natyazhnoy-potolok-na-neotaplivaemoy-dache-6.jpg",
+      "alt": "Осмотр натяжного потолка весной на даче",
+      "prompt": "Person on a step ladder inspecting the corner of a white stretch ceiling around a recessed LED spotlight in a wooden country house in spring, sunlight through window"
+    }
+  ]
+}
