@@ -21,6 +21,7 @@ live — прямые запросы к Метрике, Вебмастеру, Se
     python3 scripts/live.py landing [дней]        Метрика: страницы входа
     python3 scripts/live.py gsc [дней]            GSC: страницы, веб и картинки отдельно
     python3 scripts/live.py gsc-queries <слаг> [дней]   GSC: запросы одной страницы
+    python3 scripts/live.py inspect <слаг> [...]   GSC URL Inspection: в индексе ли, канонический, последний обход
     python3 scripts/live.py grow [дней]           GSC: позиции 5–20 с показами — что дописать
     python3 scripts/live.py ywm                   Вебмастер: индекс и популярные запросы
     python3 scripts/live.py ga4 [дней]            GA4: сеансы по страницам
@@ -206,6 +207,28 @@ def cmd_gsc_queries(slug=None, days="28"):
         print(f"  {int(r['impressions']):>4} | {int(r['clicks']):>3} | {r['position']:5.1f} | {r['keys'][0]}")
 
 
+def cmd_inspect(*slugs):
+    """Состояние страницы в индексе Google — когда страница пропала из выдачи."""
+    if not slugs:
+        sys.exit("Укажите слаг: live.py inspect <слаг> [...]")
+    need("GSC_SITE")
+    tok = google_token("https://www.googleapis.com/auth/webmasters.readonly")
+    for slug in slugs:
+        url = f"https://mir-doma.pro/{slug}/"
+        r = http("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect",
+                 data=json.dumps({"inspectionUrl": url, "siteUrl": ENV["GSC_SITE"]}).encode(),
+                 headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+        x = r.get("inspectionResult", {}).get("indexStatusResult", {})
+        print(f"{slug}: {x.get('verdict')} | {x.get('coverageState')}")
+        print(f"  обход {x.get('lastCrawlTime', '—')} | робот {x.get('crawledAs', '—')} | "
+              f"fetch {x.get('pageFetchState', '—')} | robots {x.get('robotsTxtState', '—')}")
+        gc, uc = x.get("googleCanonical"), x.get("userCanonical")
+        if gc and gc != uc:
+            print(f"  ВНИМАНИЕ: Google выбрал канонический {gc} (наш {uc})")
+        refs = x.get("referringUrls") or []
+        print(f"  ссылаются (известные Google): {len(refs)}" + (f" — {', '.join(slug_of(u) for u in refs[:5])}" if refs else ""))
+
+
 def cmd_grow(days="28"):
     a, b = period(days)
     rows = gsc({"startDate": a, "endDate": b, "dimensions": ["page", "query"], "type": "web", "rowLimit": 25000})
@@ -330,7 +353,7 @@ def cmd_week(_=None):
 
 
 CMDS = {"check": cmd_check, "traffic": cmd_traffic, "landing": cmd_landing, "gsc": cmd_gsc,
-        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "ywm": cmd_ywm, "ga4": cmd_ga4, "week": cmd_week}
+        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "inspect": cmd_inspect, "ywm": cmd_ywm, "ga4": cmd_ga4, "week": cmd_week}
 
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help") or sys.argv[1] not in CMDS:
