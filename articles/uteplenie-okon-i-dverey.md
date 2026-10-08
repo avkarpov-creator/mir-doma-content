@@ -106,6 +106,75 @@ images:
 
 Бюджетные варианты той же идеи — **вторая (внутренняя) дверь** или плотная тёплая штора-занавес на входе, отсекающая поток холодного воздуха.
 
+## 🧮 Сколько покупать: уплотнитель, плёнка и щётка
+
+Самоклеящийся уплотнитель продают с профилями разной толщины. Чаще всего встречаются три. Диапазоны зазоров ниже — ориентиры с упаковок, у конкретного производителя они могут немного отличаться.
+
+| Профиль | Для зазора | Где обычно нужен |
+|---|---|---|
+| **E** (тонкий) | примерно 2–3,5 мм | плотно закрывающиеся створки, пластиковые окна |
+| **P** (средний) | примерно 3–5 мм | большинство деревянных окон и дверей |
+| **D** (толстый) | примерно 3–7 мм | рассохшиеся рамы, старые двери |
+
+**Как измерить зазор:** заверните кусочек пластилина в пищевую плёнку и прилепите его на раму в месте притвора. Плотно закройте створку, затем откройте и измерьте толщину примятого пластилина линейкой. Мерить лучше в двух-трёх местах: старые рамы часто перекошены, и сверху щель шире, чем снизу.
+
+<!-- wp:html -->
+<div id="mdOkCalc" class="md-calc">
+  <p class="md-calc__lead">Список покупок для утепления окон и дверей</p>
+  <label class="md-calc__label" for="mdOkN">Сколько открывающихся створок</label>
+  <input type="number" id="mdOkN" class="md-calc__input" min="0" step="1" value="4">
+  <label class="md-calc__label" for="mdOkW">Средняя ширина створки, см</label>
+  <input type="number" id="mdOkW" class="md-calc__input" min="20" step="1" value="60">
+  <label class="md-calc__label" for="mdOkH">Средняя высота створки, см</label>
+  <input type="number" id="mdOkH" class="md-calc__input" min="20" step="1" value="120">
+  <label class="md-calc__label" for="mdOkG">Сколько створок закрыть теплосберегающей плёнкой</label>
+  <input type="number" id="mdOkG" class="md-calc__input" min="0" step="1" value="0">
+  <label class="md-calc__label" for="mdOkD">Сколько дверей утепляем</label>
+  <input type="number" id="mdOkD" class="md-calc__input" min="0" step="1" value="1">
+  <label class="md-calc__label" for="mdOkZ">Замеренный зазор в притворе, мм</label>
+  <input type="number" id="mdOkZ" class="md-calc__input" min="0.5" step="0.5" value="4">
+  <div id="mdOkOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdOkN','mdOkW','mdOkH','mdOkG','mdOkD','mdOkZ'], el={}, out=document.getElementById('mdOkOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function v(i){ return parseFloat(el[i].value)||0; }
+  function f(x){ return x.toFixed(1).replace('.',','); }
+  function calc(){
+    var n=v('mdOkN'), w=v('mdOkW')/100, h=v('mdOkH')/100, g=v('mdOkG'), d=v('mdOkD'), z=v('mdOkZ');
+    if((n<=0&&d<=0)||!w||!h){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    /* дверь считаем 0,9 × 2,0 м: уплотнитель по трём сторонам притвора (низ закрывает щётка) */
+    var sash=n*2*(w+h), door=d*(2*2.0+0.9), total=(sash+door)*1.1;
+    var lines=[], warn=false, prof;
+    if(z<2){ prof='Зазор меньше 2 мм: уплотнитель не нужен или подойдёт самый тонкий. Сначала проверьте, не дует ли через щели между рамой и стеной.'; }
+    else if(z<=3.5){ prof='Профиль E.'; }
+    else if(z<=5){ prof='Профиль P.'; }
+    else if(z<=7){ prof='Профиль D.'; }
+    else { warn=true; prof='Зазор больше 7 мм самоклеящийся уплотнитель не закроет. Отрегулируйте створку или петли, а для деревянной рамы подойдёт утепление «по-шведски» трубчатым уплотнителем в паз.'; }
+    lines.push('Уплотнитель: около '+Math.ceil(total)+' м с запасом 10% (окна '+f(sash)+' м, двери '+f(door)+' м). '+prof);
+    if(g>0) lines.push('Теплосберегающая плёнка: около '+f(g*(w+0.1)*(h+0.1))+' м² на '+g+' створ., с запасом по 5 см с каждой стороны.');
+    if(d>0) lines.push('Щёточный уплотнитель (шлегель) на низ двери: '+d+' шт. по 1 м. Для нестандартной двери возьмите по её ширине.');
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Уплотнитель клеят по сухой обезжиренной поверхности и при плюсовой температуре: на холоде клеевой слой не схватывается и лента отходит через пару недель. Поэтому работу лучше сделать в сентябре–октябре, до морозов.
+
 ## 📋 С чего начать: порядок действий
 
 Чтобы получить максимум эффекта за минимум денег:
