@@ -154,6 +154,7 @@ images:
 
 ## Овощи и зелень
 
+- [Чеснок под зиму](https://mir-doma.pro/chesnok-pod-zimu/#mdChCalc) — сколько зубков встанет на грядку и сколько головок отложить на посадку.
 - [Серные шашки на теплицу](https://mir-doma.pro/obrabotka-teplicy-osenyu/#mdTsCalc) — объём арочной теплицы или домика и число шашек на осеннюю обработку.
 - [Грядка-короб](https://mir-doma.pro/gryadki-koroba-iz-dosok-svoimi-rukami/#mdGkCalc) — доски и объём грунта на грядку-короб по размерам.
 

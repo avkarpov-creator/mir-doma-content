@@ -84,6 +84,63 @@ images:
 
 Важно **не вдавливать зубки** в плотную землю, а сажать в подготовленные бороздки или лунки: под вдавленным зубком уплотняется почва, и корням труднее расти. На дно бороздки полезно подсыпать немного песка для дренажа — он защищает донце от загнивания. После посадки бороздки засыпают почвой и слегка разравнивают грядку, не утрамбовывая.
 
+### Сколько чеснока нужно на вашу грядку
+
+Калькулятор считает по схеме посадки выше: сколько зубков встанет на грядку и сколько головок купить или отложить из своего урожая. Мелкие зубки на посадку не идут, поэтому в расчёте используется только часть зубков из каждой головки.
+
+<!-- wp:html -->
+<div id="mdChCalc" class="md-calc">
+  <p class="md-calc__lead">Посадка чеснока под зиму: сколько головок</p>
+  <label class="md-calc__label" for="mdChL">Длина грядки, м</label>
+  <input type="number" id="mdChL" class="md-calc__input" min="0.5" step="0.1" value="3">
+  <label class="md-calc__label" for="mdChW">Ширина грядки, м</label>
+  <input type="number" id="mdChW" class="md-calc__input" min="0.3" step="0.1" value="1">
+  <label class="md-calc__label" for="mdChS">Схема</label>
+  <select id="mdChS" class="md-calc__input">
+    <option value="10x25" selected>Обычная: 10 см между зубками, 25 см между рядами</option>
+    <option value="8x20">Плотная: 8 × 20 см (мелкие зубки, мало места)</option>
+  </select>
+  <label class="md-calc__label" for="mdChZ">Крупных зубков в одной головке</label>
+  <input type="number" id="mdChZ" class="md-calc__input" min="2" max="12" step="1" value="5">
+  <label class="md-calc__label" for="mdChR">Регион</label>
+  <select id="mdChR" class="md-calc__input">
+    <option value="mid" selected>Средняя полоса и юг</option>
+    <option value="cold">Урал, Сибирь, север</option>
+  </select>
+  <div id="mdChOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+</style>
+<script>
+(function(){
+  var ids=['mdChL','mdChW','mdChS','mdChZ','mdChR'], el={}, out=document.getElementById('mdChOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function calc(){
+    var l=parseFloat(el.mdChL.value), w=parseFloat(el.mdChW.value), z=parseFloat(el.mdChZ.value);
+    if(!l||!w||!z){ out.textContent='Заполните поля'; return; }
+    var sc=el.mdChS.value.split('x'), step=parseFloat(sc[0])/100, row=parseFloat(sc[1])/100;
+    /* ряды поперёк грядки, по 10 см отступа от краёв */
+    var rows=Math.max(1,Math.floor((l-0.2)/row)+1), per=Math.max(1,Math.floor((w-0.2)/step)+1), n=rows*per;
+    var heads=Math.ceil(n/z), headsBuy=Math.ceil(heads*1.1);
+    var cold=el.mdChR.value==='cold';
+    var lines=['Рядов: '+rows+' по '+per+' зубков, всего '+n+' зубков.',
+      'Головок: '+heads+', с запасом 10% на отбраковку — '+headsBuy+'.',
+      'Глубина: '+(cold?'8–10':'5–7')+' см от донца, донцем вниз, без вдавливания.',
+      'Сажают за 3–4 недели до устойчивых морозов. После посадки мульчируют слоем 3–5 см'+(cold?', а в малоснежные зимы — толще.':'.')];
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
 ## 🍂 Мульчирование на зиму
 
 ![Мульчирование грядки с чесноком](images/chesnok-mulchirovanie.jpg)
