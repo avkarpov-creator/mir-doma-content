@@ -17,6 +17,9 @@ python3 scripts/live.py week        # неделя к неделе: трафик
 python3 scripts/live.py grow 28     # позиции 5–20 — что дописать
 python3 scripts/live.py ywm         # индекс Яндекса и популярные запросы
 python3 scripts/live.py landing 7   # страницы входа по Метрике
+python3 scripts/live.py gindex      # индекс Google по всем URL, 20+ мин — запускать в фоне в начале сессии;
+                                   # сравнить с прошлым снимком (git diff seo/live/google-index.json):
+                                   # сколько неизвестных стали проиндексированы, кто выпал
 git log --since="<дата прошлого брифа>" --oneline   # что сделали за неделю
 ```
 
