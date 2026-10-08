@@ -129,6 +129,7 @@ images:
 
 ## Погреба и кладовые
 
+- [Где хранить овощи зимой](https://mir-doma.pro/kak-hranit-ovoshchi-zimoy/#mdHrCalc) — подборщик места для картофеля, корнеплодов, капусты, лука, чеснока и тыквы и сроки хранения.
 - [Строительство погреба](https://mir-doma.pro/stroitelstvo-pogreba-smeta/#mdPgCalc) — смета на погреб по размерам и материалу стен.
 - [Погреб в гараже](https://mir-doma.pro/pogreb-v-garazhe-svoimi-rukami/#mdPgCalc) — объём котлована, бетон или кирпич на стены, гидроизоляция.
 - [Полки для банок в погреб](https://mir-doma.pro/polki-v-pogreb-svoimi-rukami/#mdShelfCalc) — вес банок на полке и сколько нужно стоек.
