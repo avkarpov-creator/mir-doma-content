@@ -72,6 +72,80 @@ images:
 
 ![Окуривание теплицы серной шашкой осенью](images/teplitsa-sernaya-shashka.jpg)
 
+### Сколько серных шашек нужно на вашу теплицу
+
+Дозу считают на объём, а не на площадь. Арочная теплица по объёму примерно на четверть меньше «коробки» тех же размеров, поэтому считать её как прямоугольник — значит переложить серы. Калькулятор учитывает форму.
+
+<!-- wp:html -->
+<div id="mdTsCalc" class="md-calc">
+  <p class="md-calc__lead">Объём теплицы и число серных шашек</p>
+  <label class="md-calc__label" for="mdTsF">Форма</label>
+  <select id="mdTsF" class="md-calc__input">
+    <option value="arch" selected>Арочная</option>
+    <option value="house">Домиком (стены и двускатная крыша)</option>
+  </select>
+  <label class="md-calc__label" for="mdTsW">Ширина, м</label>
+  <input type="number" id="mdTsW" class="md-calc__input" min="1" step="0.1" value="3">
+  <label class="md-calc__label" for="mdTsL">Длина, м</label>
+  <input type="number" id="mdTsL" class="md-calc__input" min="1" step="0.1" value="6">
+  <label class="md-calc__label" for="mdTsH">Высота в коньке, м</label>
+  <input type="number" id="mdTsH" class="md-calc__input" min="1" step="0.1" value="2">
+  <label class="md-calc__label" for="mdTsS">Высота боковой стенки, м (только для «домика»)</label>
+  <input type="number" id="mdTsS" class="md-calc__input" min="0" step="0.1" value="1.5">
+  <label class="md-calc__label" for="mdTsM">Обработка</label>
+  <select id="mdTsM" class="md-calc__input">
+    <option value="50" selected>Профилактика (50 г/м³)</option>
+    <option value="80">Были болезни или клещ (80 г/м³)</option>
+  </select>
+  <label class="md-calc__label" for="mdTsG">Вес одной шашки, г</label>
+  <input type="number" id="mdTsG" class="md-calc__input" min="50" step="10" value="300">
+  <label class="md-calc__label" for="mdTsK">Каркас</label>
+  <select id="mdTsK" class="md-calc__input">
+    <option value="wood" selected>Деревянный или окрашенный металл</option>
+    <option value="zinc">Оцинкованный профиль</option>
+  </select>
+  <div id="mdTsOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdTsF','mdTsW','mdTsL','mdTsH','mdTsS','mdTsM','mdTsG','mdTsK'], el={}, out=document.getElementById('mdTsOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function v(i){ return parseFloat(el[i].value)||0; }
+  function f(x){ return x.toFixed(1).replace('.',','); }
+  function calc(){
+    var w=v('mdTsW'), l=v('mdTsL'), h=v('mdTsH'), sw=v('mdTsS'), dose=v('mdTsM'), g=v('mdTsG');
+    if(!w||!l||!h||!g){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var sec;
+    /* арка: половина эллипса с полуосями w/2 и h */
+    if(el.mdTsF.value==='arch') sec=Math.PI*w*h/4;
+    else { var s2=Math.min(sw,h); sec=w*s2+w*(h-s2)/2; }
+    var vol=sec*l, sulfur=vol*dose, n=Math.ceil(sulfur/g);
+    var lines=['Объём теплицы: около '+f(vol)+' м³.',
+      'Серы при '+dose+' г/м³: около '+(sulfur/1000).toFixed(1).replace('.',',')+' кг, это '+n+' шт. по '+g+' г.',
+      'Если на упаковке написано «одна шашка на N м³», ориентируйтесь на упаковку: состав у производителей разный.',
+      'Шашки ставят равномерно по длине на кирпичи или жесть и поджигают от дальней к двери.'];
+    var warn=false;
+    if(el.mdTsK.value==='zinc'){ warn=true; lines.push('Оцинкованный каркас сернистый газ разъедает. Лучше обработайте теплицу опрыскиванием (таблица выше), а не шашкой.'); }
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Для погреба и подвала расчёт другой: там доза выше и важна герметичность. Отдельный калькулятор — в статье [расчёт серной шашки для погреба](https://mir-doma.pro/raschet-sernoy-shashki-dlya-pogreba/).
+
 ## 🧪 Чем обработать теплицу: таблица средств и дозировок
 
 Средств несколько, и у каждого своя задача. Дозировки — ориентировочные, всегда сверяйтесь с инструкцией на упаковке: концентрация у разных производителей отличается.
@@ -143,7 +217,7 @@ images:
 Стандартная концентрация для осенней обработки теплицы — 100 г на 10 л воды. Этим раствором проливают почву и обрабатывают конструкции. Применять медный купорос чаще одного раза в год не стоит: медь накапливается в грунте.
 
 **Сколько нужно серы на теплицу?**
-Ориентировочно 50–80 г серы на 1 м³ объёма теплицы — то есть на стандартную теплицу 3×6 м высотой 2 м (около 36 м³) уйдёт примерно 2–3 шашки среднего размера. Точный расход указан на упаковке.
+Ориентировочно 50–80 г серы на 1 м³ объёма теплицы. Арочная теплица 3×6 м высотой 2 м — это около 28 м³: 1,4–2,3 кг серы, или 5–8 шашек по 300 г. Посчитать свою можно в [калькуляторе выше](#mdTsCalc), а если на упаковке указан объём на одну шашку, ориентируйтесь на него.
 
 **Когда обрабатывать теплицу осенью?**
 Сразу после уборки последнего урожая, пока стоит плюсовая температура — обычно сентябрь-октябрь. Мытьё и опрыскивание делают по теплу, а проветривание и проморозку оставляют на зиму.
