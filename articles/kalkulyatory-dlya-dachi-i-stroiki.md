@@ -101,6 +101,7 @@ images:
 
 - [Обшивка открытой террасы](https://mir-doma.pro/otdelka-otkrytoy-terrasy/#mdOtCalc) — материал на стены и потолок террасы по площади.
 - [Пол на холодной веранде](https://mir-doma.pro/pol-na-holodnoy-verande/#mdFloorCalc) — материал на настил пола по размерам веранды.
+- [Натяжной потолок на неотапливаемой даче](https://mir-doma.pro/natyazhnoy-potolok-na-neotaplivaemoy-dache/#mdNpdCalc) — какое полотно выдержит вашу зимовку, площадь, профиль и нужен ли шов.
 
 ## Заборы и ограждения
 
