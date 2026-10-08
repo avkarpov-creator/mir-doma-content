@@ -72,6 +72,7 @@ images:
 
 ## Системы отопления
 
+- [Мощность печи для дачи](https://mir-doma.pro/pech-dlya-dachi/#mdPechCalc) — мощность и тип печи по площади, утеплению и режиму, расход дров в морозы.
 - [Стоимость отопления](https://mir-doma.pro/otoplenie-dachi-chto-deshevle/#mdOtCalc) — расходы на сезон по виду топлива и площади.
 - [Тёплый пол на веранде](https://mir-doma.pro/teplyy-pol-na-verande/#mdTvCalc) — мощность и стоимость тёплого пола по площади.
 - [Мощность обогревателя](https://mir-doma.pro/kakoy-obogrevatel-vybrat-dlya-dachi/#mdObCalc) — сколько киловатт нужно по площади, высоте потолка и утеплению.

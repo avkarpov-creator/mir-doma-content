@@ -110,6 +110,86 @@ images:
 
 Брать печь «с большим запасом» тоже плохо: избыточную печь топят вполсилы, а это ведёт к неполному сгоранию дров, саже в дымоходе и конденсату.
 
+### Калькулятор мощности печи и расхода дров
+
+Коэффициенты те же, что в остальных калькуляторах отопления на сайте. Результат — ориентир для выбора модели, а не теплотехнический расчёт.
+
+<!-- wp:html -->
+<div id="mdPechCalc" class="md-calc">
+  <p class="md-calc__lead">Какая печь нужна и сколько дров она сожжёт</p>
+  <label class="md-calc__label" for="mdPechS">Отапливаемая площадь, м²</label>
+  <input type="number" id="mdPechS" class="md-calc__input" min="5" step="1" value="50">
+  <label class="md-calc__label" for="mdPechU">Утепление</label>
+  <select id="mdPechU" class="md-calc__input">
+    <option value="0.75">Хорошее: утеплённые стены, стеклопакеты</option>
+    <option value="1" selected>Среднее</option>
+    <option value="1.75">Почти нет: старый дом, старые окна</option>
+  </select>
+  <label class="md-calc__label" for="mdPechR">Регион</label>
+  <select id="mdPechR" class="md-calc__input">
+    <option value="1" selected>Средняя полоса</option>
+    <option value="1.4">Север, Урал, Сибирь</option>
+    <option value="0.8">Юг</option>
+  </select>
+  <label class="md-calc__label" for="mdPechH">Потолки</label>
+  <select id="mdPechH" class="md-calc__input">
+    <option value="1" selected>2,5–3 м</option>
+    <option value="1.12">Выше 3 м</option>
+  </select>
+  <label class="md-calc__label" for="mdPechM">Как живёте зимой</label>
+  <select id="mdPechM" class="md-calc__input">
+    <option value="visits" selected>Приезжаем на выходные</option>
+    <option value="live">Живём постоянно</option>
+  </select>
+  <label class="md-calc__label" for="mdPechP">Планировка</label>
+  <select id="mdPechP" class="md-calc__input">
+    <option value="open" selected>Одна-две комнаты или открытая планировка</option>
+    <option value="closed">Несколько закрытых комнат</option>
+  </select>
+  <div id="mdPechOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  var ids=['mdPechS','mdPechU','mdPechR','mdPechH','mdPechM','mdPechP'], el={}, out=document.getElementById('mdPechOut');
+  ids.forEach(function(i){el[i]=document.getElementById(i);});
+  function f(v){ return v.toFixed(1).replace('.',','); }
+  function calc(){
+    var s=parseFloat(el.mdPechS.value);
+    if(!s||s<=0){ out.className='md-calc__out'; out.textContent='Заполните поля'; return; }
+    var kw=s/10*parseFloat(el.mdPechU.value)*parseFloat(el.mdPechR.value)*parseFloat(el.mdPechH.value);
+    var live=el.mdPechM.value==='live', closed=el.mdPechP.value==='closed';
+    /* берёза, сухие дрова: 1800 кВт·ч тепла в складочном м³; КПД металлической печи 0,55, кирпичной 0,7 */
+    var eff=live?0.7:0.55, perM3=1800*eff;
+    /* в морозы средняя нагрузка — половина расчётной мощности */
+    var dayM3=kw*24*0.5/perM3;
+    var lines=['Теплопотери дома: около '+f(kw)+' кВт. Ищите печь номинальной мощностью '+f(kw)+'–'+f(kw*1.2)+' кВт.'];
+    if(live) lines.push('Тип: кирпичная или теплоёмкая (с футеровкой, каменной облицовкой). Она дольше отдаёт тепло, и топить её реже.');
+    else lines.push('Тип: металлическая. Она прогревает промёрзший дом за 1–2 часа, а кирпичная — за сутки.');
+    lines.push('Дрова в морозы: около '+f(dayM3)+' складочного м³ сухой берёзы в сутки, это примерно '+Math.round(dayM3*0.7*650)+' кг.');
+    if(!live) lines.push('За выходные (2 суток) — около '+f(dayM3*2*1.2)+' м³ с учётом первого прогрева.');
+    var warn=closed||kw>15;
+    if(closed) lines.push('В закрытых комнатах одна печь не справится: нужна разводка тёплого воздуха или обогреватели в дальних помещениях.');
+    if(kw>15) lines.push('Больше 15 кВт — много для одной дачной печи. Сначала утеплите дом: это дешевле, чем мощная печь и лишние дрова.');
+    out.className=warn?'md-calc__out is-warn':'md-calc__out';
+    out.textContent=lines.join('\n');
+  }
+  ids.forEach(function(i){el[i].addEventListener('input',calc);el[i].addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Сколько дров запасать на всю зиму с учётом породы и влажности, считает отдельный калькулятор в статье [сколько дров нужно на зиму](https://mir-doma.pro/skolko-drov-nuzhno-na-zimu/).
+
 ## 💰 Сколько стоит печь для дачи
 
 Как и с утеплением, цена самой печи — лишь часть расходов. Полный бюджет складывается из четырёх частей:
@@ -190,7 +270,7 @@ images:
 
 ### Как рассчитать мощность печи для дачи?
 
-Базовый ориентир — 1 кВт на 10 м² площади при потолках до 3 м: дому 50 м² нужна печь около 5 кВт. Плохо утеплённый дом требует в полтора-два раза больше, северный регион — на треть. Учтите и планировку: печь греет неравномерно, и в закрытые дальние комнаты тепло само не дойдёт.
+Базовый ориентир — 1 кВт на 10 м² площади при потолках до 3 м: дому 50 м² нужна печь около 5 кВт. Плохо утеплённый дом требует в полтора-два раза больше, северный регион — на треть. Учтите и планировку: печь греет неравномерно, и в закрытые дальние комнаты тепло само не дойдёт. Под свою площадь, утепление и регион посчитайте в [калькуляторе мощности печи](#mdPechCalc): он же покажет расход дров в морозы.
 
 ### Нужен ли фундамент под печь?
 
