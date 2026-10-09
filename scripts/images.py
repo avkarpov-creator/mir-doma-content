@@ -186,25 +186,42 @@ def _fit(raw: bytes) -> bytes:
 
 
 def cmd_gen(slug):
+    """Генерирует недостающие кадры параллельно: один кадр у API идёт минуты,
+    последовательно шесть штук держали ship.sh по 20–25 минут."""
+    from concurrent.futures import ThreadPoolExecutor
     data = load_prompts(slug)
     api_key = key()
-    made = skipped = 0
+    todo, skipped = [], 0
     for item in data["images"]:
         dest = ART / item["file"]
         if dest.exists():
             skipped += 1
-            continue
-        if not item.get("prompt"):
+        elif not item.get("prompt"):
             print(f"  ПРОПУСК {item['file']}: пустой промпт")
-            continue
+        else:
+            todo.append(item)
+
+    def one(item):
+        dest = ART / item["file"]
         dest.parent.mkdir(parents=True, exist_ok=True)
         print(f"  генерирую {item['file']} …", flush=True)
-        raw = _generate(item["prompt"], api_key)
-        dest.write_bytes(_fit(raw))
-        made += 1
+        dest.write_bytes(_fit(_generate(item["prompt"], api_key)))
+        print(f"  готово {item['file']}", flush=True)
+
+    workers = int(os.environ.get("MD_IMAGE_WORKERS", "3"))
+    errors = []
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as ex:
+        for item, fut in [(i, ex.submit(one, i)) for i in todo]:
+            try:
+                fut.result()
+            except BaseException as e:  # sys.exit из _generate тоже сюда
+                errors.append(f"{item['file']}: {e}")
+    made = len(todo) - len(errors)
     price = PRICE.get(MODEL, 0.067)
     print(f"Сгенерировано {made}, уже было {skipped}. "
           f"Ориентировочно ${made * price:.2f} ({MODEL})")
+    if errors:
+        sys.exit("Ошибки генерации:\n  " + "\n  ".join(errors))
 
 
 def cmd_check(slug):

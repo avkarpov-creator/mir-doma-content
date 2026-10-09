@@ -18,6 +18,8 @@
   python3 scripts/mdi.py sec <слаг> <H2>           один раздел статьи
   python3 scripts/mdi.py check [слаг]              валидация + битые ссылки
   python3 scripts/mdi.py new <слаг> <Рубрика>      скелет frontmatter
+  python3 scripts/mdi.py next [N]                  свободные темы из реестра по приоритету
+  python3 scripts/mdi.py calc <слаг> <Префикс>     заготовка калькулятора на место <!-- calc -->
 """
 import json
 import os
@@ -347,8 +349,33 @@ def cmd_toc(slug):
     print(f"[{d['category']}] {d['words']} слов, {d['kb']}k, "
           f"картинок {d['images_body']}/{d['images_fm']}, "
           f"исходящих {len(d['out'])}, adopt_existing={d['adopt']}")
+    g = google_status(slug)
+    if g:
+        print(g)
     for h in d["h"]:
         print(f"  {'  ' * (h['level'] - 2)}{'##' if h['level'] == 2 else '###'} {h['text']}  :{h['line']}")
+
+
+GINDEX = ROOT / "seo" / "live" / "google-index.json"
+GCOV = {"Submitted and indexed": "в индексе",
+        "Crawled - currently not indexed": "обойдена, НЕ в индексе",
+        "Discovered - currently not indexed": "найдена, не обойдена",
+        "URL is unknown to Google": "неизвестна Google"}
+
+
+def google_status(slug):
+    """Строка статуса из последнего снимка `live.py gindex` (без запросов в сеть)."""
+    try:
+        g = json.loads(GINDEX.read_text(encoding="utf-8")).get(slug)
+    except (OSError, ValueError):
+        return ""
+    if not g:
+        return "Google: нет в снимке gindex (не опубликована или снимок старый)"
+    cov = GCOV.get(g.get("cov", ""), g.get("cov", "")[:40])
+    crawl = f", обход {g['crawl'][:10]}" if g.get("crawl") else ""
+    import datetime
+    snap = datetime.date.fromtimestamp(GINDEX.stat().st_mtime)
+    return f"Google: {cov}{crawl} (снимок gindex {snap}, опубликована {g.get('date', '?')})"
 
 
 def cmd_sec(slug, needle):
@@ -414,6 +441,17 @@ def cmd_check(slug=None):
         for line in [d["title"], d["seo_title"], d["seo_desc"]]:
             for w in re.findall(r"[А-Яа-яЁё]+[A-Za-z]+|[A-Za-z]+[А-Яа-яЁё]+", line):
                 p.append(f"смесь кириллицы и латиницы: {w}")
+        # Текст вне HTML-блоков и ссылок: смесь алфавитов в слове, калькулятор вне обёртки
+        prose = re.sub(r"<!-- wp:html -->.*?<!-- /wp:html -->", "", body, flags=re.S)
+        prose = re.sub(r"\]\([^)]*\)|`[^`]*`|https?://\S+", "", prose)
+        for w in sorted(set(re.findall(r"[А-Яа-яЁё]+[A-Za-z]+[А-Яа-яЁёA-Za-z]*|[A-Za-z]+[А-Яа-яЁё]+[А-Яа-яЁёA-Za-z]*", prose))):
+            p.append(f"смесь кириллицы и латиницы в тексте: {w}")
+        if "<script" in prose:
+            p.append("<script> вне <!-- wp:html --> — калькулятор не попадёт на сайт целым")
+        if "CALC-TODO" in body:
+            p.append("заготовка калькулятора не дописана (CALC-TODO)")
+        if body.count("<script") != body.count("</script>"):
+            p.append("не все <script> закрыты обычным </script> (внутри JS-строк — <\\/tag>, но сам тег закрывается как есть)")
         broken = [t for t in d["out"] if t not in docs and t not in external]
         ext_used = [t for t in d["out"] if t not in docs and t in external]
         external_hits += len(ext_used)
@@ -470,12 +508,90 @@ images:
     print("Для правки уже опубликованной статьи добавь adopt_existing: true")
 
 
+def cmd_calc(slug, prefix):
+    """Вставляет заготовку калькулятора на место строки <!-- calc --> в статье.
+
+    Стили, обвязка событий и обёртка wp:html — из scripts/templates/calc.html, чтобы
+    не копировать их из соседней статьи. Все места для правки помечены CALC-TODO,
+    и `check` не пропустит статью, пока они остаются.
+    """
+    path = ARTICLES / f"{slug}.md"
+    if not path.exists():
+        sys.exit(f"Нет статьи {slug}")
+    if not re.fullmatch(r"[A-Z][a-z]{1,5}", prefix):
+        sys.exit("Префикс — 2–6 латинских букв с заглавной: Kp → #mdKpCalc, поля mdKpA, mdKpB")
+    text = path.read_text(encoding="utf-8")
+    if f'id="md{prefix}Calc"' in text:
+        sys.exit(f"#md{prefix}Calc уже есть в статье")
+    taken = [s for s, d in load()["docs"].items()
+             if f'id="md{prefix}Calc"' in (ARTICLES / d["file"]).read_text(encoding="utf-8")]
+    if taken:
+        sys.exit(f"#md{prefix}Calc уже занят в {taken[0]} — возьми другой префикс (ссылки хаба на #id)")
+    if text.count("<!-- calc -->") != 1:
+        sys.exit("Поставь в статье ровно одну строку <!-- calc --> там, где нужен калькулятор")
+    tpl = (ROOT / "scripts" / "templates" / "calc.html").read_text(encoding="utf-8")
+    path.write_text(text.replace("<!-- calc -->", tpl.replace("{P}", prefix).rstrip("\n")), encoding="utf-8")
+    line = text[:text.index("<!-- calc -->")].count("\n") + 1
+    print(f"Вставлено #md{prefix}Calc в {slug}.md:{line}. Поля: md{prefix}S (select), md{prefix}A, md{prefix}B, вывод md{prefix}Out.")
+    print("Допиши все CALC-TODO, затем: calc-smoke.py " + slug + " и mdi.py check " + slug)
+
+
+MONTHS = ["янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"]
+
+
+def cmd_next(limit="8"):
+    """Свободные темы из semantics/SEMANTIC-CORE.md по формуле приоритета.
+
+    Сезон: статья выходит в топ за 1–3 месяца, поэтому лучшее окно — пик через
+    1–3 месяца. Конкуренция ≤ 8 — берём, 9–12 — на грани. Тонкая рубрика (≤ 7
+    статей) — для квоты 2:1. Частотность — только тай-брейкер. Строки, у которых
+    слаг уже есть в articles/, печатаются отдельно: реестр устарел.
+    """
+    import datetime
+    docs = load()["docs"]
+    by_cat = {}
+    for d in docs.values():
+        by_cat[d["category"]] = by_cat.get(d["category"], 0) + 1
+    now = datetime.date.today().month - 1
+    rows, stale = [], []
+    for line in (ROOT / "semantics" / "SEMANTIC-CORE.md").read_text(encoding="utf-8").splitlines():
+        c = [x.strip() for x in line.split("|")[1:-1]]
+        if len(c) < 9 or "свобод" not in c[7].lower():
+            continue
+        phrase, freq, comp, _, cat, slug, season = c[:7]
+        slug = re.sub(r"[^a-z0-9-].*", "", slug)
+        if slug and slug in docs:
+            stale.append(f"{slug} — в реестре «{c[7][:20]}», но статья есть")
+            continue
+        f = int(re.search(r"\d+", freq).group()) if re.search(r"\d+", freq) else 0
+        k = int(re.search(r"\d+", comp).group()) if re.search(r"\d+", comp) else None
+        m = next((i for i, x in enumerate(MONTHS) if season.lower().startswith(x)), None)
+        if m is None:
+            ahead, sw, note = None, 1, "круглый год" if "кругл" in season else "сезон ?"
+        else:
+            ahead = (m - now) % 12
+            sw = 3 if 1 <= ahead <= 3 else 2 if 4 <= ahead <= 6 else 0
+            note = {0: "пик сейчас — поздно"}.get(ahead, f"пик через {ahead} мес.")
+        kw = 3 if k is not None and k <= 8 else 1 if k is None or k <= 12 else -3  # >12 — «тяжело»
+        thin = by_cat.get(cat, 0) <= 7
+        score = sw * 2 + kw + (1 if thin else 0)
+        rows.append((score, f, phrase, slug, cat, k, note, thin))
+    rows.sort(key=lambda r: (-r[0], -r[1]))
+    print(f"Свободных тем в реестре: {len(rows)}. Лучшие (балл = сезон×2 + конкуренция (≤8: +3, >12: −3) + тонкая рубрика):")
+    for score, f, phrase, slug, cat, k, note, thin in rows[:int(limit)]:
+        print(f"  {score}  {phrase[:48]:48} | {slug or '—'} | {cat}{' (тонкая)' if thin else ''} | "
+              f"конк. {k if k is not None else 'не пров.'} | {f}/мес | {note}")
+    for x in stale:
+        print("  РЕЕСТР УСТАРЕЛ:", x)
+    print("Перед стартом: mutagen.py strong (если «не пров.») и mdi.py dupe.")
+
+
 COMMANDS = {
     "index": (cmd_index, 0), "state": (cmd_state, 0), "find": (cmd_find, 1),
     "dupe": (cmd_dupe, 1), "in": (cmd_in, 1), "out": (cmd_out, 1),
     "orphans": (cmd_orphans, 0), "linkplan": (cmd_linkplan, 1),
     "toc": (cmd_toc, 1), "sec": (cmd_sec, 2), "check": (cmd_check, 0),
-    "new": (cmd_new, 2),
+    "new": (cmd_new, 2), "calc": (cmd_calc, 2), "next": (cmd_next, 0),
 }
 
 

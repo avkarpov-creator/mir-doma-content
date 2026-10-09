@@ -15,7 +15,13 @@ textContent; карты и сложные списки всё ещё могут 
 смотрите их глазами.
 """
 import re,sys,json,glob,os,subprocess,tempfile,shutil
-node=os.environ.get('MD_NODE') or shutil.which('node')
+def find_node():
+    # MD_NODE → PATH → node из VS Code Server (в WSL он есть почти всегда, но не в PATH)
+    n=os.environ.get('MD_NODE') or shutil.which('node')
+    if n: return n
+    c=sorted(glob.glob(os.path.expanduser('~/.vscode-server/bin/*/node')),key=os.path.getmtime)
+    return c[-1] if c else None
+node=find_node()
 if not node: sys.exit('node не найден: установите или задайте MD_NODE')
 S=tempfile.mkdtemp()
 only=set(sys.argv[1:])

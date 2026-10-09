@@ -130,7 +130,9 @@ python3 scripts/mdi.py check            # битые слаги по всему 
 
 ## Файлы скила
 
-- `scripts/mdi.py` — индекс и запросы (index, state, find, dupe, in, out, orphans, linkplan, toc, sec, check, new). Лежит в корне репозитория, в `scripts/`.
+- `scripts/mdi.py` — индекс и запросы (index, state, find, dupe, in, out, orphans, linkplan, toc, sec, check, new, next, calc). `toc` показывает и статус в Google из последнего `live.py gindex`; `check` ловит смесь алфавитов в тексте, `<script>` вне `wp:html`, незакрытые скрипты и недописанные `CALC-TODO`.
+- `mdi.py next [N]` — свободные темы из реестра СЯ по формуле приоритета + строки реестра, которые уже написаны (устарели).
+- `mdi.py calc <слаг> <Префикс>` — заготовка калькулятора (стили, обёртка, события из `scripts/templates/calc.html`) на место строки `<!-- calc -->`; префикс уникален по сайту. Лежит в корне репозитория, в `scripts/`.
 - `scripts/plugin-release.sh` — версия + CHANGELOG + контроль логирования
 - `references/article-contract.md` — формат статьи и frontmatter (грузить при написании)
 - `references/priorities.md` — формула приоритизации и правила контент-плана
@@ -159,7 +161,8 @@ ship.sh — семь шагов с остановом на первой проб
 - scripts/ship.sh — полный цикл выпуска
 - scripts/mutagen.py pick — отбор тем по частотности и конкуренции
 - scripts/live.py — прямые запросы к Метрике, Вебмастеру, GSC и GA4 (сводки, только чтение; секреты в ~/.config/mir-doma/secrets.env). `live.py check` — что настроено, `grow` — позиции 5–20 для доработки, `inspect <слаг>` — в индексе ли страница и когда Google её обходил (если пропала из выдачи)
-- scripts/calc-smoke.py [слаг] — исполняет JS-калькуляторы в node и ловит ошибки, NaN и пустой вывод; гонять после каждого нового калькулятора (node — в PATH или MD_NODE)
+- scripts/calc-smoke.py [слаг] — исполняет JS-калькуляторы в node и ловит ошибки, NaN и пустой вывод; гонять после каждого нового калькулятора (node ищется сам: MD_NODE → PATH → ~/.vscode-server)
+- images.py gen генерирует кадры параллельно (MD_IMAGE_WORKERS, по умолчанию 3)
 - references/pipeline.md — что проверяет каждый шаг и почему
 
 ### Недельный SEO-бриф

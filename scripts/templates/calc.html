@@ -1,0 +1,42 @@
+<!-- wp:html -->
+<div id="md{P}Calc" class="md-calc">
+  <p class="md-calc__lead">CALC-TODO заголовок калькулятора</p>
+  <label class="md-calc__label" for="md{P}S">CALC-TODO выбор варианта</label>
+  <select id="md{P}S" class="md-calc__input">
+    <option value="a">CALC-TODO вариант А</option>
+    <option value="b">CALC-TODO вариант Б</option>
+  </select>
+  <label class="md-calc__label" for="md{P}A">CALC-TODO первое число, ед.</label>
+  <input type="number" id="md{P}A" class="md-calc__input" min="0" step="1" value="10">
+  <label class="md-calc__label" for="md{P}B">CALC-TODO второе число, ед.</label>
+  <input type="number" id="md{P}B" class="md-calc__input" min="0" step="0.1" value="1">
+  <div id="md{P}Out" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  /* CALC-TODO: коэффициенты — те же числа, что в тексте и таблицах статьи */
+  var K={a:1,b:2};
+  function v(id){var x=parseFloat(document.getElementById(id).value);return isNaN(x)||x<0?0:x;}
+  function r(x){return x<10?Math.round(x*10)/10:Math.round(x);}
+  function calc(){
+    var out=document.getElementById('md{P}Out'),warn=false;
+    var k=K[document.getElementById('md{P}S').value],a=v('md{P}A'),b=v('md{P}B');
+    if(!a){out.className='md-calc__out';out.textContent='CALC-TODO подсказка, что заполнить';return;}
+    var t='CALC-TODO результат: '+r(a*b*k);
+    out.className='md-calc__out'+(warn?' is-warn':'');
+    out.textContent=t;
+  }
+  ['md{P}S','md{P}A','md{P}B'].forEach(function(id){var el=document.getElementById(id);el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
