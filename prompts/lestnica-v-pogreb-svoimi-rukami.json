@@ -1,0 +1,36 @@
+{
+  "slug": "lestnica-v-pogreb-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/lestnica-v-pogreb-svoimi-rukami.jpg",
+      "alt": "Деревянная лестница на тетивах в погребе со стеллажами",
+      "prompt": "A sturdy wooden staircase on two stringers leading down into a cellar with wooden shelves of jars and vegetable crates, warm light from a single bulb, view from the hatch above"
+    },
+    {
+      "file": "images/lestnica-v-pogreb-svoimi-rukami-2.jpg",
+      "alt": "Схема угла наклона и шага ступеней лестницы в погреб",
+      "prompt": "A wooden cellar staircase seen from the side against a plain concrete wall, showing a steep 60 degree angle and evenly spaced treads, a carpenter's square resting on one tread, soft light"
+    },
+    {
+      "file": "images/lestnica-v-pogreb-svoimi-rukami-3.jpg",
+      "alt": "Металлическая лестница из профильной трубы с рифлёными ступенями в погребе",
+      "prompt": "A welded steel cellar ladder made of rectangular profile tube with diamond-plate steel treads painted dark grey, in a concrete cellar, cool light from above"
+    },
+    {
+      "file": "images/lestnica-v-pogreb-svoimi-rukami-4.jpg",
+      "alt": "Разметка тетивы лестницы с помощью угольника на верстаке",
+      "prompt": "A pine board stringer on a workbench marked with pencil lines for stair treads using a steel carpenter's square, saw and screws nearby, garage workshop daylight"
+    },
+    {
+      "file": "images/lestnica-v-pogreb-svoimi-rukami-5.jpg",
+      "alt": "Поручень и ручка над открытым люком погреба",
+      "prompt": "An open insulated wooden cellar hatch in a garage floor with a metal grab handle on the wall above and a handrail continuing above floor level, overhead light"
+    },
+    {
+      "file": "images/lestnica-v-pogreb-svoimi-rukami-6.jpg",
+      "alt": "Ящики с овощами под маршем лестницы в погребе",
+      "prompt": "Wooden crates with potatoes and carrots stored in the triangular space under a wooden cellar staircase, brick walls, dim warm light"
+    }
+  ]
+}
