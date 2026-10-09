@@ -1,0 +1,36 @@
+{
+  "slug": "kak-hranit-karkasnyy-basseyn-zimoy",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-hranit-karkasnyy-basseyn-zimoy.jpg",
+      "alt": "Каркасный бассейн на даче осенью с опавшими листьями на воде",
+      "prompt": "A round blue frame above-ground pool on a dacha lawn in autumn with fallen yellow leaves floating on the water, birch trees, overcast day"
+    },
+    {
+      "file": "images/kak-hranit-karkasnyy-basseyn-zimoy-2.jpg",
+      "alt": "Разобранная чаша каркасного бассейна сушится на траве на солнце",
+      "prompt": "An emptied blue PVC pool liner spread out flat on green grass drying in the sun, frame poles stacked beside it, autumn garden"
+    },
+    {
+      "file": "images/kak-hranit-karkasnyy-basseyn-zimoy-3.jpg",
+      "alt": "Сложенная чаша бассейна в пластиковом контейнере на полке кладовки",
+      "prompt": "A loosely folded blue PVC pool liner inside a large clear plastic storage box with a lid on a pantry shelf, soft indoor light"
+    },
+    {
+      "file": "images/kak-hranit-karkasnyy-basseyn-zimoy-4.jpg",
+      "alt": "Каркасный бассейн, накрытый тентом, под снегом на дачном участке",
+      "prompt": "A rectangular frame pool covered with a tight grey winter cover with snow on top, standing in a snowy dacha garden, winter daylight"
+    },
+    {
+      "file": "images/kak-hranit-karkasnyy-basseyn-zimoy-5.jpg",
+      "alt": "Площадка из песка под бассейном накрыта геотекстилем на зиму",
+      "prompt": "A flat sandy pool base area covered with grey geotextile fabric weighed down with bricks on a lawn in late autumn"
+    },
+    {
+      "file": "images/kak-hranit-karkasnyy-basseyn-zimoy-6.jpg",
+      "alt": "Детали каркаса бассейна сложены у стены гаража",
+      "prompt": "Disassembled metal frame poles and grey plastic connectors of an above-ground pool neatly stacked against a wooden garage wall, plain surfaces, soft daylight"
+    }
+  ]
+}
