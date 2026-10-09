@@ -1,0 +1,36 @@
+{
+  "slug": "kak-uteplit-bytovku",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-uteplit-bytovku.jpg",
+      "alt": "Деревянная бытовка на даче с открытыми стенами, между стойками уложена минеральная вата",
+      "prompt": "Interior of a wooden frame cabin on a dacha with open wall studs filled with mineral wool insulation batts, wooden floor, daylight from a small window"
+    },
+    {
+      "file": "images/kak-uteplit-bytovku-2.jpg",
+      "alt": "Плиты экструдированного пенополистирола приклеены к металлической стене бытовки, швы заполнены пеной",
+      "prompt": "Pink extruded polystyrene boards glued to the inside of a corrugated steel container cabin wall, seams filled with yellow spray foam, work light"
+    },
+    {
+      "file": "images/kak-uteplit-bytovku-3.jpg",
+      "alt": "Утепление пола бытовки снизу: плиты пенополистирола между лагами и ветрозащитная мембрана",
+      "prompt": "Underside of a wooden cabin floor raised on concrete blocks, pink foam insulation boards fitted between wooden joists, daylight"
+    },
+    {
+      "file": "images/kak-uteplit-bytovku-4.jpg",
+      "alt": "Металлическая дверь бытовки, утеплённая изнутри пенополистиролом и обшитая вагонкой",
+      "prompt": "Inside view of a cabin entrance: a door lined with pine boards and a rubber seal around the frame, simple wooden interior, daylight"
+    },
+    {
+      "file": "images/kak-uteplit-bytovku-5.jpg",
+      "alt": "Утеплённая бытовка внутри: вагонка, конвектор под окном, приточный клапан",
+      "prompt": "Cozy insulated cabin interior with pine clapboard walls, an electric convector heater under the window and a round ventilation valve on the wall"
+    },
+    {
+      "file": "images/kak-uteplit-bytovku-6.jpg",
+      "alt": "Деревянная утеплённая бытовка на даче зимой со светом в окне",
+      "prompt": "A small wooden cabin on a snowy dacha plot at dusk with warm light in the window and smoke-free roof, winter"
+    }
+  ]
+}
