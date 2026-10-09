@@ -1,0 +1,36 @@
+{
+  "slug": "kompost-peregnoy-i-navoz-v-chem-raznica",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kompost-peregnoy-i-navoz-v-chem-raznica.jpg",
+      "alt": "Три кучи органики рядом: свежий навоз, тёмный перегной и компост",
+      "prompt": "Three separate heaps on a dacha plot side by side: fresh straw-rich cattle manure, dark crumbly humus, and brown garden compost with bits of leaves, wooden boards between them, overcast autumn day, eye-level"
+    },
+    {
+      "file": "images/kompost-peregnoy-i-navoz-v-chem-raznica-2.jpg",
+      "alt": "Перегной в лунке перед посадкой рассады томата",
+      "prompt": "A planting hole in a vegetable bed with a handful of dark crumbly humus at the bottom and a young tomato seedling in a pot next to it, spring morning light, close-up"
+    },
+    {
+      "file": "images/kompost-peregnoy-i-navoz-v-chem-raznica-3.jpg",
+      "alt": "Самосвал выгружает навоз у ворот дачного участка",
+      "prompt": "A small dump truck unloading a pile of manure at the gate of a dacha plot, wooden fence and birch trees, cloudy day, wide shot"
+    },
+    {
+      "file": "images/kompost-peregnoy-i-navoz-v-chem-raznica-4.jpg",
+      "alt": "Бурт навоза, укрытый плёнкой и переложенный соломой",
+      "prompt": "A long manure windrow covered with black plastic film weighed down by old tires and layered with straw, at the edge of a vegetable garden, autumn, three-quarter view"
+    },
+    {
+      "file": "images/kompost-peregnoy-i-navoz-v-chem-raznica-5.jpg",
+      "alt": "Компост мульчей под кустами смородины",
+      "prompt": "Dark compost mulch spread around black currant bushes in a garden, fallen leaves, soft afternoon light, low angle"
+    },
+    {
+      "file": "images/kompost-peregnoy-i-navoz-v-chem-raznica-6.jpg",
+      "alt": "Ладонь с рассыпчатым готовым перегноем над грядкой",
+      "prompt": "Close-up of crumbly dark finished humus held above a dug garden bed in an open palm, earthworm visible, natural daylight"
+    }
+  ]
+}
