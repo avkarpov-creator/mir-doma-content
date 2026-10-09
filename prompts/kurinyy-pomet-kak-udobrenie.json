@@ -1,0 +1,36 @@
+{
+  "slug": "kurinyy-pomet-kak-udobrenie",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kurinyy-pomet-kak-udobrenie.jpg",
+      "alt": "Куриный помёт в ведре рядом с вскопанной осенней грядкой",
+      "prompt": "A galvanized bucket filled with dark chicken manure mixed with straw bedding, standing on the edge of a freshly dug vegetable bed in a Russian dacha garden, fallen yellow leaves around, overcast October afternoon, eye-level view"
+    },
+    {
+      "file": "images/kurinyy-pomet-kak-udobrenie-2.jpg",
+      "alt": "Гранулированный куриный помёт в садовом совке и бумажный мешок удобрения",
+      "prompt": "Close-up of brown pelleted chicken manure fertilizer in a metal garden trowel, an open plain unlabeled kraft paper sack of pellets behind it, on a wooden potting bench, soft daylight, shallow depth of field"
+    },
+    {
+      "file": "images/kurinyy-pomet-kak-udobrenie-3.jpg",
+      "alt": "Подкормка огурцов настоем куриного помёта из лейки под корень",
+      "prompt": "A green plastic watering can pouring brownish liquid fertilizer at the base of cucumber plants on a trellis in a polycarbonate greenhouse, wet soil, yellow cucumber flowers, morning light, low angle"
+    },
+    {
+      "file": "images/kurinyy-pomet-kak-udobrenie-4.jpg",
+      "alt": "Пластиковая бочка с настоем куриного помёта и ведро для разведения",
+      "prompt": "A blue plastic barrel with brown liquid manure tea and a wooden stirring stick, next to an empty plastic bucket on grass beside a garden shed, summer evening light, three-quarter view"
+    },
+    {
+      "file": "images/kurinyy-pomet-kak-udobrenie-5.jpg",
+      "alt": "Осенняя перекопка грядки с внесённым куриным помётом",
+      "prompt": "A garden spade turning over dark soil in an autumn vegetable bed where chicken manure has been spread on the surface, harvested beds and a wooden fence in the background, cloudy October day, close-up from above at an angle"
+    },
+    {
+      "file": "images/kurinyy-pomet-kak-udobrenie-6.jpg",
+      "alt": "Мешки с золой, известью и куриным помётом раздельно на полке сарая",
+      "prompt": "Wooden shelf in a garden shed with three separate plain unlabeled sacks and a closed bucket standing apart: grey wood ash, white garden lime, brown pelleted chicken manure, natural light from a small window"
+    }
+  ]
+}
