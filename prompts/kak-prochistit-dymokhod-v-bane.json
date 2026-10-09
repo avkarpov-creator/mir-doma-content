@@ -1,0 +1,36 @@
+{
+  "slug": "kak-prochistit-dymokhod-v-bane",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-prochistit-dymokhod-v-bane.jpg",
+      "alt": "Ёрш на гибкой штанге и снятый искрогаситель у трубы банного дымохода",
+      "prompt": "A white polypropylene chimney brush on a flexible fiberglass rod lying on a roof next to a stainless steel sandwich chimney pipe with a removed spark arrester cap beside it, clear autumn day"
+    },
+    {
+      "file": "images/kak-prochistit-dymokhod-v-bane-2.jpg",
+      "alt": "Набор для чистки дымохода: полипропиленовый ёрш, стеклопластиковые штанги, совок и ведро",
+      "prompt": "Chimney cleaning kit laid out on a wooden bathhouse bench: polypropylene round brush, several threaded fiberglass rods, a metal scoop, and a metal ash bucket with a lid, soft daylight"
+    },
+    {
+      "file": "images/kak-prochistit-dymokhod-v-bane-3.jpg",
+      "alt": "Чистка банного дымохода снизу через ревизию тройника на гибких штангах",
+      "prompt": "A flexible rod with a brush inserted into the open inspection cap of a stainless chimney tee above a metal sauna stove, soot falling into a metal scoop below, warm light"
+    },
+    {
+      "file": "images/kak-prochistit-dymokhod-v-bane-4.jpg",
+      "alt": "Оголовок банной трубы с искрогасителем и чёрными потёками сажи на крыше",
+      "prompt": "A stainless chimney top with a mesh spark arrester on a bathhouse roof, black soot streaks on the pipe and roofing around it, overcast sky, close-up"
+    },
+    {
+      "file": "images/kak-prochistit-dymokhod-v-bane-5.jpg",
+      "alt": "Поленница сухих берёзовых дров под навесом у бани",
+      "prompt": "A neat stack of dry split birch firewood under a wooden shed roof next to a log bathhouse, autumn daylight"
+    },
+    {
+      "file": "images/kak-prochistit-dymokhod-v-bane-6.jpg",
+      "alt": "Чистая банная печь с открытой дверцей и ровным пламенем после чистки дымохода",
+      "prompt": "A clean metal sauna stove with the firebox door open and a steady bright flame inside, stones on top, wooden interior of a steam room, warm light"
+    }
+  ]
+}
