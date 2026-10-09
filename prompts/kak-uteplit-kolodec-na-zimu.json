@@ -1,0 +1,36 @@
+{
+  "slug": "kak-uteplit-kolodec-na-zimu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kak-uteplit-kolodec-na-zimu.jpg",
+      "alt": "Колодец из бетонных колец с деревянной утеплённой крышкой и домиком зимой",
+      "prompt": "A concrete ring well on a country plot in winter with a thick insulated wooden lid and a small wooden roof above, snow around, bucket on a chain, overcast winter day"
+    },
+    {
+      "file": "images/kak-uteplit-kolodec-na-zimu-2.jpg",
+      "alt": "Плиты экструдированного пенополистирола у раскопанного верхнего кольца колодца",
+      "prompt": "Pink extruded polystyrene foam boards cut into vertical strips glued around the top concrete ring of an excavated well, black bitumen coating visible, trench around, autumn daylight"
+    },
+    {
+      "file": "images/kak-uteplit-kolodec-na-zimu-3.jpg",
+      "alt": "Утеплённая отмостка из плит ЭППС вокруг колодца перед засыпкой",
+      "prompt": "Horizontal extruded polystyrene boards laid in a ring around a concrete well in a shallow excavation before backfilling with sand, top-down three-quarter view, autumn"
+    },
+    {
+      "file": "images/kak-uteplit-kolodec-na-zimu-4.jpg",
+      "alt": "Внутренняя диафрагма из пенополистирола в плёнке внутри колодезной шахты",
+      "prompt": "View down into a concrete well shaft showing an inner round foam insulation cover wrapped in plastic film resting on metal supports with a pipe passing through, light from above"
+    },
+    {
+      "file": "images/kak-uteplit-kolodec-na-zimu-5.jpg",
+      "alt": "Траншея с трубой ПНД, греющим кабелем и коробом из пенополистирола у колодца",
+      "prompt": "A trench next to a concrete well with a black HDPE water pipe, an orange self-regulating heating cable taped along it and a U-shaped polystyrene cover being placed over it, daylight"
+    },
+    {
+      "file": "images/kak-uteplit-kolodec-na-zimu-6.jpg",
+      "alt": "Деревянный домик над колодцем с двускатной крышей под снегом",
+      "prompt": "A small wooden house with a gable roof over a village well covered with fresh snow, wooden door closed, birch trees behind, soft winter light"
+    }
+  ]
+}
