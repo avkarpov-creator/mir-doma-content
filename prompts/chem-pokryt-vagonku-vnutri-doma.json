@@ -1,0 +1,36 @@
+{
+  "slug": "chem-pokryt-vagonku-vnutri-doma",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-pokryt-vagonku-vnutri-doma.jpg",
+      "alt": "Стена из светлой сосновой вагонки, покрытой матовым маслом, в дачном доме",
+      "prompt": "A living room wall clad with light pine tongue-and-groove boards finished with matte hard wax oil in a country house, wooden chair and window light"
+    },
+    {
+      "file": "images/chem-pokryt-vagonku-vnutri-doma-2.jpg",
+      "alt": "Образцы вагонки под лаком, маслом, белой лазурью и краской рядом",
+      "prompt": "Four short sample planks of pine clapboard side by side on a table: clear lacquer, natural oil, white tinted wood stain and opaque grey paint, soft daylight, top view"
+    },
+    {
+      "file": "images/chem-pokryt-vagonku-vnutri-doma-3.jpg",
+      "alt": "Нанесение масла на вагонку кистью вдоль волокон перед монтажом",
+      "prompt": "A paintbrush applying clear oil along the grain of pine clapboard boards laid on sawhorses before installation, workshop daylight, close-up"
+    },
+    {
+      "file": "images/chem-pokryt-vagonku-vnutri-doma-4.jpg",
+      "alt": "Светлая вагонка на застеклённом балконе, покрытая белой лазурью",
+      "prompt": "An enclosed glazed balcony with light wooden clapboard walls finished with white wood stain, sunlight through windows, potted plant"
+    },
+    {
+      "file": "images/chem-pokryt-vagonku-vnutri-doma-5.jpg",
+      "alt": "Шлифовка старой лакированной вагонки перед покраской",
+      "prompt": "An orbital sander sanding old glossy varnished pine clapboard on a wall, fine dust in the air, protective tape on the floor edge, daylight"
+    },
+    {
+      "file": "images/chem-pokryt-vagonku-vnutri-doma-6.jpg",
+      "alt": "Готовая комната с вагонкой, покрытой полуматовым лаком, и деревянной мебелью",
+      "prompt": "A cozy dacha room with pine clapboard walls in satin clear finish, wooden table, linen curtains, warm evening light"
+    }
+  ]
+}
