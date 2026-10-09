@@ -168,6 +168,7 @@ images:
 
 ## Инструменты и материалы
 
+- [Подбор снегоуборщика](https://mir-doma.pro/kakoy-snegouborshchik-vybrat-dlya-dachi/#mdSnCalc) — тип машины, ширина захвата, мощность и время расчистки по площади и характеру снега.
 - [Мощность генератора](https://mir-doma.pro/kakoy-generator-nuzhen-dlya-dachi/#mdGenCalc) — суммарная нагрузка приборов и нужная мощность генератора.
 - [Напильник для заточки цепи](https://mir-doma.pro/napilnik-dlya-zatochki-cepi-benzopily/#mdNpCalc) — шаг цепи по замеру заклёпок, диаметр напильника и высота ограничителя глубины.
 
