@@ -1,0 +1,36 @@
+{
+  "slug": "beton-dlya-stolbov-zabora",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/beton-dlya-stolbov-zabora.jpg",
+      "alt": "Металлический столб забора в яме, залитой бетоном, рядом мешки с цементом и бетономешалка",
+      "prompt": "A square steel fence post set in a freshly concreted hole on a country plot, a small electric concrete mixer and paper cement bags nearby, wooden braces holding the post, overcast day"
+    },
+    {
+      "file": "images/beton-dlya-stolbov-zabora-2.jpg",
+      "alt": "Ведро цемента, песок и щебень разложены для замеса бетона на поддоне",
+      "prompt": "A bucket of grey cement, a pile of sand and a pile of crushed granite gravel on a plywood sheet ready for mixing concrete, shovel lying across, daylight"
+    },
+    {
+      "file": "images/beton-dlya-stolbov-zabora-3.jpg",
+      "alt": "Столб забора в яме с рубероидной опалубкой выставлен по уровню на подкосах",
+      "prompt": "A steel fence post standing in a dug hole lined with a cylinder of black roofing felt, held vertical by two wooden braces, a spirit level attached to the post, garden soil around"
+    },
+    {
+      "file": "images/beton-dlya-stolbov-zabora-4.jpg",
+      "alt": "Пакет двухкомпонентной смеси выливается в яму вокруг столба почтового ящика",
+      "prompt": "A two-component expanding foam fixing mix being poured from a plain unlabeled pouch into a hole around a wooden mailbox post, close-up, daylight"
+    },
+    {
+      "file": "images/beton-dlya-stolbov-zabora-5.jpg",
+      "alt": "Деревянный столб на металлической закладной, забетонированной в землю",
+      "prompt": "A wooden fence post mounted on a galvanized steel post anchor that is set in concrete at ground level, garden lawn around, close-up"
+    },
+    {
+      "file": "images/beton-dlya-stolbov-zabora-6.jpg",
+      "alt": "Готовый забор из профнастила на забетонированных столбах",
+      "prompt": "A finished corrugated metal sheet fence in dark green on steel posts with neat concrete collars at the base, summer dacha plot, wide view"
+    }
+  ]
+}

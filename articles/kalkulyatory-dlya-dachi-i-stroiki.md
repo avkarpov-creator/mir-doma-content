@@ -82,6 +82,7 @@ images:
 - [Сколько дров на зиму](https://mir-doma.pro/skolko-drov-nuzhno-na-zimu/#mdWoodCalc) — кубы дров на сезон по площади, утеплению, региону, породе и влажности дров.
 - [Электроотопление дачи](https://mir-doma.pro/elektricheskoe-otoplenie-dachi/#mdElCalc) — мощность обогревателей по площади и утеплению, расход и счёт за месяц, запас по выделенной мощности.
 - [Куб дров — это сколько](https://mir-doma.pro/skolko-drov-nuzhno-na-zimu/#mdKubCalc) — перевод складочных, насыпных и плотных кубов, вес по породе и проверка машины по кузову.
+- [Колпак на трубу дымохода](https://mir-doma.pro/kolpak-na-trubu-dymokhoda-svoimi-rukami/#mdKdCalc) — диаметр зонта, зазор над срезом, выкройка конуса из листа и длина ножек под ваш диаметр трубы.
 
 ## Электрика и сантехника
 
@@ -94,6 +95,8 @@ images:
 
 - [Кессон для скважины](https://mir-doma.pro/kesson-dlya-skvazhiny-svoimi-rukami/#mdKsCalc) — глубина кессона по промерзанию, объём котлована, бетон на плиту и утеплитель.
 - [Объём воды в системе полива](https://mir-doma.pro/konservaciya-poliva-na-zimu/#mdKpCalc) — сколько воды должно вытечь из ленты, трубок ПНД и шлангов при сливе на зиму.
+- [Утепление колодца](https://mir-doma.pro/kak-uteplit-kolodec-na-zimu/#mdUkCalc) — сколько плит ЭППС нужно на кольца снаружи, утеплённую отмостку и крышку под ваш размер колец.
+- [Каркасный бассейн зимой](https://mir-doma.pro/kak-hranit-karkasnyy-basseyn-zimoy/#mdBpCalc) — объём воды в бассейне и сколько времени займёт слив самотёком и насосом.
 
 ## Интерьер дачи
 
@@ -106,6 +109,7 @@ images:
 - [Обшивка открытой террасы](https://mir-doma.pro/otdelka-otkrytoy-terrasy/#mdOtCalc) — материал на стены и потолок террасы по площади.
 - [Пол на холодной веранде](https://mir-doma.pro/pol-na-holodnoy-verande/#mdFloorCalc) — материал на настил пола по размерам веранды.
 - [Натяжной потолок на неотапливаемой даче](https://mir-doma.pro/natyazhnoy-potolok-na-neotaplivaemoy-dache/#mdNpdCalc) — какое полотно выдержит вашу зимовку, площадь, профиль и нужен ли шов.
+- [Чем покрыть вагонку](https://mir-doma.pro/chem-pokryt-vagonku-vnutri-doma/#mdVgCalc) — сколько лака, масла, воска, лазури или краски нужно на площадь вагонки с учётом слоёв и породы дерева.
 
 ## Заборы и ограждения
 
@@ -114,6 +118,7 @@ images:
 - [Забор из профнастила](https://mir-doma.pro/zabor-iz-profnastila-svoimi-rukami/#mdZpCalc) — листы по полезной ширине, столбы, лаги, саморезы и бетон.
 - [Забор из рабицы](https://mir-doma.pro/zabor-iz-setki-rabica-svoimi-rukami/#mdRbCalc) — рулоны сетки, столбы, проволока-катанка и крючки.
 - [Деревянный забор из штакетника](https://mir-doma.pro/zabor-iz-dereva-svoimi-rukami/#mdDzCalc) — доски по ширине и зазору, столбы, лаги и саморезы.
+- [Бетон для столбов забора](https://mir-doma.pro/beton-dlya-stolbov-zabora/#mdBsZCalc) — объём бетона на столб и на весь забор, мешки цемента, песок, щебень или сухая смесь.
 
 ## Газоны и дорожки
 
@@ -134,6 +139,7 @@ images:
 - [Строительство погреба](https://mir-doma.pro/stroitelstvo-pogreba-smeta/#mdPgCalc) — смета на погреб по размерам и материалу стен.
 - [Погреб в гараже](https://mir-doma.pro/pogreb-v-garazhe-svoimi-rukami/#mdPgCalc) — объём котлована, бетон или кирпич на стены, гидроизоляция.
 - [Полки для банок в погреб](https://mir-doma.pro/polki-v-pogreb-svoimi-rukami/#mdShelfCalc) — вес банок на полке и сколько нужно стоек.
+- [Лестница в погреб](https://mir-doma.pro/lestnica-v-pogreb-svoimi-rukami/#mdLpCalc) — число ступеней с одинаковым шагом, длина тетивы и сколько лестница займёт по полу при выбранном угле.
 - [Серные шашки для погреба](https://mir-doma.pro/raschet-sernoy-shashki-dlya-pogreba/#mdSsCalc) — объём погреба, сера по норме и число шашек по весу или по данным упаковки.
 - [Вентиляция погреба](https://mir-doma.pro/ventilyaciya-v-pogrebe/#mdVpCalc) — сечение и диаметр приточной и вытяжной трубы по площади погреба.
 
@@ -146,6 +152,7 @@ images:
 - [Каркасный сарай](https://mir-doma.pro/saray-svoimi-rukami/#mdSaCalc) — брус на обвязку, стойки и лаги с шагом 60 см, листы OSB.
 
 ![Мешки цемента и тачка на стройплощадке дачного дома](images/kalkulyatory-dlya-dachi-i-stroiki-5.jpg)
+- [Утепление бытовки](https://mir-doma.pro/kak-uteplit-bytovku/#mdUbCalc) — площади стен, пола и потолка, объём минваты или плиты ЭППС, плёнки и мощность обогревателя по размерам бытовки.
 
 ## Мебель своими руками
 
@@ -191,6 +198,7 @@ images:
 ## Плодовые деревья и кустарники
 
 - [Обрезка смородины](https://mir-doma.pro/obrezka-smorodiny/#mdSmCalc) — сколько старых ветвей и нулевых побегов вырезать с вашего куста чёрной или красной смородины и сколько останется.
+- [Обработка вишни осенью](https://mir-doma.pro/chem-obrabotat-vishnyu-osenyu/#mdVsCalc) — сколько мочевины, медного или железного купороса отвесить и сколько литров раствора нужно на ваши деревья.
 
 ## Удобрения и подкормки
 
