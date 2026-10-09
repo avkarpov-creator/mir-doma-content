@@ -1,0 +1,36 @@
+{
+  "slug": "chem-obrabotat-vishnyu-osenyu",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/chem-obrabotat-vishnyu-osenyu.jpg",
+      "alt": "Ветви вишни с жёлтыми осенними листьями и опавшая листва под деревом",
+      "prompt": "Branches of a cherry tree with yellow and orange autumn leaves, fallen leaves on the grass beneath the tree in a dacha garden, soft October light"
+    },
+    {
+      "file": "images/chem-obrabotat-vishnyu-osenyu-2.jpg",
+      "alt": "Опрыскивание голых ветвей вишни ранцевым опрыскивателем после листопада",
+      "prompt": "A green backpack garden sprayer wand misting bare cherry tree branches after leaf fall, misty late autumn morning in an orchard, no person visible, just the sprayer nozzle in frame"
+    },
+    {
+      "file": "images/chem-obrabotat-vishnyu-osenyu-3.jpg",
+      "alt": "Сбор опавших листьев под вишней граблями в пакет",
+      "prompt": "A garden rake and an open paper bag full of fallen cherry leaves under a young cherry tree, autumn lawn, daylight"
+    },
+    {
+      "file": "images/chem-obrabotat-vishnyu-osenyu-4.jpg",
+      "alt": "Влагозарядковый полив вишни из шланга в приствольный круг",
+      "prompt": "A garden hose slowly watering the trunk circle of a cherry tree with a shallow earth rim around it, fallen leaves, overcast autumn day"
+    },
+    {
+      "file": "images/chem-obrabotat-vishnyu-osenyu-5.jpg",
+      "alt": "Побелённый штамб вишни, обвязанный сеткой от зайцев",
+      "prompt": "A cherry tree trunk freshly whitewashed with lime and wrapped with a protective plastic mesh at the base, late autumn garden"
+    },
+    {
+      "file": "images/chem-obrabotat-vishnyu-osenyu-6.jpg",
+      "alt": "Опрятная вишня в саду поздней осенью после всех работ",
+      "prompt": "A tidy small cherry orchard in late autumn with bare branches, cleaned ground under the trees and mulched trunk circles, overcast sky"
+    }
+  ]
+}
