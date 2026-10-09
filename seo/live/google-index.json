@@ -1,21 +1,33 @@
 {
-"ukrytie-vinograda-na-zimu": {
-"date": "2026-10-07",
+"zola-kak-udobrenie": {
+"date": "2026-10-09",
 "cov": "URL is unknown to Google",
 "crawl": "",
 "gcanon": null
+},
+"natyazhnoy-potolok-na-neotaplivaemoy-dache": {
+"date": "2026-10-08",
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/natyazhnoy-potolok-na-neotaplivaemoy-dache/"
+},
+"ukrytie-vinograda-na-zimu": {
+"date": "2026-10-07",
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
+"gcanon": "https://mir-doma.pro/ukrytie-vinograda-na-zimu/"
 },
 "verstak-svoimi-rukami": {
 "date": "2026-10-07",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/verstak-svoimi-rukami/"
 },
 "skolko-drov-nuzhno-na-zimu": {
 "date": "2026-10-07",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
+"gcanon": "https://mir-doma.pro/skolko-drov-nuzhno-na-zimu/"
 },
 "predbannik-svoimi-rukami": {
 "date": "2026-10-06",
@@ -25,14 +37,14 @@
 },
 "internet-na-dachu": {
 "date": "2026-10-06",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
+"gcanon": "https://mir-doma.pro/internet-na-dachu/"
 },
 "pogreb-v-garazhe-svoimi-rukami": {
 "date": "2026-10-06",
 "cov": "Submitted and indexed",
-"crawl": "2026-10-06",
+"crawl": "2026-10-09",
 "gcanon": "https://mir-doma.pro/pogreb-v-garazhe-svoimi-rukami/"
 },
 "kak-topit-banyu-zimoy": {
@@ -44,18 +56,18 @@
 "planirovka-uchastka-6-sotok": {
 "date": "2026-10-05",
 "cov": "Submitted and indexed",
-"crawl": "2026-10-06",
+"crawl": "2026-10-09",
 "gcanon": "https://mir-doma.pro/planirovka-uchastka-6-sotok/"
 },
 "udalennoe-upravlenie-otopleniem-na-dache": {
 "date": "2026-10-05",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/udalennoe-upravlenie-otopleniem-na-dache/"
 },
 "alpiyskaya-gorka-svoimi-rukami": {
 "date": "2026-10-04",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -67,33 +79,33 @@
 },
 "chto-prigotovit-iz-morkovi": {
 "date": "2026-10-03",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "morozilnyy-lar-ili-morozilnaya-kamera": {
 "date": "2026-10-03",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/morozilnyy-lar-ili-morozilnaya-kamera/"
 },
 "drovyanaya-ili-elektricheskaya-pech-dlya-bani": {
 "date": "2026-10-02",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
+"gcanon": "https://mir-doma.pro/drovyanaya-ili-elektricheskaya-pech-dlya-bani/"
 },
 "kogda-vykapyvat-morkov-i-sveklu": {
 "date": "2026-10-02",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/kogda-vykapyvat-morkov-i-sveklu/"
 },
 "obrezka-plodovyh-derevev-osenyu": {
 "date": "2026-10-02",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/obrezka-plodovyh-derevev-osenyu/"
 },
 "posadka-kolonovidnoy-yabloni": {
 "date": "2026-10-01",
@@ -103,67 +115,67 @@
 },
 "veniki-dlya-bani-kak-vyazat": {
 "date": "2026-10-01",
-"cov": "ERR The read operation timed out",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "avtomaticheskoe-provetrivanie-teplicy": {
 "date": "2026-10-01",
-"cov": "ERR <urlopen error [Errno -3] Temporary failure in name resolution>",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "koptilnya-goryachego-kopcheniya-svoimi-rukami": {
 "date": "2026-09-30",
-"cov": "ERR <urlopen error [Errno -3] Temporary failure in name resolution>",
+"cov": "URL is unknown to Google",
 "crawl": "",
 "gcanon": null
 },
 "kompostnaya-yama-svoimi-rukami": {
 "date": "2026-09-30",
-"cov": "ERR <urlopen error [Errno -3] Temporary failure in name resolution>",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "mangal-iz-gazovogo-ballona-svoimi-rukami": {
 "date": "2026-09-30",
-"cov": "ERR <urlopen error [Errno -3] Temporary failure in name resolution>",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "mangal-iz-kirpicha-svoimi-rukami": {
 "date": "2026-09-29",
-"cov": "ERR <urlopen error [Errno -3] Temporary failure in name resolution>",
+"cov": "URL is unknown to Google",
 "crawl": "",
 "gcanon": null
 },
 "kak-uvelichit-moshchnost-elektrichestva-na-uchastke": {
 "date": "2026-09-29",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/kak-uvelichit-moshchnost-elektrichestva-na-uchastke/"
 },
 "ukhod-za-rulonnym-gazonom-posle-ukladki": {
 "date": "2026-09-29",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/ukhod-za-rulonnym-gazonom-posle-ukladki/"
 },
 "umnaya-rozetka-dlya-dachi": {
 "date": "2026-09-29",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/umnaya-rozetka-dlya-dachi/"
 },
 "drenazh-uchastka-na-glinistoy-pochve": {
 "date": "2026-09-28",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "gryadki-koroba-iz-dosok-svoimi-rukami": {
 "date": "2026-09-28",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -175,21 +187,21 @@
 },
 "kalkulyatory-dlya-dachi-i-stroiki": {
 "date": "2026-09-27",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/kalkulyatory-dlya-dachi-i-stroiki/"
 },
 "kakoy-obogrevatel-vybrat-dlya-dachi": {
 "date": "2026-09-27",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
+"gcanon": "https://mir-doma.pro/kakoy-obogrevatel-vybrat-dlya-dachi/"
 },
 "kakoy-snegouborshchik-vybrat-dlya-dachi": {
 "date": "2026-09-27",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/kakoy-snegouborshchik-vybrat-dlya-dachi/"
 },
 "kakoy-stabilizator-napryazheniya-vybrat": {
 "date": "2026-09-27",
@@ -199,33 +211,33 @@
 },
 "kak-hranit-yabloki-zimoy": {
 "date": "2026-09-26",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "kak-zamorozit-shchavel-na-zimu": {
 "date": "2026-09-25",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "kakie-kamni-dlya-bannoy-pechi": {
 "date": "2026-09-25",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "kakoy-trimmer-vybrat-dlya-dachi": {
 "date": "2026-09-25",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/kakoy-trimmer-vybrat-dlya-dachi/"
 },
 "kakoy-shurupovyort-vybrat-dlya-dachi": {
 "date": "2026-09-24",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/kakoy-shurupovyort-vybrat-dlya-dachi/"
 },
 "lavki-v-bane-svoimi-rukami": {
 "date": "2026-09-24",
@@ -235,7 +247,7 @@
 },
 "videonablyudenie-na-dache-svoimi-rukami": {
 "date": "2026-09-24",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -253,13 +265,13 @@
 },
 "pech-dlya-bani-iz-metalla": {
 "date": "2026-09-23",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/pech-dlya-bani-iz-metalla/"
 },
 "tlya-na-roze-chem-obrabotat": {
 "date": "2026-09-23",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -277,13 +289,13 @@
 },
 "ventilyaciya-v-bane-svoimi-rukami": {
 "date": "2026-09-22",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "vnekornevaya-podkormka-osenyu": {
 "date": "2026-09-21",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -301,27 +313,27 @@
 },
 "mebel-dlya-verandy-svoimi-rukami": {
 "date": "2026-09-19",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "chem-ukryt-klubniku-na-zimu": {
 "date": "2026-09-19",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/chem-ukryt-klubniku-na-zimu/"
 },
 "dorozhka-iz-shchebnya-svoimi-rukami": {
 "date": "2026-09-19",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/dorozhka-iz-shchebnya-svoimi-rukami/"
 },
 "teplyy-pol-na-verande": {
 "date": "2026-09-18",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
+"gcanon": "https://mir-doma.pro/teplyy-pol-na-verande/"
 },
 "otdelka-otkrytoy-terrasy": {
 "date": "2026-09-18",
@@ -331,21 +343,21 @@
 },
 "fundament-pod-banyu-svoimi-rukami": {
 "date": "2026-09-18",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "kacheli-dlya-dachi-svoimi-rukami": {
 "date": "2026-09-18",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/kacheli-dlya-dachi-svoimi-rukami/"
 },
 "chto-postroit-na-uchastke-zimoy": {
 "date": "2026-09-17",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
+"gcanon": "https://mir-doma.pro/chto-postroit-na-uchastke-zimoy/"
 },
 "letniy-dush-dlya-dachi-svoimi-rukami": {
 "date": "2026-09-17",
@@ -361,37 +373,37 @@
 },
 "uteplenie-cokolya-fundamenta-penopleksom": {
 "date": "2026-09-16",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "banya-iz-brusa-svoimi-rukami": {
 "date": "2026-09-16",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "stroitelstvo-pogreba-smeta": {
 "date": "2026-09-15",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/stroitelstvo-pogreba-smeta/"
 },
 "skolko-stoit-uteplit-dachnyy-dom": {
 "date": "2026-09-15",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/skolko-stoit-uteplit-dachnyy-dom/"
 },
 "skhema-elektroprovodki-na-dache": {
 "date": "2026-09-14",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/skhema-elektroprovodki-na-dache/"
 },
 "otoplenie-dachi-chto-deshevle": {
 "date": "2026-09-14",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -403,7 +415,7 @@
 },
 "chto-sdelat-na-dache-v-oktyabre": {
 "date": "2026-09-13",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -415,7 +427,7 @@
 },
 "chem-obshit-dom-snaruzhi": {
 "date": "2026-09-12",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -427,7 +439,7 @@
 },
 "chem-otlichaetsya-udarnaya-drel-ot-perforatora": {
 "date": "2026-09-12",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -439,7 +451,7 @@
 },
 "kak-zonirovat-malenkiy-dachnyy-domik": {
 "date": "2026-09-10",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -457,49 +469,49 @@
 },
 "raschet-kapelnic-dlya-poliva": {
 "date": "2026-09-09",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "zabor-iz-dereva-svoimi-rukami": {
 "date": "2026-09-09",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "kuryatnik-svoimi-rukami": {
 "date": "2026-09-08",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "shezlong-svoimi-rukami": {
 "date": "2026-09-08",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "vorota-dlya-dachi-svoimi-rukami": {
 "date": "2026-09-08",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "kalitka-svoimi-rukami": {
 "date": "2026-09-07",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "interer-letney-kuhni-na-dache": {
 "date": "2026-09-07",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "interer-v-bytovke-na-dache": {
 "date": "2026-09-07",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -511,15 +523,15 @@
 },
 "domik-dlya-skvazhiny-na-dache": {
 "date": "2026-09-06",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "pergola-na-dache-svoimi-rukami": {
 "date": "2026-09-06",
-"cov": "URL is unknown to Google",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/pergola-na-dache-svoimi-rukami/"
 },
 "chem-zastelit-pol-na-verande-pod-kryshey": {
 "date": "2026-09-06",
@@ -529,7 +541,7 @@
 },
 "remont-kryltsa-svoimi-rukami": {
 "date": "2026-09-06",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -571,25 +583,25 @@
 },
 "raschet-navesa-iz-profilnoy-truby": {
 "date": "2026-09-03",
-"cov": "ERR The read operation timed out",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
+"gcanon": "https://mir-doma.pro/raschet-navesa-iz-profilnoy-truby/"
 },
 "odnoskatnyy-ili-dvuskatnyy-naves": {
 "date": "2026-09-03",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
 "izvestkovanie-pochvy-osenyu": {
 "date": "2026-09-03",
-"cov": "ERR <urlopen error _ssl.c:983: The handshake operation timed out>",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
+"gcanon": "https://mir-doma.pro/izvestkovanie-pochvy-osenyu/"
 },
 "kak-uskorit-sozrevanie-komposta-osenyu": {
 "date": "2026-09-03",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -613,7 +625,7 @@
 },
 "chto-prigotovit-iz-yablok": {
 "date": "2026-09-02",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -626,7 +638,7 @@
 "skameyka-dlya-dachi-svoimi-rukami": {
 "date": "2026-09-01",
 "cov": "Submitted and indexed",
-"crawl": "2026-09-02",
+"crawl": "2026-10-09",
 "gcanon": "https://mir-doma.pro/skameyka-dlya-dachi-svoimi-rukami/"
 },
 "kakoy-motoblok-vybrat": {
@@ -638,7 +650,7 @@
 "elektrichestvo-na-dache-svoimi-rukami": {
 "date": "2026-09-01",
 "cov": "Submitted and indexed",
-"crawl": "2026-09-01",
+"crawl": "2026-10-09",
 "gcanon": "https://mir-doma.pro/elektrichestvo-na-dache-svoimi-rukami/"
 },
 "sernaya-shashka-dlya-pogreba": {
@@ -704,7 +716,7 @@
 "pol-na-holodnoy-verande": {
 "date": "2026-08-13",
 "cov": "Submitted and indexed",
-"crawl": "2026-08-14",
+"crawl": "2026-10-09",
 "gcanon": "https://mir-doma.pro/pol-na-holodnoy-verande/"
 },
 "chem-uteplit-verandu-iznutri": {
@@ -955,9 +967,7 @@
 },
 "skvazhina-ili-kolodec": {
 "date": "2026-07-13",
-"cov": "Submitted and indexed",
-"crawl": "2026-09-14",
-"gcanon": "https://mir-doma.pro/skvazhina-ili-kolodec/"
+"cov": "ERR <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occur"
 },
 "kak-vybrat-benzopilu": {
 "date": "2026-07-13",
@@ -986,7 +996,7 @@
 "posadka-plodovyh-derevev-osenyu": {
 "date": "2026-07-12",
 "cov": "Submitted and indexed",
-"crawl": "2026-07-13",
+"crawl": "2026-10-09",
 "gcanon": "https://mir-doma.pro/posadka-plodovyh-derevev-osenyu/"
 },
 "zhivaya-izgorod": {
@@ -1015,15 +1025,15 @@
 },
 "zhelteyut-listya-u-roz": {
 "date": "2026-07-10",
-"cov": "ERR The read operation timed out",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-08-11",
+"gcanon": "https://mir-doma.pro/zhelteyut-listya-u-roz/"
 },
 "podgotovka-sada-k-zime": {
 "date": "2026-07-10",
-"cov": "ERR <urlopen error _ssl.c:983: The handshake operation timed out>",
-"crawl": "",
-"gcanon": null
+"cov": "Submitted and indexed",
+"crawl": "2026-08-11",
+"gcanon": "https://mir-doma.pro/podgotovka-sada-k-zime/"
 },
 "obrabotka-teplicy-osenyu": {
 "date": "2026-07-09",
@@ -1040,7 +1050,7 @@
 "otdelka-holodnoy-verandy": {
 "date": "2026-07-09",
 "cov": "Submitted and indexed",
-"crawl": "2026-09-30",
+"crawl": "2026-10-09",
 "gcanon": "https://mir-doma.pro/otdelka-holodnoy-verandy/"
 },
 "dizayn-verandy-na-dache": {
@@ -1123,8 +1133,8 @@
 },
 "pech-dlya-dachi": {
 "date": "2026-07-04",
-"cov": "Crawled - currently not indexed",
-"crawl": "2026-07-04",
+"cov": "Submitted and indexed",
+"crawl": "2026-10-08",
 "gcanon": "https://mir-doma.pro/pech-dlya-dachi/"
 },
 "belokrylka-v-teplitse": {
@@ -1199,23 +1209,11 @@
 "crawl": "2026-06-30",
 "gcanon": "https://mir-doma.pro/oshibki-planirovki-uchastka/"
 },
-"zonirovanie-uchastka-10-sotok": {
-"date": "2026-06-30",
-"cov": "Crawled - currently not indexed",
-"crawl": "2026-06-30",
-"gcanon": "https://mir-doma.pro/zonirovanie-uchastka-10-sotok/"
-},
 "mnogoletnie-tsvety-dlya-dachi": {
 "date": "2026-06-30",
 "cov": "Crawled - currently not indexed",
 "crawl": "2026-06-30",
 "gcanon": "https://mir-doma.pro/mnogoletnie-tsvety-dlya-dachi/"
-},
-"planirovka-uchastka-10-sotok-pod-stroitelstvo": {
-"date": "2026-06-29",
-"cov": "Crawled - currently not indexed",
-"crawl": "2026-08-11",
-"gcanon": "https://mir-doma.pro/planirovka-uchastka-10-sotok-pod-stroitelstvo/"
 },
 "planirovka-uchastka-10-sotok-s-baney-garazhom": {
 "date": "2026-06-29",
@@ -1243,8 +1241,8 @@
 },
 "septik-dlya-dachi": {
 "date": "2026-06-27",
-"cov": "Crawled - currently not indexed",
-"crawl": "2026-06-28",
+"cov": "Submitted and indexed",
+"crawl": "2026-10-09",
 "gcanon": "https://mir-doma.pro/septik-dlya-dachi/"
 },
 "pomidory-na-zimu-recepty": {
@@ -1363,7 +1361,7 @@
 },
 "fitoftora-na-pomidorah": {
 "date": "2026-06-20",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -1375,7 +1373,7 @@
 },
 "obrezka-yabloni-vesnoy": {
 "date": "2026-03-03",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -1387,7 +1385,7 @@
 },
 "kogda-sazhat-perets-na-rassadu": {
 "date": "2026-02-16",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 },
@@ -1399,7 +1397,7 @@
 },
 "kogda-sazhat-pomidory-na-rassadu-v-2026": {
 "date": "2026-02-04",
-"cov": "URL is unknown to Google",
+"cov": "Discovered - currently not indexed",
 "crawl": "",
 "gcanon": null
 }
