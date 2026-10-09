@@ -1,0 +1,36 @@
+{
+  "slug": "kolpak-na-trubu-dymokhoda-svoimi-rukami",
+  "model": "gemini-3.1-flash-image",
+  "images": [
+    {
+      "file": "images/kolpak-na-trubu-dymokhoda-svoimi-rukami.jpg",
+      "alt": "Конический колпак из нержавейки на круглой трубе дымохода над кровлей",
+      "prompt": "A conical stainless steel rain cap on three thin legs mounted on a round insulated stainless chimney pipe above a metal roof of a country house, blue sky with clouds, low angle"
+    },
+    {
+      "file": "images/kolpak-na-trubu-dymokhoda-svoimi-rukami-2.jpg",
+      "alt": "Колпак-домик из оцинкованной стали на кирпичной трубе",
+      "prompt": "A galvanized steel hip-roof chimney cap on four corner posts over a red brick chimney on a dacha house roof, overcast sky, three-quarter view"
+    },
+    {
+      "file": "images/kolpak-na-trubu-dymokhoda-svoimi-rukami-3.jpg",
+      "alt": "Схема зазора между срезом трубы и колпаком и угла ската конуса",
+      "prompt": "A round stainless chimney pipe with a cone cap above it, a steel ruler held vertically between the pipe top and the cap edge to show the gap, close-up against the sky"
+    },
+    {
+      "file": "images/kolpak-na-trubu-dymokhoda-svoimi-rukami-4.jpg",
+      "alt": "Заготовка конуса из листа нержавейки, ножницы по металлу и заклёпочник",
+      "prompt": "A flat stainless steel sheet on a workbench with a circle drawn in marker and a cut-out sector, tin snips, a rivet gun and a drill nearby, workshop daylight"
+    },
+    {
+      "file": "images/kolpak-na-trubu-dymokhoda-svoimi-rukami-5.jpg",
+      "alt": "Колпак дымохода с наледью и сосульками зимой",
+      "prompt": "A chimney cap covered with ice and small icicles on a cold winter day, frosty roof covered with snow, chimney smoke, low winter sun"
+    },
+    {
+      "file": "images/kolpak-na-trubu-dymokhoda-svoimi-rukami-6.jpg",
+      "alt": "Готовый зонт с ножками на хомуте перед установкой на трубу",
+      "prompt": "A finished handmade stainless steel cone chimney cap with three riveted legs attached to a hose clamp, lying on a wooden workbench, soft daylight"
+    }
+  ]
+}
