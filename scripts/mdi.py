@@ -448,6 +448,8 @@ def cmd_check(slug=None):
             p.append(f"смесь кириллицы и латиницы в тексте: {w}")
         if "<script" in prose:
             p.append("<script> вне <!-- wp:html --> — калькулятор не попадёт на сайт целым")
+        if re.search(r"\]\((%s|\{\w*\})\)", body):
+            p.append("ссылка с неподставленным адресом: ](%s) или ]({…})")
         if "CALC-TODO" in body:
             p.append("заготовка калькулятора не дописана (CALC-TODO)")
         if body.count("<script") != body.count("</script>"):

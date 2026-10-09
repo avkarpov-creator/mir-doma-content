@@ -209,19 +209,32 @@ def cmd_gen(slug):
         print(f"  готово {item['file']}", flush=True)
 
     workers = int(os.environ.get("MD_IMAGE_WORKERS", "3"))
-    errors = []
-    with ThreadPoolExecutor(max_workers=max(1, workers)) as ex:
-        for item, fut in [(i, ex.submit(one, i)) for i in todo]:
-            try:
-                fut.result()
-            except BaseException as e:  # sys.exit из _generate тоже сюда
-                errors.append(f"{item['file']}: {e}")
+    # API иногда держит соединение открытым без данных: таймаут сокета не
+    # срабатывает, и ship.sh висел по 20+ минут. Жёсткий лимит на кадр;
+    # повторный запуск догенерирует только недостающие файлы.
+    limit = int(os.environ.get("MD_IMAGE_DEADLINE", "480"))
+    errors, hung = [], False
+    ex = ThreadPoolExecutor(max_workers=max(1, workers))
+    futs = [(i, ex.submit(one, i)) for i in todo]
+    t0 = time.time()
+    for n, (item, fut) in enumerate(futs):
+        # кадры ждут своей очереди в пуле: лимит отсчитываем от старта «волны»
+        wave = n // max(1, workers) + 1
+        try:
+            fut.result(timeout=max(1, t0 + limit * wave - time.time()))
+        except TimeoutError:
+            errors.append(f"{item['file']}: нет ответа {limit} с — прерван, запустите gen ещё раз")
+            hung = True
+        except BaseException as e:  # sys.exit из _generate тоже сюда
+            errors.append(f"{item['file']}: {e}")
     made = len(todo) - len(errors)
     price = PRICE.get(MODEL, 0.067)
     print(f"Сгенерировано {made}, уже было {skipped}. "
-          f"Ориентировочно ${made * price:.2f} ({MODEL})")
+          f"Ориентировочно ${made * price:.2f} ({MODEL})", flush=True)
     if errors:
-        sys.exit("Ошибки генерации:\n  " + "\n  ".join(errors))
+        print("Ошибки генерации:\n  " + "\n  ".join(errors), file=sys.stderr, flush=True)
+        os._exit(1)  # зависшие потоки не дают обычному exit завершить процесс
+    ex.shutdown(wait=False)
 
 
 def cmd_check(slug):

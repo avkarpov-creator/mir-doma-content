@@ -76,7 +76,9 @@ python3 scripts/images.py cost "$SLUG"
 
 # --- 4. Генерация картинок ----------------------------------------------
 step "4/7 генерация картинок"
-python3 scripts/images.py gen "$SLUG"
+# Одна повторная попытка: gen обрывает зависшие кадры по таймауту и при
+# повторе догенерирует только недостающие.
+python3 scripts/images.py gen "$SLUG" || { echo "→ повтор генерации недостающих кадров"; python3 scripts/images.py gen "$SLUG"; }
 if ! python3 scripts/images.py check "$SLUG"; then
   echo
   echo "→ Если файлы старые и не по контракту:"
