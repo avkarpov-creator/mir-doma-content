@@ -23,6 +23,7 @@ live — прямые запросы к Метрике, Вебмастеру, Se
     python3 scripts/live.py gsc-queries <слаг> [дней]   GSC: запросы одной страницы
     python3 scripts/live.py inspect <слаг> [...]   GSC URL Inspection: в индексе ли, канонический, последний обход
     python3 scripts/live.py gindex                все опубликованные через URL Inspection (20+ мин) → seo/live/google-index.json
+    python3 scripts/live.py sitemaps              GSC: когда Google последний раз читал sitemap
     python3 scripts/live.py grow [дней]           GSC: позиции 5–20 с показами — что дописать
     python3 scripts/live.py ywm                   Вебмастер: индекс и популярные запросы
     python3 scripts/live.py ga4 [дней]            GA4: сеансы по страницам
@@ -234,6 +235,20 @@ def cmd_inspect(*slugs):
         print(f"  ссылаются (известные Google): {len(refs)}" + (f" — {', '.join(slug_of(u) for u in refs[:5])}" if refs else ""))
 
 
+def cmd_sitemaps(_=None):
+    need("GSC_SITE")
+    tok = google_token("https://www.googleapis.com/auth/webmasters.readonly")
+    site = urllib.parse.quote(ENV["GSC_SITE"], safe="")
+    r = http(f"https://www.googleapis.com/webmasters/v3/sites/{site}/sitemaps",
+             headers={"Authorization": "Bearer " + tok})
+    print("GSC sitemaps: путь | отправлен | прочитан Google | pending | ошибки/предупр. | URL отправлено")
+    for m in r.get("sitemap", []):
+        sub = sum(int(c.get("submitted", 0)) for c in m.get("contents", []))
+        print(f"  {m['path'].replace('https://mir-doma.pro', '')} | {m.get('lastSubmitted', '-')[:16]} | "
+              f"{m.get('lastDownloaded', 'никогда')[:16]} | {m.get('isPending')} | "
+              f"{m.get('errors', 0)}/{m.get('warnings', 0)} | {sub}")
+
+
 GINDEX = Path(__file__).resolve().parent.parent / "seo" / "live" / "google-index.json"
 
 
@@ -404,7 +419,7 @@ def cmd_week(_=None):
 
 
 CMDS = {"check": cmd_check, "traffic": cmd_traffic, "landing": cmd_landing, "gsc": cmd_gsc,
-        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "inspect": cmd_inspect, "gindex": cmd_gindex, "ywm": cmd_ywm, "ga4": cmd_ga4, "week": cmd_week}
+        "gsc-queries": cmd_gsc_queries, "grow": cmd_grow, "inspect": cmd_inspect, "gindex": cmd_gindex, "sitemaps": cmd_sitemaps, "ywm": cmd_ywm, "ga4": cmd_ga4, "week": cmd_week}
 
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help") or sys.argv[1] not in CMDS:
