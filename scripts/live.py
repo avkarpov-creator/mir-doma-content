@@ -262,6 +262,10 @@ def cmd_gindex(_=None):
             d = http(f"https://mir-doma.pro/wp-json/wp/v2/posts?per_page=100&page={page}&_fields=slug,date")
         except SystemExit:
             break
+        except Exception as e:  # сайт недоступен (атака, хостинг) — берём список из прошлого снимка
+            print(f"wp-json недоступен ({str(e)[:60]}), слаги из {GINDEX.name}", file=sys.stderr)
+            slugs = [(s, v.get("date", "")) for s, v in json.loads(GINDEX.read_text(encoding="utf-8")).items()]
+            break
         if not d:
             break
         slugs += [(x["slug"], x["date"][:10]) for x in d]
