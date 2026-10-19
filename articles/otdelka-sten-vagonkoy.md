@@ -54,6 +54,22 @@ images:
 
 **По классу качества:** Экстра (высший, без сучков), А, В и С — чем ниже класс, тем больше сучков и дефектов и тем дешевле материал.
 
+**Размеры.** При покупке смотрите на две ширины: полную (с шипом) и
+рабочую — ту, что остаётся видна на стене после стыковки. Считать
+количество нужно по рабочей, иначе материала не хватит.
+
+| Профиль | Толщина | Полная ширина | Рабочая ширина | Длина |
+|---|---|---|---|---|
+| Евровагонка | 12,5–14 мм | 96 мм | 88 мм | 2–6 м |
+| Штиль, софтлайн | 14–15 мм | 96–145 мм | 88–135 мм | 2–6 м |
+| Блок-хаус | 20–36 мм | 96–190 мм | 85–175 мм | 3–6 м |
+| Имитация бруса | 16–20 мм | 146–190 мм | 135–175 мм | 3–6 м |
+
+Для стен внутри дома хватает 12,5–14 мм. Толще берут для наружной
+обшивки и бани. Влажность доски из камерной сушки — 12–15%: сырая
+вагонка с рынка за первую зиму с отоплением даёт щели по 2–3 мм между
+досками.
+
 ## 🧰 Что понадобится
 
 Для работы приготовьте:
@@ -65,11 +81,11 @@ images:
 
 ![Обрешётка стен под вагонку](images/vagonka-obreshetka.jpg)
 
-Перед монтажом вагонке дают «привыкнуть» к помещению — распакованные доски оставляют в нём на несколько дней, чтобы они приняли его влажность и температуру. Если пропустить этот шаг, после укладки дерево ссохнется или разбухнет, и появятся щели либо коробление.
+Перед монтажом вагонке дают «привыкнуть» к помещению — распакованные доски оставляют в нём на 2–3 дня при той температуре, что будет зимой, чтобы они приняли его влажность и температуру. Если пропустить этот шаг, после укладки дерево ссохнется или разбухнет, и появятся щели либо коробление.
 
 Затем делают обрешётку:
 
-1. **Набейте бруски** обрешётки перпендикулярно будущему направлению вагонки, с шагом 40–60 см, строго по уровню.
+1. **Набейте бруски** 20×40 или 30×40 мм перпендикулярно будущему направлению вагонки, с шагом 40–60 см (для вагонки 12,5 мм — не больше 50 см), строго по уровню. Крайние бруски ставят в 5–10 см от пола, потолка и углов.
 2. **Выровняйте плоскость** — под бруски при необходимости подкладывают клинья, чтобы стена получилась ровной.
 3. **Уложите утеплитель и пароизоляцию** в обрешётку, если это наружная стена или баня; оставьте вентиляционный зазор. Обшивка вагонкой хорошо сочетается с [утеплением дома](https://mir-doma.pro/kak-uteplit-dachnyy-dom/): в одной конструкции решаются сразу две задачи — тепло и красивая отделка.
 
@@ -88,10 +104,84 @@ images:
 2. **Установите первую доску** строго по уровню — от неё зависит ровность всей стены. Её крепят от угла, шипом или пазом в сторону угла.
 3. **Крепите вагонку.** Самый аккуратный способ — кляймеры (скобы), которые вставляют в паз и прибивают к обрешётке: крепёж получается скрытым. Также используют мелкие гвоздики или саморезы, которые забивают под углом в паз. Толстую вагонку и имитацию бруса иногда крепят и через лицевую сторону саморезами с последующей маскировкой шляпок.
 4. **Стыкуйте доски** шип в паз, плотно подбивая каждую следующую через брусок, чтобы не повредить замок.
-5. **Оставьте небольшие зазоры** у пола и потолка на температурное расширение дерева.
+5. **Оставьте зазоры 10–15 мм** у пола и потолка: дерево меняет размер вместе с влажностью, без зазора доски выгибает. Зазор закрывают плинтусом.
 6. **Закройте углы и стыки** декоративными уголками и плинтусами.
 
 Последнюю доску обычно приходится подрезать вдоль по ширине — её аккуратно распиливают и заводят на место, закрывая стык уголком или плинтусом.
+
+## 🧮 Калькулятор: сколько вагонки, брусков и кляймеров
+
+Посчитайте материалы по размерам стены. Окна и двери вычитаются, запас 10%
+закладывается на подрезку у проёмов и брак.
+
+<!-- wp:html -->
+<div id="mdVwCalc" class="md-calc">
+  <p class="md-calc__lead">Расчёт вагонки на стены</p>
+  <label class="md-calc__label" for="mdVwL">Длина стен (сумма всех обшиваемых), м</label>
+  <input type="number" id="mdVwL" class="md-calc__input" min="0" step="0.1" value="14">
+  <label class="md-calc__label" for="mdVwH">Высота стен, м</label>
+  <input type="number" id="mdVwH" class="md-calc__input" min="0" step="0.05" value="2.5">
+  <label class="md-calc__label" for="mdVwO">Площадь окон и дверей, м²</label>
+  <input type="number" id="mdVwO" class="md-calc__input" min="0" step="0.1" value="3">
+  <label class="md-calc__label" for="mdVwW">Рабочая ширина доски, мм</label>
+  <input type="number" id="mdVwW" class="md-calc__input" min="0" step="1" value="88">
+  <label class="md-calc__label" for="mdVwB">Длина доски, м</label>
+  <select id="mdVwB" class="md-calc__input">
+    <option value="2.5">2,5 м</option>
+    <option value="3" selected>3 м</option>
+    <option value="6">6 м</option>
+  </select>
+  <label class="md-calc__label" for="mdVwD">Направление вагонки</label>
+  <select id="mdVwD" class="md-calc__input">
+    <option value="v">Вертикально — обрешётка горизонтальная</option>
+    <option value="h">Горизонтально — обрешётка вертикальная</option>
+  </select>
+  <div id="mdVwOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  /* площадь по рабочей ширине + 10% запаса; обрешётка с шагом 50 см; кляймер на каждое пересечение доски с бруском, 2 гвоздика на кляймер */
+  var STEP=0.5;
+  function v(id){var x=parseFloat(String(document.getElementById(id).value).replace(',','.'));return isNaN(x)||x<0?0:x;}
+  function f(x){return (x<10?Math.round(x*10)/10:Math.round(x)).toString().replace('.',',');}
+  function calc(){
+    var out=document.getElementById('mdVwOut'),warn=false,lines=[];
+    var l=v('mdVwL'),h=v('mdVwH'),o=v('mdVwO'),w=v('mdVwW')/1000,b=parseFloat(document.getElementById('mdVwB').value),dir=document.getElementById('mdVwD').value;
+    if(!l||!h||!w){out.className='md-calc__out';out.textContent='Укажите длину и высоту стен и рабочую ширину доски';return;}
+    var area=Math.max(0,l*h-o),boards=Math.ceil(area*1.1/(w*b));
+    var battens,clips;
+    if(dir==='v'){
+      var rows=Math.ceil(h/STEP)+1;battens=rows*l;clips=Math.ceil(l/w)*rows;
+      if(b<h){warn=true;lines.push('Доска '+f(b)+' м короче высоты стены '+f(h)+' м: при вертикальной укладке будут стыки по высоте — возьмите доску длиннее или кладите горизонтально');}
+    }else{
+      var cols=Math.ceil(l/STEP)+1;battens=cols*h;clips=Math.ceil(h/w)*cols;
+    }
+    clips=Math.ceil(clips*(area/(l*h||1))*1.05);
+    lines.unshift('Площадь обшивки: '+f(area)+' м²');
+    lines.splice(1,0,'Вагонка: '+boards+' досок по '+f(b)+' м ('+f(area*1.1)+' м² с запасом 10%)');
+    lines.push('Брусок обрешётки: '+Math.ceil(battens*1.05)+' пог. м с запасом 5%');
+    lines.push('Кляймеры: около '+clips+' шт., гвоздики к ним — '+(clips*2)+' шт.');
+    out.className='md-calc__out'+(warn?' is-warn':'');
+    out.textContent=lines.join('\n');
+  }
+  ['mdVwL','mdVwH','mdVwO','mdVwW','mdVwB','mdVwD'].forEach(function(id){var el=document.getElementById(id);el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Сколько лака, масла или краски уйдёт на эту площадь в два слоя, считает
+калькулятор в статье [чем покрыть вагонку внутри
+дома](https://mir-doma.pro/chem-pokryt-vagonku-vnutri-doma/).
 
 ## 🎨 Финишная отделка
 
