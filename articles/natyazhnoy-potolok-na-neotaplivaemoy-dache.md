@@ -10,6 +10,7 @@ tags:
   - дача своими руками
   - калькулятор
 status: draft
+adopt_existing: true
 images:
   - images/natyazhnoy-potolok-na-neotaplivaemoy-dache.jpg
   - images/natyazhnoy-potolok-na-neotaplivaemoy-dache-2.jpg
