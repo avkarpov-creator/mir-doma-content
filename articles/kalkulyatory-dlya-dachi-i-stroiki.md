@@ -124,6 +124,7 @@ images:
 
 - [Щебень для дорожки](https://mir-doma.pro/dorozhka-iz-shchebnya-svoimi-rukami/#mdShCalc) — объём щебня по длине, ширине и толщине пирога.
 - [Тротуарная плитка](https://mir-doma.pro/raschet-trotuarnoy-plitki/#mdTpCalc) — количество плитки с запасом на подрезку.
+- [Посевной газон](https://mir-doma.pro/kak-poseyat-gazon/#mdLawnCalc) — семена по площади и сроку посева, стартовое удобрение, привозной грунт и вода на полив.
 
 ![План дачного участка на бумаге с линейкой и карандашом на столе](images/kalkulyatory-dlya-dachi-i-stroiki-4.jpg)
 
