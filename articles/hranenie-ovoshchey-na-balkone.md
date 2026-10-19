@@ -62,6 +62,80 @@ images:
 
 ![Утепление стенок термоящика пенопластом](images/termoyashchik-uteplenie.jpg)
 
+## 🧮 Калькулятор: размер ящика и мощность подогрева
+
+Сколько места займут овощи и сколько ватт нужно, чтобы внутри держалось
++3 °C, зависит от трёх цифр: веса запасов, толщины утеплителя и того,
+до скольких градусов остывает балкон в мороз. Последнюю цифру узнайте
+сами: положите на балкон термометр в первую холодную неделю — на
+застеклённом балконе обычно на 5–10 °C теплее, чем на улице.
+
+<!-- wp:html -->
+<div id="mdTbCalc" class="md-calc">
+  <p class="md-calc__lead">Расчёт термоящика для балкона</p>
+  <label class="md-calc__label" for="mdTbK">Картофель, кг</label>
+  <input type="number" id="mdTbK" class="md-calc__input" min="0" step="5" value="100">
+  <label class="md-calc__label" for="mdTbM">Морковь и свёкла, кг (морковь — в песке)</label>
+  <input type="number" id="mdTbM" class="md-calc__input" min="0" step="5" value="20">
+  <label class="md-calc__label" for="mdTbI">Утеплитель стенок, дна и крышки</label>
+  <select id="mdTbI" class="md-calc__input">
+    <option value="0.05">ЭППС или пенопласт 5 см</option>
+    <option value="0.1">ЭППС или пенопласт 10 см</option>
+  </select>
+  <label class="md-calc__label" for="mdTbT">Самая низкая температура на балконе, °C</label>
+  <input type="number" id="mdTbT" class="md-calc__input" step="1" value="-10">
+  <div id="mdTbOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  /* картофель 650 кг/м³ навалом, корнеплоды в песке — 300 кг на 1 м³ ящика; +25% на ящики и проход воздуха;
+     теплопотери: ЭППС λ=0,032 Вт/(м·К) плюс фанера 2×9 мм; внутри +3 °C; запас мощности ×1,5 */
+  function v(id){var x=parseFloat(String(document.getElementById(id).value).replace(',','.'));return isNaN(x)?0:x;}
+  function f(x){return (x<10?Math.round(x*100)/100:Math.round(x)).toString().replace('.',',');}
+  function calc(){
+    var out=document.getElementById('mdTbOut'),warn=false,lines=[];
+    var k=Math.max(0,v('mdTbK')),m=Math.max(0,v('mdTbM')),d=parseFloat(document.getElementById('mdTbI').value),tmin=v('mdTbT');
+    if(!k&&!m){out.className='md-calc__out';out.textContent='Укажите, сколько овощей закладываете';return;}
+    var vol=(k/650+m/300)*1.25;
+    var h=0.6,w=0.6,len=Math.max(0.5,Math.ceil(vol/(h*w)*10)/10);
+    var L=len+2*d+0.04,W=w+2*d+0.04,H=h+2*d+0.04;
+    var area=2*(L*W+L*H+W*H);
+    var U=1/(d/0.032+0.018/0.15+0.17);
+    var dt=3-tmin;
+    lines.push('Объём внутри: '+f(vol)+' м³ — например, '+f(len)+' × 0,6 × 0,6 м');
+    lines.push('Наружные размеры с утеплителем: '+f(L)+' × '+f(W)+' × '+f(H)+' м');
+    if(len>1.8)lines.push('Ящик длиннее 1,8 м удобнее разделить на два — крышку легче открывать');
+    if(dt<=3){lines.push('При '+tmin+' °C на балконе подогрев не нужен: хватит утеплённого ящика с термометром');}
+    else{
+      var p=U*area*dt,need=Math.ceil(p*1.5/5)*5;
+      lines.push('Теплопотери при '+tmin+' °C: около '+Math.round(p)+' Вт');
+      lines.push('Подогрев: '+need+' Вт с запасом — лампы накаливания или греющий кабель через терморегулятор');
+      lines.push('Расход в такой мороз: до '+f(p*24/1000)+' кВт·ч в сутки');
+      if(d<0.1&&dt>18){warn=true;lines.push('При таком морозе возьмите утеплитель 10 см: потери снизятся на 30–40%');}
+    }
+    if(tmin<-25){warn=true;lines.push('Ниже −25 °C на балконе — это почти улица: держите овощи в квартире или погребе');}
+    out.className='md-calc__out'+(warn?' is-warn':'');
+    out.textContent=lines.join('\n');
+  }
+  ['mdTbK','mdTbM','mdTbI','mdTbT'].forEach(function(id){var el=document.getElementById(id);el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Пример: 100 кг картофеля и 20 кг моркови со свёклой помещаются в ящик
+около 0,6 × 0,6 × 0,8 м. С утеплителем 5 см при −10 °C на балконе он теряет
+около 27 Вт; с запасом нужно 45 Вт — две лампы накаливания по 25 Вт или греющий кабель через терморегулятор.
+
 ## 🌡️ Температурный режим и контроль
 
 Оптимум для большинства овощей — **0…+5 °C**, для картофеля лучше **+2…+4 °C**. Что важно помнить:
@@ -120,7 +194,10 @@ images:
 Собрать каркас из бруска, обшить фанерой изнутри и снаружи, заполнить полость пенопластом или ЭППС (от 5 см), утеплить дно и крышку, просверлить вентиляционные отверстия и при необходимости добавить лампу или греющий кабель с термостатом.
 
 **Нужен ли подогрев в термоящике?**
-На тёплом застеклённом балконе — нет. Если зимой на балконе минус, подогрев необходим: 1–2 лампы накаливания 15–40 Вт или греющий кабель через терморегулятор.
+На тёплом застеклённом балконе, где держится 0 °C и выше, — нет. Если зимой на балконе минус, подогрев нужен: ящику на 100–150 кг с утеплителем 5 см при −10 °C хватает 30–50 Вт — одна-две лампы накаливания или греющий кабель через терморегулятор.
+
+**Какой толщины нужен утеплитель для термоящика?**
+Не меньше 5 см ЭППС или пенопласта со всех сторон, включая дно и крышку. Если на балконе бывает ниже −15 °C, берите 10 см: теплопотери и расход на подогрев снизятся на 30–40%.
 
 **Как хранить морковь на балконе, чтобы не вяла?**
 Пересыпать её влажным песком или опилками в ящике — так она не теряет влагу. Подойдёт и плотный пакет с несколькими отверстиями.

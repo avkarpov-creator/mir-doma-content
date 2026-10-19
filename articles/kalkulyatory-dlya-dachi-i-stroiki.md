@@ -139,6 +139,7 @@ images:
 
 ## Погреба и кладовые
 
+- [Термоящик для балкона](https://mir-doma.pro/hranenie-ovoshchey-na-balkone/#mdTbCalc) — размер ящика под вес картофеля и корнеплодов, теплопотери и мощность подогрева при вашем морозе.
 - [Где хранить овощи зимой](https://mir-doma.pro/kak-hranit-ovoshchi-zimoy/#mdHrCalc) — подборщик места для картофеля, корнеплодов, капусты, лука, чеснока и тыквы и сроки хранения.
 - [Строительство погреба](https://mir-doma.pro/stroitelstvo-pogreba-smeta/#mdPgCalc) — смета на погреб по размерам и материалу стен.
 - [Погреб в гараже](https://mir-doma.pro/pogreb-v-garazhe-svoimi-rukami/#mdPgCalc) — объём котлована, бетон или кирпич на стены, гидроизоляция.
