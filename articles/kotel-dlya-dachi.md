@@ -74,14 +74,102 @@ images:
 
 Мощность котла подбирают под площадь дома и его утепление. Грубый ориентир для средней полосы и утеплённого дома — **1 кВт мощности на 10 м² площади** (при высоте потолков около 2,5–3 м). То есть для дома 80 м² нужен котёл примерно на 8–10 кВт.
 
-Но это лишь прикидка. На реальную мощность влияют:
+Это базовая цифра для средней полосы и среднего утепления. Её поправляют:
 
-- **степень утепления** — в плохо утеплённом доме потребуется заметно больше;
-- **климат** региона;
-- **площадь остекления** и количество наружных стен;
-- **нужен ли нагрев воды** (для двухконтурного котла мощность берут с запасом).
+| Условие | Поправка |
+|---|---|
+| Дом хорошо утеплён, стеклопакеты | ×0,7–0,8 |
+| Среднее утепление | ×1,0 |
+| Дом почти не утеплён, старые окна | ×1,5–2,0 |
+| Юг России | ×0,8 |
+| Урал, Сибирь, север | ×1,3–1,5 |
+| Потолки выше 2,7 м | пропорционально высоте: 3 м — +11% |
+| Двухконтурный котёл (ещё и горячая вода) | +20% |
+| Твердотопливный котёл | +20%: по мере прогорания закладки мощность падает |
 
-Точный расчёт лучше доверить специалисту: и заниженная, и завышенная мощность одинаково плохи — первая не прогреет дом, вторая работает неэффективно и быстрее изнашивается.
+Заниженная мощность не прогреет дом в морозы, завышенная тоже вредна:
+газовый котёл часто включается и выключается («тактует») и изнашивается
+быстрее, а твердотопливный на малой мощности тлеет, копит смолу в
+дымоходе и теряет КПД. Калькулятор ниже применяет поправки из таблицы и
+подбирает ближайший типовой котёл. Для дома дороже среднего и сложной
+планировки точную цифру даст теплотехнический расчёт по стенам и окнам.
+
+<!-- wp:html -->
+<div id="mdBoilCalc" class="md-calc">
+  <p class="md-calc__lead">Какой мощности нужен котёл для дачи</p>
+  <label class="md-calc__label" for="mdBoilA">Отапливаемая площадь, м²</label>
+  <input type="number" id="mdBoilA" class="md-calc__input" min="0" step="1" value="80">
+  <label class="md-calc__label" for="mdBoilH">Высота потолков, м</label>
+  <input type="number" id="mdBoilH" class="md-calc__input" min="0" step="0.1" value="2.7">
+  <label class="md-calc__label" for="mdBoilI">Утепление</label>
+  <select id="mdBoilI" class="md-calc__input">
+    <option value="0.75">Хорошее: утеплены стены, крыша, пол, стеклопакеты</option>
+    <option value="1" selected>Среднее</option>
+    <option value="1.75">Почти нет: старый дом, деревянные окна</option>
+  </select>
+  <label class="md-calc__label" for="mdBoilR">Регион</label>
+  <select id="mdBoilR" class="md-calc__input">
+    <option value="0.8">Юг</option>
+    <option value="1" selected>Средняя полоса</option>
+    <option value="1.4">Урал, Сибирь, север</option>
+  </select>
+  <label class="md-calc__label" for="mdBoilT">Тип котла</label>
+  <select id="mdBoilT" class="md-calc__input">
+    <option value="gas">Газовый одноконтурный</option>
+    <option value="gas2">Газовый двухконтурный (отопление + вода)</option>
+    <option value="el">Электрический</option>
+    <option value="tt">Твердотопливный (дрова, уголь)</option>
+  </select>
+  <div id="mdBoilOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  /* 1 кВт на 10 м² при 2,7 м; поправки — из таблицы статьи; двухконтурный и твердотопливный +20% */
+  var STD=[6,9,12,14,16,18,20,24,28,32,36,40,48];
+  function v(id){var x=parseFloat(String(document.getElementById(id).value).replace(',','.'));return isNaN(x)||x<0?0:x;}
+  function f(x){return (Math.round(x*10)/10).toString().replace('.',',');}
+  function calc(){
+    var out=document.getElementById('mdBoilOut'),warn=false,lines=[];
+    var a=v('mdBoilA'),h=v('mdBoilH')||2.7,ins=parseFloat(document.getElementById('mdBoilI').value),reg=parseFloat(document.getElementById('mdBoilR').value),type=document.getElementById('mdBoilT').value;
+    if(!a){out.className='md-calc__out';out.textContent='Укажите площадь дома';return;}
+    var p=a/10*Math.max(1,h/2.7)*ins*reg;
+    lines.push('Теплопотери дома в мороз: около '+f(p)+' кВт');
+    if(type==='gas2'||type==='tt')p*=1.2;
+    var pick=STD[STD.length-1];
+    for(var i=0;i<STD.length;i++){if(STD[i]>=p){pick=STD[i];break;}}
+    lines.push('Нужная мощность котла: '+f(p)+' кВт → ближайший типовой '+pick+' кВт');
+    if(type==='el'){
+      if(pick<=9){lines.push('Ток при 230 В: '+Math.round(pick*1000/230)+' А — отдельная линия от щита со своим автоматом');}
+      else{lines.push('Ток при трёх фазах 400 В: '+Math.round(pick*1000/(1.732*400))+' А на фазу. Котлы мощнее 9 кВт обычно требуют трёхфазной сети');}
+      lines.push('Проверьте выделенную мощность участка: котёл, насос, чайник и плита включаются одновременно');
+    }
+    if(type==='tt')lines.push('Теплоаккумулятор: '+(pick*25)+'–'+(pick*50)+' л (25–50 л на 1 кВт) — без него котёл перегревается и закладку приходится делать чаще');
+    if(type==='gas2')lines.push('Запас 20% заложен на горячую воду. Для ванны и двух точек одновременно смотрите производительность ГВС в л/мин');
+    if(ins>1.5){warn=true;lines.push('Дом почти не утеплён: утепление крыши и окон снизит мощность и счёт сильнее, чем выбор котла');}
+    if(pick>=48&&p>48){warn=true;lines.push('Больше 48 кВт — нужен проект: такие котлы ставят по отдельным требованиям к котельной');}
+    out.className='md-calc__out'+(warn?' is-warn':'');
+    out.textContent=lines.join('\n');
+  }
+  ['mdBoilA','mdBoilH','mdBoilI','mdBoilR','mdBoilT'].forEach(function(id){var el=document.getElementById(id);el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Сколько этот котёл будет стоить в месяц на газе, дровах и электричестве —
+посчитано в сравнении [какое отопление дачи
+дешевле](https://mir-doma.pro/otoplenie-dachi-chto-deshevle/). Если сети не
+хватает под электрокотёл, варианты описаны в статье [как увеличить мощность
+электричества на участке](https://mir-doma.pro/kak-uvelichit-moshchnost-elektrichestva-na-uchastke/).
 
 Для электрического или газового котла с электронной автоматикой отдельно стоит продумать резервное питание на случай отключения света: без него насос циркуляции и розжиг просто не заработают. Как посчитать нужную мощность генератора под котёл и остальную технику дома — в статье [какой генератор нужен для дачи](https://mir-doma.pro/kakoy-generator-nuzhen-dlya-dachi/).
 
@@ -130,7 +218,10 @@ images:
 Дешевле всего отапливать магистральным газом, затем дровами и углём. Электричество и солярка — самые дорогие виды топлива. Но экономичность любого котла сильно зависит от утепления дома.
 
 **Какой мощности нужен котёл?**
-Ориентировочно 1 кВт на 10 м² площади утеплённого дома при потолках 2,5–3 м. Точную мощность рассчитывают с учётом утепления, климата и остекления.
+Ориентир — 1 кВт на 10 м² при потолках до 2,7 м в средней полосе и среднем утеплении: дому 80 м² нужно около 8 кВт, ближайший типовой — 9 кВт. Для неутеплённого дома умножайте на 1,5–2, для Сибири — на 1,3–1,5, для двухконтурного и твердотопливного добавьте 20%.
+
+**Какой котёл нужен на дом 100 м²?**
+При среднем утеплении в средней полосе — 10 кВт теплопотерь, котёл на 12 кВт. Двухконтурный или твердотопливный — 10 × 1,2 = 12 кВт: тот же типовой котёл на 12 кВт, но уже без запаса. Электрический на 12 кВт почти всегда требует трёхфазного подключения.
 
 **Можно ли поставить котёл на даче без газа?**
 Да. Без газа ставят электрический (если сеть надёжная и дом утеплён), твердотопливный (дрова, уголь, пеллеты) или дизельный котёл. Твердотопливный даёт максимальную автономность.
