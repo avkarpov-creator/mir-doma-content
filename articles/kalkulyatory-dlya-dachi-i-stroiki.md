@@ -113,6 +113,7 @@ images:
 
 ## Заборы и ограждения
 
+- [Живая изгородь](https://mir-doma.pro/zhivaya-izgorod/#mdHedgeCalc) — сколько саженцев туи, кизильника или спиреи на длину изгороди в один или два ряда, объём траншеи и бюджет.
 - [Забор](https://mir-doma.pro/kakoy-zabor-deshevle/#mdZbCalc) — стоимость забора на разный периметр и материал.
 - [Откатные ворота](https://mir-doma.pro/otkatnye-vorota-svoimi-rukami/#mdOvCalc) — длина створки с противовесом, вес, класс комплекта, закладная и бетон на фундамент.
 - [Забор из профнастила](https://mir-doma.pro/zabor-iz-profnastila-svoimi-rukami/#mdZpCalc) — листы по полезной ширине, столбы, лаги, саморезы и бетон.
