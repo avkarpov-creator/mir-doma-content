@@ -170,6 +170,7 @@ images:
 
 - [Подбор снегоуборщика](https://mir-doma.pro/kakoy-snegouborshchik-vybrat-dlya-dachi/#mdSnCalc) — тип машины, ширина захвата, мощность и время расчистки по площади и характеру снега.
 - [Мощность генератора](https://mir-doma.pro/kakoy-generator-nuzhen-dlya-dachi/#mdGenCalc) — суммарная нагрузка приборов и нужная мощность генератора.
+- [Подбор бензопилы и топливная смесь](https://mir-doma.pro/kak-vybrat-benzopilu/#mdSawCalc) — длина шины, мощность и класс пилы по толщине брёвен и объёму дров, масло на литр бензина для смеси 1:50, 1:40 или 1:25.
 - [Напильник для заточки цепи](https://mir-doma.pro/napilnik-dlya-zatochki-cepi-benzopily/#mdNpCalc) — шаг цепи по замеру заклёпок, диаметр напильника и высота ограничителя глубины.
 
 ## Умный дом и автоматика для дачи
