@@ -410,7 +410,8 @@ def cmd_week(_=None):
         snap = {"date": str(t), "ywm_searchable": s.get("searchable_pages_count"),
                 "ywm_excluded": s.get("excluded_pages_count"), "sqi": s.get("sqi")}
         hist = [json.loads(l) for l in SNAP.read_text(encoding="utf-8").splitlines()] if SNAP.exists() else []
-        old = [h for h in hist if h["date"] <= str(t - timedelta(days=6))]
+        # в файле лежат и снимки gindex (g_*) — сравниваем только со снимками Вебмастера
+        old = [h for h in hist if "ywm_searchable" in h and h["date"] <= str(t - timedelta(days=6))]
         o = old[-1] if old else None
         print(f"Вебмастер: в поиске {snap['ywm_searchable']}" + (f" (было {o['ywm_searchable']} на {o['date']})" if o else "") +
               f", исключено {snap['ywm_excluded']}, ИКС {snap['sqi']}" + (f" (было {o['sqi']})" if o else ""))
