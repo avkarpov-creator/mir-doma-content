@@ -125,6 +125,7 @@ images:
 
 ## Газоны и дорожки
 
+- [Сравнение садовых дорожек](https://mir-doma.pro/sadovye-dorozhki-svoimi-rukami/#mdSdCalc) — выемка грунта, щебень, песок, бордюр, геотекстиль и покрытие для плитки, бетона, щебня и спилов на вашу длину и грунт.
 - [Щебень для дорожки](https://mir-doma.pro/dorozhka-iz-shchebnya-svoimi-rukami/#mdShCalc) — объём щебня по длине, ширине и толщине пирога.
 - [Тротуарная плитка](https://mir-doma.pro/raschet-trotuarnoy-plitki/#mdTpCalc) — количество плитки с запасом на подрезку.
 - [Посевной газон](https://mir-doma.pro/kak-poseyat-gazon/#mdLawnCalc) — семена по площади и сроку посева, стартовое удобрение, привозной грунт и вода на полив.

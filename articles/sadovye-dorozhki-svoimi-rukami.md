@@ -127,6 +127,98 @@ images:
 
 Бюджетные дорожки экономят деньги, но и у них основание лучше не пропускать — хотя бы геотекстиль и подушку, иначе тропинка быстро зарастёт и просядет.
 
+## 🧮 Плитка, бетон, щебень или спилы: сколько материала на вашу дорожку
+
+Таблица «дешевле — дороже» не отвечает на главный вопрос: сколько всего
+придётся купить и вывезти грунта под конкретную дорожку. У каждого покрытия
+свой пирог:
+
+| Покрытие | Выемка | Щебень | Песок | Покрытие | Что ещё |
+|---|---|---|---|---|---|
+| Тротуарная плитка | 25 см | 15 см | 5 см | плитка 6 см, +5% на подрезку | бордюр с двух сторон, геотекстиль |
+| Бетон | 20 см | 10 см | 5 см | бетон 8 см | армосетка, опалубка, шов каждые 2 м |
+| Щебень насыпью | 17 см | 7 см дренаж + 6 см основной | — | отсев 4 см | бордюр, два слоя геотекстиля |
+| Спилы | 25 см | 10 см | 5 см | спилы высотой 15 см на 75% площади | отсев в промежутки, геотекстиль |
+
+На глинистом пучинистом грунте щебня кладут на 5 см больше и на столько же
+глубже копают. Щебень и песок при трамбовке садятся, поэтому насыпного
+материала берут на четверть больше расчётного слоя — калькулятор это учитывает.
+
+**Пример.** Дорожка от калитки к дому длиной 20 м и шириной 80 см (16 м²) на
+обычном грунте:
+
+- **плитка** — вывезти 4 м³ грунта, купить 3 м³ щебня, 1 м³ песка, 16,8 м²
+  плитки и 40 м бордюра;
+- **бетон** — 3,2 м³ грунта, 2 м³ щебня, 1 м³ песка, 1,3 м³ бетона, 9
+  деформационных швов;
+- **щебень** — 2,7 м³ грунта, 2,6 м³ щебня двух фракций, 0,8 м³ отсева и
+  вдвое больше геотекстиля;
+- **спилы** — 4 м³ грунта, 2 м³ щебня, 1 м³ песка и около 380 спилов
+  диаметром 20 см.
+
+Подставьте свою длину, ширину и грунт — калькулятор посчитает все четыре
+варианта рядом.
+
+<!-- wp:html -->
+<div id="mdSdCalc" class="md-calc">
+  <p class="md-calc__lead">Сравнить покрытия дорожки по материалам</p>
+  <label class="md-calc__label" for="mdSdL">Общая длина дорожек, м</label>
+  <input type="number" id="mdSdL" class="md-calc__input" min="0" step="1" value="20">
+  <label class="md-calc__label" for="mdSdW">Ширина, см</label>
+  <input type="number" id="mdSdW" class="md-calc__input" min="0" step="5" value="80">
+  <label class="md-calc__label" for="mdSdG">Грунт</label>
+  <select id="mdSdG" class="md-calc__input">
+    <option value="0">обычный, песчаный или суглинок</option>
+    <option value="1">глинистый, сырой, пучинистый</option>
+  </select>
+  <label class="md-calc__label" for="mdSdD">Средний диаметр спилов, см</label>
+  <input type="number" id="mdSdD" class="md-calc__input" min="5" step="1" value="20">
+  <div id="mdSdOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  /* слои в см — те же, что в таблице статьи; K — запас на уплотнение насыпных слоёв */
+  var K=1.25,CLAY=5;
+  function v(id){var x=parseFloat(document.getElementById(id).value);return isNaN(x)||x<0?0:x;}
+  function r(x){return x<10?Math.round(x*10)/10:Math.round(x);}
+  function calc(){
+    var out=document.getElementById('mdSdOut'),warn=false;
+    var L=v('mdSdL'),W=v('mdSdW')/100,clay=document.getElementById('mdSdG').value==='1'?CLAY:0,D=v('mdSdD')/100;
+    if(!L||!W){out.className='md-calc__out';out.textContent='Укажите длину и ширину дорожки';return;}
+    var A=L*W,geo=(W+0.3)*L*1.1;
+    function m3(cm){return A*cm/100;}
+    var t=['Площадь '+r(A)+' м²'+(clay?', глинистый грунт: щебня и выемки +5 см':'')];
+    t.push('\nПЛИТКА: грунт '+r(m3(25+clay))+' м³, щебень '+r(m3(15+clay)*K)+' м³, песок '+r(m3(5)*K)+' м³, плитка '+r(A*1.05)+' м², бордюр '+r(2*L)+' м, геотекстиль '+r(geo)+' м²');
+    t.push('БЕТОН: грунт '+r(m3(20+clay))+' м³, щебень '+r(m3(10+clay)*K)+' м³, песок '+r(m3(5)*K)+' м³, бетон '+r(m3(8)*1.05)+' м³, армосетка '+r(A*1.1)+' м², опалубка '+r(2*L)+' м, швов '+Math.max(0,Math.ceil(L/2)-1));
+    t.push('ЩЕБЕНЬ: грунт '+r(m3(17+clay))+' м³, щебень 40–70 '+r(m3(7+clay)*K)+' м³, 20–40 '+r(m3(6)*K)+' м³, отсев '+r(m3(4)*K)+' м³, бордюр '+r(2*L)+' м, геотекстиль '+r(geo*2)+' м²');
+    if(D>0){
+      var n=Math.ceil(A*0.75/(Math.PI*D*D/4));
+      t.push('СПИЛЫ: грунт '+r(m3(25+clay))+' м³, щебень '+r(m3(10+clay)*K)+' м³, песок '+r(m3(5)*K)+' м³, спилов Ø'+Math.round(D*100)+' см ≈ '+n+' шт., бордюр '+r(2*L)+' м');
+    }
+    if(W<0.4){warn=true;t.push('\nУже 40 см по дорожке неудобно ходить и не проехать тачкой');}
+    out.className='md-calc__out'+(warn?' is-warn':'');
+    out.textContent=t.join('\n');
+  }
+  ['mdSdL','mdSdW','mdSdG','mdSdD'].forEach(function(id){var el=document.getElementById(id);el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Точное число плиток под ваш формат и раскладку считает калькулятор в статье
+[расчёт тротуарной плитки](https://mir-doma.pro/raschet-trotuarnoy-plitki/),
+а фракции и слои насыпной дорожки подробно разобраны в статье
+[дорожка из щебня своими руками](https://mir-doma.pro/dorozhka-iz-shchebnya-svoimi-rukami/).
+
 ## 🌿 Несколько советов по дизайну
 
 Дорожки задают характер всему участку, поэтому стоит подумать и об их виде:
@@ -159,6 +251,14 @@ images:
 ### Из чего дешевле всего сделать садовую дорожку?
 
 Самый бюджетный вариант — насыпная дорожка из щебня или гравия по геотекстилю с бордюром: материалы недорогие, а сделать можно за пару часов. Ещё дешевле обходятся дорожки из бетона, залитого в многоразовую форму «под камень».
+
+### Сколько щебня и песка нужно на садовую дорожку?
+
+На дорожку из плитки шириной 80 см уходит около 0,15 м³ щебня и 0,05 м³
+песка на каждый погонный метр, с запасом на уплотнение. На 20 м — 3 м³
+щебня и 1 м³ песка. Под бетон щебня нужно меньше, под насыпную дорожку —
+две фракции и отсев. Все четыре варианта под вашу длину считает
+[калькулятор выше](#mdSdCalc).
 
 ### Нужно ли основание под садовую дорожку?
 
