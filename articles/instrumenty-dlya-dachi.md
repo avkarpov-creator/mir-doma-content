@@ -121,6 +121,130 @@ images:
 - **Подбирайте под себя.** Инструмент должен быть удобным по весу и размеру, тогда работать им легко и безопасно.
 - **Обращайте внимание на материал.** Кованые лопаты и вилы, качественная сталь режущих кромок служат в разы дольше дешёвых аналогов.
 
+## 📏 Что проверить при покупке: цифры
+
+Совет «берите качественное» мало что даёт в магазине. Вот цифры, по которым
+хороший инструмент отличают от одноразового:
+
+| Инструмент | На что смотреть | Ориентир |
+|---|---|---|
+| Штыковая лопата | полотно из закалённой стали, черенок в тулье на заклёпке | толщина полотна 1,5–2 мм, полотно не гнётся, если встать на него ногой |
+| Секатор | плоскостной — для живых веток, с наковальней — для сухих | режет ветки до 20–25 мм; толще — сучкорез (до 40–50 мм) или садовая ножовка |
+| Тачка | одно колесо — для грядок, два — для тяжёлых грузов по ровному | кузов 80–100 л, грузоподъёмность 100–150 кг, пневмоколесо |
+| Садовый шланг | армированный, не перегибается | 1/2″ — до 20–25 м, длиннее — 3/4″, иначе на конце слабый напор |
+| Шуруповёрт | напряжение, крутящий момент, два аккумулятора | 18 В; 30–50 Н·м для мебели и мелкого ремонта, от 50 Н·м — саморезы в брус |
+| Удлинитель на катушке | сечение жилы, катушку разматывать полностью | до 30 м и до 2 кВт — 1,5 мм²; 50 м или мощная пила — 2,5 мм² |
+| Колун | вес и длина топорища | 2–3 кг, топорище 70–90 см; лёгким топором чурки не колют |
+
+Подробные таблицы по технике — в статьях [какой шуруповёрт выбрать](https://mir-doma.pro/kakoy-shurupovyort-vybrat-dlya-dachi/),
+[как выбрать бензопилу](https://mir-doma.pro/kak-vybrat-benzopilu/) и
+[какой триммер выбрать](https://mir-doma.pro/kakoy-trimmer-vybrat-dlya-dachi/).
+
+## 🧰 Подберите набор под свои задачи
+
+Список «всё, что нужно на даче» у каждого свой: огороднику не нужен перфоратор,
+а тому, кто строит баню, — тяпка в первую очередь. Отметьте, чем собираетесь
+заниматься, — подборщик разделит набор на «купить сразу» и «докупить, когда
+дойдёт до дела». Отметки «уже есть» сохраняются в браузере, список можно
+скопировать и взять в магазин.
+
+<!-- wp:html -->
+<div id="mdNbCalc" class="md-calc">
+  <p class="md-calc__lead">Чем будете заниматься на даче</p>
+  <div id="mdNbTasks" class="md-nb__tasks"></div>
+  <div id="mdNbOut" class="md-nb__out"></div>
+  <button type="button" id="mdNbCopy" class="md-nb__btn">Скопировать список</button>
+  <span id="mdNbStatus" class="md-nb__status"></span>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-nb__tasks label,.md-nb__out label{display:flex;gap:10px;align-items:flex-start;padding:6px 0;cursor:pointer;font-size:.95em}
+.md-nb__tasks input,.md-nb__out input{width:20px;height:20px;flex-shrink:0;margin-top:2px;accent-color:#3d7a3d}
+.md-nb__out{margin-top:12px;padding:12px 14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.93em;line-height:1.45}
+.md-nb__out h4{margin:10px 0 4px;font-size:1em;color:#2d5a2d}
+.md-nb__out h4:first-child{margin-top:0}
+.md-nb__out small{display:block;color:#557;font-size:.88em}
+.md-nb__out .is-have span{text-decoration:line-through;color:#888}
+.md-nb__btn{margin-top:12px;padding:10px 16px;border:1px solid #3d7a3d;border-radius:9px;background:#fff;color:#3d7a3d;font-weight:600;font-family:inherit;cursor:pointer}
+.md-nb__status{margin-left:10px;font-size:.85em;color:#666}
+</style>
+<script>
+(function(){
+  var TASKS=[['ogorod','Огород: грядки, посадки, полив',1],['sad','Сад: плодовые деревья и кусты',0],
+    ['gazon','Газон и трава вдоль забора',0],['remont','Мелкий ремонт: полки, двери, мебель',1],
+    ['stroika','Стройка: баня, сарай, забор, бетон',0],['drova','Дрова: печь, баня, мангал',0],['sneg','Зимой бываю на участке',0]];
+  /* [задача, название, на что смотреть, сразу(1)/по делу(0)] — те же ориентиры, что в таблице статьи */
+  var ITEMS=[
+    ['ogorod','Штыковая лопата','полотно 1,5–2 мм, закалённая сталь',1],['ogorod','Грабли','',1],
+    ['ogorod','Тяпка или плоскорез','',1],['ogorod','Шланг и лейка','1/2″ до 20–25 м, длиннее — 3/4″',1],
+    ['ogorod','Тачка','80–100 л, 100–150 кг, пневмоколесо',1],['ogorod','Вилы','для перекопки тяжёлой почвы и компоста',0],
+    ['sad','Секатор плоскостной','живые ветки до 20–25 мм',1],['sad','Сучкорез','ветки до 40–50 мм',0],
+    ['sad','Садовая ножовка','для ветвей толще 5 см',0],['sad','Опрыскиватель 5–8 л','для обработок сада весной и осенью',0],
+    ['gazon','Триммер','сетевой — до 6 соток у розетки, аккумуляторный — до 10–12, бензиновый — от 15 и бурьян',1],['gazon','Веерные грабли','',0],
+    ['remont','Молоток, отвёртки, рулетка, уровень','',1],['remont','Ножовка по дереву','',1],
+    ['remont','Шуруповёрт','18 В, 30–50 Н·м, два аккумулятора',1],['remont','Удлинитель на катушке','до 30 м — 1,5 мм², 50 м — 2,5 мм²',1],
+    ['stroika','Шуруповёрт помощнее','от 50 Н·м — саморезы в брус',1],['stroika','Болгарка 125 мм','круги по металлу и камню',1],
+    ['stroika','Электролобзик или циркулярная пила','',0],['stroika','Перфоратор','только если будет бетон и кирпич',0],
+    ['stroika','Строительный уровень 1–2 м и шнур','',1],
+    ['drova','Колун','2–3 кг, топорище 70–90 см',1],['drova','Пила для дров','до 2 м³ в год — электро или аккумуляторная, больше — бензопила',1],
+    ['sneg','Лопата для снега или скрепер','',1],
+    ['*','Перчатки, очки с боковой защитой','очки обязательны с болгаркой и триммером',1]];
+  var KEY='mdNbState',st={};
+  try{st=JSON.parse(localStorage.getItem(KEY))||{};}catch(e){st={};}
+  if(!st.t){st.t={};TASKS.forEach(function(x){st.t[x[0]]=!!x[2];});}
+  if(!st.h){st.h={};}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+  var box=document.getElementById('mdNbTasks'),out=document.getElementById('mdNbOut');
+  TASKS.forEach(function(x){
+    var l=document.createElement('label'),i=document.createElement('input'),s=document.createElement('span');
+    i.type='checkbox';i.checked=!!st.t[x[0]];s.textContent=x[1];
+    i.addEventListener('change',function(){st.t[x[0]]=i.checked;save();render();});
+    l.appendChild(i);l.appendChild(s);box.appendChild(l);
+  });
+  function pick(){
+    var seen={},res=[];
+    ITEMS.forEach(function(it){
+      if((it[0]==='*'||st.t[it[0]])&&!seen[it[1]]){seen[it[1]]=1;res.push(it);}
+    });
+    if(st.t.stroika){res=res.filter(function(it){return it[1]!=='Шуруповёрт';});}
+    return res;
+  }
+  function render(){
+    out.innerHTML='';
+    var list=pick(),any=false;
+    [[1,'Купить сразу'],[0,'Докупить, когда дойдёт до дела']].forEach(function(g){
+      var part=list.filter(function(it){return it[3]===g[0];});
+      if(!part.length)return;
+      var h=document.createElement('h4');h.textContent=g[1]+' — '+part.length;out.appendChild(h);
+      part.forEach(function(it){
+        var l=document.createElement('label'),i=document.createElement('input'),s=document.createElement('span');
+        i.type='checkbox';i.checked=!!st.h[it[1]];
+        s.textContent=it[1];
+        if(it[2]){var sm=document.createElement('small');sm.textContent=it[2];s.appendChild(sm);}
+        if(i.checked)l.className='is-have';
+        i.title='уже есть';
+        i.addEventListener('change',function(){st.h[it[1]]=i.checked;l.className=i.checked?'is-have':'';save();});
+        l.appendChild(i);l.appendChild(s);out.appendChild(l);any=true;
+      });
+    });
+    if(!any)out.textContent='Отметьте хотя бы одну задачу';
+  }
+  document.getElementById('mdNbCopy').addEventListener('click',function(){
+    var lines=['Инструмент для дачи — купить:'];
+    pick().forEach(function(it){if(!st.h[it[1]])lines.push('— '+it[1]+(it[2]?' ('+it[2]+')':''));});
+    var txt=lines.join('\n'),stEl=document.getElementById('mdNbStatus');
+    if(navigator.clipboard){navigator.clipboard.writeText(txt).then(function(){stEl.textContent='Скопировано';},function(){stEl.textContent='Не удалось скопировать';});}
+    else{stEl.textContent='Браузер не даёт скопировать';}
+  });
+  render();
+})();
+</script>
+<!-- /wp:html -->
+
+Отметки в списке — то, что у вас уже есть: при копировании они не попадут в
+список покупок.
+
 ## 🛡️ Частые ошибки
 
 - **Покупка лишнего.** Новички скупают инструмент, который потом пылится без дела. Берите нужное.
@@ -153,7 +277,7 @@ images:
 
 ### Сколько стоит собрать набор инструментов для дачи?
 
-Базовый набор садового и ручного инструмента обходится недорого, а основные траты приходятся на электроинструмент. Собирать набор удобно постепенно: сначала самое необходимое, а специализированный и дорогой инструмент докупать под конкретные задачи, когда он реально понадобится. Прикинуть расходы на конкретный инструмент или материал заранее помогают [калькуляторы для дачи и стройки](https://mir-doma.pro/kalkulyatory-dlya-dachi-i-stroiki/), собранные на сайте по разделам.
+Базовый набор садового и ручного инструмента обходится недорого, а основные траты приходятся на электроинструмент. Чтобы не переплатить за лишнее, отметьте свои задачи в [подборщике набора](#mdNbCalc) — он отделит то, что нужно сразу, от того, что можно отложить. Собирать набор удобно постепенно: сначала самое необходимое, а специализированный и дорогой инструмент докупать под конкретные задачи, когда он реально понадобится. Прикинуть расходы на конкретный инструмент или материал заранее помогают [калькуляторы для дачи и стройки](https://mir-doma.pro/kalkulyatory-dlya-dachi-i-stroiki/), собранные на сайте по разделам.
 
 ### Нужна ли бензопила на даче?
 
