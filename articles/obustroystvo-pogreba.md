@@ -85,9 +85,12 @@ images:
 Удобные стеллажи позволяют разместить банки и овощи с максимальной пользой:
 
 - **Материал.** Стеллажи делают из дерева (обязательно обработав антисептиком от гнили и плесени) или из металла (крашеного либо оцинкованного, чтобы не ржавел во влаге).
-- **Расположение.** Полки ставят с небольшим зазором от стен — так за ними циркулирует воздух и не скапливается сырость.
-- **Прочность.** Полки под банки с заготовками делают крепкими: наполненные банки весят немало.
-- **Ярусы.** Стеллажи делают в несколько ярусов до потолка — так небольшой погреб вмещает гораздо больше запасов.
+- **Расположение.** Стеллаж отодвигают от стены на 5–10 см — так за ним циркулирует воздух и не скапливается сырость. Нижнюю полку поднимают на 15–20 см от пола.
+- **Глубина.** Под банки хватает 30–40 см: на такую полку встают два ряда трёхлитровых банок, и до заднего ряда легко дотянуться. Под ящики с овощами и яблоками — 50–60 см.
+- **Шаг ярусов.** Трёхлитровая банка высотой около 25 см, поэтому ярус под неё — 35–40 см; под литровые и пол-литровые хватает 25–30 см.
+- **Прочность.** Наполненная трёхлитровая банка весит около 4 кг, метр полки в два ряда — около 50 кг. Под такой вес берут доску 25–30 мм и ставят стойки не реже чем через 90–100 см; доске 20 мм нужен пролёт не больше 60–70 см.
+- **Ярусы.** Стеллажи делают в 4–5 ярусов до потолка — так небольшой погреб вмещает гораздо больше запасов.
+- **Проход.** Между стеллажом и закромом оставляют не меньше 60–70 см — иначе ящик с нижней полки не вытащить.
 
 На стеллажах удобно хранить банки с [маринованными огурцами](https://mir-doma.pro/marinovannye-ogurtsy-na-zimu/), помидорами и другими заготовками.
 
@@ -107,6 +110,120 @@ images:
 - **Яблоки — подальше от картофеля и капусты**: они перенимают землистый запах, а этилен, который выделяют спелые плоды, ускоряет порчу соседей. Как укладывать яблоки и какие сорта долёживают до весны — в статье [как хранить яблоки зимой](https://mir-doma.pro/kak-hranit-yabloki-zimoy/).
 
 Овощи не хранят прямо на полу — снизу всегда делают поддон или решётку для циркуляции воздуха. Подробнее о том, как правильно хранить разные овощи, читайте в статье [как хранить овощи зимой](https://mir-doma.pro/kak-hranit-ovoshchi-zimoy/).
+
+## 📐 Сколько места нужно под урожай
+
+Обустройство погреба начинают не со стеллажей, а с вопроса: что и сколько
+в нём будет лежать. От этого зависит, сколько места отдать под закрома, а сколько
+под полки, и поместится ли всё вместе с проходом. Ориентиры для расчёта:
+
+| Что храним | Как лежит | Сколько помещается | Ограничение |
+|---|---|---|---|
+| Картофель | закром насыпью | 650 кг в 1 м³ | слой не выше 1 м, иначе нижние клубни преют |
+| Свёкла | закром или ящик насыпью | 600 кг в 1 м³ | слой до 1 м |
+| Морковь | ящик, пересыпанный песком | 300 кг в 1 м³ ящика | песок занимает половину объёма |
+| Яблоки | ящики слоями, с бумагой | 400 кг в 1 м³ ящика | штабель до 1 м, подальше от картофеля |
+| Капуста | на полке в один ряд | 20 кг на 1 м² полки | кочаны не касаются друг друга |
+| Банки 3 л | полка, один ярус | 34 банки на 1 м² | ярус 35–40 см |
+| Банки 1 л и 0,5 л | полка, один ярус | 80 банок на 1 м² | ярус 25–30 см |
+
+Закромам и ящикам нужна площадь пола: при высоте около метра 1 м³ занимает
+примерно 1 м². Полкам — длина стены: стеллаж глубиной 40 см в четыре яруса
+даёт 1,6 м² полок на каждый погонный метр. Ещё одну полосу шириной 60–70 см
+вдоль погреба занимает проход.
+
+**Пример.** Семья закладывает 500 кг картофеля, 60 кг свёклы, 50 кг моркови,
+60 кг яблок, 40 кг капусты, 30 трёхлитровых и 60 литровых банок. Погреб —
+2 × 2,5 м.
+
+- Закрома и ящики: картофель 0,77 м³, свёкла 0,10, морковь 0,17, яблоки 0,15 —
+  всего около 1,2 м³, это 1,2 м² пола.
+- Полки: капуста 2 м², трёхлитровые банки 0,9 м², литровые 0,7 м² — 3,6 м².
+  Стеллаж в четыре яруса глубиной 40 см нужен длиной 2,3 м, он занимает 0,9 м² пола.
+- Погреб 5 м², проход 0,7 × 2,5 м съедает 1,75 м², остаётся 3,25 м².
+  Занято 2,1 м² — запас чуть больше 1 м², хватит на лестницу или ещё один закром.
+
+Подставьте свои цифры — калькулятор пересчитает площадь закромов, длину
+стеллажа и покажет, хватит ли погреба.
+
+<!-- wp:html -->
+<div id="mdUrCalc" class="md-calc">
+  <p class="md-calc__lead">Поместится ли урожай в погреб</p>
+  <label class="md-calc__label" for="mdUrL">Длина погреба, м</label>
+  <input type="number" id="mdUrL" class="md-calc__input" min="0" step="0.1" value="2.5">
+  <label class="md-calc__label" for="mdUrW">Ширина погреба, м</label>
+  <input type="number" id="mdUrW" class="md-calc__input" min="0" step="0.1" value="2">
+  <label class="md-calc__label" for="mdUrK">Картофель, кг</label>
+  <input type="number" id="mdUrK" class="md-calc__input" min="0" step="10" value="500">
+  <label class="md-calc__label" for="mdUrS">Свёкла, кг</label>
+  <input type="number" id="mdUrS" class="md-calc__input" min="0" step="5" value="60">
+  <label class="md-calc__label" for="mdUrM">Морковь в песке, кг</label>
+  <input type="number" id="mdUrM" class="md-calc__input" min="0" step="5" value="50">
+  <label class="md-calc__label" for="mdUrY">Яблоки в ящиках, кг</label>
+  <input type="number" id="mdUrY" class="md-calc__input" min="0" step="5" value="60">
+  <label class="md-calc__label" for="mdUrC">Капуста, кг</label>
+  <input type="number" id="mdUrC" class="md-calc__input" min="0" step="5" value="40">
+  <label class="md-calc__label" for="mdUrB3">Банок 3 л, шт.</label>
+  <input type="number" id="mdUrB3" class="md-calc__input" min="0" step="1" value="30">
+  <label class="md-calc__label" for="mdUrB1">Банок 1 л и 0,5 л, шт.</label>
+  <input type="number" id="mdUrB1" class="md-calc__input" min="0" step="1" value="60">
+  <label class="md-calc__label" for="mdUrD">Стеллаж</label>
+  <select id="mdUrD" class="md-calc__input">
+    <option value="0.3">глубина 30 см</option>
+    <option value="0.4" selected>глубина 40 см</option>
+    <option value="0.6">глубина 60 см</option>
+  </select>
+  <label class="md-calc__label" for="mdUrT">Ярусов на стеллаже</label>
+  <select id="mdUrT" class="md-calc__input">
+    <option value="3">3</option>
+    <option value="4" selected>4</option>
+    <option value="5">5</option>
+  </select>
+  <div id="mdUrOut" class="md-calc__out">Заполните поля</div>
+</div>
+<style>
+.md-calc{max-width:560px;margin:24px auto;padding:18px 20px;border:1px solid #e2e2e2;border-radius:12px;background:#fff}
+.md-calc__lead{margin:0 0 12px;font-size:.95em;color:#555}
+.md-calc__label{display:block;font-weight:600;margin-bottom:6px;font-size:.93em}
+.md-calc__input{width:100%;padding:11px 13px;border:1px solid #e2e2e2;border-radius:9px;font-size:16px;font-family:inherit;margin-bottom:14px;background:#fafafa}
+.md-calc__input:focus{outline:none;border-color:#3d7a3d;background:#fff}
+.md-calc__out{padding:14px;border-radius:9px;background:#eaf3ea;color:#2d5a2d;font-size:.95em;line-height:1.5;white-space:pre-line}
+.md-calc__out.is-warn{background:#fbeee9;color:#a33b1e}
+</style>
+<script>
+(function(){
+  /* те же нормы, что в таблице статьи: кг на 1 м³ закрома/ящика, кг или банок на 1 м² полки */
+  var BIN={K:650,S:600,M:300,Y:400},SHELF={C:20,B3:34,B1:80},PASS=0.7,H=1;
+  function v(id){var x=parseFloat(document.getElementById(id).value);return isNaN(x)||x<0?0:x;}
+  function r(x){return Math.round(x*100)/100;}
+  function calc(){
+    var out=document.getElementById('mdUrOut'),warn=false;
+    var L=v('mdUrL'),W=v('mdUrW');
+    if(!L||!W){out.className='md-calc__out';out.textContent='Укажите длину и ширину погреба';return;}
+    var vol=0;for(var k in BIN){vol+=v('mdUr'+k)/BIN[k];}
+    var sh=0;for(var s in SHELF){sh+=v('mdUr'+s)/SHELF[s];}
+    var d=parseFloat(document.getElementById('mdUrD').value),t=parseFloat(document.getElementById('mdUrT').value);
+    var run=sh/(d*t),binA=vol/H,shA=run*d,used=binA+shA;
+    var area=L*W,usable=area-PASS*Math.max(L,W),left=usable-used;
+    var lines=['Закрома и ящики: '+r(vol)+' м³ — это '+r(binA)+' м² пола при высоте 1 м',
+      'Полки: '+r(sh)+' м² — стеллаж длиной '+r(run)+' м, займёт '+r(shA)+' м² пола',
+      'Погреб '+r(area)+' м², без прохода 70 см остаётся '+r(usable)+' м²'];
+    if(usable<=0){warn=true;lines.push('Погреб слишком узкий: проход съедает всю площадь');}
+    else if(left<0){warn=true;lines.push('Не помещается: не хватает '+r(-left)+' м². Добавьте ярус, поднимите стеллаж до потолка или часть картофеля храните в ящиках на балконе');}
+    else{lines.push('Помещается, запас '+r(left)+' м²');}
+    if(run>2*Math.max(L,W)){warn=true;lines.push('Стеллаж длиннее двух длинных стен ('+r(2*Math.max(L,W))+' м) — добавьте ярусы или возьмите полки глубже');}
+    out.className='md-calc__out'+(warn?' is-warn':'');
+    out.textContent=lines.join('\n');
+  }
+  ['mdUrL','mdUrW','mdUrK','mdUrS','mdUrM','mdUrY','mdUrC','mdUrB3','mdUrB1','mdUrD','mdUrT'].forEach(function(id){var el=document.getElementById(id);el.addEventListener('input',calc);el.addEventListener('change',calc);});
+  calc();
+})();
+</script>
+<!-- /wp:html -->
+
+Если картофеля больше, чем помещается, его не обязательно держать в погребе
+целиком: часть урожая до весны доживает в утеплённом ящике — как его
+рассчитать, в статье [хранение овощей на балконе](https://mir-doma.pro/hranenie-ovoshchey-na-balkone/).
 
 ## 🧹 Защита от плесени и грызунов
 
@@ -148,6 +265,13 @@ images:
 ### Из чего сделать стеллажи в погребе?
 
 Стеллажи делают из дерева, обработанного антисептиком от гнили и плесени, или из металла — крашеного либо оцинкованного, чтобы он не ржавел во влаге. Полки ставят с зазором от стен для вентиляции и делают достаточно прочными для тяжёлых банок.
+
+### Сколько места в погребе нужно под 500 кг картофеля?
+
+500 кг картофеля занимают около 0,77 м³. При слое не выше метра это закром
+примерно 1 × 0,8 м по полу и 1 м в высоту — плюс 10–15 см зазора от стены
+и подставка 15 см от пола. Посчитать весь урожай вместе с банками и проходом
+можно в [калькуляторе выше](#mdUrCalc).
 
 ### Как избавиться от плесени в погребе?
 
